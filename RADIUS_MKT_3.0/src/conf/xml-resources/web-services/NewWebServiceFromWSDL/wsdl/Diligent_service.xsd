@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://crm.it.telekom.mk/diligent/datatypes/Diligent" targetNamespace="http://crm.it.telekom.mk/diligent/datatypes/Diligent" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:complexType name="CheckMassiveFaultByLine">
+		<xsd:sequence>
+			<xsd:element name="LineID" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="GetLineMetrics">
+		<xsd:sequence>
+			<xsd:element name="LineID" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="CheckMassiveFaultByLineOutput">
+		<xsd:sequence>
+			<xsd:element ref="MassiveFault" minOccurs="0" maxOccurs="unbounded"></xsd:element>		
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="GetLineMetricsOutput">
+		<xsd:sequence>
+			<xsd:element ref="LineMetric" minOccurs="0" maxOccurs="unbounded"></xsd:element>		
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:element name="LineMetric">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Name" type="xsd:string"/>
+				<xsd:element name="Value" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="MassiveFault">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Name" type="xsd:string"/>
+				<xsd:element name="Value" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

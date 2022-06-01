@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/wsdls/mk-telekom-it-crm-diligent-services-queryDiligentIncident/CRMDiligentResponsePortType.wsdl" uri="src/conf/xml-resources/web-services/NewWebServiceFromWSDL/wsdl/CRMDiligentResponsePortType.wsdl"/>
+    <system systemId="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/xsds/mk-telekom-it-crm-diligent-datatypes-queryDiligentIncidentResponse.xsd" uri="src/conf/xml-resources/web-services/xsds/mk-telekom-it-crm-diligent-datatypes-queryDiligentIncidentResponse.xsd"/>
+    <system systemId="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/xsds/ei.messaging.datatypes.xsd" uri="src/conf/xml-resources/web-services/xsds/ei.messaging.datatypes.xsd"/>
+</catalog>

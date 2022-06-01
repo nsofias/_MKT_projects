@@ -1,0 +1,12 @@
+SMAP
+redirect_jsp.java
+JSP
+*S JSP
+*F
++ 0 redirect.jsp
+redirect.jsp
+*L
+5,12:44
+18,6:58
+23,4:64
+*E

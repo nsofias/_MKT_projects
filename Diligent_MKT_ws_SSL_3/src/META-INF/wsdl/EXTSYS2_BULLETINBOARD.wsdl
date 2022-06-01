@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mx="http://www.ibm.com/maximo" xmlns:mxws="http://www.ibm.com/maximo/wsdl/EXTSYS2_BULLETINBOARD" targetNamespace="http://www.ibm.com/maximo/wsdl/EXTSYS2_BULLETINBOARD" name="EXTSYS2_BULLETINBOARD">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://www.ibm.com/maximo" schemaLocation="../xsds/BULLETINBOARDService.xsd" />
+    </xsd:schema>
+  </types>
+  <portType name="EXTSYS2_BULLETINBOARDPortType">
+    <operation name="QueryBULLETINBOARD">
+      <input message="mxws:QueryBULLETINBOARDRequest" />
+      <output message="mxws:QueryBULLETINBOARDResponse" />
+    </operation>
+  </portType>
+  <binding name="EXTSYS2_BULLETINBOARDSOAP11Binding" type="mxws:EXTSYS2_BULLETINBOARDPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="QueryBULLETINBOARD">
+      <soap:operation soapAction="urn:processDocument" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <message name="QueryBULLETINBOARDRequest">
+    <part name="parameters" element="mx:QueryBULLETINBOARD" />
+  </message>
+  <message name="QueryBULLETINBOARDResponse">
+    <part name="parameters" element="mx:QueryBULLETINBOARDResponse" />
+  </message>
+  <service name="EXTSYS2_BULLETINBOARD">
+    <port name="EXTSYS2_BULLETINBOARDSOAP11Port" binding="mxws:EXTSYS2_BULLETINBOARDSOAP11Binding">
+      <soap:address location="https://10.232.49.223:9043/meaweb/services/EXTSYS2_BULLETINBOARD" />
+    </port>
+  </service>
+</definitions>
+

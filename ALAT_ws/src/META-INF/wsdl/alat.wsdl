@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="alatDefinitions" targetNamespace="http://oss.it.telekom.mk/alat/services/alatmanagement" xmlns="http://oss.it.telekom.mk/alat/services/alatmanagement" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://oss.it.telekom.mk/alat/services/alatmanagement" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soabp="http://messaging.ei.tmobile.net/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<wsdl:documentation>
+	<!-- CEISeR version of WSDLPortType: 111812 (Branch: main) -->
+	<!-- CEISeR version used for generation: 17.6.11.0 -->
+</wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://oss.it.telekom.mk/alat/services/alatmanagement" version="-UNDEFINED-" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ei_messaging_datatypes="http://messaging.ei.tmobile.net/datatypes" xmlns:tmmkt_tmobile_oss_it_tt_datatypes="http://oss.it.telekom.mk/alat/datatypes/alatmanagement" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://oss.it.telekom.mk/alat/datatypes/alatmanagement" schemaLocation="../../xsds/mk-telekom-it-oss-alat-datatypes-alatmanagement.xsd"/>
+<xsd:import namespace="http://messaging.ei.tmobile.net/datatypes" schemaLocation="../../xsds/ei.messaging.datatypes.xsd"/>
+<!-- ****************************************************************** -->
+<xsd:element name="GetMeasureHistory">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="tmmkt_tmobile_oss_it_tt_datatypes:alat_getMeasureHistoryRequest"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="GetMeasureHistoryOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="tmmkt_tmobile_oss_it_tt_datatypes:alat_getMeasureHistoryResponse"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="PerformSeltMeasure">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="tmmkt_tmobile_oss_it_tt_datatypes:alat_performSeltMeasureRequest"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="PerformSeltMeasureOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="tmmkt_tmobile_oss_it_tt_datatypes:alat_performSeltMeasureResponse"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="PerformSyncMeasure">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="tmmkt_tmobile_oss_it_tt_datatypes:alat_performSyncMeasureRequest"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="PerformSyncMeasureOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="tmmkt_tmobile_oss_it_tt_datatypes:alat_performSyncMeasureResponse"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="ResetPort">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="tmmkt_tmobile_oss_it_tt_datatypes:alat_resetPortRequest"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="ResetPortOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="tmmkt_tmobile_oss_it_tt_datatypes:alat_resetPortResponse"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="TechnicalExceptionElement" type="ei_messaging_datatypes:SOABPException2"/>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getMeasureHistoryOutput">
+    <wsdl:part name="parameters" element="tns:GetMeasureHistoryOutput">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="resetPortInput">
+    <wsdl:part name="parameters" element="tns:ResetPort">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="performSeltMeasureOutput">
+    <wsdl:part name="parameters" element="tns:PerformSeltMeasureOutput">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="resetPortOutput">
+    <wsdl:part name="parameters" element="tns:ResetPortOutput">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="performSeltMeasureInput">
+    <wsdl:part name="parameters" element="tns:PerformSeltMeasure">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="performSyncMeasureOutput">
+    <wsdl:part name="parameters" element="tns:PerformSyncMeasureOutput">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="performSyncMeasureInput">
+    <wsdl:part name="parameters" element="tns:PerformSyncMeasure">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="TechnicalExceptionMessage">
+    <wsdl:part name="parameters" element="tns:TechnicalExceptionElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMeasureHistoryInput">
+    <wsdl:part name="parameters" element="tns:GetMeasureHistory">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="alat">
+    <wsdl:operation name="ResetPort">
+<wsdl:documentation>
+<soabp:RequestResponseOperation/>
+</wsdl:documentation>
+      <wsdl:input message="tns:resetPortInput">
+    </wsdl:input>
+      <wsdl:output message="tns:resetPortOutput">
+    </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault" message="tns:TechnicalExceptionMessage">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PerformSeltMeasure">
+<wsdl:documentation>
+<soabp:RequestResponseOperation/>
+</wsdl:documentation>
+      <wsdl:input message="tns:performSeltMeasureInput">
+    </wsdl:input>
+      <wsdl:output message="tns:performSeltMeasureOutput">
+    </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault" message="tns:TechnicalExceptionMessage">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PerformSyncMeasure">
+<wsdl:documentation>
+<soabp:RequestResponseOperation/>
+</wsdl:documentation>
+      <wsdl:input message="tns:performSyncMeasureInput">
+    </wsdl:input>
+      <wsdl:output message="tns:performSyncMeasureOutput">
+    </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault" message="tns:TechnicalExceptionMessage">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetMeasureHistory">
+<wsdl:documentation>
+<soabp:RequestResponseOperation/>
+</wsdl:documentation>
+      <wsdl:input message="tns:getMeasureHistoryInput">
+    </wsdl:input>
+      <wsdl:output message="tns:getMeasureHistoryOutput">
+    </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault" message="tns:TechnicalExceptionMessage">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="alatBinding" type="tns:alat">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ResetPort">
+      <soap:operation soapAction="http://telekom.mk/alat/ResetPort"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault">
+        <soap:fault name="TechnicalExceptionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PerformSeltMeasure">
+      <soap:operation soapAction="http://telekom.mk/alat/PerformSeltMeasure"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault">
+        <soap:fault name="TechnicalExceptionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="PerformSyncMeasure">
+      <soap:operation soapAction="http://telekom.mk/alat/PerformSyncMeasure"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault">
+        <soap:fault name="TechnicalExceptionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetMeasureHistory">
+      <soap:operation soapAction="http://telekom.mk/alat/GetMeasureHistory"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault">
+        <soap:fault name="TechnicalExceptionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="alatService">
+    <wsdl:port name="alat" binding="tns:alatBinding">
+      <soap:address location="https://10.232.58.147/mk.telekom.system.architecture.Diligent.ALAT.alat"/>	  
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://crm.diligent.webservices.northbound.esb.middleware.telekom.mk/" xmlns:soabp="http://messaging.ei.tmobile.net/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://crm.diligent.webservices.northbound.esb.middleware.telekom.mk/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IDiligentWSDefinitions" targetNamespace="http://crm.diligent.webservices.northbound.esb.middleware.telekom.mk/">
+<wsdl:documentation>
+	<!-- CEISeR version of WSDLPortType: 643244 (Branch: main) -->
+	<!-- CEISeR version used for generation: 17.6.11.0 -->
+</wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema xmlns:ns1="http://messaging.ei.tmobile.net/datatypes" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://crm.diligent.webservices.northbound.esb.middleware.telekom.mk/" version="-UNDEFINED-">
+<xsd:import namespace="http://messaging.ei.tmobile.net/datatypes" schemaLocation="http://10.232.49.223:8080/mk.telekom.system.architecture.Diligent.CRM.IDiligentWS?wsdl&amp;resource=ei.messaging.datatypes.xsd"/>
+<!-- ****************************************************************** -->
+<xs:element name="DiligentException" type="tns:DiligentException"/>
+<xs:complexType name="DiligentException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="ValidationModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="responseStatus" type="xs:string"/>
+      <xs:element minOccurs="0" name="responseReason" type="xs:string"/>
+      <xs:element minOccurs="0" name="errorId" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:element name="createCustomerIssue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="eiMessageContext" type="ns1:EIMessageContext2"/>
+        <xs:element name="createCustomerIssueRequestData" type="tns:createCustomerIssueRequestData"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+<xs:complexType name="createCustomerIssueRequestData">
+    <xs:sequence>
+      <xs:element name="customerIssueModel" type="tns:customerIssueModel"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:element name="createCustomerIssueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="eiMessageContext" type="ns1:EIMessageContext2"/>
+        <xs:element name="createCustomerIssueResponseData" type="tns:createCustomerIssueResponseData"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+<xs:complexType name="createCustomerIssueResponseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="customerIssueId" type="xs:string"/>
+      <xs:element minOccurs="0" name="incidentId" type="xs:string"/>
+      <xs:element minOccurs="0" name="validationModel" type="tns:ValidationModel"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="customerIssueModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:string"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" name="dateEntered" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="dateModified" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="createdBy" type="xs:string"/>
+      <xs:element minOccurs="0" name="modifiedUserId" type="xs:string"/>
+      <xs:element minOccurs="0" name="description" type="xs:string"/>
+      <xs:element minOccurs="0" name="deleted" type="xs:int"/>
+      <xs:element minOccurs="0" name="tsrmId" type="xs:string"/>
+      <xs:element minOccurs="0" name="faultType" type="xs:string"/>
+      <xs:element minOccurs="0" name="customerId" type="xs:string"/>
+      <xs:element minOccurs="0" name="productId" type="xs:string"/>
+      <xs:element minOccurs="0" name="contactPerson" type="xs:string"/>
+      <xs:element minOccurs="0" name="contactPhone" type="xs:string"/>
+      <xs:element minOccurs="0" name="contactId" type="xs:string"/>
+      <xs:element minOccurs="0" name="sendSms" type="xs:string"/>
+      <xs:element minOccurs="0" name="status" type="xs:string"/>
+      <xs:element minOccurs="0" name="reason" type="xs:string"/>
+      <xs:element minOccurs="0" name="tsrmTeamId" type="xs:string"/>
+      <xs:element minOccurs="0" name="worklog" type="xs:string"/>
+      <xs:element minOccurs="0" name="serviceId" type="xs:string"/>
+      <xs:element minOccurs="0" name="teamId" type="xs:string"/>
+      <xs:element minOccurs="0" name="contactEmail" type="xs:string"/>
+      <xs:element minOccurs="0" name="contactedFailed" type="xs:int"/>
+      <xs:element minOccurs="0" name="serviceInFault" type="xs:string"/>
+      <xs:element minOccurs="0" name="wholesaleId" type="xs:int"/>
+      <xs:element minOccurs="0" name="operatorId" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:element name="updateCustomerIssue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="eiMessageContext" type="ns1:EIMessageContext2"/>
+        <xs:element name="updateCustomerIssueRequestData" type="tns:updateCustomerIssueRequestData"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+<xs:complexType name="updateCustomerIssueRequestData">
+    <xs:sequence>
+      <xs:element name="customerIssueModel" type="tns:customerIssueModel"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:element name="updateCustomerIssueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="eiMessageContext" type="ns1:EIMessageContext2"/>
+        <xs:element name="updateCustomerIssueResponseData" type="tns:updateCustomerIssueResponseData"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+<xs:complexType name="updateCustomerIssueResponseData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="customerIssueId" type="xs:string"/>
+      <xs:element minOccurs="0" name="incidentId" type="xs:string"/>
+      <xs:element minOccurs="0" name="validationModel" type="tns:ValidationModel"/>
+    </xs:sequence>
+  </xs:complexType>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="DiligentException">
+    <wsdl:part element="tns:DiligentException" name="DiligentException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createCustomerIssue">
+    <wsdl:part element="tns:createCustomerIssue" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateCustomerIssueResponse">
+    <wsdl:part element="tns:updateCustomerIssueResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createCustomerIssueResponse">
+    <wsdl:part element="tns:createCustomerIssueResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateCustomerIssue">
+    <wsdl:part element="tns:updateCustomerIssue" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="IDiligentWS">
+    <wsdl:operation name="createCustomerIssue">
+<wsdl:documentation>
+<soabp:RequestResponseOperation/>
+</wsdl:documentation>
+      <wsdl:input message="tns:createCustomerIssue" name="createCustomerIssue">
+    </wsdl:input>
+      <wsdl:output message="tns:createCustomerIssueResponse" name="createCustomerIssueResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:DiligentException" name="DiligentException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateCustomerIssue">
+<wsdl:documentation>
+<soabp:RequestResponseOperation/>
+</wsdl:documentation>
+      <wsdl:input message="tns:updateCustomerIssue" name="updateCustomerIssue">
+    </wsdl:input>
+      <wsdl:output message="tns:updateCustomerIssueResponse" name="updateCustomerIssueResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:DiligentException" name="DiligentException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IDiligentWSBinding" type="tns:IDiligentWS">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="createCustomerIssue">
+      <soap:operation soapAction="createCustomerIssue"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DiligentException">
+        <soap:fault name="DiligentException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateCustomerIssue">
+      <soap:operation soapAction="updateCustomerIssue"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="DiligentException">
+        <soap:fault name="DiligentException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IDiligentWSService">
+    <wsdl:port binding="tns:IDiligentWSBinding" name="IDiligentWS">
+      <soap:address location="http://10.232.49.223:8080/soabp/rpc/TestInfrastructure1/mk.telekom.system.architecture.Diligent/CRM/IDiligentWS/up"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

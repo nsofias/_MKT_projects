@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://crm.it.telekom.mk/diligent/datatypes/queryDiligentIncident" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://crm.it.telekom.mk/diligent/datatypes/queryDiligentIncident" version="-UNDEFINED-">
+	<!-- CEISeR version of ServiceNamespace: 553896 (Branch: main) -->
+	<!-- CEISeR version used for generation: 17.6.10.0 -->
+<!-- ****************************************************************** -->
+<xsd:element name="GetMSISDN2Subline" type="GetMSISDN2SublineType"/>
+<xsd:element name="GetMSISDN2SublineResponse" type="GetMSISDN2SublineResponseType"/>
+<xsd:complexType name="GetMSISDN2SublineResponseType">
+		<xsd:sequence>
+			<xsd:element name="Line_ID" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="GetMSISDN2SublineType">
+		<xsd:sequence>
+			<xsd:element name="MSISDN" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:element name="HasCustomerGroupFault" type="HasCustomerGroupFaultType"/>
+<xsd:element name="HasCustomerGroupFaultResponse" type="HasCustomerGroupFaultResponseType"/>
+<xsd:complexType name="HasCustomerGroupFaultResponseType">
+		<xsd:sequence>
+			<xsd:element name="INCIDENT_ID" type="xsd:string"/>
+			<xsd:element name="INCIDENT_TYPE" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="HasCustomerGroupFaultType">
+		<xsd:sequence>
+			<xsd:element name="MSISDN" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:element name="HasCustomerIndividualFault" type="HasCustomerIndividualFaultType"/>
+<xsd:element name="HasCustomerIndividualFaultResponse" type="HasCustomerIndividualFaultResponseType"/>
+<xsd:complexType name="HasCustomerIndividualFaultResponseType">
+		<xsd:sequence>
+			<xsd:element name="INCIDENT_ID" type="xsd:string"/>
+			<xsd:element name="REASON_CODE" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="HasCustomerIndividualFaultType">
+		<xsd:sequence>
+			<xsd:element name="MSISDN" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="MainProductsbyLineID">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="VALUE" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:element name="MarkAffected" type="MarkAffectedType"/>
+<xsd:complexType name="MarkAffectedAsyncResponse">
+		<xsd:sequence>
+			<xsd:element name="TransactionID" type="xsd:int"/>	
+			<xsd:element name="Status" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="Message" type="xsd:string"/>				
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:element name="MarkAffectedResponse" type="MarkAffectedResponseType"/>
+<xsd:complexType name="MarkAffectedResponseType">
+		<xsd:sequence>
+			<xsd:element name="TransactionID" type="xsd:int"/>			
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="MarkAffectedType">
+		<xsd:sequence>
+			<xsd:element name="TransactionID" type="xsd:int"/>
+			<xsd:element name="GroupingTicketIncidentID" type="xsd:int"/>
+			<xsd:element name="AffectedMainProductsbyLineID" type="MainProductsbyLineID"/>
+			<xsd:element name="DefectiveType" type="xsd:string"/>
+			<xsd:element name="Description" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:element name="ReleaseAffected" type="ReleaseAffectedType"/>
+<xsd:complexType name="ReleaseAffectedAsyncResponse">
+		<xsd:sequence>
+			<xsd:element name="TransactionID" type="xsd:int"/>
+			<xsd:element name="Status" type="xsd:string"/>	
+			<xsd:element minOccurs="0" name="Message" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:element name="ReleaseAffectedResponse" type="ReleaseAffectedResponseType"/>
+<xsd:complexType name="ReleaseAffectedResponseType">
+		<xsd:sequence>
+			<xsd:element name="TransactionID" type="xsd:int"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="ReleaseAffectedType">
+		<xsd:sequence>
+			<xsd:element name="TransactionID" type="xsd:int"/>
+			<xsd:element name="GroupingTicketIncidentID" type="xsd:int"/>
+			<xsd:element name="AffectedMainProductsbyLineID" type="MainProductsbyLineID"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

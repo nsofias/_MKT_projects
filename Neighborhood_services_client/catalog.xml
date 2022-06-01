@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://diligent-04:8080/Neighborhood_services/NeighbourDataPortTypeService?wsdl" uri="xml-resources/web-service-references/NeighbourDataPortTypeService/wsdl/diligent-04_8080/Neighborhood_services/NeighbourDataPortTypeService.wsdl"/>
+    <system systemId="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/wsdls/mk-telekom-it-diligent-diligent-services-NeighbourTool/NeighbourDataPortTypeClient.wsdl" uri="xml-resources/web-service-references/NeighbourDataPortTypeClient/wsdl/NeighbourDataPortTypeClient.wsdl"/>
+    <system systemId="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/xsds/mk-telekom-it-diligent-diligent-datatypes-NeighbourTool.xsd" uri="xml-resources/web-service-references/xsds/mk-telekom-it-diligent-diligent-datatypes-NeighbourTool.xsd"/>
+    <system systemId="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/xsds/ei.messaging.datatypes.xsd" uri="xml-resources/web-service-references/xsds/ei.messaging.datatypes.xsd"/>
+</catalog>

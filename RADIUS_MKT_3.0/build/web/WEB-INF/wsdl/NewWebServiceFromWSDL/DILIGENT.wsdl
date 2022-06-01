@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soabp="http://messaging.ei.tmobile.net/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mx="http://crm.it.telekom.mk/diligent/datatypes/Diligent" xmlns:mxws="http://crm.it.telekom.mk/diligent/services/Diligent" name="EXTSYS2_QTT1" targetNamespace="http://crm.it.telekom.mk/diligent/services/Diligent">
+	<types>
+		<xsd:schema targetNamespace="http://crm.it.telekom.mk/diligent/services/Diligent" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ei_messaging_datatypes="http://messaging.ei.tmobile.net/datatypes" xmlns:tns="http://crm.it.telekom.mk/diligent/services/Diligent" xmlns:diligent_it_telekom_mk_tt_datatypes="http://crm.it.telekom.mk/diligent/datatypes/Diligent" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified" version="1.0">
+			<xsd:import namespace="http://messaging.ei.tmobile.net/datatypes" schemaLocation="ei.messaging.datatypes.xsd"/>
+			<xsd:import namespace="http://crm.it.telekom.mk/diligent/datatypes/Diligent" schemaLocation="Diligent_service.xsd"/>
+			<xsd:element name="CheckMassiveFaultByLine">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2" minOccurs="1" maxOccurs="1"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element name="data" type="diligent_it_telekom_mk_tt_datatypes:CheckMassiveFaultByLine" minOccurs="1" maxOccurs="1"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="CheckMassiveFaultByLineOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2" minOccurs="1" maxOccurs="1"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element name="data" type="diligent_it_telekom_mk_tt_datatypes:CheckMassiveFaultByLineOutput" minOccurs="1" maxOccurs="1"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TechnicalExceptionElement" type="ei_messaging_datatypes:SOABPException2"/>
+			<xsd:element name="GetLineMetrics">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-elem;ent "eiMessageContext2" -->
+						<xsd:element name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2" minOccurs="1" maxOccurs="1"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element name="data" type="diligent_it_telekom_mk_tt_datatypes:GetLineMetrics" minOccurs="1" maxOccurs="1"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="GetLineMetricsOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-elem;ent "eiMessageContext2" -->
+						<xsd:element name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2" minOccurs="1" maxOccurs="1"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element name="data" type="diligent_it_telekom_mk_tt_datatypes:GetLineMetricsOutput" minOccurs="1" maxOccurs="1"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</types>
+	<message name="CheckMassiveFaultByLineInput">
+		<part name="parameters" element="mxws:CheckMassiveFaultByLine"/>
+	</message>
+	<message name="CheckMassiveFaultByLineOutput">
+		<part name="parameters" element="mxws:CheckMassiveFaultByLineOutput"/>
+	</message>
+	<message name="GetLineMetricsInput">
+		<part name="parameters" element="mxws:GetLineMetrics"/>
+	</message>
+	<message name="GetLineMetricsOutput">
+		<part name="parameters" element="mxws:GetLineMetricsOutput"/>
+	</message>
+	<message name="TechnicalExceptionMessage">
+		<part name="parameters" element="mxws:TechnicalExceptionElement"/>
+	</message>
+	<portType name="DiligentPortType">
+		<operation name="CheckMassiveFaultByLine">
+			<input message="mxws:CheckMassiveFaultByLineInput"/>
+			<output message="mxws:CheckMassiveFaultByLineOutput"/>
+			<fault name="TechnicalExceptionFault" message="mxws:TechnicalExceptionMessage"/>
+		</operation>
+		<operation name="GetLineMetrics">
+			<input message="mxws:GetLineMetricsInput"/>
+			<output message="mxws:GetLineMetricsOutput"/>
+			<fault name="TechnicalExceptionFault" message="mxws:TechnicalExceptionMessage"/>
+		</operation>
+	</portType>
+	<binding name="DiligentBinding" type="mxws:DiligentPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="CheckMassiveFaultByLine">
+			<soap:operation soapAction="urn:CheckMassiveFaultByLine" style="document"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="TechnicalExceptionFault">
+				<soap:fault name="TechnicalExceptionFault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="GetLineMetrics">
+			<soap:operation soapAction="urn:GetLineMetrics" style="document"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="TechnicalExceptionFault">
+				<soap:fault name="TechnicalExceptionFault" use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="DiligentCRM">
+		<port name="DiligentPort" binding="mxws:DiligentBinding">
+			<soap:address location="http://10.232.65.102:9080/meaweb/services/EXTSYS2_QTT1"/>
+		</port>
+	</service>
+</definitions>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="CustomerLineServicePortTypeDefinitions" targetNamespace="http://oss.it.telekom.mk/tt/services/customerLineService" xmlns="http://oss.it.telekom.mk/tt/services/customerLineService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://oss.it.telekom.mk/tt/services/customerLineService" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soabp="http://messaging.ei.tmobile.net/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<wsdl:documentation>
+	<!-- CEISeR version of WSDLPortType: 569140 (Branch: main) -->
+	<!-- CEISeR version used for generation: 17.6.11.0 -->
+</wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://oss.it.telekom.mk/tt/services/customerLineService" version="1.0" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ei_messaging_datatypes="http://messaging.ei.tmobile.net/datatypes" xmlns:oss_it_telekom_mk_tt_datatypes="http://oss.it.telekom.mk/tt/datatypes/customerLineService" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://oss.it.telekom.mk/tt/datatypes/customerLineService" schemaLocation="../../xsds/mk-telekom-it-oss-tt-datatypes-customerLineService.xsd"/>
+<xsd:import namespace="http://messaging.ei.tmobile.net/datatypes" schemaLocation="../../xsds/ei.messaging.datatypes.xsd"/>
+<!-- ****************************************************************** -->
+<xsd:element name="SyncCUSTOMERLINEID">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:SyncCUSTOMERLINEIDType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="SyncCUSTOMERLINEIDResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:SyncCUSTOMERLINEIDResponseType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<element name="TechnicalExceptionElement" type="ei_messaging_datatypes:SOABPException2"/>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SyncCUSTOMERLINEIDRequest">
+    <wsdl:part name="parameters" element="tns:SyncCUSTOMERLINEID">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SyncCUSTOMERLINEIDResponse">
+    <wsdl:part name="parameters" element="tns:SyncCUSTOMERLINEIDResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="TechnicalExceptionMessage">
+    <wsdl:part name="parameters" element="tns:TechnicalExceptionElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="CustomerLineServicePortType">
+    <wsdl:operation name="SyncCUSTOMERLINEID">
+<wsdl:documentation>
+<soabp:RequestResponseOperation/>
+</wsdl:documentation>
+      <wsdl:input message="tns:SyncCUSTOMERLINEIDRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:SyncCUSTOMERLINEIDResponse">
+    </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault" message="tns:TechnicalExceptionMessage">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CustomerLineServicePortTypeBinding" type="tns:CustomerLineServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="SyncCUSTOMERLINEID">
+      <soap:operation soapAction="urn:processDocument"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault">
+        <soap:fault name="TechnicalExceptionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CustomerLineServicePortTypeService">
+    <wsdl:port name="CustomerLineServicePortType" binding="tns:CustomerLineServicePortTypeBinding">
+      <soap:address location="https://10.232.58.147/mk.telekom.system.architecture.Diligent.TroubleTicket.CustomerLineServicePortType"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:mx="http://oss.it.telekom.mk/TroubleTicket/ibm/maximo" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://oss.it.telekom.mk/tt/datatypes/stela-sync" version="0.4">
+<xsd:annotation>
+    <xsd:documentation>
+		contains the wsdl-comprehensive data type definitions (reused in more than one wsdl-File)
+		for http://oss.it.telekom.mk/tt/services/stela-sync
+		</xsd:documentation>
+  </xsd:annotation>	<!-- CEISeR version of ServiceNamespace: 44886 (Branch: main) -->
+	<!-- CEISeR version used for generation: 17.6.10.0 -->
+<xsd:import namespace="http://oss.it.telekom.mk/TroubleTicket/ibm/maximo" schemaLocation="../xsds/mk-telekom-it-oss-TroubleTicket-ibm-maximo.xsd"/>
+<!-- ****************************************************************** -->
+<complexType name="stela-sync_queryTTRequest">
+		<annotation>
+			<documentation>
+				The payload for the request of operation 'synch' of port-type 'stela-sync'
+			</documentation>
+		</annotation>
+		<sequence>
+			<element name="QueryTT" type="mx:QueryQTTINCIDENTType"/>
+		</sequence>
+	</complexType>
+<complexType name="stela-sync_queryTTResponse">
+		<annotation>
+			<documentation>
+				The payload for the response of operation 'synch' of port-type 'stela-sync'
+			</documentation>
+		</annotation>
+		<sequence>
+			<element name="QueryTTResponse" type="mx:QueryQTTINCIDENTResponseType"/>
+		</sequence>
+	</complexType>
+<complexType name="stela-sync_synchRequest">
+		<annotation>
+			<documentation>
+				The payload for the request of operation 'synch' of port-type 'stela-sync'
+			</documentation>
+		</annotation>
+		<sequence>
+			<element name="SyncSTELLA" type="mx:SyncTTINCIDENTType"/>
+		</sequence>
+	</complexType>
+<complexType name="stela-sync_synchResponse">
+		<annotation>
+			<documentation>
+				The payload for the response of operation 'synch' of port-type 'stela-sync'
+			</documentation>
+		</annotation>
+		<sequence>
+			<element name="SyncSTELLAResponse" type="mx:SyncTTINCIDENTResponseType"/>
+		</sequence>
+	</complexType>
+</xsd:schema>

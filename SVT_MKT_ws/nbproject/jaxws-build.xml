@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-mk.telekom.system.architecture.Diligent.CRM" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM"/>
+        <property name="wsdl-mk.telekom.system.architecture.Diligent.CRM" location="xml-resources/web-service-references/mk.telekom.system.architecture.Diligent.CRM/wsdl/10.232.49.223_8080/mk.telekom.system.architecture.Diligent.CRM.IDiligentWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM" destdir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM" wsdl="${wsdl-mk.telekom.system.architecture.Diligent.CRM}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://10.232.49.223:8080/mk.telekom.system.architecture.Diligent.CRM.IDiligentWS?wsdl" xnocompile="true" xendorsed="true" package="svt_mkt_ws">
+            <binding dir="xml-resources/web-service-references/mk.telekom.system.architecture.Diligent.CRM/bindings" includes="mk.telekom.system.architecture.Diligent.CRM_handler.xml"/>
+            <depends file="${wsdl-mk.telekom.system.architecture.Diligent.CRM}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM">
+                <include name="**/*.xml"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-mk.telekom.system.architecture.Diligent.CRM" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/svt_mkt_ws"/>
+    </target>
+    <target name="wsimport-client-mk.telekom.system.architecture.Diligent.CRM_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM_1"/>
+        <property name="wsdl-mk.telekom.system.architecture.Diligent.CRM_1" location="xml-resources/web-service-references/mk.telekom.system.architecture.Diligent.CRM_1/wsdl/10.232.49.223_8080/mk.telekom.system.architecture.Diligent.CRM.CRMDiligentPortType.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM_1" destdir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM_1" wsdl="${wsdl-mk.telekom.system.architecture.Diligent.CRM_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://10.232.49.223:8080/mk.telekom.system.architecture.Diligent.CRM.CRMDiligentPortType?wsdl" xnocompile="true" xendorsed="true" package="SVT_MKT_ws1">
+            <binding dir="xml-resources/web-service-references/mk.telekom.system.architecture.Diligent.CRM_1/bindings" includes="mk.telekom.system.architecture.Diligent.CRM_1_handler.xml"/>
+            <depends file="${wsdl-mk.telekom.system.architecture.Diligent.CRM_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM_1">
+                <include name="**/*.xml"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-mk.telekom.system.architecture.Diligent.CRM_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/mk.telekom.system.architecture.Diligent.CRM_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/SVT_MKT_ws1"/>
+    </target>
+    <target name="wsimport-client-DiagnosticServicePortType_production" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType_production"/>
+        <property name="wsdl-DiagnosticServicePortType_production" location="xml-resources/web-service-references/DiagnosticServicePortType_production/wsdl/DiagnosticServicePortType_production.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType_production" destdir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType_production" wsdl="${wsdl-DiagnosticServicePortType_production}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/my%20files/JavaProjects/svt_skopia_wsdls/src-gen/wsdls/mk-telekom-servicediagnostictool-service-diagnostic/DiagnosticServicePortType_production.wsdl" xnocompile="true" xendorsed="true" package="svt_mkt_tool_prod">
+            <depends file="${wsdl-DiagnosticServicePortType_production}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType_production"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType_production">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DiagnosticServicePortType_production" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType_production"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/svt_mkt_tool_prod"/>
+    </target>
+    <target name="wsimport-client-DiagnosticServicePortType" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType"/>
+        <property name="wsdl-DiagnosticServicePortType" location="xml-resources/web-service-references/DiagnosticServicePortType/wsdl/DiagnosticServicePortType.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType" destdir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType" wsdl="${wsdl-DiagnosticServicePortType}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/my%20files/JavaProjects/svt_skopia_wsdls/src-gen/wsdls/mk-telekom-servicediagnostictool-service-diagnostic/DiagnosticServicePortType.wsdl" xnocompile="true" xendorsed="true" package="svt_tool">
+            <binding dir="xml-resources/web-service-references/DiagnosticServicePortType/bindings" includes="DiagnosticServicePortType_handler.xml"/>
+            <depends file="${wsdl-DiagnosticServicePortType}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType">
+                <include name="**/*.xml"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DiagnosticServicePortType" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/DiagnosticServicePortType"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/svt_tool"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-mk.telekom.system.architecture.Diligent.CRM, wsimport-client-mk.telekom.system.architecture.Diligent.CRM_1, wsimport-client-DiagnosticServicePortType_production, wsimport-client-DiagnosticServicePortType"/>
+</project>

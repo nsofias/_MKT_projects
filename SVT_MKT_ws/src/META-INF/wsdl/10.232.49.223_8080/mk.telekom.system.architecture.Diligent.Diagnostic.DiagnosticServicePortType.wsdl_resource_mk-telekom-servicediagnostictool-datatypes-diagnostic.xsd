@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://servicediagnostictool.telekom.mk/datatypes/diagnostic" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://servicediagnostictool.telekom.mk/datatypes/diagnostic" version="-UNDEFINED-">
+	<!-- CEISeR version of ServiceNamespace: 675964 (Branch: main) -->
+	<!-- CEISeR version used for generation: 17.6.11.0 -->
+<!-- ****************************************************************** -->
+<xsd:complexType name="CheckLineServiceRequest">
+		<xsd:sequence>
+			<xsd:element maxOccurs="1" minOccurs="0" name="LineID" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="CheckLineServiceResponse">
+		<xsd:sequence>
+			<xsd:element name="LineID" type="xsd:string"/>
+			<xsd:element name="Status" type="xsd:string"/>
+			<xsd:element name="Transport" type="xsd:string"/>
+			<xsd:element name="TransportDescription" type="xsd:string"/>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" ref="tns:ServiceDiagnosticData"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:element name="DiagnosticData">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element maxOccurs="1" name="Name" type="xsd:string"/>
+				<xsd:element maxOccurs="1" name="Value" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+<xsd:element name="ServiceDiagnosticData">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Service" type="xsd:string"/>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="tns:DiagnosticData"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

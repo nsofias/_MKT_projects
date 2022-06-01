@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mx="http://www.ibm.com/maximo" xmlns:mxws="http://www.ibm.com/maximo/wsdl/EXTSYS2_AFFECTEDSERVICE" targetNamespace="http://www.ibm.com/maximo/wsdl/EXTSYS2_AFFECTEDSERVICE" name="EXTSYS2_AFFECTEDSERVICE">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://www.ibm.com/maximo" schemaLocation="../xsds/AFFECTEDSERVICEService.xsd" />
+    </xsd:schema>
+  </types>
+  <portType name="EXTSYS2_AFFECTEDSERVICEPortType">
+    <operation name="SyncAFFECTEDSERVICE">
+      <input message="mxws:SyncAFFECTEDSERVICERequest" />
+      <output message="mxws:SyncAFFECTEDSERVICEResponse" />
+    </operation>
+  </portType>
+  <binding name="EXTSYS2_AFFECTEDSERVICESOAP11Binding" type="mxws:EXTSYS2_AFFECTEDSERVICEPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="SyncAFFECTEDSERVICE">
+      <soap:operation soapAction="urn:processDocument" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="EXTSYS2_AFFECTEDSERVICESOAP12Binding" type="mxws:EXTSYS2_AFFECTEDSERVICEPortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="SyncAFFECTEDSERVICE">
+      <soap12:operation soapAction="urn:processDocument" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <message name="SyncAFFECTEDSERVICERequest">
+    <part name="parameters" element="mx:SyncAFFECTEDSERVICE" />
+  </message>
+  <message name="SyncAFFECTEDSERVICEResponse">
+    <part name="parameters" element="mx:SyncAFFECTEDSERVICEResponse" />
+  </message>
+  <service name="EXTSYS2_AFFECTEDSERVICE">
+    <port name="EXTSYS2_AFFECTEDSERVICESOAP11Port" binding="mxws:EXTSYS2_AFFECTEDSERVICESOAP11Binding">
+      <soap:address location="https://10.232.49.223:9043/meaweb/services/EXTSYS2_AFFECTEDSERVICE" />
+    </port>
+    <port name="EXTSYS2_AFFECTEDSERVICESOAP12Port" binding="mxws:EXTSYS2_AFFECTEDSERVICESOAP12Binding">
+      <soap12:address location="https://10.232.58.147/mk.telekom.system.architecture.Diligent.ManageServices.AFFECTEDSERVICEPortType" />
+    </port>
+  </service>
+</definitions>
+

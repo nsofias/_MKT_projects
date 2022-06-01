@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://oss.it.telekom.mk/tt/datatypes/customerLineService" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://oss.it.telekom.mk/tt/datatypes/customerLineService" version="-UNDEFINED-">
+	<!-- CEISeR version of ServiceNamespace: 585906 (Branch: main) -->
+	<!-- CEISeR version used for generation: 17.6.11.0 -->
+<!-- ****************************************************************** -->
+<xsd:simpleType name="BooleanType">
+		<xsd:restriction base="xsd:boolean">
+			<xsd:pattern value="0|1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+<xsd:element name="CUSTOMERLINEID" type="CUSTOMERLINEIDType"/>
+<xsd:complexType name="CUSTOMERLINEIDCombinedKeySetType">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="CUSTOMERLINEID">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="CUSTOMERLINEIDID" nillable="true" type="MXLongType">
+							<xsd:annotation>
+								<xsd:documentation>Unique Key Component</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="CUSTOMERLINEIDKeyType">
+		<xsd:sequence>
+			<xsd:element name="CUSTOMERLINEIDID" nillable="true" type="MXLongType">
+				<xsd:annotation>
+					<xsd:documentation>Unique Key Component</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:element name="CUSTOMERLINEIDMbo" type="CUSTOMERLINEIDMboType"/>
+<xsd:element name="CUSTOMERLINEIDMboKey" type="CUSTOMERLINEIDMboKeyType"/>
+<xsd:element name="CUSTOMERLINEIDMboKeySet" type="CUSTOMERLINEIDMboKeySetType"/>
+<xsd:complexType name="CUSTOMERLINEIDMboKeySetType">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="CUSTOMERLINEID" type="CUSTOMERLINEIDKeyType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="CUSTOMERLINEIDMboKeyType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="CUSTOMERLINEID" type="CUSTOMERLINEIDKeyType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:element name="CUSTOMERLINEIDMboQuery" type="CUSTOMERLINEIDMboQueryType"/>
+<xsd:complexType name="CUSTOMERLINEIDMboQueryType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="WHERE" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="CUSTOMERLINEID">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="CUSTOMERLINEIDID" nillable="true" type="MXLongQueryType">
+							<xsd:annotation>
+								<xsd:documentation>Unique Key Component</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="DESCRIPTION" type="MXStringQueryType"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="ENDTIME" nillable="true" type="MXDateTimeQueryType"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="LINEID" type="MXStringQueryType"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="TICKETID" type="MXStringQueryType"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="TYPE" type="MXStringQueryType"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="CHANGEDATE" nillable="true" type="MXDateTimeQueryType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="QueryClausePropertyGroup"/>
+	</xsd:complexType>
+<xsd:element name="CUSTOMERLINEIDMboSet" type="CUSTOMERLINEIDMboSetType"/>
+<xsd:complexType name="CUSTOMERLINEIDMboSetType">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="CUSTOMERLINEID" type="CUSTOMERLINEIDObjectType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="CUSTOMERLINEIDMboType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="CUSTOMERLINEID" type="CUSTOMERLINEIDObjectType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="CUSTOMERLINEIDObjectType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="CUSTOMERLINEIDID" nillable="true" type="MXLongType">
+				<xsd:annotation>
+					<xsd:documentation>Unique Key Component</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element minOccurs="0" name="DESCRIPTION" type="MXStringType"/>
+			<xsd:element minOccurs="0" name="ENDTIME" nillable="true" type="MXDateTimeType"/>
+			<xsd:element minOccurs="0" name="LINEID" type="MXStringType"/>
+			<xsd:element minOccurs="0" name="TICKETID" type="MXStringType"/>
+			<xsd:element minOccurs="0" name="TYPE" type="MXStringType"/>
+			<xsd:element minOccurs="0" name="CHANGEDATE" nillable="true" type="MXDateTimeType"/>
+		</xsd:sequence>
+		<xsd:attribute name="action" type="ProcessingActionType" use="optional"/>
+	</xsd:complexType>
+<xsd:element name="CUSTOMERLINEIDQuery" type="CUSTOMERLINEIDQueryType"/>
+<xsd:complexType name="CUSTOMERLINEIDQueryType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="WHERE" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="CUSTOMERLINEID">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="CHANGEDATE" nillable="true" type="MXDateTimeQueryType"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="CUSTOMERLINEIDID" nillable="true" type="MXLongQueryType">
+							<xsd:annotation>
+								<xsd:documentation>Unique Key Component</xsd:documentation>
+							</xsd:annotation>
+						</xsd:element>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="DESCRIPTION" type="MXStringQueryType"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="ENDTIME" nillable="true" type="MXDateTimeQueryType"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="LINEID" type="MXStringQueryType"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="TICKETID" type="MXStringQueryType"/>
+						<xsd:element maxOccurs="unbounded" minOccurs="0" name="TYPE" type="MXStringQueryType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="QueryClausePropertyGroup"/>
+	</xsd:complexType>
+<xsd:element name="CUSTOMERLINEIDSet" type="CUSTOMERLINEIDSetType"/>
+<xsd:complexType name="CUSTOMERLINEIDSetType">
+		<xsd:sequence>
+			<xsd:element maxOccurs="unbounded" minOccurs="0" name="CUSTOMERLINEID" type="CUSTOMERLINEID_CUSTOMERLINEIDType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="CUSTOMERLINEIDType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="CUSTOMERLINEID" type="CUSTOMERLINEID_CUSTOMERLINEIDType"/>
+		</xsd:sequence>
+	</xsd:complexType>
+<xsd:complexType name="CUSTOMERLINEID_CUSTOMERLINEIDType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="MAXINTERRORMSG" type="xsd:string"/>
+			<xsd:element minOccurs="0" name="CHANGEDATE" nillable="true" type="MXDateTimeType"/>
+			<xsd:element minOccurs="0" name="CUSTOMERLINEIDID" nillable="true" type="MXLongType">
+				<xsd:annotation>
+					<xsd:documentation>Unique Key Component</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element minOccurs="0" name="DESCRIPTION" type="MXStringType"/>
+			<xsd:element minOccurs="0" name="ENDTIME" nillable="true" type="MXDateTimeType"/>
+			<xsd:element minOccurs="0" name="LINEID" type="MXStringType"/>
+			<xsd:element minOccurs="0" name="TICKETID" type="MXStringType"/>
+			<xsd:element minOccurs="0" name="TYPE" type="MXStringType"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="ObjectStructurePropertyGroup"/>
+		<xsd:attribute name="transLanguage" type="xsd:string" use="optional"/>
+	</xsd:complexType>
+<xsd:simpleType name="ChangeIndicatorType">
+		<xsd:annotation>
+			<xsd:documentation>Boolean flag identifying if a field has a new value. Applicable only for a MOS generated by an event</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:boolean">
+			<xsd:pattern value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+<xsd:attributeGroup name="CommonContentGroup">
+		<xsd:attribute name="creationDateTime" type="xsd:dateTime" use="optional"/>
+		<xsd:attribute name="baseLanguage" type="xsd:string" use="optional"/>
+		<xsd:attribute name="transLanguage" type="xsd:string" use="optional"/>
+		<xsd:attribute name="messageID" type="xsd:string" use="optional"/>
+		<xsd:attribute name="maximoVersion" type="MaximoVersionType" use="optional"/>
+	</xsd:attributeGroup>
+<xsd:element name="CreateCUSTOMERLINEID" type="CreateCUSTOMERLINEIDType"/>
+<xsd:element name="CreateCUSTOMERLINEIDResponse" type="CreateCUSTOMERLINEIDResponseType"/>
+<xsd:complexType name="CreateCUSTOMERLINEIDResponseType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="CUSTOMERLINEIDSet" type="CUSTOMERLINEIDCombinedKeySetType"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+	</xsd:complexType>
+<xsd:complexType name="CreateCUSTOMERLINEIDType">
+		<xsd:sequence>
+			<xsd:element ref="CUSTOMERLINEIDSet"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+	</xsd:complexType>
+<xsd:element name="DeleteCUSTOMERLINEID" type="DeleteCUSTOMERLINEIDType"/>
+<xsd:element name="DeleteCUSTOMERLINEIDResponse" type="DeleteCUSTOMERLINEIDResponseType"/>
+<xsd:complexType name="DeleteCUSTOMERLINEIDResponseType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="CUSTOMERLINEIDSet" type="CUSTOMERLINEIDCombinedKeySetType"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+	</xsd:complexType>
+<xsd:complexType name="DeleteCUSTOMERLINEIDType">
+		<xsd:sequence>
+			<xsd:element ref="CUSTOMERLINEIDSet"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+	</xsd:complexType>
+<xsd:simpleType name="EventType">
+		<xsd:annotation>
+			<xsd:documentation>Boolean flag identifying if a published MOS was the result of an event. 1 implies event</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:boolean">
+			<xsd:pattern value="0|1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+<xsd:element name="InvokeCUSTOMERLINEID" type="InvokeCUSTOMERLINEIDType"/>
+<xsd:element name="InvokeCUSTOMERLINEIDResponse" type="InvokeCUSTOMERLINEIDResponseType"/>
+<xsd:complexType name="InvokeCUSTOMERLINEIDResponseType">
+		<xsd:sequence>
+			<xsd:element ref="CUSTOMERLINEIDSet"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+	</xsd:complexType>
+<xsd:complexType name="InvokeCUSTOMERLINEIDType">
+		<xsd:sequence>
+			<xsd:element ref="CUSTOMERLINEIDSet"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+	</xsd:complexType>
+<xsd:complexType name="MXBinaryType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:base64Binary">
+				<xsd:attribute name="changed" type="ChangeIndicatorType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXBooleanQueryType">
+		<xsd:simpleContent>
+			<xsd:extension base="BooleanType">
+				<xsd:attribute name="operator" type="QueryOperatorType" use="optional"/>
+				<xsd:attribute name="operandModeOR" type="xsd:boolean" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXBooleanType">
+		<xsd:simpleContent>
+			<xsd:extension base="BooleanType">
+				<xsd:attribute name="changed" type="ChangeIndicatorType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXCryptoType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:base64Binary">
+				<xsd:attribute name="changed" type="ChangeIndicatorType" use="optional"/>
+				<xsd:attribute default="1" name="mxencrypted" type="BooleanType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXDateTimeQueryType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:dateTime">
+				<xsd:attribute name="operator" type="QueryOperatorType" use="optional"/>
+				<xsd:attribute name="operandModeOR" type="xsd:boolean" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXDateTimeType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:dateTime">
+				<xsd:attribute name="changed" type="ChangeIndicatorType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXDomainQueryType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="maxvalue" type="xsd:string" use="optional"/>
+				<xsd:attribute name="operator" type="QueryOperatorType" use="optional"/>
+				<xsd:attribute name="operandModeOR" type="xsd:boolean" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXDomainType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="maxvalue" type="xsd:string" use="optional"/>
+				<xsd:attribute name="changed" type="ChangeIndicatorType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXDoubleQueryType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:double">
+				<xsd:attribute name="operator" type="QueryOperatorType" use="optional"/>
+				<xsd:attribute name="operandModeOR" type="xsd:boolean" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXDoubleType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:double">
+				<xsd:attribute name="changed" type="ChangeIndicatorType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXFloatQueryType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:float">
+				<xsd:attribute name="operator" type="QueryOperatorType" use="optional"/>
+				<xsd:attribute name="operandModeOR" type="xsd:boolean" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXFloatType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:float">
+				<xsd:attribute name="changed" type="ChangeIndicatorType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXGLAccountQueryType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="VALUE" type="xsd:string"/>
+		</xsd:sequence>
+		<xsd:attribute name="operator" type="QueryOperatorType" use="optional"/>
+		<xsd:attribute name="operandModeOR" type="xsd:boolean" use="optional"/>
+	</xsd:complexType>
+<xsd:complexType name="MXGLAccountType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="VALUE" type="xsd:string"/>
+			<xsd:element maxOccurs="20" minOccurs="0" name="GLCOMP" type="MXGLComponentType"/>
+		</xsd:sequence>
+		<xsd:attribute name="changed" type="ChangeIndicatorType" use="optional"/>
+	</xsd:complexType>
+<xsd:complexType name="MXGLComponentQueryType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="glorder" use="required">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:int">
+							<xsd:minInclusive value="0"/>
+							<xsd:maxExclusive value="20"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXGLComponentType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="glorder" use="required">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:int">
+							<xsd:minInclusive value="0"/>
+							<xsd:maxExclusive value="20"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXIntQueryType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:int">
+				<xsd:attribute name="operator" type="QueryOperatorType" use="optional"/>
+				<xsd:attribute name="operandModeOR" type="xsd:boolean" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXIntType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:int">
+				<xsd:attribute name="changed" type="ChangeIndicatorType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXLangStringType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="changed" type="ChangeIndicatorType" use="optional"/>
+				<xsd:attribute fixed="1" name="languageEnabled" type="xsd:boolean" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXLongQueryType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="operator" type="QueryOperatorType" use="optional"/>
+				<xsd:attribute name="operandModeOR" type="xsd:boolean" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXLongType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:long">
+				<xsd:attribute name="changed" type="ChangeIndicatorType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXStringQueryType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="operator" type="QueryOperatorType" use="optional"/>
+				<xsd:attribute name="operandModeOR" type="xsd:boolean" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:complexType name="MXStringType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="changed" type="ChangeIndicatorType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+<xsd:simpleType name="MaximoVersionType">
+		<xsd:annotation>
+			<xsd:documentation>This is a concatenated string that identifies the major version, minor version, build and dbbuild</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+<xsd:simpleType name="MboRelationshipType">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+<xsd:attributeGroup name="ObjectStructurePropertyGroup">
+		<xsd:attribute name="action" type="ProcessingActionType" use="optional"/>
+		<xsd:attribute name="relationship" type="xsd:string" use="optional"/>
+		<xsd:attribute name="deleteForInsert" type="xsd:string" use="optional"/>
+	</xsd:attributeGroup>
+<xsd:simpleType name="OperandModeType">
+		<xsd:annotation>
+			<xsd:documentation>Enumerated List of operand modes supported by Maximo Query</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="OR"/>
+			<xsd:enumeration value="AND"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+<xsd:simpleType name="ProcessingActionType">
+		<xsd:annotation>
+			<xsd:documentation>Enumerated List of Processing Actions supported by Maximo Services</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Add"/>
+			<xsd:enumeration value="Change"/>
+			<xsd:enumeration value="Replace"/>
+			<xsd:enumeration value="Delete"/>
+			<xsd:enumeration value="AddChange"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+<xsd:element name="PublishCUSTOMERLINEID" type="PublishCUSTOMERLINEIDType"/>
+<xsd:complexType name="PublishCUSTOMERLINEIDType">
+		<xsd:sequence>
+			<xsd:element ref="CUSTOMERLINEIDSet"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+		<xsd:attributeGroup ref="PublishingContentGroup"/>
+	</xsd:complexType>
+<xsd:attributeGroup name="PublishingContentGroup">
+		<xsd:attribute default="0" name="event" type="EventType" use="optional"/>
+	</xsd:attributeGroup>
+<xsd:element name="QueryCUSTOMERLINEID" type="QueryCUSTOMERLINEIDType"/>
+<xsd:element name="QueryCUSTOMERLINEIDResponse" type="QueryCUSTOMERLINEIDResponseType"/>
+<xsd:complexType name="QueryCUSTOMERLINEIDResponseType">
+		<xsd:sequence>
+			<xsd:element ref="CUSTOMERLINEIDSet"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+		<xsd:attributeGroup ref="ResponseContentGroup"/>
+	</xsd:complexType>
+<xsd:complexType name="QueryCUSTOMERLINEIDType">
+		<xsd:sequence>
+			<xsd:element ref="CUSTOMERLINEIDQuery"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+		<xsd:attributeGroup ref="QueryContentGroup"/>
+	</xsd:complexType>
+<xsd:attributeGroup name="QueryClausePropertyGroup">
+		<xsd:attribute name="orderby" type="xsd:string" use="optional"/>
+		<xsd:attribute default="AND" name="operandMode" type="OperandModeType" use="optional"/>
+	</xsd:attributeGroup>
+<xsd:attributeGroup name="QueryContentGroup">
+		<xsd:attribute default="0" name="uniqueResult" type="BooleanType" use="optional"/>
+		<xsd:attribute name="maxItems" type="xsd:positiveInteger" use="optional"/>
+		<xsd:attribute default="0" name="rsStart" type="xsd:integer" use="optional"/>
+	</xsd:attributeGroup>
+<xsd:simpleType name="QueryOperatorType">
+		<xsd:annotation>
+			<xsd:documentation>Operator identifying the QBE action to be performed on the field it is associated with</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="="/>
+			<xsd:enumeration value="!="/>
+			<xsd:enumeration value="&lt;"/>
+			<xsd:enumeration value="&lt;="/>
+			<xsd:enumeration value="&gt;"/>
+			<xsd:enumeration value="&gt;="/>
+			<xsd:enumeration value="EW"/>
+			<xsd:enumeration value="SW"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+<xsd:attributeGroup name="ResponseContentGroup">
+		<xsd:attribute name="rsStart" type="xsd:integer" use="optional"/>
+		<xsd:attribute name="rsCount" type="xsd:integer" use="optional"/>
+		<xsd:attribute name="rsTotal" type="xsd:integer" use="optional"/>
+	</xsd:attributeGroup>
+<xsd:element name="SyncCUSTOMERLINEID" type="SyncCUSTOMERLINEIDType"/>
+<xsd:element name="SyncCUSTOMERLINEIDResponse" type="SyncCUSTOMERLINEIDResponseType"/>
+<xsd:complexType name="SyncCUSTOMERLINEIDResponseType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="CUSTOMERLINEIDSet" type="CUSTOMERLINEIDCombinedKeySetType"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+	</xsd:complexType>
+<xsd:complexType name="SyncCUSTOMERLINEIDType">
+		<xsd:sequence>
+			<xsd:element ref="CUSTOMERLINEIDSet"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+	</xsd:complexType>
+<xsd:element name="UpdateCUSTOMERLINEID" type="UpdateCUSTOMERLINEIDType"/>
+<xsd:element name="UpdateCUSTOMERLINEIDResponse" type="UpdateCUSTOMERLINEIDResponseType"/>
+<xsd:complexType name="UpdateCUSTOMERLINEIDResponseType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="CUSTOMERLINEIDSet" type="CUSTOMERLINEIDCombinedKeySetType"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+	</xsd:complexType>
+<xsd:complexType name="UpdateCUSTOMERLINEIDType">
+		<xsd:sequence>
+			<xsd:element ref="CUSTOMERLINEIDSet"/>
+		</xsd:sequence>
+		<xsd:attributeGroup ref="CommonContentGroup"/>
+	</xsd:complexType>
+</xsd:schema>

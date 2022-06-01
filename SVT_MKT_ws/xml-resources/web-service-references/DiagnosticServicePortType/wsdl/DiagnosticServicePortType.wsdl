@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="DiagnosticServicePortTypeDefinitions" targetNamespace="http://servicediagnostictool.telekom.mk/service/diagnostic" xmlns="http://servicediagnostictool.telekom.mk/service/diagnostic" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://servicediagnostictool.telekom.mk/service/diagnostic" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soabp="http://messaging.ei.tmobile.net/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<wsdl:documentation>
+	<!-- CEISeR version of WSDLPortType: 675964 (Branch: main) -->
+	<!-- CEISeR version used for generation: 17.6.11.0 -->
+</wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://servicediagnostictool.telekom.mk/service/diagnostic" version="1.0" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ds_datatypes="http://servicediagnostictool.telekom.mk/datatypes/diagnostic" xmlns:ei_messaging_datatypes="http://messaging.ei.tmobile.net/datatypes" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://servicediagnostictool.telekom.mk/datatypes/diagnostic" schemaLocation="../../xsds/mk-telekom-servicediagnostictool-datatypes-diagnostic.xsd"/>
+<xsd:import namespace="http://messaging.ei.tmobile.net/datatypes" schemaLocation="../../xsds/ei.messaging.datatypes.xsd"/>
+<!-- ****************************************************************** -->
+<xsd:element name="CheckLineService">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="ds_datatypes:CheckLineServiceRequest"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="CheckLineServiceOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="ds_datatypes:CheckLineServiceResponse"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="TechnicalExceptionElement" type="ei_messaging_datatypes:SOABPException2"/>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="TechnicalExceptionMessage">
+    <wsdl:part name="parameters" element="tns:TechnicalExceptionElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CheckLineServiceOutput">
+    <wsdl:part name="parameters" element="tns:CheckLineServiceOutput">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CheckLineServiceInput">
+    <wsdl:part name="parameters" element="tns:CheckLineService">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="DiagnosticServicePortType">
+    <wsdl:operation name="CheckLineService">
+<wsdl:documentation>
+<soabp:RequestResponseOperation/>
+</wsdl:documentation>
+      <wsdl:input message="tns:CheckLineServiceInput">
+    </wsdl:input>
+      <wsdl:output message="tns:CheckLineServiceOutput">
+    </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault" message="tns:TechnicalExceptionMessage">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DiagnosticServicePortTypeBinding" type="tns:DiagnosticServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="CheckLineService">
+      <soap:operation soapAction="http://servicediagnostictool.telekom.mk/service/diagnostic/CheckLineService"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault">
+        <soap:fault name="TechnicalExceptionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DiagnosticServicePortTypeService">
+    <wsdl:port name="DiagnosticServicePortType" binding="tns:DiagnosticServicePortTypeBinding">
+      <soap:address location="http://10.232.49.223:8080/mk.telekom.system.architecture.Diligent.Diagnostic.DiagnosticServicePortType"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
+

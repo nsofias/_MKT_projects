@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="stela-syncDefinitions" targetNamespace="http://oss.it.telekom.mk/tt/services/stela-sync" xmlns="http://oss.it.telekom.mk/tt/services/stela-sync" xmlns:soabp="http://messaging.ei.tmobile.net/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://oss.it.telekom.mk/tt/services/stela-sync" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<wsdl:documentation>
+	<!-- CEISeR version of WSDLPortType: 44912 (Branch: main) -->
+	<!-- CEISeR version used for generation: 17.6.10.0 -->
+</wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://oss.it.telekom.mk/tt/services/stela-sync" version="1.0" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ei_messaging_datatypes="http://messaging.ei.tmobile.net/datatypes" xmlns:oss_it_telekom_mk_tt_datatypes="http://oss.it.telekom.mk/tt/datatypes/stela-sync" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://oss.it.telekom.mk/TroubleTicket/ibm/maximo" schemaLocation="../../xsds/mk-telekom-it-oss-TroubleTicket-ibm-maximo.xsd"/>
+<xsd:import namespace="http://oss.it.telekom.mk/tt/datatypes/stela-sync" schemaLocation="../../xsds/mk-telekom-it-oss-tt-datatypes-stela-sync.xsd"/>
+<xsd:import namespace="http://messaging.ei.tmobile.net/datatypes" schemaLocation="../../xsds/ei.messaging.datatypes.xsd"/>
+<!-- ****************************************************************** -->
+<xsd:element name="SyncTTINCIDENT">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:stela-sync_synchRequest"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="SyncTTINCIDENTOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:stela-sync_synchResponse"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="TechnicalExceptionElement" type="ei_messaging_datatypes:SOABPException2"/>
+<xsd:element name="stelaQueryTT">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:stela-sync_queryTTRequest"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="stelaQueryTTOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:stela-sync_queryTTResponse"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SyncTTINCIDENTOutput">
+    <wsdl:part name="parameters" element="tns:SyncTTINCIDENTOutput">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="stelaQueryTTOutput">
+    <wsdl:part name="parameters" element="tns:stelaQueryTTOutput">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SyncTTINCIDENTInput">
+    <wsdl:part name="parameters" element="tns:SyncTTINCIDENT">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="TechnicalExceptionMessage">
+    <wsdl:part name="parameters" element="tns:TechnicalExceptionElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="stelaQueryTTInput">
+    <wsdl:part name="parameters" element="tns:stelaQueryTT">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="stela-sync">
+    <wsdl:operation name="SyncTTINCIDENT">
+<wsdl:documentation>
+<soabp:RequestResponseOperation/>
+</wsdl:documentation>
+      <wsdl:input message="tns:SyncTTINCIDENTInput">
+    </wsdl:input>
+      <wsdl:output message="tns:SyncTTINCIDENTOutput">
+    </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault" message="tns:TechnicalExceptionMessage">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="stelaQueryTT">
+<wsdl:documentation>
+<soabp:RequestResponseOperation/>
+</wsdl:documentation>
+      <wsdl:input message="tns:stelaQueryTTInput">
+    </wsdl:input>
+      <wsdl:output message="tns:stelaQueryTTOutput">
+    </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault" message="tns:TechnicalExceptionMessage">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="stela-syncBinding" type="tns:stela-sync">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="SyncTTINCIDENT">
+      <soap:operation soapAction="urn:processDocument"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault">
+        <soap:fault name="TechnicalExceptionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="stelaQueryTT">
+      <soap:operation soapAction="http://telekom.mk/TT/StelaQueryTT"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault">
+        <soap:fault name="TechnicalExceptionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="stela-syncService">
+    <wsdl:port name="stela-sync" binding="tns:stela-syncBinding">
+	    <soap:address location="https://10.232.58.147/mk.telekom.system.architecture.Diligent.TroubleTicket.stela-sync"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

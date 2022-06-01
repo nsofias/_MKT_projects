@@ -1,0 +1,178 @@
+body {
+	margin: 20px;
+	background-position: top;
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #480082;
+}
+
+table {      
+	font-size: 10px;
+        /*background-image: url(diligent_View_front_page.jpg);*/
+	background-color: lightgray;
+            color: #E10075;
+}
+th {
+  border: 1px solid;
+  border-color: whitesmoke; 
+background-color: #E10075;
+            color: white;
+
+  padding: 2px;
+}
+
+td {
+  border: 1px solid;
+  border-color: whitesmoke; 
+  padding: 2px;
+}
+body.achtergrond {
+
+}
+
+body.corporate {
+
+}
+body.doc {
+
+}
+.font,doctext,TD,P,U,LI,OL,UL,BLOCKQUOTE,U,SUB,SUP {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: purple;
+}
+
+i {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: purple;
+	font-style : italic;
+}
+
+B,STRONG {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: purple;
+	font-weight : bold;	
+}
+
+
+A, A:hover, A:visited, A:active, A:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #009900;
+	font-weight : bold;	
+}
+
+A, A:hover  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight : bold;	
+}
+
+INPUT,SELECT,TEXTAREA {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: purple;
+	padding : 1px;
+	border-style: double;
+	border-color: #002F00;                  
+}
+SMALL,small {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #009900;
+}
+
+H1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: white;
+	font-weight : bold;
+	background-color: #E10075;	
+}
+
+H2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: white;
+	font-weight : bold;
+        background-color: #E10075;	
+
+}
+
+H3,H4,H5,H6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: white;
+	font-weight : bold;
+	background-color: #E10075;	
+}
+
+.doctextLblue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #00b2e6;
+}
+
+/* Link styles */
+
+
+.heading3
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;	
+}
+
+.menuitem, a.menuitem {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #009900;
+	text-decoration: none;
+}
+
+/* Title headings */
+.corporateText{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+}
+.pagetitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #00b2e6;
+	font-size: 14px;
+}
+
+.doctitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #009900;
+	font-size: 11px;
+	margin-bottom: 2px;
+}
+
+.headingrightclmn {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #00b2e6;
+}
+
+img {
+  /*width: 100%;*/
+  object-fit:  contain;
+
+}
+iframe {
+    width: 100%;
+    height: 90vh;
+    background-color: lightgrey;	
+}
+
+

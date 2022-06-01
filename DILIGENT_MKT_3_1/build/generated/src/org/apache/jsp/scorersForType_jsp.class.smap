@@ -1,0 +1,22 @@
+SMAP
+scorersForType_jsp.java
+JSP
+*S JSP
+*F
++ 0 scorersForType.jsp
+scorersForType.jsp
+*L
+1,2:61
+4,75:64
+78,12:139
+90,2:151,3
+92,3:157
+95,30:161
+124,2:191
+126:193,7
+127:200,3
+128,2:203
+129,7:205
+135,7:212
+142,8:19
+*E

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="CRMDiligentPortTypeResponseDefinitions" targetNamespace="http://crm.it.telekom.mk/diligent/services/queryDiligentIncident" xmlns="http://crm.it.telekom.mk/diligent/services/queryDiligentIncident" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://crm.it.telekom.mk/diligent/services/queryDiligentIncident" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soabp="http://messaging.ei.tmobile.net/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<wsdl:documentation>
+	<!-- CEISeR version of WSDLPortType: 547804 (Branch: main) -->
+	<!-- CEISeR version used for generation: 17.6.10.0 -->
+</wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://crm.it.telekom.mk/diligent/services/queryDiligentIncident" version="1.0" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:diligent_it_telekom_mk_tt_datatypes="http://crm.it.telekom.mk/diligent/datatypes/queryDiligentIncident" xmlns:ei_messaging_datatypes="http://messaging.ei.tmobile.net/datatypes" xmlns:oss_it_telekom_mk_tt_datatypes="http://crm.it.telekom.mk/diligent/datatypes/queryDiligentIncident" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://crm.it.telekom.mk/diligent/datatypes/queryDiligentIncident" schemaLocation="../../xsds/mk-telekom-it-crm-diligent-datatypes-queryDiligentIncident.xsd"/>
+<xsd:import namespace="http://messaging.ei.tmobile.net/datatypes" schemaLocation="../../xsds/ei.messaging.datatypes.xsd"/>
+<!-- ****************************************************************** -->
+<xsd:element name="GetMSISDN2Subline">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:GetMSISDN2SublineType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="GetMSISDN2SublineOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:GetMSISDN2SublineResponseType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="HasCustomerGroupFault">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:HasCustomerGroupFaultType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="HasCustomerGroupFaultOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:HasCustomerGroupFaultResponseType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="HasCustomerIndividualFault">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:HasCustomerIndividualFaultType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="HasCustomerIndividualFaultOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:HasCustomerIndividualFaultResponseType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="MarkAffected">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:MarkAffectedType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="MarkAffectedOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:MarkAffectedResponseType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="MarkAffectedResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="diligent_it_telekom_mk_tt_datatypes:MarkAffectedAsyncResponse"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="MarkAffectedResponseOutput" type="ei_messaging_datatypes:EIEmptyResponse2"/>
+<xsd:element name="ReleaseAffected">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:ReleaseAffectedType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="ReleaseAffectedOutput">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="oss_it_telekom_mk_tt_datatypes:ReleaseAffectedResponseType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="ReleaseAffectedResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<!-- REQUIRED structure-element "eiMessageContext2" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="eiMessageContext" type="ei_messaging_datatypes:EIMessageContext2"/>
+						<!-- REQUIRED structure-element "data" -->
+						<xsd:element maxOccurs="1" minOccurs="1" name="data" type="diligent_it_telekom_mk_tt_datatypes:ReleaseAffectedAsyncResponse"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+<xsd:element name="ReleaseAffectedResponseOutput" type="ei_messaging_datatypes:EIEmptyResponse2"/>
+<xsd:element name="TechnicalExceptionElement" type="ei_messaging_datatypes:SOABPException2"/>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="TechnicalExceptionMessage">
+    <wsdl:part name="parameters" element="tns:TechnicalExceptionElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ReleaseAffectedResponseOutput">
+    <wsdl:part name="parameters" element="tns:ReleaseAffectedResponseOutput">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="MarkAffectedResponseOutput">
+    <wsdl:part name="parameters" element="tns:MarkAffectedResponseOutput">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="MarkAffectedResponseInput">
+    <wsdl:part name="parameters" element="tns:MarkAffectedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ReleaseAffectedResponseInput">
+    <wsdl:part name="parameters" element="tns:ReleaseAffectedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="CRMDiligentPortTypeResponse">
+<wsdl:documentation>
+<soabp:UserPortType providerPortType="http://crm.it.telekom.mk/diligent/services/queryDiligentIncident/CRMDiligentPortType"/>
+</wsdl:documentation>
+    <wsdl:operation name="MarkAffectedResponse">
+<wsdl:documentation>
+<soabp:ResponseOperation requestOperation="MarkAffected"/>
+</wsdl:documentation>
+      <wsdl:input message="tns:MarkAffectedResponseInput">
+    </wsdl:input>
+      <wsdl:output message="tns:MarkAffectedResponseOutput">
+    </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault" message="tns:TechnicalExceptionMessage">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseAffectedResponse">
+<wsdl:documentation>
+<soabp:ResponseOperation requestOperation="ReleaseAffected"/>
+</wsdl:documentation>
+      <wsdl:input message="tns:ReleaseAffectedResponseInput">
+    </wsdl:input>
+      <wsdl:output message="tns:ReleaseAffectedResponseOutput">
+    </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault" message="tns:TechnicalExceptionMessage">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CRMDiligentPortTypeResponseBinding" type="tns:CRMDiligentPortTypeResponse">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="MarkAffectedResponse">
+      <soap:operation soapAction="urn:MarkAffectedResponse"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault">
+        <soap:fault name="TechnicalExceptionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ReleaseAffectedResponse">
+      <soap:operation soapAction="urn:ReleaseAffectedResponse"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="TechnicalExceptionFault">
+        <soap:fault name="TechnicalExceptionFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CRMDiligentPortTypeResponseService">
+    <wsdl:port name="CRMDiligentPortTypeResponse" binding="tns:CRMDiligentPortTypeResponseBinding">
+      <soap:address location="http://REPLACE_WITH_ACTUAL_HOST_AND_PORT/ENVIRONMENT_NAME/mk-telekom-it-crm-diligent-services-queryDiligentIncident-CRMDiligentPortTypeResponse.soap2jms/1.0"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

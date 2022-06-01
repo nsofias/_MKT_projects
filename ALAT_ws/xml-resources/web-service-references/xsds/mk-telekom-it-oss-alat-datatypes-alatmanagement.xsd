@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://oss.it.telekom.mk/alat/datatypes/alatmanagement" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://oss.it.telekom.mk/alat/datatypes/alatmanagement" version="0.4">
+<xsd:annotation>
+    <xsd:documentation>
+		contains the wsdl-comprehensive data type definitions (reused in more than one wsdl-File)
+		for http://it.oss.tmobile.tmmkt/tt/services/alatservices
+		</xsd:documentation>
+  </xsd:annotation>	<!-- CEISeR version of ServiceNamespace: 114268 (Branch: main) -->
+	<!-- CEISeR version used for generation: 17.6.11.0 -->
+<!-- ****************************************************************** -->
+<complexType name="AlatGetMeasureHistoryRequest1">
+		<sequence>
+			<element name="lineID" type="xsd:string"/>
+		</sequence>
+	</complexType>
+<complexType name="AlatGetMeasureHistoryResponse1">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" name="MeasureData" type="tns:MeasureData1"/>
+		</sequence>
+	</complexType>
+<complexType name="AlatPerformSeltMeasureRequest1">
+		<sequence>
+			<element name="phoneNumber" type="xsd:string"/>
+			<element name="ticketID" type="xsd:string"/>
+			<element name="userName" type="xsd:string"/>
+		</sequence>
+	</complexType>
+<complexType name="AlatPerformSeltMeasureResponse1">
+		<sequence>
+			<element name="NOISE_UP" type="xsd:string"/>
+			<element name="NOISE_DN" type="xsd:string"/>
+			<element name="MRATE_UP" type="xsd:string"/>
+			<element name="LINE_LENGTH" type="xsd:string"/>
+			<element name="SATTN" type="xsd:string"/>
+			<element name="MRATE_DN" type="xsd:string"/>
+		</sequence>
+	</complexType>
+<complexType name="AlatPerformSyncMeasureRequest1">
+		<sequence>
+			<element name="phoneNumber" type="xsd:string"/>
+			<element name="userName" type="xsd:string"/>
+		</sequence>
+	</complexType>
+<complexType name="AlatPerformSyncMeasureResponse1">
+		<sequence>
+			<element name="LINE_CUSTID" type="xsd:string"/>
+			<element name="AIF_ADM" type="xsd:string"/>
+			<element name="AIF_OPER" type="xsd:string"/>
+			<element name="AIF_LASTCH" type="xsd:string"/>
+			<element name="LINE_OPMODE" type="xsd:string"/>
+			<element name="ATUR_ESTIM_LENGTH" type="xsd:string"/>
+			<element name="ATUR_MAX_RATE" type="xsd:string"/>
+			<element name="ATUR_CRT_RATE" type="xsd:string"/>
+			<element name="ATUC_MAX_RATE" type="xsd:string"/>
+			<element name="ATUC_CRT_RATE" type="xsd:string"/>
+			<element name="AM_NOISE" type="xsd:string"/>
+			<element name="BAD_SPLICE" type="xsd:string"/>
+			<element name="LOW_FREQ_POWER_NOISE" type="xsd:string"/>
+			<element name="HIGH_FREQ_POWER_NOISE" type="xsd:string"/>
+			<element name="ATUR_SERNO" type="xsd:string"/>
+			<element name="ATUR_VERNO" type="xsd:string"/>
+			<element name="ATUR_VENDID" type="xsd:string"/>
+			<element name="RAD_IP_LIST" type="xsd:string"/>
+			<element name="PRF_NAME" type="xsd:string"/>
+			<element name="PRFC_MAX_RATE" type="xsd:string"/>
+			<element name="PRFC_MIN_RATE" type="xsd:string"/>
+			<element name="PRFR_MAX_RATE" type="xsd:string"/>
+			<element name="PRFR_MIN_RATE" type="xsd:string"/>
+			<element name="ATUC_LOOP_ATTN" type="xsd:string"/>
+			<element name="ATUC_ATTN" type="xsd:string"/>
+			<element name="ATUR_BITS" type="xsd:string"/>
+			<element name="PRFC_RATE_MODE" type="xsd:string"/>
+			<element name="PRFR_TGT_SNR" type="xsd:string"/>
+			<element name="PRFC_TGT_SNR" type="xsd:string"/>
+			<element name="ATUR_LOOP_ATTN" type="xsd:string"/>
+			<element name="ATUR_ATTN" type="xsd:string"/>
+			<element name="ATUC_BITS" type="xsd:string"/>
+			<element name="ATUR_SNR" type="xsd:string"/>
+			<element name="ATUC_SNR" type="xsd:string"/>
+			
+			<element minOccurs="0" name="OLT_BER" type="xsd:string"/>
+			<element minOccurs="0" name="OLT_BERPLR_END_TS" type="xsd:string"/>
+			<element minOccurs="0" name="OLT_BERPLR_START_TS" type="xsd:string"/>
+			<element minOccurs="0" name="OLT_IF_ADM" type="xsd:string"/>
+			<element minOccurs="0" name="OLT_IF_OPER" type="xsd:string"/>
+			<element minOccurs="0" name="OLT_LASER_BIAS_CURRENT" type="xsd:string"/>
+			<element minOccurs="0" name="OLT_LASER_TEMP" type="xsd:string"/>
+			<element minOccurs="0" name="OLT_LASER_VOLTAGE" type="xsd:string"/>
+			<element minOccurs="0" name="OLT_PLR" type="xsd:string"/>
+			<element minOccurs="0" name="OLT_RX_ONU_POWER" type="xsd:string"/>
+			<element minOccurs="0" name="OLT_TX_POWER" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_BERPLR_START_TS" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_DN_BER" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_DN_PLR" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_IF_ADM" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_IF_OPER" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_LASER_BIAS_CURRENT" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_LASER_TEMP" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_LASER_VOLTAGE" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_RX_POWER" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_TX_POWER" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_UP_BER" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_UP_BIP" type="xsd:string"/>
+			<element minOccurs="0" name="ONU_UP_PLR" type="xsd:string"/>
+			<element minOccurs="0" name="OUN_BERPLR_END_TS" type="xsd:string"/>
+			<element minOccurs="0" name="FO_AC_OF_USERLINE_TESTING_TR" type="xsd:string"/>
+			<element minOccurs="0" name="INSULATING_R_OF_USERLINE_TESTING_RG" type="xsd:string"/>
+			<element minOccurs="0" name="CAPACITANCE_OF_SIGNATURE" type="xsd:string"/>
+			<element minOccurs="0" name="INSULATING_R_OF_USERLINE_TESTING_TR" type="xsd:string"/>
+			<element minOccurs="0" name="FO_AC_OF_USERLINE_TESTING_TG" type="xsd:string"/>
+			<element minOccurs="0" name="FO_DC_OF_USERLINE_TESTING_RG" type="xsd:string"/>
+			<element minOccurs="0" name="INSULATING_R_OF_USERLINE_TESTING_TG" type="xsd:string"/>
+			<element minOccurs="0" name="C_OF_USERLINE_TESTING_TR" type="xsd:string"/>
+			<element minOccurs="0" name="FO_AC_OF_USERLINE_TESTING_RG" type="xsd:string"/>
+			<element minOccurs="0" name="FO_DC_OF_USERLINE_TESTING_TG" type="xsd:string"/>
+			<element minOccurs="0" name="C_OF_USERLINE_TESTING_RG" type="xsd:string"/>
+			<element minOccurs="0" name="FO_DC_OF_USERLINE_TESTING_TR" type="xsd:string"/>
+			<element minOccurs="0" name="C_OF_USERLINE_TESTING_TG" type="xsd:string"/>
+			<element minOccurs="0" name="RESISTANCE_OF_RINGER" type="xsd:string"/>
+		</sequence>
+	</complexType>
+<complexType name="AlatResetPortRequest1">
+		<sequence>
+			<element name="phoneNumber" type="xsd:string"/>
+			<element name="userName" type="xsd:string"/>
+		</sequence>
+	</complexType>
+<complexType name="AlatResetPortResponse1">
+		<sequence>
+			<element name="ResetPortResult" type="xsd:string"/>
+		</sequence>
+	</complexType>
+<complexType name="MeasureData1">
+		<sequence>
+			<element name="LINE_ID" type="xsd:string"/>
+			<element name="DATE_MEASURE" type="xsd:dateTime"/>
+			<element name="UPLOAD_SPEED" type="xsd:string"/>
+			<element name="DOWNLOAD_SPEED" type="xsd:string"/>
+			<element name="ESTIMATE_LENGTH" type="xsd:string"/>
+		</sequence>
+	</complexType>
+<complexType name="alat_getMeasureHistoryRequest">
+		<annotation>
+			<documentation>
+				The payload for the request of operation 'performSyncMeasure' of port-type 'alat'
+			</documentation>
+		</annotation>
+		<sequence>
+			<element minOccurs="0" name="GetMeasureHistory" type="tns:AlatGetMeasureHistoryRequest1"/>
+		</sequence>
+	</complexType>
+<complexType name="alat_getMeasureHistoryResponse">
+		<annotation>
+			<documentation>
+				The payload for the response of operation 'performSyncMeasure' of port-type 'alat'
+			</documentation>
+		</annotation>
+		<sequence>
+			<!-- TODO: define the business payload ... -->
+			<element minOccurs="0" name="GetMeasureHistoryResponse" type="tns:AlatGetMeasureHistoryResponse1"/>
+		</sequence>
+	</complexType>
+<complexType name="alat_performSeltMeasureRequest">
+		<annotation>
+			<documentation>
+				The payload for the request of operation 'performSyncMeasure' of port-type 'alat'
+			</documentation>
+		</annotation>
+		<sequence>
+			<element minOccurs="0" name="PerformSeltMeasure" type="tns:AlatPerformSeltMeasureRequest1"/>
+		</sequence>
+	</complexType>
+<complexType name="alat_performSeltMeasureResponse">
+		<annotation>
+			<documentation>
+				The payload for the response of operation 'performSyncMeasure' of port-type 'alat'
+			</documentation>
+		</annotation>
+		<sequence>
+			<!-- TODO: define the business payload ... -->
+			<element minOccurs="0" name="PerformSeltMeasureResponse" type="tns:AlatPerformSeltMeasureResponse1"/>
+		</sequence>
+	</complexType>
+<complexType name="alat_performSyncMeasureRequest">
+		<annotation>
+			<documentation>
+				The payload for the request of operation 'performSyncMeasure' of port-type 'alat'
+			</documentation>
+		</annotation>
+		<sequence>
+			<element minOccurs="0" name="PerformSyncMeasure" type="tns:AlatPerformSyncMeasureRequest1"/>
+		</sequence>
+	</complexType>
+<complexType name="alat_performSyncMeasureResponse">
+		<annotation>
+			<documentation>
+				The payload for the response of operation 'performSyncMeasure' of port-type 'alat'
+			</documentation>
+		</annotation>
+		<sequence>
+			<!-- TODO: define the business payload ... -->
+			<element minOccurs="0" name="PerformSyncMeasureResponse" type="tns:AlatPerformSyncMeasureResponse1"/>
+		</sequence>
+	</complexType>
+<complexType name="alat_resetPortRequest">
+		<annotation>
+			<documentation>
+				The payload for the request of operation 'performSyncMeasure' of port-type 'alat'
+			</documentation>
+		</annotation>
+		<sequence>
+			<element minOccurs="0" name="ResetPort" type="tns:AlatResetPortRequest1"/>
+		</sequence>
+	</complexType>
+<complexType name="alat_resetPortResponse">
+		<annotation>
+			<documentation>
+				The payload for the response of operation 'performSyncMeasure' of port-type 'alat'
+			</documentation>
+		</annotation>
+		<sequence>
+			<!-- TODO: define the business payload ... -->
+			<element minOccurs="0" name="ResetPortResponse" type="tns:AlatResetPortResponse1"/>
+		</sequence>
+	</complexType>
+</xsd:schema>

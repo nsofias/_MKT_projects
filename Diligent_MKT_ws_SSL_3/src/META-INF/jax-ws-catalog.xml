@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://10.232.63.13/diliserv?wsdl" uri="wsdl/10.232.63.13/diliserv.wsdl"/>
+    <system systemId="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/wsdls/mk-telekom-it-oss-tt-services-stela-sync/stela-sync.wsdl" uri="wsdl/stela-sync.wsdl"/>
+    <system systemId="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/wsdls/mk-telekom-it-oss-tt-services-customerLineService/CustomerLineServicePortType.wsdl" uri="wsdl/CustomerLineServicePortType.wsdl"/>
+    <system systemId="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/wsdls/mk-telekom-it-crm-diligent-services-queryDiligentIncident/CRMDiligentPortType.wsdl" uri="wsdl/CRMDiligentPortType.wsdl"/>
+    <system systemId="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/wsdls/EXTSYS2_AFFECTEDSERVICE.wsdl" uri="wsdl/EXTSYS2_AFFECTEDSERVICE.wsdl"/>
+    <system systemId="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/wsdls/DILIGENT_EXTSYS2_QTT1.wsdl" uri="wsdl/DILIGENT_EXTSYS2_QTT1.wsdl"/>
+</catalog>

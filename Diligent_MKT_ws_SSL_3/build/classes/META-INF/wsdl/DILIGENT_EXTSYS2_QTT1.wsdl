@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mx="http://www.ibm.com/maximo" xmlns:mxws="http://www.ibm.com/maximo/wsdl/EXTSYS2_QTT1" name="EXTSYS2_QTT1" targetNamespace="http://www.ibm.com/maximo/wsdl/EXTSYS2_QTT1">
+	<types>
+		<xsd:schema>
+			<xsd:import namespace="http://www.ibm.com/maximo" schemaLocation="../xsds/Diligent_service_QTT1Service.xsd"/>
+		</xsd:schema>
+	</types>
+	<message name="QueryQTT1Request">
+		<part name="parameters" element="mx:QueryQTT1"/>
+	</message>
+	<message name="QueryQTT1Response">
+		<part name="parameters" element="mx:QueryQTT1Response"/>
+	</message>
+	<portType name="EXTSYS2_QTT1PortType">
+		<operation name="QueryQTT1">
+			<input message="mxws:QueryQTT1Request"/>
+			<output message="mxws:QueryQTT1Response"/>
+		</operation>
+	</portType>
+	<binding name="EXTSYS2_QTT1SOAP11Binding" type="mxws:EXTSYS2_QTT1PortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="QueryQTT1">
+			<soap:operation soapAction="urn:processDocument" style="document"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="EXTSYS2_QTT1">
+		<port name="EXTSYS2_QTT1SOAP11Port" binding="mxws:EXTSYS2_QTT1SOAP11Binding">
+			<soap:address location="https://10.232.58.147/mk.telekom.system.architecture.Diligent.TroubleTicket.QTT1DiligentPortType"/>
+		</port>
+	</service>
+</definitions>

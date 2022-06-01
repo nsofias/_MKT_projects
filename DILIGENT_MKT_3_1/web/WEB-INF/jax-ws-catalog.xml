@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/my%20files/JavaProjects/DSLMON/web/closureUpdAlarmNTT.wsdl" uri="src/conf/xml-resources/web-services/closedSRNotification_WS/wsdl/closureUpdAlarmNTT.wsdl"/>
+    <system systemId="file:/C:/my%20files/JavaProjects/DSLMON/web/TeMIPBaseTypes.xsd" uri="src/conf/xml-resources/web-services/closedSRNotification_WS/wsdl/TeMIPBaseTypes.xsd"/>
+    <system systemId="file:/C:/my%20files/JavaProjects/DSLMON/src/conf/xml-resources/web-services/closureUpdAlarmNTT.wsdl" uri="src/conf/xml-resources/web-services/closedSiebelSRListener/wsdl/closureUpdAlarmNTT.wsdl"/>
+    <system systemId="file:/C:/my%20files/JavaProjects/DSLMON/src/conf/xml-resources/web-services/TeMIPBaseTypes.xsd" uri="src/conf/xml-resources/web-services/closedSiebelSRListener/wsdl/TeMIPBaseTypes.xsd"/>
+    <system systemId="http://localhost:8080/dilliagent-proxy/services/CRMWsEndpoint?wsdl" uri="wsdl/localhost_8080/dilliagent-proxy/services/CRMWsEndpoint.wsdl"/>
+    <system systemId="http://localhost:8080/dilliagent-proxy/services/CRMWsEndpoint?xsd=CRMWsEndpointService_schema1.xsd" uri="wsdl/localhost_8080/dilliagent-proxy/services/CRMWsEndpoint.xsd_CRMWsEndpointService_schema1.xsd"/>
+</catalog>

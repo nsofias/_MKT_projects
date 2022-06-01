@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/my%20Files/JavaProjects/diligent_skopia_wsdls_SSL/CR2WS_wsdls/DiligentCRM.wsdl" uri="src/conf/xml-resources/web-services/disconnectionsWSDL/wsdl/DiligentCRM.wsdl"/>
+    <system systemId="file:/C:/my%20Files/JavaProjects/diligent_skopia_wsdls_SSL/CR2WS_wsdls/DILIGENT.wsdl" uri="src/conf/xml-resources/web-services/NewWebServiceFromWSDL/wsdl/DILIGENT.wsdl"/>
+    <system systemId="file:/C:/my%20Files/JavaProjects/diligent_skopia_wsdls_SSL/CR2WS_wsdls/ei.messaging.datatypes.xsd" uri="src/conf/xml-resources/web-services/NewWebServiceFromWSDL/wsdl/ei.messaging.datatypes.xsd"/>
+    <system systemId="file:/C:/my%20Files/JavaProjects/diligent_skopia_wsdls_SSL/CR2WS_wsdls/Diligent_service.xsd" uri="src/conf/xml-resources/web-services/NewWebServiceFromWSDL/wsdl/Diligent_service.xsd"/>
+</catalog>

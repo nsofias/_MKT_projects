@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Diligent MKT Project</title> 
+<meta charset="UTF-8">
+<script>
+     window.setInterval("reloadIFrame();", 120000);
+
+     function reloadIFrame()  
+     {
+      window.frames['right'].location.reload(true); 
+  //      window.frames['right'].location = window.frames['right'].location;
+
+   //    window.frames['right'].location.href="leftPage_perCC_TABLES.jsp?history_stats_service_number=13888&view=per_time";
+   //    window.frames['right'].location.href = window.frames['right'].location.href;
+     }      
+</script>
+</head>
+
+<frameset  cols="290,*">
+  <frame name="left" scrolling="yes"  src="index_1.html">
+  <frame name="right" scrolling="yes"  src="wellcome.jsp">
+ <noframes>   
+ <body>
+  <p>This page uses frames, but your browser doesn't support them.</p>
+  </body>
+</noframes>      
+</frameset>
+
+</html>

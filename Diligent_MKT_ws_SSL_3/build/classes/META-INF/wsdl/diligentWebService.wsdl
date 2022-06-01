@@ -1,0 +1,366 @@
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://crm.diligent.webservices.northbound.esb.middleware.telekom.mk/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="DiligentWSService" targetNamespace="http://crm.diligent.webservices.northbound.esb.middleware.telekom.mk/">
+<wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://messaging.ei.tmobile.net/datatypes" elementFormDefault="qualified" targetNamespace="http://messaging.ei.tmobile.net/datatypes" version="1.0">
+<xs:complexType name="EIMessageContext2">
+<xs:sequence>
+<xs:element minOccurs="0" name="target" type="xs:string"/>
+<xs:element minOccurs="0" name="replyTo" type="xs:string"/>
+<xs:element minOccurs="0" name="requestId" type="xs:string"/>
+<xs:element minOccurs="0" name="timeLeft" type="xs:long"/>
+<xs:element minOccurs="0" name="priority" type="xs:short"/>
+<xs:element minOccurs="0" name="redelivered" type="tns:EIMessageRedelivered"/>    
+<xs:element minOccurs="0" name="revision" type="xs:string"/>
+<xs:element name="sender" type="xs:string"/>
+<xs:element name="correlationId" type="xs:string"/>
+<xs:element minOccurs="0" name="sequenceId" type="xs:integer"/>
+<xs:element minOccurs="0" name="properties" type="tns:EIMessagePropertyCollection"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIMessagePropertyCollection">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" name="property" type="tns:EIMessageProperty"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIMessageProperty">
+<xs:simpleContent>
+<xs:extension base="xs:string">
+<xs:attribute ref="tns:name" use="required"/>
+<xs:attribute ref="tns:policy"/>
+<xs:attribute ref="tns:mustUnderstand"/>
+<xs:attribute ref="tns:type"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+<xs:complexType name="EIEmpty">
+<xs:sequence/>
+</xs:complexType>
+<xs:complexType name="SOABPException2">
+<xs:sequence>
+<xs:element name="eiMessageContext" type="tns:EIMessageContext2"/>
+<xs:element name="timestamp" type="xs:anySimpleType"/>
+<xs:element minOccurs="0" name="originator" type="xs:string"/>
+<xs:element minOccurs="0" name="exceptionClass" type="xs:string"/>
+<xs:element minOccurs="0" name="subCode" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="description" nillable="true" type="tns:EIDescriptionElement"/>
+<xs:element minOccurs="0" name="completed" type="tns:EIOperationCompleted"/>
+<xs:element minOccurs="0" name="stackTraceString" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="furtherInfo" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="placeholderValues" type="tns:EIPlaceholderValueCollection"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIDescriptionElement">
+<xs:simpleContent>
+<xs:extension base="xs:string">
+<xs:attribute ref="tns:lang"/>
+<xs:attribute ref="tns:descId"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+<xs:complexType name="EIPlaceholderValueCollection">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" name="placeholderValue" type="tns:EIPlaceholderValue"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIPlaceholderValue">
+<xs:simpleContent>
+<xs:extension base="xs:string">
+<xs:attribute ref="tns:name" use="required"/>
+<xs:attribute ref="tns:type"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+<xs:complexType name="EIPingInfo">
+<xs:sequence>
+<xs:element minOccurs="0" name="type" type="tns:EIPingTargetType"/>
+<xs:element minOccurs="0" name="subComponent" type="xs:string"/>
+<xs:element minOccurs="0" name="location" type="xs:string"/>
+<xs:element minOccurs="0" name="version" type="xs:string"/>
+<xs:element minOccurs="0" name="timeMeasurementCollection" type="tns:EINamedTimeMeasurementCollection"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EINamedTimeMeasurementCollection">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="timeMeasurement" nillable="true" type="tns:EINamedTimeMeasurement"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EINamedTimeMeasurement">
+<xs:sequence>
+<xs:element name="description" type="xs:string"/>
+<xs:element name="startTimestamp" type="xs:dateTime"/>
+<xs:element name="durationMillis" type="xs:long"/>
+<xs:element minOccurs="0" name="stopTimestamp" type="xs:dateTime"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIMessageContext">
+<xs:sequence>
+<xs:element minOccurs="0" name="target" type="xs:string"/>
+<xs:element minOccurs="0" name="replyTo" type="xs:string"/>
+<xs:element minOccurs="0" name="requestId" type="xs:string"/>
+<xs:element minOccurs="0" name="timeLeft" type="xs:long"/>
+<xs:element minOccurs="0" name="priority" type="xs:short"/>
+<xs:element minOccurs="0" name="redelivered" type="tns:EIMessageRedelivered"/>
+<xs:element minOccurs="0" name="revision" type="xs:string"/>
+<xs:element name="sender" type="xs:string"/>
+<xs:element name="correlationId" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIEmptyResponse">
+<xs:sequence>
+<xs:element name="eiMessageContext" type="tns:EIMessageContext"/>
+<xs:element name="data" type="tns:EIEmpty"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EITechnicalException">
+<xs:sequence>
+<xs:element name="eiMessageContext" type="tns:EIMessageContext"/>
+<xs:element name="message" type="xs:string"/>
+<xs:element name="exceptionClass" type="xs:string"/>
+<xs:element minOccurs="0" name="stackTraceString" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="furtherInfo" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIEmptyRequest2">
+<xs:sequence>
+<xs:element name="eiMessageContext" type="tns:EIMessageContext2"/>
+<xs:element name="data" type="tns:EIEmpty"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIPingResponse">
+<xs:sequence>
+<xs:element name="eiMessageContext" type="tns:EIMessageContext2"/>
+<xs:element name="data" type="tns:EIPingInfoCollection"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIPingInfoCollection">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="technicalComponent" nillable="true" type="tns:EIPingInfo"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIPingData">
+<xs:sequence>
+<xs:element minOccurs="0" name="technicalComponent" type="tns:EIPingTargetType"/>
+<xs:element minOccurs="0" name="subComponent" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIPingRequest">
+<xs:sequence>
+<xs:element name="eiMessageContext" type="tns:EIMessageContext2"/>
+<xs:element name="data" type="tns:EIPingData"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIEmptyRequest">
+<xs:sequence>
+<xs:element name="eiMessageContext" type="tns:EIMessageContext"/>
+<xs:element name="data" type="tns:EIEmpty"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="SOABPException">
+<xs:sequence>
+<xs:element name="eiMessageContext" type="tns:EIMessageContext"/>
+<xs:element name="timestamp" type="xs:dateTime"/>
+<xs:element minOccurs="0" name="originator" type="xs:anyURI"/>
+<xs:element minOccurs="0" name="exceptionClass" type="xs:string"/>
+<xs:element minOccurs="0" name="subCode" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="description" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="completed" type="tns:EIOperationCompleted"/>
+<xs:element minOccurs="0" name="stackTraceString" type="xs:string"/>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="furtherInfo" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="EIEmptyResponse2">
+<xs:sequence>
+<xs:element name="eiMessageContext" type="tns:EIMessageContext2"/>
+<xs:element name="data" type="tns:EIEmpty"/>
+</xs:sequence>
+</xs:complexType>
+<xs:simpleType name="EIMessageRedelivered">
+<xs:restriction base="xs:string">
+<xs:enumeration value="CLIENT"/>
+<xs:enumeration value="SOABP"/>
+<xs:enumeration value="MANUAL"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="EIOperationCompleted">
+<xs:restriction base="xs:string">
+<xs:enumeration value="no"/>
+<xs:enumeration value="maybe"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="EIPingTargetType">
+<xs:restriction base="xs:string">
+<xs:enumeration value="Client"/>
+<xs:enumeration value="Server"/>
+<xs:enumeration value="Provider"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="descId" type="xs:string"/>
+<xs:attribute name="lang" type="xs:string"/>
+<xs:attribute name="mustUnderstand" type="xs:boolean"/>
+<xs:attribute name="name" type="xs:string"/>
+<xs:attribute name="policy" type="xs:string"/>
+<xs:attribute name="type" type="xs:string"/>
+</xs:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://crm.diligent.webservices.northbound.esb.middleware.telekom.mk/" xmlns:ns1="http://messaging.ei.tmobile.net/datatypes" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://crm.diligent.webservices.northbound.esb.middleware.telekom.mk/">
+<xs:import namespace="http://messaging.ei.tmobile.net/datatypes"/>
+<xs:element name="createCustomerIssue">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="eiMessageContext" type="ns1:EIMessageContext2"/>
+<xs:element name="createCustomerIssueRequestData" type="tns:createCustomerIssueRequestData"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="createCustomerIssueResponse">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="eiMessageContext" type="ns1:EIMessageContext2"/>
+<xs:element name="createCustomerIssueResponseData" type="tns:createCustomerIssueResponseData"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="updateCustomerIssue">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="eiMessageContext" type="ns1:EIMessageContext2"/>
+<xs:element name="updateCustomerIssueRequestData" type="tns:updateCustomerIssueRequestData"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="updateCustomerIssueResponse">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="eiMessageContext" type="ns1:EIMessageContext2"/>
+<xs:element name="updateCustomerIssueResponseData" type="tns:updateCustomerIssueResponseData"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:complexType name="createCustomerIssueRequestData">
+<xs:sequence>
+<xs:element name="customerIssueModel" type="tns:customerIssueModel"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="customerIssueModel">
+<xs:sequence>
+<xs:element minOccurs="0" name="id" type="xs:string"/>
+<xs:element minOccurs="0" name="name" type="xs:string"/>
+<xs:element minOccurs="0" name="dateEntered" type="xs:dateTime"/>
+<xs:element minOccurs="0" name="dateModified" type="xs:dateTime"/>
+<xs:element minOccurs="0" name="createdBy" type="xs:string"/>
+<xs:element minOccurs="0" name="modifiedUserId" type="xs:string"/>
+<xs:element minOccurs="0" name="description" type="xs:string"/>
+<xs:element minOccurs="0" name="deleted" type="xs:int"/>
+<xs:element minOccurs="0" name="tsrmId" type="xs:string"/>
+<xs:element minOccurs="0" name="faultType" type="xs:string"/>
+<xs:element minOccurs="0" name="customerId" type="xs:string"/>
+<xs:element minOccurs="0" name="productId" type="xs:string"/>
+<xs:element minOccurs="0" name="contactPerson" type="xs:string"/>
+<xs:element minOccurs="0" name="contactPhone" type="xs:string"/>
+<xs:element minOccurs="0" name="contactId" type="xs:string"/>
+<xs:element minOccurs="0" name="sendSms" type="xs:string"/>
+<xs:element minOccurs="0" name="status" type="xs:string"/>
+<xs:element minOccurs="0" name="reason" type="xs:string"/>
+<xs:element minOccurs="0" name="tsrmTeamId" type="xs:string"/>
+<xs:element minOccurs="0" name="worklog" type="xs:string"/>
+<xs:element minOccurs="0" name="serviceId" type="xs:string"/>
+<xs:element minOccurs="0" name="teamId" type="xs:string"/>
+<xs:element minOccurs="0" name="contactEmail" type="xs:string"/>
+<xs:element minOccurs="0" name="contactedFailed" type="xs:int"/>
+<xs:element minOccurs="0" name="serviceInFault" type="xs:string"/>
+<xs:element minOccurs="0" name="wholesaleId" type="xs:int"/>
+<xs:element minOccurs="0" name="operatorId" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="createCustomerIssueResponseData">
+<xs:sequence>
+<xs:element minOccurs="0" name="customerIssueId" type="xs:string"/>
+<xs:element minOccurs="0" name="incidentId" type="xs:string"/>
+<xs:element minOccurs="0" name="validationModel" type="tns:ValidationModel"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="ValidationModel">
+<xs:sequence>
+<xs:element minOccurs="0" name="responseStatus" type="xs:string"/>
+<xs:element minOccurs="0" name="responseReason" type="xs:string"/>
+<xs:element minOccurs="0" name="errorId" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="updateCustomerIssueRequestData">
+<xs:sequence>
+<xs:element name="customerIssueModel" type="tns:customerIssueModel"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="updateCustomerIssueResponseData">
+<xs:sequence>
+<xs:element minOccurs="0" name="customerIssueId" type="xs:string"/>
+<xs:element minOccurs="0" name="incidentId" type="xs:string"/>
+<xs:element minOccurs="0" name="validationModel" type="tns:ValidationModel"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="DiligentException" type="tns:DiligentException"/>
+<xs:complexType name="DiligentException">
+<xs:sequence>
+<xs:element minOccurs="0" name="message" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+</wsdl:types>
+<wsdl:message name="DiligentException">
+<wsdl:part element="tns:DiligentException" name="DiligentException"> </wsdl:part>
+</wsdl:message>
+<wsdl:message name="createCustomerIssue">
+<wsdl:part element="tns:createCustomerIssue" name="parameters"> </wsdl:part>
+</wsdl:message>
+<wsdl:message name="updateCustomerIssueResponse">
+<wsdl:part element="tns:updateCustomerIssueResponse" name="parameters"> </wsdl:part>
+</wsdl:message>
+<wsdl:message name="createCustomerIssueResponse">
+<wsdl:part element="tns:createCustomerIssueResponse" name="parameters"> </wsdl:part>
+</wsdl:message>
+<wsdl:message name="updateCustomerIssue">
+<wsdl:part element="tns:updateCustomerIssue" name="parameters"> </wsdl:part>
+</wsdl:message>
+<wsdl:portType name="IDiligentWS">
+<wsdl:operation name="createCustomerIssue">
+<wsdl:input message="tns:createCustomerIssue" name="createCustomerIssue"> </wsdl:input>
+<wsdl:output message="tns:createCustomerIssueResponse" name="createCustomerIssueResponse"> </wsdl:output>
+<wsdl:fault message="tns:DiligentException" name="DiligentException"> </wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateCustomerIssue">
+<wsdl:input message="tns:updateCustomerIssue" name="updateCustomerIssue"> </wsdl:input>
+<wsdl:output message="tns:updateCustomerIssueResponse" name="updateCustomerIssueResponse"> </wsdl:output>
+<wsdl:fault message="tns:DiligentException" name="DiligentException"> </wsdl:fault>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="DiligentWSServiceSoapBinding" type="tns:IDiligentWS">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="createCustomerIssue">
+<soap:operation soapAction="createCustomerIssue" style="document"/>
+<wsdl:input name="createCustomerIssue">
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output name="createCustomerIssueResponse">
+<soap:body use="literal"/>
+</wsdl:output>
+<wsdl:fault name="DiligentException">
+<soap:fault name="DiligentException" use="literal"/>
+</wsdl:fault>
+</wsdl:operation>
+<wsdl:operation name="updateCustomerIssue">
+<soap:operation soapAction="updateCustomerIssue" style="document"/>
+<wsdl:input name="updateCustomerIssue">
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output name="updateCustomerIssueResponse">
+<soap:body use="literal"/>
+</wsdl:output>
+<wsdl:fault name="DiligentException">
+<soap:fault name="DiligentException" use="literal"/>
+</wsdl:fault>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="DiligentWSService">
+<wsdl:port binding="tns:DiligentWSServiceSoapBinding" name="DiligentWSPort">
+<soap:address location="http://10.232.59.82:8080/esb/northbound/diligentWebService"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,11 @@
+SMAP
+patterns_jsp.java
+JSP
+*S JSP
+*F
++ 0 patterns.jsp
+patterns.jsp
+*L
+1,104:50
+104,7:154
+*E

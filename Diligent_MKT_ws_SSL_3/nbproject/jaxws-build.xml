@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-diliserv" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/diliserv"/>
+        <property name="wsdl-diliserv" location="xml-resources/web-service-references/diliserv/wsdl/10.232.63.13/diliserv.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/diliserv" destdir="${build.generated.dir}/jax-wsCache/diliserv" wsdl="${wsdl-diliserv}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://10.232.63.13/diliserv?wsdl" xnocompile="true" xendorsed="true" package="diligent_mkt_ws">
+            <depends file="${wsdl-diliserv}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/diliserv"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/diliserv">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-diliserv" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/diliserv"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/diligent_mkt_ws"/>
+    </target>
+    <target name="wsimport-client-stela-sync" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/stela-sync"/>
+        <property name="wsdl-stela-sync" location="xml-resources/web-service-references/stela-sync/wsdl/stela-sync.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/stela-sync" destdir="${build.generated.dir}/jax-wsCache/stela-sync" wsdl="${wsdl-stela-sync}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/wsdls/mk-telekom-it-oss-tt-services-stela-sync/stela-sync.wsdl" xnocompile="true" xendorsed="true" package="TT_incident">
+            <depends file="${wsdl-stela-sync}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/stela-sync"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/stela-sync">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-stela-sync" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/stela-sync"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/TT_incident"/>
+    </target>
+    <target name="wsimport-client-CustomerLineServicePortType" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CustomerLineServicePortType"/>
+        <property name="wsdl-CustomerLineServicePortType" location="xml-resources/web-service-references/CustomerLineServicePortType/wsdl/CustomerLineServicePortType.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CustomerLineServicePortType" destdir="${build.generated.dir}/jax-wsCache/CustomerLineServicePortType" wsdl="${wsdl-CustomerLineServicePortType}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/wsdls/mk-telekom-it-oss-tt-services-customerLineService/CustomerLineServicePortType.wsdl" xnocompile="true" xendorsed="true" package="customerLineService">
+            <depends file="${wsdl-CustomerLineServicePortType}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CustomerLineServicePortType"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CustomerLineServicePortType">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CustomerLineServicePortType" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/CustomerLineServicePortType"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/customerLineService"/>
+    </target>
+    <target name="wsimport-client-EXTSYS2_AFFECTEDSERVICE" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/EXTSYS2_AFFECTEDSERVICE"/>
+        <property name="wsdl-EXTSYS2_AFFECTEDSERVICE" location="xml-resources/web-service-references/EXTSYS2_AFFECTEDSERVICE/wsdl/EXTSYS2_AFFECTEDSERVICE.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/EXTSYS2_AFFECTEDSERVICE" destdir="${build.generated.dir}/jax-wsCache/EXTSYS2_AFFECTEDSERVICE" wsdl="${wsdl-EXTSYS2_AFFECTEDSERVICE}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/wsdls/EXTSYS2_AFFECTEDSERVICE.wsdl" xnocompile="true" xendorsed="true" package="affected_services">
+            <depends file="${wsdl-EXTSYS2_AFFECTEDSERVICE}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/EXTSYS2_AFFECTEDSERVICE"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/EXTSYS2_AFFECTEDSERVICE">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-EXTSYS2_AFFECTEDSERVICE" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/EXTSYS2_AFFECTEDSERVICE"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/affected_services"/>
+    </target>
+    <target name="wsimport-client-DILIGENT_EXTSYS2_QTT1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DILIGENT_EXTSYS2_QTT1"/>
+        <property name="wsdl-DILIGENT_EXTSYS2_QTT1" location="xml-resources/web-service-references/DILIGENT_EXTSYS2_QTT1/wsdl/DILIGENT_EXTSYS2_QTT1.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DILIGENT_EXTSYS2_QTT1" destdir="${build.generated.dir}/jax-wsCache/DILIGENT_EXTSYS2_QTT1" wsdl="${wsdl-DILIGENT_EXTSYS2_QTT1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/wsdls/DILIGENT_EXTSYS2_QTT1.wsdl" xnocompile="true" xendorsed="true" package="ibm_query">
+            <depends file="${wsdl-DILIGENT_EXTSYS2_QTT1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DILIGENT_EXTSYS2_QTT1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DILIGENT_EXTSYS2_QTT1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DILIGENT_EXTSYS2_QTT1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/DILIGENT_EXTSYS2_QTT1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ibm_query"/>
+    </target>
+    <target name="wsimport-client-CRMDiligentPortType" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CRMDiligentPortType"/>
+        <property name="wsdl-CRMDiligentPortType" location="xml-resources/web-service-references/CRMDiligentPortType/wsdl/CRMDiligentPortType.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CRMDiligentPortType" destdir="${build.generated.dir}/jax-wsCache/CRMDiligentPortType" wsdl="${wsdl-CRMDiligentPortType}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/myfiles/JavaProjects/diligent_skopia_wsdls_SSL/src-gen/wsdls/mk-telekom-it-crm-diligent-services-queryDiligentIncident/CRMDiligentPortType.wsdl" xnocompile="true" xendorsed="true" package="crm">
+            <depends file="${wsdl-CRMDiligentPortType}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CRMDiligentPortType"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CRMDiligentPortType">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CRMDiligentPortType" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/CRMDiligentPortType"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/crm"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-diliserv, wsimport-client-stela-sync, wsimport-client-CustomerLineServicePortType, wsimport-client-EXTSYS2_AFFECTEDSERVICE, wsimport-client-DILIGENT_EXTSYS2_QTT1, wsimport-client-CRMDiligentPortType"/>
+</project>
