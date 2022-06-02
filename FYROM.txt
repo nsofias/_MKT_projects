@@ -230,7 +230,7 @@ GIT (C:\myfiles\JavaProjects\_MKT_projects)
 -----------------------
 Githau token: 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
 https://github.com/nsofias/_MKT_projects.git
-
 git remote set-url origin https://nsofias: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@github.com/nsofias/_MKT_projects.git
- 
 git clone https://github.com/nsofias/_MKT_projects.git C:\myfiles\JavaProjects\_MKT_projects
+
+git pull origin master
