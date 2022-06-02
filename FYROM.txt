@@ -41,18 +41,18 @@ DNIS         	:service IVR number
 ANI             :Originated Calling number
 INPUT_NUMBER    :Entered Fix MSISDN or taken from previous input
 SUBLINE_ID      :Line ID of fixed number
-REASON 		:(ivr options: internet, iptv, mobile, voip, faulty status) – current diligent process checks only internet, iptv,faulty status)
+REASON 		:(ivr options: internet, iptv, mobile, voip, faulty status) â€“ current diligent process checks only internet, iptv,faulty status)
 EXTRA_INFO1     :taken from check group fault in the diligent flow (incident group ID) - (-100 means no fault, and if have it fault it has Incident number)
-EXTRA_INFO2     :taken from check group fault in the diligent flow   (incident group type) (-100 means no fault, and description like ‘Massive’ if have it fault)
+EXTRA_INFO2     :taken from check group fault in the diligent flow   (incident group type) (-100 means no fault, and description like â€˜Massiveâ€™ if have it fault)
 EXTRA_INFO3    	:taken from check individual fault in the diligent flow (incident individual ID) - (-100 means no fault, and if have it fault it has Incident number)
 EXTRA_INFO4    	:taken from check individual fault in the diligent flow   (incident individual type) (-100 means no fault, and description of fauly if have it fault)
 EXTRA_INFO5     :taken from check individual fault in the crm   (current status in CRM)
 EXTRA_INFO6     :Does customer goes to agent (IVR->AGENT means that customer choose * to go to agent, blank means that stay on ivr)
-EXTRA_INFO7     :name of the current individual ticket in CRM like ‘CTTH Internet  - INC1634584’
+EXTRA_INFO7     :name of the current individual ticket in CRM like â€˜CTTH Internet  - INC1634584â€™
 EXTRA_INFO8     :datetime  of the current open individual ticket in CRM
 EXTRA_INFO9     :does customer create automatic IVR ticket in current call (yes / null)
-EXTRA_INFO10    :(sysdate – open ticket date in hours) – currently set to 50 and every customer has a posilibity to choose * to go to agent
-IS_IT_DOWNLOADED    :Y/N flag – initialy set as ‘N’, but you will update it when the record will be taken into diligent.
+EXTRA_INFO10    :(sysdate â€“ open ticket date in hours) â€“ currently set to 50 and every customer has a posilibity to choose * to go to agent
+IS_IT_DOWNLOADED    :Y/N flag â€“ initialy set as â€˜Nâ€™, but you will update it when the record will be taken into diligent.
  
 The credentials for the Oracle DB is
 Hulk DB (bruce.telekom.mk) 10.232.73.12
@@ -208,9 +208,9 @@ https://10.232.49.223:9043/mk.telekom.system.architecture.Diligent.TroubleTicket
 https://10.232.49.223:9043/mk.telekom.system.architecture.Diligent.TroubleTicket.stela-sync
 https://10.232.49.223:9043/mk.telekom.system.architecture.Diligent.CRM.CRMDiligentPortType
 https://10.232.49.223:9043/mk.telekom.system.architecture.Diligent.ManageServices.AFFECTEDSERVICEPortType
- 
+Â 
 Prod environments
- 
+Â 
 https://10.232.58.147/mk.telekom.system.architecture.Diligent.TroubleTicket.QTT1DiligentPortType
 https://10.232.58.147/mk.telekom.system.architecture.Diligent.TroubleTicket.stela-sync
 https://10.232.58.147/mk.telekom.system.architecture.Diligent.CRM.CRMDiligentPortType
@@ -231,4 +231,6 @@ GIT (C:\myfiles\JavaProjects\_MKT_projects)
 Githau token: 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
 https://github.com/nsofias/_MKT_projects.git
 
- git remote set-url origin https://nsofias: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@github.com/nsofias/_MKT_projects.git
+git remote set-url origin https://nsofias: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@github.com/nsofias/_MKT_projects.git
+ 
+git clone https://github.com/nsofias/_MKT_projects.git C:\myfiles\JavaProjects\_MKT_projects
