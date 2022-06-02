@@ -235,3 +235,4 @@ git clone https://github.com/nsofias/_MKT_projects.git C:\myfiles\JavaProjects\_
 
 git pull origin master
 git commit -a -m "test changes"
+git push
