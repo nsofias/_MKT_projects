@@ -225,7 +225,7 @@ https://10.232.58.147/mk.telekom.system.architecture.Diligent.ManageServices.AFF
 
 
 
-
+ 
 GIT (C:\myfiles\JavaProjects\_MKT_projects)   
 -----------------------
 Githau token: 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
