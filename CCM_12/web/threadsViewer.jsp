@@ -36,8 +36,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Control Panel</title>
-        <meta http-equiv="refresh" content="60; url=threadsViewer.jsp">
+        <title>Control Panel</title> 
+        <link rel="stylesheet" href="global.css">
     </head>
     <body>  
 

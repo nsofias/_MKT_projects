@@ -62,7 +62,7 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
         //-----------------------------------       
         boolean allowedToCreate = myParameters.getBooleanValue("createTicket." + myType, false);
         System.out.println("CCM12:Ticket_MKT:isAllowedToCreateTicket:" + myType + " " + totalCalls + " > " + createTicketMinCallsForType + " " + allowedToCreate);
-        return (allowedToCreate && totalCalls >= createTicketMinCallsForType);
+        return (allowedToCreate && totalCalls >= createTicketMinCallsForType); 
     }
 
     @Override

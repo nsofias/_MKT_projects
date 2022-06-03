@@ -147,14 +147,17 @@
                 <th>sourse</th>
                 <th>Parent</th>
                 <th>SR number</th>
+                <th>SR started</th>
+                <th>SR stopped</th>
                 <th>SR reported</th>  
                 <th>SR type</th>  
                 <th>Ticket State</th>
                 <th>num Of CTTs</th>
-                <th nowrap>signature</th>
+                <th>signature</th>
+                <th>reason</th>
+                <th>affected</th>
             </tr>
-            <%               
-                ArrayList<String> alarmIds = new ArrayList(alarmArrayList.keySet());
+            <%                ArrayList<String> alarmIds = new ArrayList(alarmArrayList.keySet());
                 Collections.sort(alarmIds, Collections.reverseOrder());
                 for (String key : alarmIds) {
                     CCMAlarm myAlarm = alarmArrayList.get(key);
@@ -176,23 +179,34 @@
                         }
                         String signatute = "";
                         String sr = "";
+                        String incidentStartDate = "";
+                        String incidentStoppedDate = "";
                         String srReported = "";
                         if (myCCMTicket != null) {
                             if ((!alarmType.equals("ANY") && !alarmType.equals(myCCMTicket.getType()))
                                     || (!ticketState.equals("ANY") && (myCCMTicket == null || !ticketState.equals(myCCMTicket.getState())))) {
                                 continue;
                             }
+                            if (myCCMTicket.getLastSignature() != null) {
+                                signatute = myCCMTicket.getLastSignature().getLabel();
+                            }
+                            sr = myCCMTicket.getSR();
+                            if (sr == null) {
+                                sr = myCCMTicket.getComments();
+                            }
                             try {
-                                if (myCCMTicket.getLastSignature() != null) {
-                                    signatute = myCCMTicket.getLastSignature().getLabel();
-                                }
-                                sr = myCCMTicket.getSR();
-                                if (sr == null) {
-                                    sr = myCCMTicket.getComments();
-                                }
                                 srReported = new TimeStamp1(myCCMTicket.getIncidentReportedDate()).getNowFormated();
                             } catch (Exception e) {
                             }
+                            try {
+                                incidentStartDate = new TimeStamp1(myCCMTicket.getIncidentStartDate()).getNowFormated();
+                            } catch (Exception e) {
+                            }
+                            try {
+                                incidentStoppedDate = new TimeStamp1(myCCMTicket.getIncidentStoppedDate()).getNowFormated();
+                            } catch (Exception e) {
+                            }
+
                             Counters1 myResources = new Counters1();
                             myResources.updateCounters(myAggregationsForPeriod.getCurrentResourceCounters(myAlarm.getAlarmType()));
                             myResources.removeParameter("COUNT");
@@ -204,9 +218,11 @@
                 <td><%=alertOrigin%></td> 
                 <td><%=myAlarm.getAlarmParent().replace(";", "; ")%></td>               
                 <td><a href="CCMTicketInfo.jsp?myTicketId=<%=URLEncoder.encode(myAlarm.getTicketId(), "utf-8")%>" target="_blank"><%=sr%></a></td>
+                <td><%=incidentStartDate%></td>
+                <td><%=incidentStoppedDate%></td>
                 <td><%=srReported%></td>
                 <td><%=myCCMTicket.getType()%></td>
-                <td><%=myCCMTicket.getState().replace("STATE_","")%></td>
+                <td><%=myCCMTicket.getState().replace("STATE_", "")%></td>
                 <td><%=myCCMTicket.getNumOfCCTs()%></td>
                 <td><%=signatute%></td> 
                 <%if (myCCMTicket.getState().equals(Ticket.STATE_OPEN) && false) {%>                
@@ -214,6 +230,8 @@
                 <%} else if (myCCMTicket.getState().equals(Ticket.STATE_CLOSED)) {%>                
                 <!--<td><a href='tickets.jsp?openTicket=<%=myAlarm.getTicketId()%>' target='_blank'>open</a></td>-->
                 <%}%>
+                <td><%=myCCMTicket.getAlertMostSignificantReason()%></td>
+                <td><%=myCCMTicket.getCustomerImpact()%></td>
             </tr> 
 
             <%           }

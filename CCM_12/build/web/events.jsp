@@ -105,7 +105,7 @@
                     break;
                 }
                 try {
-                    out.println("<tr><td>" + myCallInfo.getLineId() + "</td><td>" + myCallInfo.getStartTime() + " : " + myCallInfo.getNetworkType() + " : " + myCallInfo.getResources() + "</td></tr>");
+                    out.println("<tr><td>" + myCallInfo.getLineId() + "</td><td>" + new TimeStamp1(myCallInfo.getStartTime()).getNowFormated() + "</td><td>" + myCallInfo.getReason() + "</td><td>" + myCallInfo.getResources() + "</td></tr>");
                 } catch (Exception e) {
                     System.out.println("CCM12:error====" + e.toString());
                     e.printStackTrace();

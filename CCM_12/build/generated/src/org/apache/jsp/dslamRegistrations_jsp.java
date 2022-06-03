@@ -49,9 +49,9 @@ public final class dslamRegistrations_jsp extends org.apache.jasper.runtime.Http
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     String dslamCode = request.getParameter("dslamCode");
     ServletContext myContext=request.getServletContext();      
@@ -67,6 +67,7 @@ public final class dslamRegistrations_jsp extends org.apache.jasper.runtime.Http
             out.println(e.toString());
             }
 
+      out.write('\r');
       out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

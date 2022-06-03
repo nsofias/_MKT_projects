@@ -44,11 +44,11 @@ public final class edit_005fcomments_jsp extends org.apache.jasper.runtime.HttpJ
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     request.setCharacterEncoding("UTF-8");
     response.setCharacterEncoding("UTF-8");
@@ -75,26 +75,26 @@ public final class edit_005fcomments_jsp extends org.apache.jasper.runtime.HttpJ
             myDatabaseLogger.writeln(SQL_update);
             myDatabaseLogger.close();
                 
-      out.write("\n");
+      out.write("\r\n");
       out.write("                <h3>Your comments for ");
       out.print(elementName);
       out.write("  @ ");
       out.print(start);
-      out.write(" updated successfully! <p>You can close this window now. <p>Please, notice that you have to refresh before updates become visible</h3>\n");
+      out.write(" updated successfully! <p>You can close this window now. <p>Please, notice that you have to refresh before updates become visible</h3>\r\n");
       out.write("                ");
 
                     }
                 catch (Exception e)
                     {
                 
-      out.write("\n");
+      out.write("\r\n");
       out.write("                <h3>Your comments' for ");
       out.print(elementName);
       out.write("  @ ");
       out.print(start);
       out.write(" update failed, sorry! Send this information to Administrator:");
       out.print(e.toString());
-      out.write(" <p>You can close this window now.</h3>\n");
+      out.write(" <p>You can close this window now.</h3>\r\n");
       out.write("                ");
 
             }
@@ -115,34 +115,34 @@ public final class edit_005fcomments_jsp extends org.apache.jasper.runtime.HttpJ
         }
 
 
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>JSP Page</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("\r\n");
       out.write("        <h3>Comments for ");
       out.print(elementName);
       out.write(" @ ");
       out.print(start);
-      out.write("</h3>\n");
-      out.write("        <form name=\"comments\" action=\"edit_comments.jsp\" method=\"POST\" accept-charset=\"UTF-8\">\n");
+      out.write("</h3>\r\n");
+      out.write("        <form name=\"comments\" action=\"edit_comments.jsp\" method=\"POST\" accept-charset=\"UTF-8\">\r\n");
       out.write("            <textarea style=\"text-align: left\" name=\"comments\" rows=\"4\" cols=\"20\">");
       out.print(comments);
-      out.write("</textarea>\n");
-      out.write("            <input type=\"submit\" value=\"submit comments\" name=\"submit\" />\n");
+      out.write("</textarea>\r\n");
+      out.write("            <input type=\"submit\" value=\"submit comments\" name=\"submit\" />\r\n");
       out.write("            <input type=\"hidden\" value=\"");
       out.print(elementName);
-      out.write("\" name=\"elementName\" />\n");
+      out.write("\" name=\"elementName\" />\r\n");
       out.write("            <input type=\"hidden\" value=\"");
       out.print(start);
-      out.write("\" name=\"start\" />\n");
-      out.write("        </form>\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\" name=\"start\" />\r\n");
+      out.write("        </form>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

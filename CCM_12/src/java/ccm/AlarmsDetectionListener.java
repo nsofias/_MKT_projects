@@ -51,7 +51,7 @@ public class AlarmsDetectionListener extends SimpleDaemon {
     }
 
     public void onAlarmStart(CCMAlarm myAlarm) {
-        if (CCMTicketFactory != null && (myAlarm.getTicketId() == null || myAlarm.getTicketId().trim().isEmpty()) ) {
+        if (CCMTicketFactory != null && (myAlarm.getTicketId() == null || myAlarm.getTicketId().trim().isEmpty())) {
             System.out.println("CCM12:AlarmsDetectionListener:onAlarmStart isAllowedToCreateTicket for " + myAlarm.getAlarmObject());
             String ticketID = createCCMTicket(myAlarm);
             myAlarm.setTicketId(ticketID);
@@ -105,9 +105,9 @@ public class AlarmsDetectionListener extends SimpleDaemon {
             CCMTicket myTicket = getTicketsMap().get(key);
             //System.out.println("CCM12:AlarmsDetectionListener:processData ticket for:" + myTicket.getElementName() + " of type:" + myTicket.getType() + " state:" + myTicket.getState());            
             String myType = myTicket.getType();
-            int affectedCustomers=myTicket.findNumberOfAffectedCustomers();
-                    int totalCalls= myTicket.getNumOfCalls();
-            if (myTicket.getState().equals(Ticket.STATE_PENDING_TO_OPEN) && myTicket.isAllowedToOpen(myType,affectedCustomers,totalCalls)) {
+            int affectedCustomers = myTicket.findNumberOfAffectedCustomers();
+            int totalCalls = myTicket.getNumOfCalls();
+            if (myTicket.getState().equals(Ticket.STATE_PENDING_TO_OPEN) && myTicket.isAllowedToOpen(myType, affectedCustomers, totalCalls)) {
                 try {
                     System.out.println("CCM12:AlarmsDetectionListener:processData Oppening ticket for:" + myTicket.getElementName() + " of type:" + myTicket.getType());
                     //--- isElementAlreadyDefected ---
@@ -166,6 +166,8 @@ public class AlarmsDetectionListener extends SimpleDaemon {
                     boolean closed = myTicket.closeTicket();
                     if (closed) {
                         myTicket.setState(Ticket.STATE_CLOSED);
+                        String stop_time = new TimeStamp1().getNowUnformated();
+                        myTicket.setIncidentStoppedDate(stop_time);
                     }
                 } catch (Exception e) {
                     myTicket.setState(Ticket.STATE_CLOSE_FAILED);
@@ -202,7 +204,6 @@ public class AlarmsDetectionListener extends SimpleDaemon {
         }
         return null;
     }
-
 
     public int getNumOfCCTs() {
         int count = 0;
