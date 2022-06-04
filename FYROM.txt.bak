@@ -1,0 +1,244 @@
+ 
+---- DILIGENT SERVERS -------------
+diligent-01          10.232.63.13
+diligent-02          10.232.63.14
+sshUser: diligent
+pass: #Kastoria123
+
+----VPN_ACCESS----
+62.220.203.10
+Sofias Nikolaos
+User: sofiasn , christosp
+Pass: MaKt3L)12#
+
+-------------mail server -------------
+User: Diligent_System_MkT
+Domain: telekom.mk
+Email: Diligent_System_MkT@telekom.mk
+SMTP Server: smtp.telekom.mk
+Port: 25
+Pass: DsMSys123Pwd456
+
+------------- Replica DB ---------------------
+The access to NC Replica DB. RDB user privileges for Diligent Project is:
+IP address for NC RDB 10.232.58.38
+user DILIGENT_USER
+pass: Dilipass#1
+1521 port 
+name of the database, NGOSSRDB
+view:SELECT LINE_ID, HOST, DSLAM_NAME, RACK, SHELF, SLOT, PORT, CARD_TECHNOLOGY, CARD_TYPE, SHELF_CODE, SHELF_NAME, SLOT_NAME, PORT_STATUS, RADIUS_ACCOUNT, ATC, CABLE, DP
+FROM NC_OSS_PROD_RDB.V_DILIGENT_LINES;
+
+---------LINKS-----------
+Link to NetCracker is: http://nc-prod-1.telekom.mk:6800/.
+Link to CRM is: https://crm/index.php?action=Login&module=Users.
+
+
+//--------anomaly----------------
+CALLID          :CallID of IVR call
+DATETIME        
+DNIS         	:service IVR number
+ANI             :Originated Calling number
+INPUT_NUMBER    :Entered Fix MSISDN or taken from previous input
+SUBLINE_ID      :Line ID of fixed number
+REASON 		:(ivr options: internet, iptv, mobile, voip, faulty status) – current diligent process checks only internet, iptv,faulty status)
+EXTRA_INFO1     :taken from check group fault in the diligent flow (incident group ID) - (-100 means no fault, and if have it fault it has Incident number)
+EXTRA_INFO2     :taken from check group fault in the diligent flow   (incident group type) (-100 means no fault, and description like ‘Massive’ if have it fault)
+EXTRA_INFO3    	:taken from check individual fault in the diligent flow (incident individual ID) - (-100 means no fault, and if have it fault it has Incident number)
+EXTRA_INFO4    	:taken from check individual fault in the diligent flow   (incident individual type) (-100 means no fault, and description of fauly if have it fault)
+EXTRA_INFO5     :taken from check individual fault in the crm   (current status in CRM)
+EXTRA_INFO6     :Does customer goes to agent (IVR->AGENT means that customer choose * to go to agent, blank means that stay on ivr)
+EXTRA_INFO7     :name of the current individual ticket in CRM like ‘CTTH Internet  - INC1634584’
+EXTRA_INFO8     :datetime  of the current open individual ticket in CRM
+EXTRA_INFO9     :does customer create automatic IVR ticket in current call (yes / null)
+EXTRA_INFO10    :(sysdate – open ticket date in hours) – currently set to 50 and every customer has a posilibity to choose * to go to agent
+IS_IT_DOWNLOADED    :Y/N flag – initialy set as ‘N’, but you will update it when the record will be taken into diligent.
+ 
+The credentials for the Oracle DB is
+Hulk DB (bruce.telekom.mk) 10.232.73.12
+User: sysdiligent
+Pass: D1L193n7_15_H3r3
+ 
+HULK=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=bruce.telekom.mk)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=hulk)
+    )
+  )
+-----------linux prepare----------
+cat /etc/centos-release
+CentOS Linux release 7.6.1810 (Core)
+OpenJDK Runtime Environment (build 1.8.0_191-b12)
+OpenJDK 64-Bit Server VM (build 25.191-b12, mixed mode)
+locate jdk
+$ pwd
+/home/<username>
+wget http://apache.mirrors.ionfish.org/tomcat/tomcat-8/v8.5.9/bin/apache-tomcat-8.5.9.tar.gz
+sudo yum install java-1.8.0-openjdk-devel
+sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
+cd /tmpo
+wget http://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.zip
+unzip apache-tomcat-*.zip
+sudo mkdir -p /opt/tomcat
+sudo mv apache-tomcat-8.5.37 /opt/tomcat/
+sudo chown -R tomcat: /opt/tomcat
+sudo mv tomcat.service /etc/systemd/system/
+
+--------TOMCAT mngmt ---
+sudo systemctl daemon-reload
+sudo systemctl stop tomcat
+sudo systemctl start tomcat
+sudo systemctl restart tomcat
+systemctl status tomcat.service
+tail -f /opt/tomcat/apache-tomcat-8.5.37/logs/catalina.out  (for 10.232.63.13)
+tail -f /opt/tomcat/apache-tomcat-9.0.35/logs/catalina.out  (for 10.232.63.14)
+tail -f /home/diligent/data/my.log
+http://localhost:8080/host-manager/text/list
+sudo pkill -9 -f tomcat
+
+----------------TOMCAT conf file ?? --------------------------------------
+[Unit]
+Description=Tomcat 8.5 servlet container
+After=network.target
+
+[Service]
+Type=forking
+User=diligent
+Group=diligent
+Environment="JAVA_HOME=/usr/lib/jvm/jre"
+Environment="JAVA_OPTS=-Djava.security.egd=file:///dev/urandom"
+Environment="CATALINA_BASE=/opt/tomcat/latest"
+Environment="CATALINA_HOME=/opt/tomcat/latest"
+Environment="CATALINA_PID=/opt/tomcat/latest/temp/tomcat.pid"
+Environment="CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC"
+ExecStart=/opt/tomcat/latest/bin/startup.sh          /opt/tomcat/apache-tomcat-9.0.35/bin/startup.sh
+ExecStop=/opt/tomcat/latest/bin/shutdown.sh          /opt/tomcat/apache-tomcat-9.0.35/bin/shutdown.sh
+[Install]
+WantedBy=multi-user.target
+=========== TOMCAT context.xml ===
+/opt/tomcat/apache-tomcat-8.5.37/webapps/manager/META-INF/context.xml
+<Context antiResourceLocking="false" privileged="true" >
+<!--  
+<Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
+  <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>
+-->
+</Context>
+----------------------TOMCAT info for users file---------
+The admin and manager roles no longer exist in Tomcat 7 and have been replaced by more specific roles.
+For the Tomcat Manager application:
+    manager-gui: allows access to the HTML GUI and the status pages
+    manager-script: allows access to the text interface and the status pages
+    manager-jmx: allows access to the JMX proxy and the status pages
+    manager-status: allows access to the status pages only
+For the Host Manager application:
+    admin-gui: allows access to the HTML GUI and the status pages
+    admin-script: allows access to the text interface and the status pages
+
+-------------tomcat SSL-----------
+      <Connector
+         protocol="org.apache.coyote.http11.Http11NioProtocol"
+         port="8443" maxThreads="200"
+         scheme="https" secure="true" SSLEnabled="true"
+         keystoreFile="/home/diligent/data/certificates/diligent-prod-prv-keystore.jks"
+         keystorePass="changeit"
+         clientAuth="false" sslProtocol="TLS"/>
+
+--------- mySQL ------------------------------------------------------------------
+mysql -V
+mysql  Ver 15.1 Distrib 5.5.60-MariaDB, for Linux (x86_64) using readline 5.1
+
+[diligent@diligent-01 /]$ mysql -u root -p
+Enter password: //press ENTER
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 10
+Server version: 5.5.60-MariaDB MariaDB Server
+MariaDB [(none)]> SELECT User,Host FROM mysql.user;
++------+-------------+
+| User | Host        |
++------+-------------+
+| root | 127.0.0.1   |
+| root | ::1         |
+|      | diligent-01 |
+| root | diligent-01 |
+|      | localhost   |
+| root | localhost   |
+
+MariaDB [(none)]> GRANT ALL ON *.* TO 'diligent';
+MariaDB [(none)]> CREATE USER 'diligent'@'localhost' IDENTIFIED BY 'Password123';
+Query OK, 0 rows affected (0.01 sec)
+MariaDB [(none)]> CREATE USER 'sa' IDENTIFIED BY 'trinitron';
+Query OK, 0 rows affected (0.00 sec)
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON *.* TO 'diligent'@'localhost' IDENTIFIED BY 'Password123' WITH GRANT OPTION;
+Query OK, 0 rows affected (0.00 sec)
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON *.* TO 'sa'@'localhost' IDENTIFIED BY 'trinitron' WITH GRANT OPTION;
+Query OK, 0 rows affected (0.00 sec)
+[diligent@diligent-01 ~]$ systemctl stop mariadb
+[diligent@diligent-01 ~]$ systemctl start mariadb
+
+-------------- file system ----------------
+[diligent@diligent-01 ~]$ df -h
+Filesystem                            Size  Used Avail Use% Mounted on
+/dev/mapper/centos_diligent--01-root   50G  2.5G   48G   5% /
+devtmpfs                               16G     0   16G   0% /dev
+tmpfs                                  16G     0   16G   0% /dev/shm
+tmpfs                                  16G   41M   16G   1% /run
+tmpfs                                  16G     0   16G   0% /sys/fs/cgroup
+/dev/sda1                            1014M  153M  862M  15% /boot
+/dev/mapper/centos_diligent--01-home  957G   33M  957G   1% /home
+tmpfs                                 3.2G     0  3.2G   0% /run/user/1001
+
+
+
+
+
+**********linux usefull**************
+chmod -R  a+rwx /usr/lib/apache-tomcat-8.5.38
+alias tomcat_status='supervisorctl -c /etc/diligent/conf/supervisord.conf status all'
+./shutdown.sh
+./startup.sh
+
+https://10.232.49.223:9043/mk.telekom.system.architecture.Diligent.TroubleTicket.QTT1DiligentPortType
+https://10.232.49.223:9043/mk.telekom.system.architecture.Diligent.TroubleTicket.stela-sync
+https://10.232.49.223:9043/mk.telekom.system.architecture.Diligent.CRM.CRMDiligentPortType
+https://10.232.49.223:9043/mk.telekom.system.architecture.Diligent.ManageServices.AFFECTEDSERVICEPortType
+ 
+Prod environments
+ 
+https://10.232.58.147/mk.telekom.system.architecture.Diligent.TroubleTicket.QTT1DiligentPortType
+https://10.232.58.147/mk.telekom.system.architecture.Diligent.TroubleTicket.stela-sync
+https://10.232.58.147/mk.telekom.system.architecture.Diligent.CRM.CRMDiligentPortType
+https://10.232.58.147/mk.telekom.system.architecture.Diligent.ManageServices.AFFECTEDSERVICEPortType
+
+//----------problem of Netbeans & winimport tool---------------
+    Go to Tools->Options->Java->Ant.
+    Click on "Add JAR/ZIP..." under the Classpath section
+    Navigate to "C:\Program Files\NetBeans x.y\enterprise\modules\ext\metro\"
+    Select all files.
+    Click OK, and try the import/regenerate again.
+
+
+
+ 
+GIT (C:\myfiles\JavaProjects\_MKT_projects)   
+-----------------------
+Githau token: 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
+https://github.com/nsofias/_MKT_projects.git
+git remote set-url origin https://nsofias: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@github.com/nsofias/_MKT_projects.git
+git clone https://github.com/nsofias/_MKT_projects.git C:\myfiles\JavaProjects\_MKT_projects
+
+git pull origin master
+git commit -a -m "test changes"
+git push
+
+
+git bash
+cd /c/myfiles/JavaProjects/_MKT_projects
+
+--
