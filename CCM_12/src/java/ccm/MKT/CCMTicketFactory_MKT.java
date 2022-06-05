@@ -10,6 +10,7 @@ import ccm.CCMTicket;
 import ccm.CCMTicketFactory;
 import diligent_MKT.AlarmOpenningProfile;
 import diligent_MKT.Alarm_FYROM;
+import static diligent_MKT.Alarm_FYROM.COPPER_PATH_DEPTH_ATC;
 import static diligent_MKT.Alarm_FYROM.SUBTYPE_COPPER_ATC;
 import static diligent_MKT.Alarm_FYROM.SUBTYPE_COPPER_CABLE_CABLE;
 import static diligent_MKT.Alarm_FYROM.SUBTYPE_COPPER_CABLE_DP;
@@ -128,6 +129,7 @@ public class CCMTicketFactory_MKT implements CCMTicketFactory {
                 //------------- GPON -----------------                
                 break;
             case "OLT":
+                myAlarm_FYROM.setATC(myAlarm.getAlarmParent());//just for weather!!!
                 myAlarm_FYROM.setOLT(elementName);
                 myTicket_FYROM.setType(TYPE_GPON);
                 myAlarm_FYROM.setAlarmType(TYPE_GPON);
@@ -190,8 +192,12 @@ public class CCMTicketFactory_MKT implements CCMTicketFactory {
         myTicket_FYROM.setSYNOPSIS(myTicket_FYROM.getDescUnformated());
         //---------- weather ----------------------
         if (myAlarm_FYROM.getATC() != null) {
+            String myATC = myAlarm_FYROM.getATC();
             try {
-                Double[] coords = findLatLonOfATC(ATCsCoords, myAlarm_FYROM.getATC());
+                if (myATC.contains(";")) {
+                    myATC = myATC.split(";")[1];
+                }
+                Double[] coords = findLatLonOfATC(ATCsCoords, myATC);
                 String weather = Helpme.getWeatherInfo_LON_LAT(coords[1], coords[0]);
                 myAlarm.setWeatherInfo(weather);
             } catch (Exception e) {

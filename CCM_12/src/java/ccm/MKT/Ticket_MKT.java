@@ -57,12 +57,12 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
         long createTicketMinCallsForType = myParameters.getIntValue("createTicketMinCalls." + myType, createTicketMinCallsDefault);
         //**********************************- dynamic ******************************************* 
         if (affectedCustomers > 0) {
-            createTicketMinCallsForType = 2 + round(0.002 * affectedCustomers);
+            createTicketMinCallsForType = 3 + round(0.002 * affectedCustomers);
         }
         //-----------------------------------       
         boolean allowedToCreate = myParameters.getBooleanValue("createTicket." + myType, false);
         System.out.println("CCM12:Ticket_MKT:isAllowedToCreateTicket:" + myType + " " + totalCalls + " > " + createTicketMinCallsForType + " " + allowedToCreate);
-        return (allowedToCreate && totalCalls >= createTicketMinCallsForType); 
+        return (allowedToCreate && totalCalls >= createTicketMinCallsForType);
     }
 
     @Override
@@ -238,18 +238,9 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
         return false;
     }
 
-    /*
-        myIBMAlarm.setState(Alarm.STATE_CLOSED);
-        myIBMAlarm.setAlarmStop(now.getNowUnformated());
-        //****************************--------------- update (remove) in maximo & CRM  ------------********************
-        if (!myIBMAlarm.getAffServiceID().isEmpty() && myIBMAlarm.getTicketSR() != null) {
-            System.out.println("DSLMON_SKOPIA -> createAlarms: RemoveServiceElements_ACTION_Thread: " + myIBMAlarm.getTicketSR() + "-" + myIBMAlarm.getAffServiceID());
-            RemoveServiceElements_ACTION_Thread myRemoveServiceElements_ACTION_Thread = new RemoveServiceElements_ACTION_Thread(myTicket, myIBMAlarm, myContainer.getEventsLogArrayList(), myParameters);
-            new Thread(myRemoveServiceElements_ACTION_Thread).start();
-        }    
-     */
     @Override
-    public void updateTicket() throws Exception {
+    public String getIncidentStoppedDate() {
+        return myTicket_IBM.getIncidentStoppedDate();
     }
 
     /**
@@ -295,7 +286,7 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
                 System.out.println("CCM12:Ticket_MKT:initializeSignature:SIGNATURE_6 - Probable Cable Fault " + elementName + "");
             }
         } catch (Exception e) {
-            System.out.println("CCM12:Ticket_MKT:initializeSignature error:" + e.toString()+" for "+ this.getElementName());
+            System.out.println("CCM12:Ticket_MKT:initializeSignature error:" + e.toString() + " for " + this.getElementName());
             e.printStackTrace();
             System.out.println("CCM12:Ticket_MKT:initializeSignature:SIGNATURE_1 -Unknown problem for " + elementName + "");
         }
@@ -456,9 +447,12 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
      */
     @Override
     public Signature getLastSignature() {
-        return this.getSignatureHistory().get(this.getSignatureHistory().size() - 1);
+        if (!this.getSignatureHistory().isEmpty()) {
+            return this.getSignatureHistory().get(this.getSignatureHistory().size() - 1);
+        }else{
+            return null;
+        }
     }
-
 
     public void setLastSignature(Signature s) {
         this.getSignatureHistory().add(s);
@@ -467,7 +461,6 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
     /**
      * @return the signatureHistory
      */
-
     public List<Signature> getSignatureHistory() {
         return signatureHistory;
     }

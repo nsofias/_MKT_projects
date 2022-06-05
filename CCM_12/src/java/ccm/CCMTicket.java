@@ -5,8 +5,6 @@
  */
 package ccm;
 
-import java.util.List;
-
 /**
  *
  * @author nsofias
@@ -16,8 +14,6 @@ public interface CCMTicket {
     public String openTicket() throws Exception;
 
     public boolean closeTicket() throws Exception;
-
-    public void updateTicket() throws Exception;
 
     public String getSR();
 
@@ -78,7 +74,6 @@ public interface CCMTicket {
     public int getNumOfCalls();
 
     public Signature getLastSignature();
-
 
     public String getAlertMostSignificantReason();
 

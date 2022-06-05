@@ -155,6 +155,8 @@
                 </td>
                 <td nowrap><%=myAlarm.getMyBulletinid()%></td>
                 <td nowrap><%=myAlarm.getAlarmOpenningProfile().toString()%></td>
+                <td><%=myAlarm.getATC()%></td> 
+                 <td><%=myAlarm.getSERVING_AREA()%></td> 
             </tr> 
             <%
             } else {
@@ -184,6 +186,8 @@
                 </td>
                 <td nowrap><%=myAlarm.getMyBulletinid()%></td>
                 <td nowrap><%=myAlarm.getAlarmOpenningProfile().toString()%></td>
+                <td><%=myAlarm.getATC()%></td> 
+                <td><%=myAlarm.getSERVING_AREA()%></td> 
             </tr> 
             <%
                         }

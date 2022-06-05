@@ -6,17 +6,29 @@
 package ccm;
 
 import static ccm.CCMonitorStatsObjsContainer.MAIN_DIRECTORY;
+import ccm.MKT.Ticket_MKT;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonIOException;
+import com.google.gson.JsonSyntaxException;
+import com.google.gson.reflect.TypeToken;
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.DomDriver;
+import com.thoughtworks.xstream.security.AnyTypePermission;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import static java.lang.Math.round;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import static java.util.stream.Collectors.toList;
 import nsofiasLib.databases.DatabaseLogger;
 import nsofiasLib.ote.alarms.Ticket;
 import nsofiasLib.others.Parameters;
@@ -46,7 +58,7 @@ public class AlarmsDetectionListener extends SimpleDaemon {
             }
         } catch (Exception e) {
             System.out.println("CCM12:AlarmsDetectionListener databaseLogger did not connect!!!!");
-            e.printStackTrace();
+            e.printStackTrace(System.out);
         }
     }
 
@@ -79,6 +91,7 @@ public class AlarmsDetectionListener extends SimpleDaemon {
                         myAlarm.setTicketSR(myTicket.getSR() + ":" + signature + ":" + myTicket.getNumOfCCTs());
                     } else {
                         myTicket.setState(Ticket.STATE_CANCELED);
+                        myTicket.setIncidentStoppedDate(new TimeStamp1().getNowUnformated());
                     }
                 } catch (Exception e) {
                     myTicket.setState(Ticket.STATE_CLOSE_FAILED);
@@ -166,11 +179,11 @@ public class AlarmsDetectionListener extends SimpleDaemon {
                     boolean closed = myTicket.closeTicket();
                     if (closed) {
                         myTicket.setState(Ticket.STATE_CLOSED);
-                        String stop_time = new TimeStamp1().getNowUnformated();
-                        myTicket.setIncidentStoppedDate(stop_time);
+                        myTicket.setIncidentStoppedDate(new TimeStamp1().getNowUnformated());
                     }
                 } catch (Exception e) {
                     myTicket.setState(Ticket.STATE_CLOSE_FAILED);
+                    myTicket.setIncidentStoppedDate(new TimeStamp1().getNowUnformated());
                     e.printStackTrace(System.out);
                     System.out.println("CCM12:AlarmsDetectionListener: closeTicket failed for " + myTicket.getElementName());
                     //new MailAlert().sendmailAlert("CCM12:DSLMON_SKOPIA error:", e);
@@ -200,7 +213,7 @@ public class AlarmsDetectionListener extends SimpleDaemon {
             }
         } catch (Exception e) {
             System.out.println("CCM12:AlarmsDetectionListener:createCCMTicket error: " + e.toString());
-            e.printStackTrace();
+            e.printStackTrace(System.out);
         }
         return null;
     }
@@ -239,6 +252,8 @@ public class AlarmsDetectionListener extends SimpleDaemon {
 
     @Override
     public void startProccess() throws Exception {//loadFromDisk
+        loadContent();
+        /*
         String CONF_DIR = MAIN_DIRECTORY + "conf/";
         System.out.println("CCM12:AlarmsDetectionListener:startProccess tickets");
         try {
@@ -248,26 +263,65 @@ public class AlarmsDetectionListener extends SimpleDaemon {
             System.out.println("CCM12:loadFromDisk tickets:parsed" + "CCM" + ".tickets");
         } catch (Exception e) {
             System.out.println("CCM12:loadFromDisk tickets error:" + CONF_DIR + "CCM" + ".tickets Not loaded!!! " + e.toString());
+            e.printStackTrace();
+        }*/
+    }
+
+    public final void loadContent() {
+        String CONF_DIR = MAIN_DIRECTORY + "conf/";
+        System.out.println("CCM12:AlarmsDetectionListener:startProccess:loadContent tickets");
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(CONF_DIR + "CCMTickets" + ".xml"), "utf-8"));
+            XStream xStream = new XStream(new DomDriver());
+            xStream.addPermission(AnyTypePermission.ANY);
+            List<CCMTicket> elements = (List<CCMTicket>) xStream.fromXML(bufferedReader);
+            elements.stream().forEach(v -> ticketsMap.put(v.getTicketId(), v));
+        } catch (JsonIOException | JsonSyntaxException | FileNotFoundException | UnsupportedEncodingException e) {
+            System.out.println("CCM12:AlarmsDetectionListener:startProccess:loadContent error:" + e.toString());
+            //new MailAlert().sendmailAlert("ACTOR error:Tickets loadFromDisk error", e);
         }
     }
 
     @Override
     public void endProccess() throws Exception {// flushToDisk
-        String CONF_DIR = MAIN_DIRECTORY + "conf/";
-        System.out.println("CCM12:AlarmsDetectionListener:endProccess flushing To Disk");
-        try ( BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(CONF_DIR + "CCM" + ".tickets"), "UTF-8"))) {
-            Gson gson = new GsonBuilder().create();
-            gson.toJson(ticketsMap, writer);
-        } catch (Exception e) {
-            System.out.println("CCM12:loadFromDisk tickets error:" + CONF_DIR + "CCM" + ".tickets Not saved!!! " + e.toString());
-        }
-        //------------------- DatabaseLogger close --------------------------------------- 
-        if (databaseLogger != null) {
-            try {
-                databaseLogger.close();
+        if (!this.ticketsMap.isEmpty()) {
+            saveContent();
+            /*
+            String CONF_DIR = MAIN_DIRECTORY + "conf/";
+            System.out.println("CCM12:AlarmsDetectionListener:endProccess flushing To Disk");
+            try ( BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(CONF_DIR + "CCM" + ".tickets"), "UTF-8"))) {
+                Gson gson = new GsonBuilder().create();
+                gson.toJson(ticketsMap, writer);
             } catch (Exception e) {
-                System.out.println("CCM12:AlarmsDetectionListener:#4 error " + e.toString());
-                e.printStackTrace();
+                System.out.println("CCM12:endProccess tickets error:" + CONF_DIR + "CCM" + ".tickets Not saved!!! " + e.toString());
+            }
+
+            //------------------- DatabaseLogger close --------------------------------------- 
+            if (databaseLogger != null) {
+                try {
+                    databaseLogger.close();
+                } catch (Exception e) {
+                    System.out.println("CCM12:AlarmsDetectionListener:#4 error " + e.toString());
+                    e.printStackTrace(System.out);
+                }
+            }
+        */
+        }
+    }
+
+    public void saveContent() {
+        if (!this.ticketsMap.isEmpty()) {
+            try {
+                String CONF_DIR = MAIN_DIRECTORY + "conf/";
+                System.out.println("CCM12:AlarmsDetectionListener:endProccess:saveContent flushing To Disk");
+                List<CCMTicket> elements = this.ticketsMap.values().stream().collect(toList());
+                try ( BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(CONF_DIR + "CCMTickets" + ".xml"), "UTF-8"))) {
+                    XStream xStream = new XStream(new DomDriver());
+                    writer.write(xStream.toXML(elements));
+                    writer.flush();
+                }
+            } catch (IOException e) {
+                System.out.println("CCM12:AlarmsDetectionListener:endProccess:saveContent error:" + e.toString());
             }
         }
     }
@@ -291,5 +345,19 @@ public class AlarmsDetectionListener extends SimpleDaemon {
      */
     public void setMyTicketsTypeToken(java.lang.reflect.Type myTicketsTypeToken) {
         this.myTicketsTypeToken = myTicketsTypeToken;
+    }
+
+    public static void main(String[] args) {
+        try {
+            AlarmsDetectionListener myAlarmsDetectionListener = new AlarmsDetectionListener(1, 1);
+            java.lang.reflect.Type myTicketsTypeToken = new TypeToken<Map<String, Ticket_MKT>>() {
+            }.getType();
+            myAlarmsDetectionListener.setMyTicketsTypeToken(myTicketsTypeToken);
+            myAlarmsDetectionListener.startProccess();
+            myAlarmsDetectionListener.endProccess();
+            System.out.println(myAlarmsDetectionListener.getTicketsMap());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

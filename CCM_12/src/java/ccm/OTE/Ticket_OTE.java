@@ -617,10 +617,6 @@ public class Ticket_OTE extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
         return this.getLastSignature().getLabel().equals(Signature_OTE.SIGNATURE_9);
     }
 
-    @Override
-    public void updateTicket() throws Exception {
-
-    }
 
     @Override
     public String getSR() {

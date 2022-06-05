@@ -292,6 +292,12 @@ if (myAlarm.isDyingGasp()) {
       out.write("                <td nowrap>");
       out.print(myAlarm.getAlarmOpenningProfile().toString());
       out.write("</td>\r\n");
+      out.write("                <td>");
+      out.print(myAlarm.getATC());
+      out.write("</td> \r\n");
+      out.write("                 <td>");
+      out.print(myAlarm.getSERVING_AREA());
+      out.write("</td> \r\n");
       out.write("            </tr> \r\n");
       out.write("            ");
 
@@ -365,6 +371,12 @@ if (myAlarm.isDyingGasp()) {
       out.write("                <td nowrap>");
       out.print(myAlarm.getAlarmOpenningProfile().toString());
       out.write("</td>\r\n");
+      out.write("                <td>");
+      out.print(myAlarm.getATC());
+      out.write("</td> \r\n");
+      out.write("                <td>");
+      out.print(myAlarm.getSERVING_AREA());
+      out.write("</td> \r\n");
       out.write("            </tr> \r\n");
       out.write("            ");
 

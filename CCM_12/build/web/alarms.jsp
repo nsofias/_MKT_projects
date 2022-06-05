@@ -196,7 +196,7 @@
                 <!--<th>Previous (closed) SR</th>-->
                 <th>Ticket State</th>
                 <th>Num Of CTTs</th>
-                 <th nowrap>signature</th>
+                <th nowrap>signature</th>
                 <th>comments</th>                
                 <th>weather</th>
                 <th>Childs</th>                
@@ -208,70 +208,76 @@
                 for (String key : alarmIds) {
                     CCMAlarm myAlarm = alarmArrayList.get(key);
                     //System.out.println("CCM12:alarms key=" + key);
-                    try {
-                        String alertOrigin = myAlarm.getAlarmObject().replace(";", "; ");
-                        //System.out.println("CCM12:" + alertOrigin);
-                        TimeStamp1 T1 = new TimeStamp1(myAlarm.getAlertStart());
-                        TimeStamp1 T2 = new TimeStamp1(myAlarm.getAlarmStop());
-                        TimeStamp1 T0 = new TimeStamp1(myAlarm.getAlertStart());
-                        T0.addSeconds(-7400);
-                        String AlertStart = T1.getNowFormated();
-                        String AlarmStop = T2.getNowFormated();
-                        String AlertType = myAlarm.getAlarmType();
-                        String AlertTypeS = "";
-                        if (AlertType.equals("REASON")) {
-                            AlertTypeS = "Reason " + myAlarm.getAlarmObject();
-                        } else {
-                            AlertTypeS = AlertType;
-                        }
-                        String AlertMostSignificantReason = myAlarm.getAlertMostSignificantReason();
-                        if ((!alarmType.equals("ANY") && !alarmType.equals(AlertType))
-                                || (!myReason.equals("ANY") && !myReason.equals(AlertMostSignificantReason))) {
-                            continue;
-                        }
-                        String StatusS = "";
-                        boolean isAlive = myAlarm.isStilAlive();
-                        if (isAlive) {
-                            StatusS = "Ενεργο";
-                        } else {
-                            StatusS = "Μη ενεργό";
-                        }
-                        String resource = myAlarm.getAlarmObject();
-                        CCMTicket myCCMTicket = null;
-                        if (myAlarm.getTicketId() != null) {
-                            myCCMTicket = myAlarmsDetectionListener.getTicketsMap().get(myAlarm.getTicketId());
-                        }
-                        String mySignature="";
-                        String srReported = "";
-                        if (!ticketState.equals("ANY") && (myCCMTicket == null || !ticketState.equals(myCCMTicket.getState()))) {
-                            continue;
-                        }
-                        String impact = "N/A";
-                        if (myCCMTicket != null) {
-                            try {
-                                impact = String.valueOf(myCCMTicket.getCustomerImpact());
-                                if (myCCMTicket.getLastSignature() != null) {
-                                    mySignature = myCCMTicket.getLastSignature().getLabel()+":"+myCCMTicket.getLastSignature().getSynopsis();
-                                }
 
-                                srReported = new TimeStamp1(myCCMTicket.getIncidentReportedDate()).getNowFormated();
-                            } catch (Exception e) {
+                    String alertOrigin = myAlarm.getAlarmObject().replace(";", "; ");
+                    //System.out.println("CCM12:" + alertOrigin);
+                    TimeStamp1 T1 = new TimeStamp1(myAlarm.getAlertStart());
+                    TimeStamp1 T2 = new TimeStamp1(myAlarm.getAlarmStop());
+                    TimeStamp1 T0 = new TimeStamp1(myAlarm.getAlertStart());
+                    T0.addSeconds(-7400);
+                    String AlertStart = T1.getNowFormated();
+                    String AlarmStop = T2.getNowFormated();
+                    String AlertType = myAlarm.getAlarmType();
+                    if (AlertType == null) {
+                        AlertType = "UNKNOWN";
+                    }
+                    String AlertTypeS = "";
+                    if (AlertType.equals("REASON")) {
+                        AlertTypeS = "Reason " + myAlarm.getAlarmObject();
+                    } else {
+                        AlertTypeS = AlertType;
+                    }
+                    String AlertMostSignificantReason = myAlarm.getAlertMostSignificantReason();
+                    if ((!alarmType.equals("ANY") && !alarmType.equals(AlertType))
+                            || (!myReason.equals("ANY") && !myReason.equals(AlertMostSignificantReason))) {
+                        continue;
+                    }
+                    String StatusS = "";
+                    boolean isAlive = myAlarm.isStilAlive();
+                    if (isAlive) {
+                        StatusS = "Ενεργο";
+                    } else {
+                        StatusS = "Μη ενεργό";
+                    }
+                    String resource = myAlarm.getAlarmObject();
+                    CCMTicket myCCMTicket = null;
+                    if (myAlarm.getTicketId() != null) {
+                        myCCMTicket = myAlarmsDetectionListener.getTicketsMap().get(myAlarm.getTicketId());
+                    }
+                    String mySignature = "";
+                    String srReported = "";
+                    if (!ticketState.equals("ANY") && (myCCMTicket == null || !ticketState.equals(myCCMTicket.getState()))) {
+                        continue;
+                    }
+                    String impact = "N/A";
+                    if (myCCMTicket != null) {
+                        try {
+                            impact = String.valueOf(myCCMTicket.getCustomerImpact());
+                            if (myCCMTicket.getLastSignature() != null) {
+                                mySignature = myCCMTicket.getLastSignature().getLabel() + ":" + myCCMTicket.getLastSignature().getSynopsis();
                             }
+
+                            srReported = new TimeStamp1(myCCMTicket.getIncidentReportedDate()).getNowFormated();
+                        } catch (Exception e) {
                         }
-                        if (request.getParameter("withSR") != null && myCCMTicket.getSR() == null) {
-                            continue;
-                        }
-                        String childs = myAlarm.getDesc().replace(";", "; ");
-                        //---------
-                        Parameters myParameters = new Parameters(System.getenv("APPLICATIONS_PATH") + "/ccm/conf/parameters.properties", "UTF8");
-                        int createTicketMinCallsDefault = myParameters.getIntValue("createTicketMinCalls.DEFAULT", 5);
-                        long createTicketMinCallsForType = myParameters.getIntValue("createTicketMinCalls." + AlertType, createTicketMinCallsDefault);
-                        //**********************************- dynamic ******************************************* 
-                        if (myAlarm.getAffectedCustomers() > 0) {
-                            createTicketMinCallsForType = 2 + java.lang.Math.round(0.002 * myAlarm.getAffectedCustomers());
-                        }
-                        //-----
-                        if (StatusS.equals("Ενεργο")) {%>
+                    }
+                    if (request.getParameter("withSR") != null && myCCMTicket.getSR() == null) {
+                        continue;
+                    }
+                    String childs = "";
+                    if (myAlarm.getDesc() != null) {
+                        childs = myAlarm.getDesc().replace(";", "; ");
+                    }
+                    //---------
+                    Parameters myParameters = new Parameters(System.getenv("APPLICATIONS_PATH") + "/ccm/conf/parameters.properties", "UTF8");
+                    int createTicketMinCallsDefault = myParameters.getIntValue("createTicketMinCalls.DEFAULT", 5);
+                    long createTicketMinCallsForType = myParameters.getIntValue("createTicketMinCalls." + AlertType, createTicketMinCallsDefault);
+                    //**********************************- dynamic ******************************************* 
+                    if (myAlarm.getAffectedCustomers() > 0) {
+                        createTicketMinCallsForType = 2 + java.lang.Math.round(0.002 * myAlarm.getAffectedCustomers());
+                    }
+                    //-----
+                    if (StatusS.equals("Ενεργο")) {%>
             <tr bgcolor = 'white'>
                 <%   } else {%>    
             <tr>
@@ -303,16 +309,13 @@
                 <td>-</td>
                 <td>-</td>
                 <td><%=myAlarm.getWeatherInfo()%></td>  
-                <td><%=childs%></td>                  
+                <td><%=childs%></td>                                   
                 <%}%>                              
-                <!--<td><a href='alarms.jsp?remove_alarm=<%=URLEncoder.encode(key, "utf-8")%>' target='_blank'>remove</a></td>-->
+                <td><a href='alarms.jsp?remove_alarm=<%=URLEncoder.encode(key, "utf-8")%>' target='_blank'>remove</a></td>
                 </b>  
 
             </tr>        
-            <%             } catch (Exception e) {
-                        System.out.println("CCM12:error====" + e.toString());
-                        e.printStackTrace();
-                    }
+            <%
 
                 }%>        
         </table>

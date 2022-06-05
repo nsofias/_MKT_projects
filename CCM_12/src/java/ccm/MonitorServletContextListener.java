@@ -34,7 +34,7 @@ public class MonitorServletContextListener implements ServletContextListener {
             //-------------------load config ---------
             Parameters myParameters = new Parameters(System.getenv("APPLICATIONS_PATH") + "/ccm/conf/parameters.properties", "UTF8");
             //------------------------ AlarmsLoaderDaemon ----------------------------------
-            java.lang.reflect.Type myTicketsTypeToken = null;
+            //java.lang.reflect.Type myTicketsTypeToken = null;
             //--------------------- load classes ------------------------
             String NetworkResourcesFinder_ClassName = myParameters.getStringValue("NetworkResourcesFinder_ClassName", null);
             NetworkResourcesFinder myNetworkResourcesFinder = (NetworkResourcesFinder) Class.forName(NetworkResourcesFinder_ClassName).newInstance();
@@ -92,8 +92,7 @@ public class MonitorServletContextListener implements ServletContextListener {
                     ((CallsLoaderDaemon_file) myCallsLoaderDaemon).setRemoveFiles(removeFiles);
                     ((CallsLoaderDaemon_file) myCallsLoaderDaemon).setCsvcols(csvcols);
                     start_daemon(myCallsLoaderDaemon);
-                    myTicketsTypeToken = new TypeToken<Map<String, Ticket_OTE>>() {
-                    }.getType();
+                    //myTicketsTypeToken = new TypeToken<Map<String, Ticket_OTE>>() {}.getType();
                 } catch (Exception e) {
                     System.out.println("CCM12:MonitorServletContextListener error " + e.toString());
                     e.printStackTrace(System.out);
@@ -102,7 +101,7 @@ public class MonitorServletContextListener implements ServletContextListener {
                 String DATABASE_PROFILES = myParameters.getStringValue("DATABASE_PROFILES", "DATABASE");
                 String[] databaseProfiles = DATABASE_PROFILES.split(",");
                 for (String mydatabase_profile : databaseProfiles) {
-                    try {
+                    try { 
                         System.out.println("CCM12:MonitorServletContextListener starting profile=" + mydatabase_profile);
                         String connectionURL = myParameters.getStringValue(mydatabase_profile + ".connectionURL", "jdbc:oracle:thin:@//10.232.59.105:1521/startrek");
                         String jdbcDriver = myParameters.getStringValue(mydatabase_profile + ".jdbcDriver", "oracle.jdbc.OracleDriver");
@@ -112,7 +111,7 @@ public class MonitorServletContextListener implements ServletContextListener {
                         String sqlExecAfter = myParameters.getStringValue(mydatabase_profile + ".sqlExecAfter", "");
                         String tablefields = myParameters.getStringValue(mydatabase_profile + ".tablefields", "startTime;lineId;lineIdInFault;reason");
                         boolean useODS = myParameters.getBooleanValue(mydatabase_profile + ".useODS", true);
-                        CallsLoaderDaemon myCallsLoaderDaemon = null;
+                        CallsLoaderDaemon myCallsLoaderDaemon;
                         if (useODS) {
                             OracleDataSource ods = new OracleDataSource();
                             ods.setURL(connectionURL);
@@ -128,8 +127,7 @@ public class MonitorServletContextListener implements ServletContextListener {
                         ((CallsLoaderDaemon_database) myCallsLoaderDaemon).setSqlExecAfter(sqlExecAfter);
                         ((CallsLoaderDaemon_database) myCallsLoaderDaemon).setTablefields(tablefields);
                         start_daemon(myCallsLoaderDaemon);
-                        myTicketsTypeToken = new TypeToken<Map<String, Ticket_MKT>>() {
-                        }.getType();
+                        //myTicketsTypeToken = new TypeToken<Map<String, Ticket_MKT>>() {}.getType();
                     } catch (Exception e) {
                         System.out.println("CCM12:MonitorServletContextListener error " + e.toString());
                         e.printStackTrace(System.out);
@@ -138,7 +136,7 @@ public class MonitorServletContextListener implements ServletContextListener {
             }
             //-------------------------------------------------------
             AlarmsDetectionListener myAlarmsDetectionListener = new AlarmsDetectionListener(10000, 6);
-            myAlarmsDetectionListener.setMyTicketsTypeToken(myTicketsTypeToken);
+            //myAlarmsDetectionListener.setMyTicketsTypeToken(myTicketsTypeToken);
             myAlarmsDetectionListener.setCCMTicketFactory(myCCMTicketFactory);
             myAlarmsDetectionListener.setDaemonName("alarmsDetectionListener");
             start_daemon(myAlarmsDetectionListener);

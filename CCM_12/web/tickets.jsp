@@ -144,15 +144,16 @@
 
         <table  border='1'>
             <tr>
-                <th>sourse</th>
-                <th>Parent</th>
                 <th>SR number</th>
+                <th>sourse</th>
+                <th>Parent</th>                
                 <th>SR started</th>
                 <th>SR stopped</th>
                 <th>SR reported</th>  
                 <th>SR type</th>  
                 <th>Ticket State</th>
-                <th>num Of CTTs</th>
+                <th>Customer calls</th>
+                <th>Bound CTTs</th>
                 <th>signature</th>
                 <th>reason</th>
                 <th>affected</th>
@@ -162,7 +163,7 @@
                 for (String key : alarmIds) {
                     CCMAlarm myAlarm = alarmArrayList.get(key);
                     //System.out.println("CCM12:alarms key=" + key);
-                    try {
+ 
                         String alertOrigin = myAlarm.getAlarmObject().replace(";", "; ");;
                         TimeStamp1 T0 = new TimeStamp1(myAlarm.getAlertStart());
                         T0.addSeconds(-7400);
@@ -215,14 +216,15 @@
                 <%   } else {%>    
             <tr bgcolor>
                 <%   }%> 
+                 <td><a href="CCMTicketInfo.jsp?myTicketId=<%=URLEncoder.encode(myAlarm.getTicketId(), "utf-8")%>" target="_blank"><%=sr%></a></td>
                 <td><%=alertOrigin%></td> 
-                <td><%=myAlarm.getAlarmParent().replace(";", "; ")%></td>               
-                <td><a href="CCMTicketInfo.jsp?myTicketId=<%=URLEncoder.encode(myAlarm.getTicketId(), "utf-8")%>" target="_blank"><%=sr%></a></td>
+                <td><%=myAlarm.getAlarmParent().replace(";", "; ")%></td>                              
                 <td><%=incidentStartDate%></td>
                 <td><%=incidentStoppedDate%></td>
                 <td><%=srReported%></td>
                 <td><%=myCCMTicket.getType()%></td>
                 <td><%=myCCMTicket.getState().replace("STATE_", "")%></td>
+                <td><%=myCCMTicket.getNumOfCalls()%></td>
                 <td><%=myCCMTicket.getNumOfCCTs()%></td>
                 <td><%=signatute%></td> 
                 <%if (myCCMTicket.getState().equals(Ticket.STATE_OPEN) && false) {%>                
@@ -235,10 +237,7 @@
             </tr> 
 
             <%           }
-                    } catch (Exception e) {
-                        System.out.println("CCM12:error====" + e.toString());
-                        e.printStackTrace();
-                    }
+                    
 
                 }%>        
         </table>

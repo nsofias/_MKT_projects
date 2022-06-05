@@ -264,16 +264,19 @@ return;
       out.write("\r\n");
       out.write("        <table  border='1'>\r\n");
       out.write("            <tr>\r\n");
-      out.write("                <th>sourse</th>\r\n");
-      out.write("                <th>Parent</th>\r\n");
       out.write("                <th>SR number</th>\r\n");
+      out.write("                <th>sourse</th>\r\n");
+      out.write("                <th>Parent</th>                \r\n");
       out.write("                <th>SR started</th>\r\n");
       out.write("                <th>SR stopped</th>\r\n");
       out.write("                <th>SR reported</th>  \r\n");
       out.write("                <th>SR type</th>  \r\n");
       out.write("                <th>Ticket State</th>\r\n");
-      out.write("                <th>num Of CTTs</th>\r\n");
-      out.write("                <th nowrap>signature</th>\r\n");
+      out.write("                <th>Customer calls</th>\r\n");
+      out.write("                <th>Bound CTTs</th>\r\n");
+      out.write("                <th>signature</th>\r\n");
+      out.write("                <th>reason</th>\r\n");
+      out.write("                <th>affected</th>\r\n");
       out.write("            </tr>\r\n");
       out.write("            ");
                 ArrayList<String> alarmIds = new ArrayList(alarmArrayList.keySet());
@@ -281,7 +284,7 @@ return;
                 for (String key : alarmIds) {
                     CCMAlarm myAlarm = alarmArrayList.get(key);
                     //System.out.println("CCM12:alarms key=" + key);
-                    try {
+ 
                         String alertOrigin = myAlarm.getAlarmObject().replace(";", "; ");;
                         TimeStamp1 T0 = new TimeStamp1(myAlarm.getAlertStart());
                         T0.addSeconds(-7400);
@@ -339,17 +342,17 @@ return;
       out.write("                ");
    }
       out.write(" \r\n");
+      out.write("                 <td><a href=\"CCMTicketInfo.jsp?myTicketId=");
+      out.print(URLEncoder.encode(myAlarm.getTicketId(), "utf-8"));
+      out.write("\" target=\"_blank\">");
+      out.print(sr);
+      out.write("</a></td>\r\n");
       out.write("                <td>");
       out.print(alertOrigin);
       out.write("</td> \r\n");
       out.write("                <td>");
       out.print(myAlarm.getAlarmParent().replace(";", "; "));
-      out.write("</td>               \r\n");
-      out.write("                <td><a href=\"CCMTicketInfo.jsp?myTicketId=");
-      out.print(URLEncoder.encode(myAlarm.getTicketId(), "utf-8"));
-      out.write("\" target=\"_blank\">");
-      out.print(sr);
-      out.write("</a></td>\r\n");
+      out.write("</td>                              \r\n");
       out.write("                <td>");
       out.print(incidentStartDate);
       out.write("</td>\r\n");
@@ -364,6 +367,9 @@ return;
       out.write("</td>\r\n");
       out.write("                <td>");
       out.print(myCCMTicket.getState().replace("STATE_", ""));
+      out.write("</td>\r\n");
+      out.write("                <td>");
+      out.print(myCCMTicket.getNumOfCalls());
       out.write("</td>\r\n");
       out.write("                <td>");
       out.print(myCCMTicket.getNumOfCCTs());
@@ -390,16 +396,13 @@ if (myCCMTicket.getState().equals(Ticket.STATE_OPEN) && false) {
       out.print(myCCMTicket.getAlertMostSignificantReason());
       out.write("</td>\r\n");
       out.write("                <td>");
-      out.print(myCCMTicket.getComments());
+      out.print(myCCMTicket.getCustomerImpact());
       out.write("</td>\r\n");
       out.write("            </tr> \r\n");
       out.write("\r\n");
       out.write("            ");
            }
-                    } catch (Exception e) {
-                        System.out.println("CCM12:error====" + e.toString());
-                        e.printStackTrace();
-                    }
+                    
 
                 }
       out.write("        \r\n");
