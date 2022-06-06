@@ -233,10 +233,12 @@ https://github.com/nsofias/_MKT_projects.git
 git remote set-url origin https://nsofias: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@github.com/nsofias/_MKT_projects.git
 git clone https://github.com/nsofias/_MKT_projects.git C:\myfiles\JavaProjects\_MKT_projects
 
-git pull origin master
 git commit -a -m "test changes"
 git push -u origin master (to send)
-git fetch origin master (to get)
+
+$ git fetch --all (to get)   or   git fetch origin master (to get)
+$ git reset --hard origin/master
+$ git pull origin master
 
 git bash
 cd /c/myfiles/JavaProjects/_MKT_projects
