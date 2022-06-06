@@ -235,7 +235,8 @@ git clone https://github.com/nsofias/_MKT_projects.git C:\myfiles\JavaProjects\_
 
 git pull origin master
 git commit -a -m "test changes"
-git push -u origin master
+git push -u origin master (to send)
+git fetch origin master (to get)
 
 git bash
 cd /c/myfiles/JavaProjects/_MKT_projects
