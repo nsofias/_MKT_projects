@@ -309,7 +309,7 @@ public class CCMonitorStatsObjsContainer {
                     && timestamp.compareTo(from) <= 0 && timestamp.compareTo(to) >= 0
                     && (myResource != null && myResource.equals(resource) || resource.isEmpty())) {
                 //System.out.println("found!!!" + resourceType + " " + myResource + " " + timestamp + " " + from + " " + to);
-                calls.add(lineId + " @ " + new TimeStamp1(timestamp).getNowFormated());
+                calls.add(lineId + " @ " + new TimeStamp1(timestamp).getNowFormated()+" reason: "+myCallInfo.getReason());
             }
         }
         return calls;

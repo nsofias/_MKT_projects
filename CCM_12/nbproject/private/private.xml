@@ -4,6 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/myfiles/JavaProjects/_MKT_projects/CCM_12/src/java/ccm/AlarmsDetectionListener.java</file>
+            <file>file:/C:/myfiles/JavaProjects/_MKT_projects/CCM_12/src/java/ccm/MonitorServletContextListener.java</file>
+            <file>file:/C:/myfiles/JavaProjects/_MKT_projects/CCM_12/web/numbers_called.jsp</file>
+            <file>file:/C:/myfiles/JavaProjects/_MKT_projects/CCM_12/web/MKT/askSVT.jsp</file>
+            <file>file:/C:/myfiles/JavaProjects/_MKT_projects/CCM_12/src/java/ccm/CCMonitorStatsObjsContainer.java</file>
+            <file>file:/C:/myfiles/JavaProjects/_MKT_projects/CCM_12/web/tickets_1.jsp</file>
         </group>
     </open-files>
 </project-private>

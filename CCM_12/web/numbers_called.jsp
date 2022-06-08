@@ -41,18 +41,10 @@
             out.println("<tr><td></td></tr>");
             lineID = call.split("@")[0];
         }
-        out.println("<tr><td>" + call+"</td></tr>");
+        out.println("<tr><td>" + call+"</td><td><a href='MKT/askSVT.jsp?lineID="+lineID+"' target='_EMPTY'> Ask SVT</a></td></tr>");
     }
     out.println("</table>");
-    /*
-    List<String> labels = myAnumbers.getLabelsSortedBy(Counters.sortByCount);    
-    for (String Anum : labels){
-        try {
-            out.println("<p>"+Anum+" "+myAnumbers.getCount(Anum));
-        } catch (Exception e) {
-            out.println(e.toString());
-        }
-    }*/
+   
 %>
 
 

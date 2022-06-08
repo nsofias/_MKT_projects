@@ -23,7 +23,12 @@
         <link rel="stylesheet" href="global.css">
     </head>
     <%        String remove = request.getParameter("remove");
+        String flush = request.getParameter("flush");
+
         AlarmsDetectionListener myTicketsDetectionListener = (AlarmsDetectionListener) myContext.getAttribute("myAlarmsDetectionListener");
+        if (flush != null) {
+            myTicketsDetectionListener.saveContent();
+        }
         List<CCMTicket> tickets = myTicketsDetectionListener.getTicketsMap().values().stream()
                 .map(v -> (CCMTicket) v)
                 //.sorted(( v1,  v2) -> v2.getIncidentReportedDate().compareTo(v1.getIncidentReportedDate()))

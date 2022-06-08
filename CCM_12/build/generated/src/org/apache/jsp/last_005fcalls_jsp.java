@@ -52,13 +52,13 @@ public final class last_005fcalls_jsp extends org.apache.jasper.runtime.HttpJspB
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
 
         ServletContext myContext = request.getServletContext();
         Counters myCounters = (Counters) myContext.getAttribute("browseCounters");
@@ -79,9 +79,9 @@ public final class last_005fcalls_jsp extends org.apache.jasper.runtime.HttpJspB
         List<String> labels = myAnumbers.getLabels();
         out.print(labels);    
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

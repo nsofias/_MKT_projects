@@ -178,7 +178,7 @@ public class MonitorServletContextListener implements ServletContextListener {
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-        System.out.println("CCM12:--->terminating daemons");
+        System.out.println("CCM12:--->terminating daemons");        
         for (String key : daemons.keySet()) {
             try {
                 SimpleDaemon myDaemon = daemons.get(key);
@@ -192,13 +192,25 @@ public class MonitorServletContextListener implements ServletContextListener {
         System.out.println("CCM12:CCM12:--->flushed To Disk");
         //
         int count = 0;
-        while (!allFinished() && count++ < 10) {
+        while (!allFinished() && count++ < 60) {
             try {
-                System.out.println("CCM12: stopping:" + (10 - count));
+                System.out.println("CCM12: stopping:" + (60 - count));
                 Thread.sleep(1000);
             } catch (Exception e) {
             }
         }
+        //------------ force flushing ---------
+        for (String key : daemons.keySet()) {
+            try {
+                SimpleDaemon myDaemon = daemons.get(key);
+                if (!myDaemon.isStopped()) {
+                    System.out.println("CCM12:--->" + key + " is stays running and will be flushed!!!");
+                    myDaemon.endProccess();
+                }
+            } catch (Exception e) {
+                System.out.println("CCM12: error during termination for: " + key);
+            }
+        }        
         System.out.println("CCM12: all processes stoped!");
     }
 

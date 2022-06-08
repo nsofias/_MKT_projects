@@ -61,20 +61,19 @@ public final class events_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
  String userTypes = "00,01,02";
-      out.write('\r');
       out.write('\n');
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
 
     //String userTypes = "00,01,02";
     //  ----------- SEQURITY CHECK ---------------
@@ -85,49 +84,46 @@ public final class events_jsp extends org.apache.jasper.runtime.HttpJspBase
     String username = (String) session.getAttribute("username");
     if (userType == null)
         {
-      out.write('\r');
       out.write('\n');
       if (true) {
         _jspx_page_context.forward(url);
         return;
       }
-      out.write('\r');
       out.write('\n');
   return;
     }
 else if (userType.endsWith("-expired"))// password expired
         {
         
-      out.write("\r\n");
-      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\r\n");
+      out.write("\n");
+      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\n");
       out.write("        ");
       if (true) {
         _jspx_page_context.forward("change_password.jsp");
         return;
       }
-      out.write("\r\n");
+      out.write("\n");
       out.write("        ");
 return;
         }
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write('\r');
+      out.write('\n');
+      out.write('\n');
       out.write('\n');
 //----------- sequrity----------------
     try {
         if (!userTypes.contains(userType)) {
 
-      out.write("\r\n");
-      out.write("<font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\r\n");
+      out.write("\n");
+      out.write("<font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\n");
 return;
         }
     } catch (Exception e) {
     }
 //----------- sequrity end----------------
 
-      out.write("\r\n");
-      out.write("<!DOCTYPE html>\r\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
 
     request.setCharacterEncoding("UTF-8");
     response.setCharacterEncoding("UTF-8");
@@ -137,30 +133,30 @@ return;
     TimeStamp1 now = new TimeStamp1();
     double sinse_myLastNewAlarms = (int) now.secondsDiff(myLastCallInputTimeStamp);
 
-      out.write("\r\n");
-      out.write("<html>\r\n");
-      out.write("    <head>\r\n");
-      out.write("        <title>Event stream</title>\r\n");
-      out.write("        <link rel=\"stylesheet\" href=\"global.css\">\r\n");
-      out.write("        <script language=\"javascript\">\r\n");
-      out.write("            var max_timePage = 120;\r\n");
+      out.write("\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <title>Event stream</title>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"global.css\">\n");
+      out.write("        <script language=\"javascript\">\n");
+      out.write("            var max_timePage = 120;\n");
       out.write("            var max_timeData = ");
       out.print(sinse_myLastNewAlarms);
-      out.write(";\r\n");
-      out.write("            var cinterval = setInterval('countdown_timer()', 1000);\r\n");
-      out.write("\r\n");
-      out.write("            function countdown_timer() {\r\n");
-      out.write("                max_timePage--;\r\n");
-      out.write("                max_timeData++;\r\n");
-      out.write("                document.getElementById('countdownPage').innerHTML = max_timePage;\r\n");
-      out.write("                document.getElementById('countdownData').innerHTML = max_timeData;\r\n");
-      out.write("                //\r\n");
-      out.write("                if (max_timePage === 0) {\r\n");
-      out.write("                    clearInterval(cinterval);\r\n");
-      out.write("                }\r\n");
-      out.write("            }\r\n");
-      out.write("        </script>\r\n");
-      out.write("    </head>\r\n");
+      out.write(";\n");
+      out.write("            var cinterval = setInterval('countdown_timer()', 1000);\n");
+      out.write("\n");
+      out.write("            function countdown_timer() {\n");
+      out.write("                max_timePage--;\n");
+      out.write("                max_timeData++;\n");
+      out.write("                document.getElementById('countdownPage').innerHTML = max_timePage;\n");
+      out.write("                document.getElementById('countdownData').innerHTML = max_timeData;\n");
+      out.write("                //\n");
+      out.write("                if (max_timePage === 0) {\n");
+      out.write("                    clearInterval(cinterval);\n");
+      out.write("                }\n");
+      out.write("            }\n");
+      out.write("        </script>\n");
+      out.write("    </head>\n");
       out.write("    ");
 
         Counters myCounters = (Counters) myContext.getAttribute("browseCounters");
@@ -172,8 +168,8 @@ return;
 
         Map<String, CallInfo> events = myCCMonitorStatsObjsContainer.getDimensionInstances();
         if (events.isEmpty()) {
-      out.write("\r\n");
-      out.write("    out.print(\"<h2>No current alarms found ...</h2>\");\r\n");
+      out.write("\n");
+      out.write("    out.print(\"<h2>No current alarms found ...</h2>\");\n");
       out.write("    ");
       return;
         }
@@ -194,18 +190,18 @@ return;
         t2.addHours(-24);
 
     
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("    <body>\r\n");
-      out.write("        <table border=\"0\" width=\"100%\"   id=\"table1\" >\r\n");
-      out.write("            <tr>\r\n");
-      out.write("                <td nowrap width=\"5%\" bgcolor=\"Gray\"><font color=\"white\">Page will refresh in (sec): <span id=\"countdownPage\">0</span></font></td>                \r\n");
-      out.write("                <td nowrap width=\"5%\" bgcolor=\"Gray\"><font color=\"white\">Data last update since (sec): <span id=\"countdownData\">0</span></font></td>                                   \r\n");
-      out.write("            </tr>\r\n");
-      out.write("        </table>        \r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("    <body>\n");
+      out.write("        <table border=\"0\" width=\"100%\"   id=\"table1\" >\n");
+      out.write("            <tr>\n");
+      out.write("                <td nowrap width=\"5%\" bgcolor=\"Gray\"><font color=\"white\">Page will refresh in (sec): <span id=\"countdownPage\">0</span></font></td>                \n");
+      out.write("                <td nowrap width=\"5%\" bgcolor=\"Gray\"><font color=\"white\">Data last update since (sec): <span id=\"countdownData\">0</span></font></td>                                   \n");
+      out.write("            </tr>\n");
+      out.write("        </table>        \n");
+      out.write("\n");
       out.write("        ");
   ArrayList<String> eventIds = new ArrayList(events.keySet());
             Collections.sort(eventIds, Collections.reverseOrder());
@@ -231,14 +227,14 @@ return;
             }
             out.println("<table width='100%'>");
         
-      out.write("        \r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("    </body>\r\n");
-      out.write("</html>\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("        \n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+      out.write("\n");
+      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

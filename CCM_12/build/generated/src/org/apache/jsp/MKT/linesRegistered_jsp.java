@@ -56,14 +56,14 @@ public final class linesRegistered_jsp extends org.apache.jasper.runtime.HttpJsp
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
 
     String type = request.getParameter("type");
     String path = request.getParameter("path");
@@ -71,19 +71,19 @@ public final class linesRegistered_jsp extends org.apache.jasper.runtime.HttpJsp
     out.flush();
 
 
-      out.write("\r\n");
-      out.write("<!DOCTYPE html>\r\n");
-      out.write("<html>\r\n");
-      out.write("    <head>\r\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <title>registered lines</title>\r\n");
-      out.write("        <link rel=\"stylesheet\" href=\"../global.css\">\r\n");
-      out.write("    </head>\r\n");
-      out.write("    <body>\r\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>registered lines</title>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"../global.css\">\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
       out.write("        <h1>Current lines for ");
       out.print(path);
-      out.write(" </h1>        \r\n");
-      out.write("        <table  border='1' width='100%'>\r\n");
+      out.write(" </h1>        \n");
+      out.write("        <table  border='1' width='100%'>\n");
       out.write("            ");
             
                 PathsRetriever myPatrhsRetriever = PathRetrieverFactory.create(type);
@@ -94,10 +94,10 @@ public final class linesRegistered_jsp extends org.apache.jasper.runtime.HttpJsp
                         out.println("<tr><td>" + line + "</td></tr>");
                 }
             }
-      out.write("       \r\n");
-      out.write("        </table>\r\n");
-      out.write("    </body>\r\n");
-      out.write("</html>\r\n");
+      out.write("       \n");
+      out.write("        </table>\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

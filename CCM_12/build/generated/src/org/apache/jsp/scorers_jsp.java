@@ -51,12 +51,12 @@ public final class scorers_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
 
     ServletContext myContext = request.getServletContext();
     Counters myCounters = (Counters) myContext.getAttribute("browseCounters");
@@ -89,21 +89,21 @@ public final class scorers_jsp extends org.apache.jasper.runtime.HttpJspBase
     Counters myAnumbers = myCCMonitorStatsObjsContainer.getLinesForPeriod(from, to);
     List<String> labels = myAnumbers.getLabelsSortedBy(Counters.sortByCount); 
 
-      out.write(" \r\n");
-      out.write("<!DOCTYPE html>\r\n");
-      out.write("<html>\r\n");
-      out.write("    <head>\r\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <title>JSP Page</title>\r\n");
-      out.write("    </head>\r\n");
-      out.write("    <body>\r\n");
+      out.write(" \n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
       out.write("        <h1>Top scorers from ");
       out.print(to_);
       out.write(" to:");
       out.print(from_);
-      out.write("</h1>\r\n");
-      out.write("        <table border=\"1\" cellpadding=\"5\" cellspacing=\"5\">\r\n");
-      out.write("            <tr><td><b>Caller</b></td><td><b>Calls</b></td><td><b>Δικτυακοι Ποροι</b></td><td><b>Ιστορικο κλησεων</b></td></tr>\r\n");
+      out.write("</h1>\n");
+      out.write("        <table border=\"1\" cellpadding=\"5\" cellspacing=\"5\">\n");
+      out.write("            <tr><td><b>Caller</b></td><td><b>Calls</b></td><td><b>Δικτυακοι Ποροι</b></td><td><b>Ιστορικο κλησεων</b></td></tr>\n");
       out.write("            ");
  for (String Anum : labels)
                     {
@@ -113,7 +113,7 @@ public final class scorers_jsp extends org.apache.jasper.runtime.HttpJspBase
 
                         String Anum1 = Anum.substring(0, 8) + "XX";
             
-      out.write("\r\n");
+      out.write("\n");
       out.write("            <tr><td>");
       out.print(Anum1);
       out.write("</td><td align = 'right'>");
@@ -126,19 +126,19 @@ public final class scorers_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.print(from);
       out.write("&to=");
       out.print(to);
-      out.write("\" target=\"_blank\">Ιστορικο κλησεων</a></td></tr>\r\n");
+      out.write("\" target=\"_blank\">Ιστορικο κλησεων</a></td></tr>\n");
       out.write("                    ");
 }
                             catch (Exception e)
                                 {
                                 }
                             }
-      out.write("\r\n");
-      out.write("        </table>\r\n");
-      out.write("    </body>\r\n");
-      out.write("</html>\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("        </table>\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+      out.write("\n");
+      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
