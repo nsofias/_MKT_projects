@@ -99,7 +99,9 @@ public interface CCMTicket {
 
     public int getCustomerImpact();
 
-    public boolean isAllowedToOpen(String myType, int affectedCustomers, int totalCalls);
+    public boolean isAllowedToOpen(String myType, long affectedCustomers, int totalCalls);
 
-    public int findNumberOfAffectedCustomers();
+    public long findNumberOfAffectedCustomers();
+    
+    public Double[] getLatLon();
 }

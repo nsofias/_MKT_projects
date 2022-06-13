@@ -7,7 +7,7 @@
 <%@page import="java.util.HashSet"%>
 <%@page import="java.util.Set"%>
 <%@page import="nsofiasLib.time.TimeStamp1"%>
-<%@page import="nsofiasLib.utils.VolumnPercentagePatern"%>
+<%@page import="nsofiasLib.utils.TrafficVolumnPatern"%>
 <%@page import="nsofiasLib.utils.MyChart"%>
 <%@page import="nsofiasLib.utils.Counters1"%>
 <%@page import="nsofiasLib.others.SimpleDaemon,org.jfree.chart.*,nsofiasLib.others.Parameters,java.net.URLDecoder,java.util.Collections,java.util.Map,java.util.List,java.util.ArrayList,nsofiasLib.fileIO.FileParser2,nsofiasLib.fileIO.SimpleLineParser,ccm.*"%>
@@ -42,7 +42,7 @@
     } catch (Exception e) {
     }
     // ------------------------------               
-    Map<String, VolumnPercentagePatern> paterns = myCCMonitorStatsObjsContainer.getPaternsOfResource(resourceType);
+    Map<String, TrafficVolumnPatern> paterns = myCCMonitorStatsObjsContainer.getPaternsOfResource(resourceType);
     //----------------------------   
     AggregationsForPeriod myAggregationsForPeriod = myCCMonitorStatsObjsContainer.getCurrentObject();
     from = myAggregationsForPeriod.getFrom();

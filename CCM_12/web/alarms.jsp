@@ -274,7 +274,7 @@
                     long createTicketMinCallsForType = myParameters.getIntValue("createTicketMinCalls." + AlertType, createTicketMinCallsDefault);
                     //**********************************- dynamic ******************************************* 
                     if (myAlarm.getAffectedCustomers() > 0) {
-                        createTicketMinCallsForType = 2 + java.lang.Math.round(0.002 * myAlarm.getAffectedCustomers());
+                        createTicketMinCallsForType = 3 + java.lang.Math.round(0.002 * myAlarm.getAffectedCustomers());
                     }
                     //-----
                     if (StatusS.equals("Ενεργο")) {%>

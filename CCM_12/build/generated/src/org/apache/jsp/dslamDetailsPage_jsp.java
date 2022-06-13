@@ -44,18 +44,18 @@ public final class dslamDetailsPage_jsp extends org.apache.jasper.runtime.HttpJs
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        <h1>Resources</h1>\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>JSP Page</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <h1>Resources</h1>\r\n");
+      out.write("\r\n");
       out.write("        ");
 
             String dslam = request.getParameter("dslam");
@@ -64,11 +64,11 @@ public final class dslamDetailsPage_jsp extends org.apache.jasper.runtime.HttpJs
                 dslam = dslam.trim();
                 }
         
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("        <p><h1>Dslam details for ");
       out.print(dslam);
-      out.write("</h1>\n");
+      out.write("</h1>\r\n");
       out.write("        ");
 
             try
@@ -102,9 +102,9 @@ public final class dslamDetailsPage_jsp extends org.apache.jasper.runtime.HttpJs
                 {
                 e.printStackTrace();
                 }
-      out.write("                 \n");
-      out.write("    </body>\n");
-      out.write("</html>     \n");
+      out.write("                 \r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>     \r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

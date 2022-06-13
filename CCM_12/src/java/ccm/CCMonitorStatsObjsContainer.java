@@ -24,7 +24,7 @@ import nsofiasLib.others.Parameters;
 import nsofiasLib.time.TimeStamp1;
 import nsofiasLib.utils.Counters;
 import nsofiasLib.utils.Counters1;
-import nsofiasLib.utils.VolumnPercentagePatern;
+import nsofiasLib.utils.TrafficVolumnPatern;
 
 public class CCMonitorStatsObjsContainer {
 
@@ -38,7 +38,7 @@ public class CCMonitorStatsObjsContainer {
     private int rememberPeriod = 4;//days to remember
 
     //private ArrayList fasmata;
-    private final Map<String, Map<String, VolumnPercentagePatern>> paterns = new ConcurrentHashMap<>();
+    private final Map<String, Map<String, TrafficVolumnPatern>> paterns = new ConcurrentHashMap<>();
     private List<String> reasons = new CopyOnWriteArrayList();
     private ArrayList commentsLogArrayList = new ArrayList();
 
@@ -430,9 +430,9 @@ public class CCMonitorStatsObjsContainer {
         try {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(CONF_DIR + fimeName + ".paterns"), "utf-8"));
             Gson gson = new Gson();
-            java.lang.reflect.Type type = new TypeToken<Map<String, Map<String, VolumnPercentagePatern>>>() {
+            java.lang.reflect.Type type = new TypeToken<Map<String, Map<String, TrafficVolumnPatern>>>() {
             }.getType();
-            paterns.putAll((Map<String, Map<String, VolumnPercentagePatern>>) gson.fromJson(bufferedReader, type));
+            paterns.putAll((Map<String, Map<String, TrafficVolumnPatern>>) gson.fromJson(bufferedReader, type));
             System.out.println("CCM12:parsed" + fimeName + ".paterns");
         } catch (Exception e) {
             System.out.println("CCM12:loadFromDisk error:" + CONF_DIR + fimeName + ".paterns Not loaded!!!");
@@ -596,11 +596,11 @@ public class CCMonitorStatsObjsContainer {
         return MODE;
     }
 
-    public Map<String, Map<String, VolumnPercentagePatern>> getPaterns() {
+    public Map<String, Map<String, TrafficVolumnPatern>> getPaterns() {
         return paterns;
     }
 
-    public Map<String, VolumnPercentagePatern> getPaternsOfResource(String resourceType) {
+    public Map<String, TrafficVolumnPatern> getPaternsOfResource(String resourceType) {
         return getPaterns().get(resourceType);
     }
 

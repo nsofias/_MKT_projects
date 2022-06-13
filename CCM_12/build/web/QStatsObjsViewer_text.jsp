@@ -3,12 +3,12 @@
     Created on : Mar 5, 2020, 10:41:27 AM
     Author     : nsofias
 --%>
+<%@page import="nsofiasLib.utils.TrafficVolumnPatern"%>
 <%@page import="java.util.Arrays"%>
 <%@page import="java.util.LinkedHashSet"%>
 <%@page import="java.util.HashSet"%>
 <%@page import="java.util.Set"%>
 <%@page import="nsofiasLib.time.TimeStamp1"%>
-<%@page import="nsofiasLib.utils.VolumnPercentagePatern"%>
 <%@page import="nsofiasLib.utils.MyChart"%>
 <%@page import="nsofiasLib.utils.Counters1"%>
 <%@page import="nsofiasLib.others.SimpleDaemon,org.jfree.chart.*,nsofiasLib.others.Parameters,java.net.URLDecoder,java.util.Collections,java.util.Map,java.util.List,java.util.ArrayList,nsofiasLib.fileIO.FileParser2,nsofiasLib.fileIO.SimpleLineParser,ccm.*"%>
@@ -34,7 +34,7 @@
     to = myAggregationsForPeriod.getTo();
     Counters1 myResources = new Counters1();
         myResources.updateCounters(myAggregationsForPeriod.getCurrentResourceCounters(resourceType));
-        Map<String, VolumnPercentagePatern> patterns = myCCMonitorStatsObjsContainer.getPaternsOfResource(resourceType);
+        Map<String, TrafficVolumnPatern> patterns = myCCMonitorStatsObjsContainer.getPaternsOfResource(resourceType);
 
         for (String label : myResources.keySet()) {
             try{

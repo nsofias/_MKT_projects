@@ -49,30 +49,31 @@ public final class security_005fcheck_jsp extends org.apache.jasper.runtime.Http
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n");
-      out.write("    \"http://www.w3.org/TR/html4/loose.dtd\">\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n");
+      out.write("    \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>JSP Page</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
       out.write("        ");
   DatabaseLogger myDatabaseLogger = null;
             String myUsername = request.getParameter("j_username");
             String request_URI = request.getParameter("request_URI");
         //    if ( request_URI ==null || request_URI.isEmpty() || request_URI.equals("login.jsp") || request_URI.equals("null"))request_URI="index.jsp";
-            //---------------------    
+            //--------------------- 
+            String connectionURL="";
             try
                 {
                 String userRole = null;
                 String modules = null;
                 String myPassword = request.getParameter("j_password");
                 String jdbcDriver = Parameters.loadStringValue(System.getenv("APPLICATIONS_PATH") + "/ccm/conf/parameters.properties", "jdbcDriver", "UTF8");
-                String connectionURL = Parameters.loadStringValue(System.getenv("APPLICATIONS_PATH") + "/ACTOR/conf/parameters.properties", "connectionURL", "UTF8");
+                connectionURL = Parameters.loadStringValue(System.getenv("APPLICATIONS_PATH") + "/ccm/conf/parameters.properties", "connectionURL", "UTF8");
                 myDatabaseLogger = new DatabaseLogger(jdbcDriver, connectionURL);
                 myDatabaseLogger.connect();
                 String sqlStr = "SELECT * FROM users WHERE users.username='" + myUsername + "' AND users.password='" + myPassword + "'";
@@ -110,45 +111,45 @@ public final class security_005fcheck_jsp extends org.apache.jasper.runtime.Http
                         }
                     myDatabaseLogger.close();
         
-      out.write("            \n");
+      out.write("            \r\n");
       out.write("        ");
       if (true) {
         _jspx_page_context.forward(request_URI);
         return;
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("        ");
 return;
                 }
             else
                 {
-      out.write("\n");
-      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your authentication failed. Please go\n");
-      out.write("                <a href=\"login.jsp\">back</a> and try again!</font></b>\n");
+      out.write("\r\n");
+      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your authentication failed. Please go\r\n");
+      out.write("                <a href=\"login.jsp\">back</a> and try again!</font></b>\r\n");
       out.write("                ");
    }
                     myDatabaseLogger.close();
                     }//try
                 catch (Exception e)
                     {
-                    out.println(e.toString());
+                    out.println(connectionURL+" error:"+e.toString());
                 
-      out.write("\n");
+      out.write("\r\n");
       out.write("        request_URI=");
       out.print(request_URI);
-      out.write("\n");
+      out.write("\r\n");
       out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">");
       out.print(e.toString());
-      out.write("</font></b>\n");
+      out.write("</font></b>\r\n");
       out.write("                ");
    myDatabaseLogger.close();
                         return;
                         }
                 
-      out.write("\n");
-      out.write("\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -68,15 +68,7 @@
         disconnected = Integer.parseInt(request.getParameter("disconnected"));
     } catch (Exception e) {
     }
-    Map<String, String[]> parameters = request.getParameterMap();
     //--------------------------     
-    String _parameters = "";
-    for (String key : parameters.keySet()) {
-        //out.println("<p>"+key + "=" + parameters.get(key)[0]);
-        if (!key.equals("open") && !key.equals("remove")) {
-            _parameters += key + "=" + parameters.get(key)[0] + "&";
-        }
-    }
     if (status == null || status.isEmpty()) {
         status = "ALL";
     }
@@ -191,7 +183,6 @@
     <table  width="100%" border='1'>
 
         <tr>     
-            <th>map</th>
             <th>R</th>
             <th>Description</th>
             <th>Element type</th>
@@ -212,7 +203,7 @@
                     .filter(v -> v.getTicketId() != null)
                     .map(v -> (Ticket_MKT) myAlarmsDetectionListener.getTicketsMap().get(v.getTicketId()))
                     .filter(v -> v != null)
-                    .map(v -> v.getMyTicket_IBM()).filter(v -> v != null).sorted(( tt1,  tt2) -> tt1.getIncidentStartDate().compareTo(tt2.getIncidentStartDate()) > 0 ? -1 : 1)
+                    .map(v -> v.getMyTicket_IBM()).filter(v -> v != null).sorted(( tt1,    tt2) -> tt1.getIncidentStartDate().compareTo(tt2.getIncidentStartDate()) > 0 ? -1 : 1)
                     .collect(Collectors.toList());
             //***********************************************************************************
             for (Ticket_FYROM myTicket : ticketsList) {
@@ -283,9 +274,9 @@
                 }
                 //-------------------------------------------------------------------------------------
                 if (myTicket.isStillAlive()) {
+
         %> 
         <tr bgcolor='white'>             
-            <td nowrap><a onclick="openMap('<%=ticketId%>')"><IMG src = "fyrom.jpg"/></a></td>
                     <%
                         if (myTicket.isRepeated()) {%>
             <td nowrap>R</td>
@@ -310,7 +301,6 @@
         <%              } else {
         %>
         <tr>             
-            <td nowrap><a onclick="openMap('<%=ticketId%>')"><IMG src = "fyrom.jpg"/></a></td>
                     <%
                         if (myTicket.isRepeated()) {%>
             <td nowrap>R</td>

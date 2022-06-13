@@ -9,9 +9,8 @@ import nsofiasLib.others.Parameters;
 import nsofiasLib.others.SimpleDaemon;
 import nsofiasLib.time.TimeStamp1;
 import nsofiasLib.utils.Counters1;
-import nsofiasLib.utils.VolumnPercentagePatern;
+import nsofiasLib.utils.TrafficVolumnPatern;
 //import nsofiasLib.utils.MailSender_new;
-
 /**
  *
  * @author nsofias
@@ -51,7 +50,7 @@ public class AlarmDetectionDaemon extends SimpleDaemon {
                 String from = myCurrentObject.getFrom();
                 String to = myCurrentObject.getTo();
                 System.out.println("CCM12:AlarmCheckerDaemon: checking period:" + from + "-" + to);
-                //Map<String, Map<String, VolumnPercentagePatern>> paterns = myStatsObjContainer.getPaterns();
+                //Map<String, Map<String, TrafficVolumnPatern>> paterns = myStatsObjContainer.getPaterns();
                 //------------------------------------------------------
                 Set<String> keys = myCurrentObject.getAggregationLabels();
                 parent_childs.clear();
@@ -60,7 +59,7 @@ public class AlarmDetectionDaemon extends SimpleDaemon {
                     try {
                         System.out.println("CCM12:AlarmCheckerDaemon: check_Resource " + resourceType);
                         Counters1 myResources = myCurrentObject.getCurrentResourceCounters(resourceType);
-                        Map<String, VolumnPercentagePatern> resource_traffic_paterns = myStatsObjContainer.getPaternsOfResource(resourceType);
+                        Map<String, TrafficVolumnPatern> resource_traffic_paterns = myStatsObjContainer.getPaternsOfResource(resourceType);
                         if (myResources != null && resource_traffic_paterns != null) {
                             parent_childs.updateCounters(myResources);
                             System.out.println("CCM12:AlarmCheckerDaemon:check_Resources check_Resource (" + resourceType + ") size:" + myResources.size() + " from:" + from + " to:" + to);
@@ -267,7 +266,7 @@ public class AlarmDetectionDaemon extends SimpleDaemon {
         return null;
     }
 
-    private ArrayList<CCMAlarm> check_Resources(Counters1 myResources, Map<String, VolumnPercentagePatern> traffic_patern, String from, String to) {
+    private ArrayList<CCMAlarm> check_Resources(Counters1 myResources, Map<String, TrafficVolumnPatern> traffic_patern, String from, String to) {
         ArrayList<CCMAlarm> newresourceAlarms = new ArrayList();
         String resourceType = myResources.getHeader();
         String myAlertStartTimeStamp = to;

@@ -53,14 +53,14 @@ public final class AnumberCallHistory_jsp extends org.apache.jasper.runtime.Http
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     ServletContext myContext = request.getServletContext();
     Counters myCounters = (Counters) myContext.getAttribute("browseCounters");
@@ -82,23 +82,23 @@ public final class AnumberCallHistory_jsp extends org.apache.jasper.runtime.Http
 //    myAnumbers.sort(Counters.sortByCount);
 
 
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>JSP Page</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
       out.write("        <h2>Calls from ");
       out.print(lineID);
       out.write(" Period from  ");
       out.print(new TimeStamp1(to).getNowFormated());
       out.write(" to ");
       out.print(new TimeStamp1(from).getNowFormated());
-      out.write("</h2>        \n");
-      out.write("        <table border=\"1\" cellpadding=\"5\" cellspacing=\"5\">\n");
-      out.write("            <tr><th><b>Ημερομηνια</b></th><th>Πληθος κλησεων</th></tr>\n");
+      out.write("</h2>        \r\n");
+      out.write("        <table border=\"1\" cellpadding=\"5\" cellspacing=\"5\">\r\n");
+      out.write("            <tr><th><b>Ημερομηνια</b></th><th>Πληθος κλησεων</th></tr>\r\n");
       out.write("                    ");
 
                         Counters1 statObjs = myCCMonitorStatsObjsContainer.getLineIDCalls(lineID, from, to);
@@ -108,21 +108,21 @@ public final class AnumberCallHistory_jsp extends org.apache.jasper.runtime.Http
                             double count = statObjs.getTotalValueOfLabel(label);
                             String date = new TimeStamp1(label + "00.000").getNowFormated();
                     
-      out.write("\n");
+      out.write("\r\n");
       out.write("            <tr><td>");
       out.print(date);
       out.write("</td></td><td>");
       out.print(count);
-      out.write("</td></tr>                            \n");
+      out.write("</td></tr>                            \r\n");
       out.write("            ");
 
                 }
             
-      out.write("\n");
-      out.write("        </table>\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("        </table>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
+      out.write("\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

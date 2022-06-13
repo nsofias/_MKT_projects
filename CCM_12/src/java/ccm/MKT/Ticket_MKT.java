@@ -7,6 +7,7 @@ package ccm.MKT;
 
 import ccm.SignatureFactory;
 import ccm.CCMTicket;
+import static ccm.MKT.CCMTicketFactory_MKT.findLatLonOfATC;
 import ccm.Signature;
 import ccm.exceptions.CCM_element_AlreadyOpen_Exception;
 import com.google.gson.Gson;
@@ -14,13 +15,16 @@ import diligent_MKT.Alarm_FYROM;
 import diligent_MKT.Ticket_FYROM;
 import static diligent_mkt_ws.Alarm_umbrella.findBoundCTTs;
 import diligent_mkt_ws.Diligent_connector;
+import java.io.IOException;
 import static java.lang.Math.round;
 import java.util.ArrayList;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.LinkedList;
 import java.util.List;
 import nsofiasLib.ote.alarms.Alarm;
 import nsofiasLib.ote.alarms.Ticket;
+import nsofiasLib.others.Helpme;
 import nsofiasLib.others.Parameters;
 import nsofiasLib.time.TimeStamp1;
 import nsofiasLib.utils.JsonToHtmlConverter;
@@ -51,7 +55,7 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
     }
 
     @Override
-    public boolean isAllowedToOpen(String myType, int affectedCustomers, int totalCalls) {
+    public boolean isAllowedToOpen(String myType, long affectedCustomers, int totalCalls) {
         Parameters myParameters = new Parameters(System.getenv("APPLICATIONS_PATH") + "/ccm/conf/parameters.properties", "UTF8");
         int createTicketMinCallsDefault = myParameters.getIntValue("createTicketMinCalls.DEFAULT", 5);
         long createTicketMinCallsForType = myParameters.getIntValue("createTicketMinCalls." + myType, createTicketMinCallsDefault);
@@ -66,9 +70,9 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
     }
 
     @Override
-    public int findNumberOfAffectedCustomers() {
+    public long findNumberOfAffectedCustomers() {
         Alarm_FYROM myAlarm_FYROM = this.getMyTicket_IBM().getElementsList().get(0);
-        return myAlarm_FYROM.findLinesRegistered();
+        return myAlarm_FYROM.getLinesRegistered();
     }
 
     @Override
@@ -449,7 +453,7 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
     public Signature getLastSignature() {
         if (!this.getSignatureHistory().isEmpty()) {
             return this.getSignatureHistory().get(this.getSignatureHistory().size() - 1);
-        }else{
+        } else {
             return null;
         }
     }
@@ -742,6 +746,22 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
      */
     public void setMyTicket_IBM(Ticket_FYROM myTicket_FYROM) {
         this.myTicket_IBM = myTicket_FYROM;
+    }
+
+    @Override
+    public Double[] getLatLon() {
+        try {
+            List<String> ATCsCoords = Helpme.getFileRowsAsList(System.getenv("APPLICATIONS_PATH") + "/ccm/conf/NC_Locations1.csv", StandardCharsets.UTF_8);
+            String ATC = this.getMyTicket_IBM().getElementsList().get(0).getATC();
+            if (ATC != null) {
+                if (ATC.contains(";")) {
+                    ATC = ATC.split(";")[1];
+                }
+                return findLatLonOfATC(ATCsCoords, ATC);
+            }
+        } catch (IOException e) {
+        }
+        return null;
     }
 
     public static void main(String[] args) {

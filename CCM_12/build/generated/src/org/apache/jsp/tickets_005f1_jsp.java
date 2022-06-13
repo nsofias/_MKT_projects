@@ -59,17 +59,17 @@ public final class tickets_005f1_jsp extends org.apache.jasper.runtime.HttpJspBa
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     request.setCharacterEncoding("UTF-8");
     response.setCharacterEncoding("UTF-8");
@@ -77,16 +77,21 @@ public final class tickets_005f1_jsp extends org.apache.jasper.runtime.HttpJspBa
 
 
 
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <title>Tickets</title>\n");
-      out.write("        <link rel=\"stylesheet\" href=\"global.css\">\n");
-      out.write("    </head>\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <title>Tickets</title>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"global.css\">\r\n");
+      out.write("    </head>\r\n");
       out.write("    ");
         String remove = request.getParameter("remove");
+        String flush = request.getParameter("flush");
+
         AlarmsDetectionListener myTicketsDetectionListener = (AlarmsDetectionListener) myContext.getAttribute("myAlarmsDetectionListener");
+        if (flush != null) {
+            myTicketsDetectionListener.saveContent();
+        }
         List<CCMTicket> tickets = myTicketsDetectionListener.getTicketsMap().values().stream()
                 .map(v -> (CCMTicket) v)
                 //.sorted(( v1,  v2) -> v2.getIncidentReportedDate().compareTo(v1.getIncidentReportedDate()))
@@ -96,19 +101,19 @@ public final class tickets_005f1_jsp extends org.apache.jasper.runtime.HttpJspBa
         Map<String, CCMAlarm> alarmArrayList = myCCMonitorStatsObjsContainer.getAlarmArrayList();
         List<String> alarmTicketIDs = alarmArrayList.values().stream().map(v -> v.getTicketId()).collect(Collectors.toList());
     
-      out.write("\n");
-      out.write("    <body>         \n");
-      out.write("        <table  border='1'>\n");
-      out.write("            <tr>\n");
-      out.write("                <th>sourse</th>\n");
-      out.write("                <th>Parent</th>\n");
-      out.write("                <th>SR number</th>\n");
-      out.write("                <th>SR reported</th>  \n");
-      out.write("                <th>SR type</th>  \n");
-      out.write("                <th>Ticket State</th>\n");
-      out.write("                <th>num Of CTTs</th>\n");
-      out.write("                <th nowrap>signature</th>\n");
-      out.write("            </tr>\n");
+      out.write("\r\n");
+      out.write("    <body>         \r\n");
+      out.write("        <table  border='1'>\r\n");
+      out.write("            <tr>\r\n");
+      out.write("                <th>sourse</th>\r\n");
+      out.write("                <th>Parent</th>\r\n");
+      out.write("                <th>SR number</th>\r\n");
+      out.write("                <th>SR reported</th>  \r\n");
+      out.write("                <th>SR type</th>  \r\n");
+      out.write("                <th>Ticket State</th>\r\n");
+      out.write("                <th>num Of CTTs</th>\r\n");
+      out.write("                <th nowrap>signature</th>\r\n");
+      out.write("            </tr>\r\n");
       out.write("            ");
 
                 //ArrayList<String> ticketIDs = new ArrayList(tickets.keySet());
@@ -148,42 +153,42 @@ public final class tickets_005f1_jsp extends org.apache.jasper.runtime.HttpJspBa
 
 
             
-      out.write("\n");
+      out.write("\r\n");
       out.write("            <tr bgcolor = \"");
       out.print(color);
-      out.write("\">\n");
+      out.write("\">\r\n");
       out.write("                <td>");
       out.print(ticketId);
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(element);
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(sr);
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(srReported);
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(myCCMTicket.getType());
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(myCCMTicket.getState().replace("STATE_", ""));
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(myCCMTicket.getNumOfCCTs());
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(signatute);
-      out.write("</td> \n");
+      out.write("</td> \r\n");
       out.write("                <td>");
       out.print(ctts);
-      out.write("</td> \n");
+      out.write("</td> \r\n");
       out.write("                <td>");
       out.print(comments);
-      out.write("</td>\n");
-      out.write("            </tr> \n");
-      out.write("\n");
+      out.write("</td>\r\n");
+      out.write("            </tr> \r\n");
+      out.write("\r\n");
       out.write("            ");
 
                     } catch (Exception e) {
@@ -192,13 +197,13 @@ public final class tickets_005f1_jsp extends org.apache.jasper.runtime.HttpJspBa
                     }
 
                 }
-      out.write("        \n");
-      out.write("        </table>\n");
-      out.write("\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("        \r\n");
+      out.write("        </table>\r\n");
+      out.write("\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

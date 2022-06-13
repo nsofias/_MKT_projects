@@ -53,7 +53,7 @@
                         });
 
             } else {
-                myCCMonitorStatsObjsContainer.getAlarmArrayList().entrySet().stream().map(entry -> entry.getValue())
+                myCCMonitorStatsObjsContainer.getAlarmArrayList().values().stream()
                         .filter(v -> v.getTicketId() != null)
                         .map(v -> (Ticket_MKT) myAlarmsDetectionListener.getTicketsMap().get(v.getTicketId()))
                         .filter(v -> v != null)

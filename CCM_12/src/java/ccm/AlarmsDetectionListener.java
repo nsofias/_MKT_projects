@@ -7,8 +7,6 @@ package ccm;
 
 import static ccm.CCMonitorStatsObjsContainer.MAIN_DIRECTORY;
 import ccm.MKT.Ticket_MKT;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
@@ -24,7 +22,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -118,7 +115,7 @@ public class AlarmsDetectionListener extends SimpleDaemon {
             CCMTicket myTicket = getTicketsMap().get(key);
             //System.out.println("CCM12:AlarmsDetectionListener:processData ticket for:" + myTicket.getElementName() + " of type:" + myTicket.getType() + " state:" + myTicket.getState());            
             String myType = myTicket.getType();
-            int affectedCustomers = myTicket.findNumberOfAffectedCustomers();
+            long affectedCustomers = myTicket.findNumberOfAffectedCustomers();
             int totalCalls = myTicket.getNumOfCalls();
             if (myTicket.getState().equals(Ticket.STATE_PENDING_TO_OPEN) && myTicket.isAllowedToOpen(myType, affectedCustomers, totalCalls)) {
                 try {
@@ -279,33 +276,6 @@ public class AlarmsDetectionListener extends SimpleDaemon {
         } catch (JsonIOException | JsonSyntaxException | FileNotFoundException | UnsupportedEncodingException e) {
             System.out.println("CCM12:AlarmsDetectionListener:startProccess:loadContent error:" + e.toString());
             //new MailAlert().sendmailAlert("ACTOR error:Tickets loadFromDisk error", e);
-        }
-    }
-
-    @Override
-    public void endProccess() throws Exception {// flushToDisk
-        if (!this.ticketsMap.isEmpty()) {
-            saveContent();
-            /*
-            String CONF_DIR = MAIN_DIRECTORY + "conf/";
-            System.out.println("CCM12:AlarmsDetectionListener:endProccess flushing To Disk");
-            try ( BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(CONF_DIR + "CCM" + ".tickets"), "UTF-8"))) {
-                Gson gson = new GsonBuilder().create();
-                gson.toJson(ticketsMap, writer);
-            } catch (Exception e) {
-                System.out.println("CCM12:endProccess tickets error:" + CONF_DIR + "CCM" + ".tickets Not saved!!! " + e.toString());
-            }
-
-            //------------------- DatabaseLogger close --------------------------------------- 
-            if (databaseLogger != null) {
-                try {
-                    databaseLogger.close();
-                } catch (Exception e) {
-                    System.out.println("CCM12:AlarmsDetectionListener:#4 error " + e.toString());
-                    e.printStackTrace(System.out);
-                }
-            }
-        */
         }
     }
 

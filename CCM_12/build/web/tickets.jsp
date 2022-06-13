@@ -144,6 +144,7 @@
 
         <table  border='1'>
             <tr>
+                <th>On the map view</th>
                 <th>SR number</th>
                 <th>sourse</th>
                 <th>Parent</th>                
@@ -163,60 +164,68 @@
                 for (String key : alarmIds) {
                     CCMAlarm myAlarm = alarmArrayList.get(key);
                     //System.out.println("CCM12:alarms key=" + key);
- 
-                        String alertOrigin = myAlarm.getAlarmObject().replace(";", "; ");;
-                        TimeStamp1 T0 = new TimeStamp1(myAlarm.getAlertStart());
-                        T0.addSeconds(-7400);
-                        String StatusS = "";
-                        boolean isAlive = myAlarm.isStilAlive();
-                        if (isAlive) {
-                            StatusS = "Ενεργο";
-                        } else {
-                            StatusS = "Μη ενεργό";
-                        }
-                        CCMTicket myCCMTicket = null;
-                        if (myAlarm.getTicketId() != null) {
-                            myCCMTicket = myAlarmsDetectionListener.getTicketsMap().get(myAlarm.getTicketId());
-                        }
-                        String signatute = "";
-                        String sr = "";
-                        String incidentStartDate = "";
-                        String incidentStoppedDate = "";
-                        String srReported = "";
-                        if (myCCMTicket != null) {
-                            if ((!alarmType.equals("ANY") && !alarmType.equals(myCCMTicket.getType()))
-                                    || (!ticketState.equals("ANY") && (myCCMTicket == null || !ticketState.equals(myCCMTicket.getState())))) {
-                                continue;
-                            }
-                            if (myCCMTicket.getLastSignature() != null) {
-                                signatute = myCCMTicket.getLastSignature().getLabel();
-                            }
-                            sr = myCCMTicket.getSR();
-                            if (sr == null) {
-                                sr = myCCMTicket.getComments();
-                            }
-                            try {
-                                srReported = new TimeStamp1(myCCMTicket.getIncidentReportedDate()).getNowFormated();
-                            } catch (Exception e) {
-                            }
-                            try {
-                                incidentStartDate = new TimeStamp1(myCCMTicket.getIncidentStartDate()).getNowFormated();
-                            } catch (Exception e) {
-                            }
-                            try {
-                                incidentStoppedDate = new TimeStamp1(myCCMTicket.getIncidentStoppedDate()).getNowFormated();
-                            } catch (Exception e) {
-                            }
 
-                            Counters1 myResources = new Counters1();
-                            myResources.updateCounters(myAggregationsForPeriod.getCurrentResourceCounters(myAlarm.getAlarmType()));
-                            myResources.removeParameter("COUNT");
-                            if (StatusS.equals("Ενεργο")) {%>
+                    String alertOrigin = myAlarm.getAlarmObject().replace(";", "; ");;
+                    TimeStamp1 T0 = new TimeStamp1(myAlarm.getAlertStart());
+                    T0.addSeconds(-7400);
+                    String StatusS = "";
+                    boolean isAlive = myAlarm.isStilAlive();
+                    if (isAlive) {
+                        StatusS = "Ενεργο";
+                    } else {
+                        StatusS = "Μη ενεργό";
+                    }
+                    CCMTicket myCCMTicket = null;
+                    if (myAlarm.getTicketId() != null) {
+                        myCCMTicket = myAlarmsDetectionListener.getTicketsMap().get(myAlarm.getTicketId());
+                    }
+                    String signatute = "";
+                    String sr = "";
+                    String incidentStartDate = "";
+                    String incidentStoppedDate = "";
+                    String srReported = "";
+                    if (myCCMTicket != null && myCCMTicket.getSR() != null && !myCCMTicket.getSR().isEmpty()) {
+                        if ((!alarmType.equals("ANY") && !alarmType.equals(myCCMTicket.getType()))
+                                || (!ticketState.equals("ANY") && (myCCMTicket == null || !ticketState.equals(myCCMTicket.getState())))) {
+                            continue;
+                        }
+                        if (myCCMTicket.getLastSignature() != null) {
+                            signatute = myCCMTicket.getLastSignature().getLabel();
+                        }
+                        sr = myCCMTicket.getSR();
+                        if (sr == null) {
+                            sr = myCCMTicket.getComments();
+                        }
+                        try {
+                            srReported = new TimeStamp1(myCCMTicket.getIncidentReportedDate()).getNowFormated();
+                        } catch (Exception e) {
+                        }
+                        try {
+                            incidentStartDate = new TimeStamp1(myCCMTicket.getIncidentStartDate()).getNowFormated();
+                        } catch (Exception e) {
+                        }
+                        try {
+                            incidentStoppedDate = new TimeStamp1(myCCMTicket.getIncidentStoppedDate()).getNowFormated();
+                        } catch (Exception e) {
+                        }
+                        String reason = "N/A";
+                        try {
+                            reason = myCCMTicket.getAlertMostSignificantReason();
+                        } catch (Exception e) {
+                        }
+                        long impact = myCCMTicket.getCustomerImpact();
+                        Double[] latLon = myCCMTicket.getLatLon();
+                        //--------
+                        if (StatusS.equals("Ενεργο")) {%>
             <tr bgcolor = 'white'>
                 <%   } else {%>    
-            <tr bgcolor>
+            <tr>
                 <%   }%> 
-                 <td><a href="CCMTicketInfo.jsp?myTicketId=<%=URLEncoder.encode(myAlarm.getTicketId(), "utf-8")%>" target="_blank"><%=sr%></a></td>
+                <%if (latLon != null) {%>
+                <td nowrap><a href="map_1.jsp?lat=<%=latLon[0]%>&lon=<%=latLon[1]%>"><IMG src = "fyrom.jpg"/></a></td>
+                <%} else 
+            {%> <td></td><%}%>
+                <td><a href="CCMTicketInfo.jsp?myTicketId=<%=URLEncoder.encode(myAlarm.getTicketId(), "utf-8")%>" target="_blank"><%=sr%></a></td>
                 <td><%=alertOrigin%></td> 
                 <td><%=myAlarm.getAlarmParent().replace(";", "; ")%></td>                              
                 <td><%=incidentStartDate%></td>
@@ -232,12 +241,11 @@
                 <%} else if (myCCMTicket.getState().equals(Ticket.STATE_CLOSED)) {%>                
                 <!--<td><a href='tickets.jsp?openTicket=<%=myAlarm.getTicketId()%>' target='_blank'>open</a></td>-->
                 <%}%>
-                <td><%=myCCMTicket.getAlertMostSignificantReason()%></td>
-                <td><%=myCCMTicket.getCustomerImpact()%></td>
+                <td><%=reason%></td>
+                <td><%=impact%></td>
             </tr> 
 
             <%           }
-                    
 
                 }%>        
         </table>

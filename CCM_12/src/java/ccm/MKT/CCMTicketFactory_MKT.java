@@ -190,6 +190,9 @@ public class CCMTicketFactory_MKT implements CCMTicketFactory {
         myTicket_FYROM.setIncidentStartDate(myAlarm_FYROM.getAlarmStart());
         myTicket_FYROM.setState(Ticket_FYROM.STATE_PENDING_TO_OPEN);
         myTicket_FYROM.setSYNOPSIS(myTicket_FYROM.getDescUnformated());
+        //-----------PENDING_STATE_DURATION_MIN-----------           
+        myTicket_FYROM.setWaitTime(0);
+        myTicket.setMyTicket_IBM(myTicket_FYROM);
         //---------- weather ----------------------
         if (myAlarm_FYROM.getATC() != null) {
             String myATC = myAlarm_FYROM.getATC();
@@ -204,10 +207,7 @@ public class CCMTicketFactory_MKT implements CCMTicketFactory {
                 System.out.println("CCM12:weather error: " + e.toString());
                 e.printStackTrace();
             }
-        }
-        //-----------PENDING_STATE_DURATION_MIN-----------           
-        myTicket_FYROM.setWaitTime(0);
-        myTicket.setMyTicket_IBM(myTicket_FYROM);
+        }        
         return myTicket;
     }
 

@@ -114,39 +114,40 @@ public final class alarms_005fgannt_jsp extends org.apache.jasper.runtime.HttpJs
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
  String userTypes = "00,01,02";
+      out.write('\r');
       out.write('\n');
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     //String userTypes = "00,01,02";
     //  ----------- SEQURITY CHECK ---------------
@@ -157,31 +158,34 @@ public final class alarms_005fgannt_jsp extends org.apache.jasper.runtime.HttpJs
     String username = (String) session.getAttribute("username");
     if (userType == null)
         {
+      out.write('\r');
       out.write('\n');
       if (true) {
         _jspx_page_context.forward(url);
         return;
       }
+      out.write('\r');
       out.write('\n');
   return;
     }
 else if (userType.endsWith("-expired"))// password expired
         {
         
-      out.write("\n");
-      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\n");
+      out.write("\r\n");
+      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\r\n");
       out.write("        ");
       if (true) {
         _jspx_page_context.forward("change_password.jsp");
         return;
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("        ");
 return;
         }
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write('\r');
       out.write('\n');
 
 //----------- sequrity----------------
@@ -190,8 +194,8 @@ return;
         if (!userTypes.contains(userType))
             {
             
-      out.write("\n");
-      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\n");
+      out.write("\r\n");
+      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\r\n");
       out.write("            ");
 return;
             }
@@ -201,8 +205,8 @@ return;
         }
 //----------- sequrity end----------------
 
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
 
     request.setCharacterEncoding("UTF-8");
     response.setCharacterEncoding("UTF-8");
@@ -224,6 +228,7 @@ return;
 
     Map<String, CCMAlarm> alarmArrayList = myCCMonitorStatsObjsContainer.getAlarmArrayList();
     if (alarmArrayList.isEmpty()) {
+      out.write('\r');
       out.write('\n');
       return;
     }
@@ -296,8 +301,8 @@ e                .printStackTrace();
         e.printStackTrace(System.out);
     }
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

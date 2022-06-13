@@ -3,12 +3,12 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import nsofiasLib.utils.TrafficVolumnPatern;
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.HashSet;
 import java.util.Set;
 import nsofiasLib.time.TimeStamp1;
-import nsofiasLib.utils.VolumnPercentagePatern;
 import nsofiasLib.utils.MyChart;
 import nsofiasLib.utils.Counters1;
 import nsofiasLib.others.SimpleDaemon;
@@ -69,19 +69,19 @@ public final class QStatsObjsViewer_005ftext_jsp extends org.apache.jasper.runti
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
 
     response.setContentType("text/html");
@@ -101,7 +101,7 @@ public final class QStatsObjsViewer_005ftext_jsp extends org.apache.jasper.runti
     to = myAggregationsForPeriod.getTo();
     Counters1 myResources = new Counters1();
         myResources.updateCounters(myAggregationsForPeriod.getCurrentResourceCounters(resourceType));
-        Map<String, VolumnPercentagePatern> patterns = myCCMonitorStatsObjsContainer.getPaternsOfResource(resourceType);
+        Map<String, TrafficVolumnPatern> patterns = myCCMonitorStatsObjsContainer.getPaternsOfResource(resourceType);
 
         for (String label : myResources.keySet()) {
             try{

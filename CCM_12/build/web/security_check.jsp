@@ -13,14 +13,15 @@
             String myUsername = request.getParameter("j_username");
             String request_URI = request.getParameter("request_URI");
         //    if ( request_URI ==null || request_URI.isEmpty() || request_URI.equals("login.jsp") || request_URI.equals("null"))request_URI="index.jsp";
-            //---------------------    
+            //--------------------- 
+            String connectionURL="";
             try
                 {
                 String userRole = null;
                 String modules = null;
                 String myPassword = request.getParameter("j_password");
                 String jdbcDriver = Parameters.loadStringValue(System.getenv("APPLICATIONS_PATH") + "/ccm/conf/parameters.properties", "jdbcDriver", "UTF8");
-                String connectionURL = Parameters.loadStringValue(System.getenv("APPLICATIONS_PATH") + "/ACTOR/conf/parameters.properties", "connectionURL", "UTF8");
+                connectionURL = Parameters.loadStringValue(System.getenv("APPLICATIONS_PATH") + "/ccm/conf/parameters.properties", "connectionURL", "UTF8");
                 myDatabaseLogger = new DatabaseLogger(jdbcDriver, connectionURL);
                 myDatabaseLogger.connect();
                 String sqlStr = "SELECT * FROM users WHERE users.username='" + myUsername + "' AND users.password='" + myPassword + "'";
@@ -70,7 +71,7 @@
                     }//try
                 catch (Exception e)
                     {
-                    out.println(e.toString());
+                    out.println(connectionURL+" error:"+e.toString());
                 %>
         request_URI=<%=request_URI%>
         <b><font face="Verdana" size="3" color="#000080"><%=e.toString()%></font></b>

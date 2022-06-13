@@ -7,7 +7,7 @@ import java.util.LinkedHashSet;
 import java.util.HashSet;
 import java.util.Set;
 import nsofiasLib.time.TimeStamp1;
-import nsofiasLib.utils.VolumnPercentagePatern;
+import nsofiasLib.utils.TrafficVolumnPatern;
 import nsofiasLib.utils.MyChart;
 import nsofiasLib.utils.Counters1;
 import nsofiasLib.others.SimpleDaemon;
@@ -68,18 +68,18 @@ public final class QStatsObjsViewer_jsp extends org.apache.jasper.runtime.HttpJs
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     response.setContentType("image/png");
     response.setHeader("Cache-Control", "no-cache"); //HTTP 1.1
@@ -108,7 +108,7 @@ public final class QStatsObjsViewer_jsp extends org.apache.jasper.runtime.HttpJs
     } catch (Exception e) {
     }
     // ------------------------------               
-    Map<String, VolumnPercentagePatern> paterns = myCCMonitorStatsObjsContainer.getPaternsOfResource(resourceType);
+    Map<String, TrafficVolumnPatern> paterns = myCCMonitorStatsObjsContainer.getPaternsOfResource(resourceType);
     //----------------------------   
     AggregationsForPeriod myAggregationsForPeriod = myCCMonitorStatsObjsContainer.getCurrentObject();
     from = myAggregationsForPeriod.getFrom();

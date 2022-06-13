@@ -62,7 +62,7 @@ public class Ticket_OTE extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
     }
 
     @Override
-    public boolean isAllowedToOpen(String myType, int affectedCustomers, int totalCalls) {
+    public boolean isAllowedToOpen(String myType, long affectedCustomers, int totalCalls) {
         Parameters myParameters = new Parameters(System.getenv("APPLICATIONS_PATH") + "/ccm/conf/parameters.properties", "UTF8");
         int createTicketMinCallsDefault = myParameters.getIntValue("createTicketMinCalls.DEFAULT", 5);
         long createTicketMinCallsForType = myParameters.getIntValue("createTicketMinCalls." + myType, createTicketMinCallsDefault);
@@ -73,7 +73,7 @@ public class Ticket_OTE extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
     }
 
     @Override
-    public int findNumberOfAffectedCustomers() {
+    public long findNumberOfAffectedCustomers() {
         return 0;
     }
 
@@ -617,7 +617,6 @@ public class Ticket_OTE extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
         return this.getLastSignature().getLabel().equals(Signature_OTE.SIGNATURE_9);
     }
 
-
     @Override
     public String getSR() {
         if (myTicketSiebel != null) {
@@ -760,7 +759,6 @@ public class Ticket_OTE extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
     /**
      * @return the signatureHistory
      */
-
     public ArrayList<String> getSignatureHistory() {
         return signatureHistory;
     }
@@ -957,6 +955,11 @@ public class Ticket_OTE extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
         } catch (Exception e) {
         }
         return value;
+    }
+
+    @Override
+    public Double[] getLatLon() {
+        return null;
     }
 
     public static void main(String[] args) {

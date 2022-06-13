@@ -4,10 +4,7 @@
  */
 package ccm;
 
-import ccm.MKT.Ticket_MKT;
-import ccm.OTE.Ticket_OTE;
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -25,6 +22,7 @@ public class MonitorServletContextListener implements ServletContextListener {
     Map<String, SimpleDaemon> daemons = new HashMap<>();
     Counters browseCounters = new Counters();
     CCMonitorStatsObjsContainer myContainer;
+    AlarmsDetectionListener myAlarmsDetectionListener;
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
@@ -135,8 +133,7 @@ public class MonitorServletContextListener implements ServletContextListener {
                 }
             }
             //-------------------------------------------------------
-            AlarmsDetectionListener myAlarmsDetectionListener = new AlarmsDetectionListener(10000, 6);
-            //myAlarmsDetectionListener.setMyTicketsTypeToken(myTicketsTypeToken);
+            myAlarmsDetectionListener = new AlarmsDetectionListener(10000, 6);
             myAlarmsDetectionListener.setCCMTicketFactory(myCCMTicketFactory);
             myAlarmsDetectionListener.setDaemonName("alarmsDetectionListener");
             start_daemon(myAlarmsDetectionListener);
@@ -189,28 +186,17 @@ public class MonitorServletContextListener implements ServletContextListener {
             }
         }
         myContainer.flushToDisk("CCM");
+        myAlarmsDetectionListener.saveContent();
         System.out.println("CCM12:CCM12:--->flushed To Disk");
         //
         int count = 0;
-        while (!allFinished() && count++ < 60) {
+        while (!allFinished() && count++ < 120) {
             try {
-                System.out.println("CCM12: stopping:" + (60 - count));
+                System.out.println("CCM12: stopping:" + (120 - count));
                 Thread.sleep(1000);
-            } catch (Exception e) {
+            } catch (InterruptedException e) {
             }
-        }
-        //------------ force flushing ---------
-        for (String key : daemons.keySet()) {
-            try {
-                SimpleDaemon myDaemon = daemons.get(key);
-                if (!myDaemon.isStopped()) {
-                    System.out.println("CCM12:--->" + key + " is stays running and will be flushed!!!");
-                    myDaemon.endProccess();
-                }
-            } catch (Exception e) {
-                System.out.println("CCM12: error during termination for: " + key);
-            }
-        }        
+        }       
         System.out.println("CCM12: all processes stoped!");
     }
 

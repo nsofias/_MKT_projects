@@ -42,9 +42,9 @@ public final class tools_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
 
     ServletContext myContext = request.getServletContext();
     Counters myCounters = (Counters) myContext.getAttribute("browseCounters");
@@ -62,37 +62,37 @@ public final class tools_jsp extends org.apache.jasper.runtime.HttpJspBase
         }
     System.out.println("CCM12:customerActivity-tools.jsp:caller=" + caller);
 
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>Tools</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        <h1>Tools</h1>\n");
-      out.write("\n");
-      out.write("        <h2>Customer Activity:</h2>\n");
-      out.write("        <form action=\"tools.jsp\" method=\"POST\">\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>Tools</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <h1>Tools</h1>\r\n");
+      out.write("\r\n");
+      out.write("        <h2>Customer Activity:</h2>\r\n");
+      out.write("        <form action=\"tools.jsp\" method=\"POST\">\r\n");
       out.write("            <p><input type=\"text\" name=\"caller\" value=\"");
       out.print(caller);
-      out.write("\" size=\"30\" /> use 2112010020 for testing\n");
-      out.write("            <p>   <input type=\"submit\" name=\"submitCustomer\" value=\"OK!\" />\n");
-      out.write("        </form>\n");
-      out.write("    </body>\n");
+      out.write("\" size=\"30\" /> use 2112010020 for testing\r\n");
+      out.write("            <p>   <input type=\"submit\" name=\"submitCustomer\" value=\"OK!\" />\r\n");
+      out.write("        </form>\r\n");
+      out.write("    </body>\r\n");
       out.write("    ");
 if (caller != null)
             {
-      out.write("\n");
+      out.write("\r\n");
       out.write("    <iframe width=\"100%\" height=\"500\" src='customerActivity.jsp?caller=");
       out.print(caller.trim());
-      out.write("' frameborder= \"0\"></iframe>\n");
+      out.write("' frameborder= \"0\"></iframe>\r\n");
       out.write("        ");
   }
-      out.write("\n");
-      out.write("</html>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("</html>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

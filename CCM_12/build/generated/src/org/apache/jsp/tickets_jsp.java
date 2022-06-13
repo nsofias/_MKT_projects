@@ -62,20 +62,21 @@ public final class tickets_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
  String userTypes = "00,01,02";
+      out.write('\r');
       out.write('\n');
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     //String userTypes = "00,01,02";
     //  ----------- SEQURITY CHECK ---------------
@@ -86,44 +87,48 @@ public final class tickets_jsp extends org.apache.jasper.runtime.HttpJspBase
     String username = (String) session.getAttribute("username");
     if (userType == null)
         {
+      out.write('\r');
       out.write('\n');
       if (true) {
         _jspx_page_context.forward(url);
         return;
       }
+      out.write('\r');
       out.write('\n');
   return;
     }
 else if (userType.endsWith("-expired"))// password expired
         {
         
-      out.write("\n");
-      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\n");
+      out.write("\r\n");
+      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\r\n");
       out.write("        ");
       if (true) {
         _jspx_page_context.forward("change_password.jsp");
         return;
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("        ");
 return;
         }
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write('\r');
       out.write('\n');
 //----------- sequrity----------------
     try {
         if (!userTypes.contains(userType)) {
 
-      out.write("\n");
-      out.write("<font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\n");
+      out.write("\r\n");
+      out.write("<font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\r\n");
 return;
         }
     } catch (Exception e) {
     }
 //----------- sequrity end----------------
 
+      out.write('\r');
       out.write('\n');
 
     request.setCharacterEncoding("UTF-8");
@@ -138,31 +143,31 @@ return;
 
     }
 
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <title>Tickets</title>\n");
-      out.write("        <link rel=\"stylesheet\" href=\"global.css\">\n");
-      out.write("        <script language=\"javascript\">\n");
-      out.write("            var max_timePage = 120;\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <title>Tickets</title>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"global.css\">\r\n");
+      out.write("        <script language=\"javascript\">\r\n");
+      out.write("            var max_timePage = 120;\r\n");
       out.write("            var max_timeData = ");
       out.print(sinse_myLastNewAlarms);
-      out.write(";\n");
-      out.write("            var cinterval = setInterval('countdown_timer()', 1000);\n");
-      out.write("\n");
-      out.write("            function countdown_timer() {\n");
-      out.write("                max_timePage--;\n");
-      out.write("                max_timeData++;\n");
-      out.write("                document.getElementById('countdownPage').innerHTML = max_timePage;\n");
-      out.write("                document.getElementById('countdownData').innerHTML = max_timeData;\n");
-      out.write("                //\n");
-      out.write("                if (max_timePage === 0) {\n");
-      out.write("                    clearInterval(cinterval);\n");
-      out.write("                }\n");
-      out.write("            }\n");
-      out.write("        </script>\n");
-      out.write("    </head>\n");
+      out.write(";\r\n");
+      out.write("            var cinterval = setInterval('countdown_timer()', 1000);\r\n");
+      out.write("\r\n");
+      out.write("            function countdown_timer() {\r\n");
+      out.write("                max_timePage--;\r\n");
+      out.write("                max_timeData++;\r\n");
+      out.write("                document.getElementById('countdownPage').innerHTML = max_timePage;\r\n");
+      out.write("                document.getElementById('countdownData').innerHTML = max_timeData;\r\n");
+      out.write("                //\r\n");
+      out.write("                if (max_timePage === 0) {\r\n");
+      out.write("                    clearInterval(cinterval);\r\n");
+      out.write("                }\r\n");
+      out.write("            }\r\n");
+      out.write("        </script>\r\n");
+      out.write("    </head>\r\n");
       out.write("    ");
 
         Counters myCounters = (Counters) myContext.getAttribute("browseCounters");
@@ -198,13 +203,13 @@ return;
         AggregationsForPeriod myAggregationsForPeriod = myCCMonitorStatsObjsContainer.getCurrentObject();
         Set<String> types = myAggregationsForPeriod.getAggregationLabels();
     
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("    <body>\n");
-      out.write("        <form action=\"tickets.jsp\">\n");
-      out.write("            Alarm Type:<select name=\"alarmType\" onchange=\"this.form.submit()\">                \n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <form action=\"tickets.jsp\">\r\n");
+      out.write("            Alarm Type:<select name=\"alarmType\" onchange=\"this.form.submit()\">                \r\n");
       out.write("                ");
 
                     String alarmType = request.getParameter("alarmType");
@@ -222,12 +227,12 @@ return;
                         }
                     }
                 
-      out.write("\n");
-      out.write("            </select>&nbsp;\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("            &nbsp;&nbsp;Ticket state :<select name=\"ticketState\" onchange=\"this.form.submit()\">                    \n");
+      out.write("\r\n");
+      out.write("            </select>&nbsp;\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("            &nbsp;&nbsp;Ticket state :<select name=\"ticketState\" onchange=\"this.form.submit()\">                    \r\n");
       out.write("                ");
 
                     String ticketState = request.getParameter("ticketState");
@@ -244,169 +249,177 @@ return;
                     out.println("<option value='" + Ticket.STATE_UPDATED + "'>" + Ticket.STATE_UPDATED + "</option>");
 
                 
-      out.write("        \n");
-      out.write("            </select>            \n");
-      out.write("\n");
-      out.write("        </form>        \n");
-      out.write("\n");
-      out.write("\n");
-      out.write("        <table border=\"0\" width=\"100%\"   id=\"table1\" >\n");
-      out.write("            <tr>\n");
-      out.write("                <td nowrap width=\"5%\" bgcolor=\"Gray\"><font color=\"white\">Page will refresh in (sec): <span id=\"countdownPage\">0</span></font></td>                \n");
-      out.write("                <td nowrap width=\"5%\" bgcolor=\"Gray\"><font color=\"white\">Data last update since (sec): <span id=\"countdownData\">0</span></font></td>                                   \n");
-      out.write("            </tr>\n");
-      out.write("        </table>        \n");
-      out.write("\n");
-      out.write("        <table  border='1'>\n");
-      out.write("            <tr>\n");
-      out.write("                <th>SR number</th>\n");
-      out.write("                <th>sourse</th>\n");
-      out.write("                <th>Parent</th>                \n");
-      out.write("                <th>SR started</th>\n");
-      out.write("                <th>SR stopped</th>\n");
-      out.write("                <th>SR reported</th>  \n");
-      out.write("                <th>SR type</th>  \n");
-      out.write("                <th>Ticket State</th>\n");
-      out.write("                <th>Customer calls</th>\n");
-      out.write("                <th>Bound CTTs</th>\n");
-      out.write("                <th>signature</th>\n");
-      out.write("                <th>reason</th>\n");
-      out.write("                <th>affected</th>\n");
-      out.write("            </tr>\n");
+      out.write("        \r\n");
+      out.write("            </select>            \r\n");
+      out.write("\r\n");
+      out.write("        </form>        \r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("        <table border=\"0\" width=\"100%\"   id=\"table1\" >\r\n");
+      out.write("            <tr>\r\n");
+      out.write("                <td nowrap width=\"5%\" bgcolor=\"Gray\"><font color=\"white\">Page will refresh in (sec): <span id=\"countdownPage\">0</span></font></td>                \r\n");
+      out.write("                <td nowrap width=\"5%\" bgcolor=\"Gray\"><font color=\"white\">Data last update since (sec): <span id=\"countdownData\">0</span></font></td>                                   \r\n");
+      out.write("            </tr>\r\n");
+      out.write("        </table>        \r\n");
+      out.write("\r\n");
+      out.write("        <table  border='1'>\r\n");
+      out.write("            <tr>\r\n");
+      out.write("                <th>On the map view</th>\r\n");
+      out.write("                <th>SR number</th>\r\n");
+      out.write("                <th>sourse</th>\r\n");
+      out.write("                <th>Parent</th>                \r\n");
+      out.write("                <th>SR started</th>\r\n");
+      out.write("                <th>SR stopped</th>\r\n");
+      out.write("                <th>SR reported</th>  \r\n");
+      out.write("                <th>SR type</th>  \r\n");
+      out.write("                <th>Ticket State</th>\r\n");
+      out.write("                <th>Customer calls</th>\r\n");
+      out.write("                <th>Bound CTTs</th>\r\n");
+      out.write("                <th>signature</th>\r\n");
+      out.write("                <th>reason</th>\r\n");
+      out.write("                <th>affected</th>\r\n");
+      out.write("            </tr>\r\n");
       out.write("            ");
                 ArrayList<String> alarmIds = new ArrayList(alarmArrayList.keySet());
                 Collections.sort(alarmIds, Collections.reverseOrder());
                 for (String key : alarmIds) {
                     CCMAlarm myAlarm = alarmArrayList.get(key);
                     //System.out.println("CCM12:alarms key=" + key);
- 
-                        String alertOrigin = myAlarm.getAlarmObject().replace(";", "; ");;
-                        TimeStamp1 T0 = new TimeStamp1(myAlarm.getAlertStart());
-                        T0.addSeconds(-7400);
-                        String StatusS = "";
-                        boolean isAlive = myAlarm.isStilAlive();
-                        if (isAlive) {
-                            StatusS = "Ενεργο";
-                        } else {
-                            StatusS = "Μη ενεργό";
-                        }
-                        CCMTicket myCCMTicket = null;
-                        if (myAlarm.getTicketId() != null) {
-                            myCCMTicket = myAlarmsDetectionListener.getTicketsMap().get(myAlarm.getTicketId());
-                        }
-                        String signatute = "";
-                        String sr = "";
-                        String incidentStartDate = "";
-                        String incidentStoppedDate = "";
-                        String srReported = "";
-                        if (myCCMTicket != null) {
-                            if ((!alarmType.equals("ANY") && !alarmType.equals(myCCMTicket.getType()))
-                                    || (!ticketState.equals("ANY") && (myCCMTicket == null || !ticketState.equals(myCCMTicket.getState())))) {
-                                continue;
-                            }
-                            if (myCCMTicket.getLastSignature() != null) {
-                                signatute = myCCMTicket.getLastSignature().getLabel();
-                            }
-                            sr = myCCMTicket.getSR();
-                            if (sr == null) {
-                                sr = myCCMTicket.getComments();
-                            }
-                            try {
-                                srReported = new TimeStamp1(myCCMTicket.getIncidentReportedDate()).getNowFormated();
-                            } catch (Exception e) {
-                            }
-                            try {
-                                incidentStartDate = new TimeStamp1(myCCMTicket.getIncidentStartDate()).getNowFormated();
-                            } catch (Exception e) {
-                            }
-                            try {
-                                incidentStoppedDate = new TimeStamp1(myCCMTicket.getIncidentStoppedDate()).getNowFormated();
-                            } catch (Exception e) {
-                            }
 
-                            Counters1 myResources = new Counters1();
-                            myResources.updateCounters(myAggregationsForPeriod.getCurrentResourceCounters(myAlarm.getAlarmType()));
-                            myResources.removeParameter("COUNT");
-                            if (StatusS.equals("Ενεργο")) {
-      out.write("\n");
-      out.write("            <tr bgcolor = 'white'>\n");
+                    String alertOrigin = myAlarm.getAlarmObject().replace(";", "; ");;
+                    TimeStamp1 T0 = new TimeStamp1(myAlarm.getAlertStart());
+                    T0.addSeconds(-7400);
+                    String StatusS = "";
+                    boolean isAlive = myAlarm.isStilAlive();
+                    if (isAlive) {
+                        StatusS = "Ενεργο";
+                    } else {
+                        StatusS = "Μη ενεργό";
+                    }
+                    CCMTicket myCCMTicket = null;
+                    if (myAlarm.getTicketId() != null) {
+                        myCCMTicket = myAlarmsDetectionListener.getTicketsMap().get(myAlarm.getTicketId());
+                    }
+                    String signatute = "";
+                    String sr = "";
+                    String incidentStartDate = "";
+                    String incidentStoppedDate = "";
+                    String srReported = "";
+                    if (myCCMTicket != null && myCCMTicket.getSR() != null && !myCCMTicket.getSR().isEmpty()) {
+                        if ((!alarmType.equals("ANY") && !alarmType.equals(myCCMTicket.getType()))
+                                || (!ticketState.equals("ANY") && (myCCMTicket == null || !ticketState.equals(myCCMTicket.getState())))) {
+                            continue;
+                        }
+                        if (myCCMTicket.getLastSignature() != null) {
+                            signatute = myCCMTicket.getLastSignature().getLabel();
+                        }
+                        sr = myCCMTicket.getSR();
+                        if (sr == null) {
+                            sr = myCCMTicket.getComments();
+                        }
+                        try {
+                            srReported = new TimeStamp1(myCCMTicket.getIncidentReportedDate()).getNowFormated();
+                        } catch (Exception e) {
+                        }
+                        try {
+                            incidentStartDate = new TimeStamp1(myCCMTicket.getIncidentStartDate()).getNowFormated();
+                        } catch (Exception e) {
+                        }
+                        try {
+                            incidentStoppedDate = new TimeStamp1(myCCMTicket.getIncidentStoppedDate()).getNowFormated();
+                        } catch (Exception e) {
+                        }
+
+                        Counters1 myResources = new Counters1();
+                        myResources.updateCounters(myAggregationsForPeriod.getCurrentResourceCounters(myAlarm.getAlarmType()));
+                        myResources.removeParameter("COUNT");
+                        //-----------
+                        Double[] latLon = myCCMTicket.getLatLon();
+                        //--------
+                        if (StatusS.equals("Ενεργο")) {
+      out.write("\r\n");
+      out.write("            <tr bgcolor = 'white'>\r\n");
       out.write("                ");
    } else {
-      out.write("    \n");
-      out.write("            <tr bgcolor>\n");
+      out.write("    \r\n");
+      out.write("            <tr bgcolor>\r\n");
       out.write("                ");
    }
-      out.write(" \n");
-      out.write("                 <td><a href=\"CCMTicketInfo.jsp?myTicketId=");
+      out.write(" \r\n");
+      out.write("                <td nowrap><a href=\"map_1.jsp?lat=");
+      out.print(latLon[0]);
+      out.write("&lon=");
+      out.print(latLon[1]);
+      out.write("\"><IMG src = \"fyrom.jpg\"/></a></td>\r\n");
+      out.write("                <td><a href=\"CCMTicketInfo.jsp?myTicketId=");
       out.print(URLEncoder.encode(myAlarm.getTicketId(), "utf-8"));
       out.write("\" target=\"_blank\">");
       out.print(sr);
-      out.write("</a></td>\n");
+      out.write("</a></td>\r\n");
       out.write("                <td>");
       out.print(alertOrigin);
-      out.write("</td> \n");
+      out.write("</td> \r\n");
       out.write("                <td>");
       out.print(myAlarm.getAlarmParent().replace(";", "; "));
-      out.write("</td>                              \n");
+      out.write("</td>                              \r\n");
       out.write("                <td>");
       out.print(incidentStartDate);
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(incidentStoppedDate);
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(srReported);
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(myCCMTicket.getType());
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(myCCMTicket.getState().replace("STATE_", ""));
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(myCCMTicket.getNumOfCalls());
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(myCCMTicket.getNumOfCCTs());
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(signatute);
-      out.write("</td> \n");
+      out.write("</td> \r\n");
       out.write("                ");
 if (myCCMTicket.getState().equals(Ticket.STATE_OPEN) && false) {
-      out.write("                \n");
+      out.write("                \r\n");
       out.write("                <td><a href='alarms.jsp?myTicketId=");
       out.print(URLEncoder.encode(myCCMTicket.getTicketId(), "UTF-8"));
-      out.write("' target='_blank'>close</a></td>\n");
+      out.write("' target='_blank'>close</a></td>\r\n");
       out.write("                ");
 } else if (myCCMTicket.getState().equals(Ticket.STATE_CLOSED)) {
-      out.write("                \n");
+      out.write("                \r\n");
       out.write("                <!--<td><a href='tickets.jsp?openTicket=");
       out.print(myAlarm.getTicketId());
-      out.write("' target='_blank'>open</a></td>-->\n");
+      out.write("' target='_blank'>open</a></td>-->\r\n");
       out.write("                ");
 }
-      out.write("\n");
+      out.write("\r\n");
       out.write("                <td>");
       out.print(myCCMTicket.getAlertMostSignificantReason());
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(myCCMTicket.getCustomerImpact());
-      out.write("</td>\n");
-      out.write("            </tr> \n");
-      out.write("\n");
+      out.write("</td>\r\n");
+      out.write("            </tr> \r\n");
+      out.write("\r\n");
       out.write("            ");
            }
-                    
 
                 }
-      out.write("        \n");
-      out.write("        </table>\n");
-      out.write("\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("        \r\n");
+      out.write("        </table>\r\n");
+      out.write("\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
