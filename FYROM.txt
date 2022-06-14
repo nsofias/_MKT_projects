@@ -233,7 +233,9 @@ cd /c/myfiles/JavaProjects/_MKT_projects
 --------
 Githab token: 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
 https://github.com/nsofias/_MKT_projects.git
-git remote set-url origin https://nsofias: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@github.com/nsofias/_MKT_projects.git
+git remote set-url origin https://nsofias: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@github.com/nsofias/_MKT_projects.git
+git remote add origin https://nsofias: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@github.com/nsofias/_MKT_projects.git
+
 git clone https://github.com/nsofias/_MKT_projects.git C:\myfiles\JavaProjects\_MKT_projects
 =========
 git commit -a -m "test changes"

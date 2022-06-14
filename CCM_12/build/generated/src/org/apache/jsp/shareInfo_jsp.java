@@ -45,9 +45,9 @@ public final class shareInfo_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("<!DOCTYPE html>\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
 
 ServletContext myContext=request.getServletContext();
 Counters myCounters = (Counters)myContext.getAttribute("browseCounters");
@@ -64,27 +64,27 @@ if (comment!=null && !comment.isEmpty())
     myComments.add(0, comment);
     if (myComments.size()>3){myComments.remove(3);myComments.trimToSize();}
 
-      out.write("\r\n");
-      out.write("<b><h1>Please close this window!!!</h1></b>\r\n");
+      out.write("\n");
+      out.write("<b><h1>Please close this window!!!</h1></b>\n");
       out.write("    ");
 
     return;
     }
 
-      out.write("\r\n");
-      out.write("<html>\r\n");
-      out.write("    <head>\r\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <title>JSP Page</title>\r\n");
-      out.write("    </head>\r\n");
-      out.write("    <body>\r\n");
-      out.write("        <h1>Share information with other users. Your text (latin characters) will be visible on the top of the screen for about half an hour</h1>\r\n");
-      out.write("        <form action=\"shareInfo.jsp\" method=\"POST\">\r\n");
-      out.write("            <input type=\"text\" name=\"comment\" value=\"\" size=\"100\" />\r\n");
-      out.write("            <input type=\"submit\" value=\"ok\" />\r\n");
-      out.write("        </form>\r\n");
-      out.write("    </body>\r\n");
-      out.write("</html>\r\n");
+      out.write("\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <h1>Share information with other users. Your text (latin characters) will be visible on the top of the screen for about half an hour</h1>\n");
+      out.write("        <form action=\"shareInfo.jsp\" method=\"POST\">\n");
+      out.write("            <input type=\"text\" name=\"comment\" value=\"\" size=\"100\" />\n");
+      out.write("            <input type=\"submit\" value=\"ok\" />\n");
+      out.write("        </form>\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

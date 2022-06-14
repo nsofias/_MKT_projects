@@ -233,7 +233,7 @@ public class CalcTrafficPatternsDaemon extends SimpleDaemon {
                     myTrafficPatern.setVolumnPatern_mean(mean);
                     myTrafficPatern.setVolumnPatern_max(max);
                     if (myStatsObjContainer.getPaterns().get(resourceType) == null) {
-                        myStatsObjContainer.getPaterns().put(resourceType, new HashMap<String, TrafficVolumnPatern>());
+                        myStatsObjContainer.getPaterns().put(resourceType, new HashMap<>());
                     }
                     myStatsObjContainer.getPaterns().get(resourceType).put(resource, myTrafficPatern);
                     //System.out.println(myTrafficPatern);

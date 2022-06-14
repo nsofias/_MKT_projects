@@ -54,20 +54,20 @@ public final class numbers_005fcalled_jsp extends org.apache.jasper.runtime.Http
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("<html>\r\n");
-      out.write("    <head>\r\n");
-      out.write("        <title>Alarm calls</title>\r\n");
-      out.write("        <link rel=\"stylesheet\" href=\"global.css\">        \r\n");
-      out.write("    </head>\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <title>Alarm calls</title>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"global.css\">        \n");
+      out.write("    </head>\n");
+      out.write("\n");
 
     ServletContext myContext = request.getServletContext();
     Counters myCounters = (Counters) myContext.getAttribute("browseCounters");
@@ -102,9 +102,9 @@ public final class numbers_005fcalled_jsp extends org.apache.jasper.runtime.Http
     out.println("</table>");
    
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -49,13 +49,13 @@ public final class number_005fof_005fcallers_jsp extends org.apache.jasper.runti
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
 
     ServletContext myContext = request.getServletContext();
     Counters myCounters = (Counters) myContext.getAttribute("browseCounters");
@@ -73,8 +73,8 @@ public final class number_005fof_005fcallers_jsp extends org.apache.jasper.runti
     Counters1 myAnumbers = myCCMonitorStatsObjsContainer.getCallersCounters(myAlarm);
     out.println(myAnumbers.size());
 
-      out.write(" \r\n");
-      out.write("\r\n");
+      out.write(" \n");
+      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
