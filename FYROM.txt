@@ -1,4 +1,4 @@
- 
+﻿ 
 ---- DILIGENT SERVERS -------------
 diligent-01          10.232.63.13
 diligent-02          10.232.63.14
