@@ -310,8 +310,10 @@
                 <td>-</td>
                 <td><%=myAlarm.getWeatherInfo()%></td>  
                 <td><%=childs%></td>                                   
-                <%}%>                              
+                <%}%>
+                <!--
                 <td><a href='alarms.jsp?remove_alarm=<%=URLEncoder.encode(key, "utf-8")%>' target='_blank'>remove</a></td>
+                -->
                 </b>  
 
             </tr>        
