@@ -174,8 +174,7 @@
             </select>            
 
 
-            <%if (request.getParameter(
-                        "withSR") != null) {%>
+            <%if (request.getParameter("withSR") != null) {%>
             &nbsp;With SR<input onchange="this.form.submit()" type="checkbox" name="withSR" checked="checked" value="ON" />
             <%} else {%>
             &nbsp;With SR<input onchange="this.form.submit()" type="checkbox" name="withSR" value="ON" />
@@ -183,6 +182,7 @@
         </form>
         <table  border='1' width="100%">
             <tr>
+                <th>On the map view</th>
                 <th>sourse</th>                
                 <th>start</th>
                 <th>stop</th>
@@ -250,18 +250,19 @@
                         continue;
                     }
                     String impact = "N/A";
+                    Double[] latLon = null;
                     if (myCCMTicket != null) {
                         try {
                             impact = String.valueOf(myCCMTicket.getCustomerImpact());
                             if (myCCMTicket.getLastSignature() != null) {
                                 mySignature = myCCMTicket.getLastSignature().getLabel() + ":" + myCCMTicket.getLastSignature().getSynopsis();
                             }
-
                             srReported = new TimeStamp1(myCCMTicket.getIncidentReportedDate()).getNowFormated();
+                            latLon = myCCMTicket.getLatLon();
                         } catch (Exception e) {
                         }
                     }
-                    if (request.getParameter("withSR") != null && myCCMTicket.getSR() == null) {
+                    if (request.getParameter("withSR") != null && myCCMTicket != null && myCCMTicket.getSR() == null) {
                         continue;
                     }
                     String childs = "";
@@ -282,6 +283,9 @@
                 <%   } else {%>    
             <tr>
                 <%   }%> 
+                <%if (latLon != null) {%>
+                <td nowrap><a href="map_1.jsp?lat=<%=latLon[0]%>&lon=<%=latLon[1]%>"><IMG src = "fyrom.jpg"/></a></td>
+                <%} else {%> <td></td><%}%>                
                 <td><%=alertOrigin%></td>                                
                 <td nowrap><%=AlertStart.substring(0, 16)%></td>
                 <td nowrap><%=AlarmStop.substring(0, 16)%></td>  
