@@ -7,18 +7,18 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * &lt;p&gt;Java class for EIPingTargetType.
+ * <p>Java class for EIPingTargetType.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
- * &lt;pre&gt;
- * &amp;lt;simpleType name="EIPingTargetType"&amp;gt;
- *   &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&amp;gt;
- *     &amp;lt;enumeration value="Client"/&amp;gt;
- *     &amp;lt;enumeration value="Server"/&amp;gt;
- *     &amp;lt;enumeration value="Provider"/&amp;gt;
- *   &amp;lt;/restriction&amp;gt;
- * &amp;lt;/simpleType&amp;gt;
- * &lt;/pre&gt;
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <pre>
+ * &lt;simpleType name="EIPingTargetType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Client"/&gt;
+ *     &lt;enumeration value="Server"/&gt;
+ *     &lt;enumeration value="Provider"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
+ * </pre>
  * 
  */
 @XmlType(name = "EIPingTargetType", namespace = "http://messaging.ei.tmobile.net/datatypes")

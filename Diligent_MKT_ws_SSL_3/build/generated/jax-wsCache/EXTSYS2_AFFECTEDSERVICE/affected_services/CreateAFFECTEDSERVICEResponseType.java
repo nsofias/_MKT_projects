@@ -11,22 +11,22 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * &lt;p&gt;Java class for CreateAFFECTEDSERVICEResponseType complex type.
+ * <p>Java class for CreateAFFECTEDSERVICEResponseType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="CreateAFFECTEDSERVICEResponseType"&amp;gt;
- *   &amp;lt;complexContent&amp;gt;
- *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *       &amp;lt;sequence&amp;gt;
- *         &amp;lt;element name="AFFECTEDSERVICESet" type="{http://www.ibm.com/maximo}AFFECTEDSERVICECombinedKeySetType" minOccurs="0"/&amp;gt;
- *       &amp;lt;/sequence&amp;gt;
- *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}CommonContentGroup"/&amp;gt;
- *     &amp;lt;/restriction&amp;gt;
- *   &amp;lt;/complexContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="CreateAFFECTEDSERVICEResponseType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="AFFECTEDSERVICESet" type="{http://www.ibm.com/maximo}AFFECTEDSERVICECombinedKeySetType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.ibm.com/maximo}CommonContentGroup"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */

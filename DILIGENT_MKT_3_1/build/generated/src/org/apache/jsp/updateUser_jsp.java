@@ -47,24 +47,24 @@ public final class updateUser_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n");
-      out.write("   \"http://www.w3.org/TR/html4/loose.dtd\">\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n");
+      out.write("   \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>JSP Page</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("        ");
  
 //---------------------
@@ -74,26 +74,27 @@ String url="login.jsp?request_URI="+request_URI;
 String userType=(String)session.getAttribute("role");
 if (userType==null)
     {
-      out.write("\n");
+      out.write("\r\n");
       out.write("    ");
       if (true) {
         _jspx_page_context.forward(url);
         return;
       }
+      out.write('\r');
       out.write('\n');
   return;
     }
 if (userType.endsWith("-expired"))// password expired
     {
     
-      out.write("\n");
-      out.write("    <b><font face=\"Verdana\" size=\"3\" color=\"#000080\"></font></b>Sorry, your password is expired!!!\n");
+      out.write("\r\n");
+      out.write("    <b><font face=\"Verdana\" size=\"3\" color=\"#000080\"></font></b>Sorry, your password is expired!!!\r\n");
       out.write("    ");
       if (true) {
         _jspx_page_context.forward("change_password.jsp");
         return;
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("    ");
 return;
     }
@@ -121,8 +122,8 @@ return;
             }catch(Exception e){
       out.write("User already  exists.  Now go <a href=\"showUsers.jsp\">  back to Users</a> ");
 return;}
-      out.write("\n");
-      out.write("            <h2>User created successfully, now go <a href=\"showUsers.jsp\">  back to Users</a></h2>\n");
+      out.write("\r\n");
+      out.write("            <h2>User created successfully, now go <a href=\"showUsers.jsp\">  back to Users</a></h2>\r\n");
       out.write("            ");
 
             return;
@@ -132,8 +133,8 @@ return;}
             String sqlStr="update users set password = '"+password+"',role='"+role+"',lastPasswordChange='"+lastPasswordChange+"',realName='"+realName+"',passwordExpiryDate='"+passwordExpiryDate+"' where username='"+username+"'";
             myDatabaseLogger.writeln(sqlStr); 
             
-      out.write("\n");
-      out.write("            <h2>User updated successfully, now go<a href=\"showUsers.jsp\">  back to Users</a></h2>\n");
+      out.write("\r\n");
+      out.write("            <h2>User updated successfully, now go<a href=\"showUsers.jsp\">  back to Users</a></h2>\r\n");
       out.write("            ");
 
             return;
@@ -143,73 +144,73 @@ return;}
             String sqlStr="delete from users where username='"+username+"'";
             myDatabaseLogger.writeln(sqlStr); 
             
-      out.write("\n");
-      out.write("            <h2>User deleted successfully, now go <a href=\"showUsers.jsp\"> back to Users</a></h2>\n");
+      out.write("\r\n");
+      out.write("            <h2>User deleted successfully, now go <a href=\"showUsers.jsp\"> back to Users</a></h2>\r\n");
       out.write("            ");
 
             return;
             }    
-      out.write("    \n");
-      out.write("\n");
+      out.write("    \r\n");
+      out.write("\r\n");
       out.write("        <h1>");
       out.print(title);
-      out.write("</h1>\n");
-      out.write("        <form action=\"updateUser.jsp?update\">\n");
-      out.write("        \n");
+      out.write("</h1>\r\n");
+      out.write("        <form action=\"updateUser.jsp?update\">\r\n");
+      out.write("        \r\n");
       if (username!=null)
             {
             String sqlStr="select * from users where username='"+username+"'";
             ResultSet users=myDatabaseLogger.getResults(sqlStr);
             users.next();
             
-      out.write(" \n");
-      out.write("            <table border=\"1\" cellspacing=\"1\" cellpadding=\"1\">            \n");
+      out.write(" \r\n");
+      out.write("            <table border=\"1\" cellspacing=\"1\" cellpadding=\"1\">            \r\n");
       out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">username</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"username\" value=\"");
       out.print(users.getString(1));
-      out.write("\"></td>\n");
+      out.write("\"></td>\r\n");
       out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">password</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"password\" value=\"");
       out.print(users.getString(2));
-      out.write("\"></td>\n");
+      out.write("\"></td>\r\n");
       out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">role</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"role\" value=\"");
       out.print(users.getString(3));
-      out.write("\"></td>\n");
+      out.write("\"></td>\r\n");
       out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">last Password Change</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"lastPasswordChange\" value=\"");
       out.print(users.getString(4));
-      out.write("\"></td>\n");
+      out.write("\"></td>\r\n");
       out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">real Name</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"realName\" value=\"");
       out.print(users.getString(5));
-      out.write("\"></td>\n");
+      out.write("\"></td>\r\n");
       out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">password Expiry Date</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"passwordExpiryDate\" value=\"");
       out.print(users.getString(6));
-      out.write("\"></td>    \n");
-      out.write("        </table>                    \n");
-      out.write("        <input name=\"UPDATE\" type=\"submit\" value=\"Update User\">\n");
-      out.write("        <input name=\"DELETE\" type=\"submit\" value=\"Delete User\">                \n");
+      out.write("\"></td>    \r\n");
+      out.write("        </table>                    \r\n");
+      out.write("        <input name=\"UPDATE\" type=\"submit\" value=\"Update User\">\r\n");
+      out.write("        <input name=\"DELETE\" type=\"submit\" value=\"Delete User\">                \r\n");
           }
         else
             {
             TimeStamp1 now= new TimeStamp1();
             now.addDays(-1);                       
         
-      out.write("  \n");
-      out.write("        <table border=\"1\" cellspacing=\"1\" cellpadding=\"1\">            \n");
-      out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">username</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"username\" value=\"\"></td>\n");
-      out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">password</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"password\" value=\"\"></td>\n");
-      out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">role</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"role\" value=\"\"></td>\n");
-      out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">last Password Change</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input readonly type=\"text\" name=\"lastPasswordChange\" value=\"\"></td>\n");
-      out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">real Name</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"realName\" value=\"\"></td>\n");
+      out.write("  \r\n");
+      out.write("        <table border=\"1\" cellspacing=\"1\" cellpadding=\"1\">            \r\n");
+      out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">username</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"username\" value=\"\"></td>\r\n");
+      out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">password</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"password\" value=\"\"></td>\r\n");
+      out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">role</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"role\" value=\"\"></td>\r\n");
+      out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">last Password Change</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input readonly type=\"text\" name=\"lastPasswordChange\" value=\"\"></td>\r\n");
+      out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">real Name</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input type=\"text\" name=\"realName\" value=\"\"></td>\r\n");
       out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\">password Expiry Date</td><td align=\"left\" bgcolor=\"#DEB0AF\"><input readonly type=\"text\" name=\"passwordExpiryDate\" value=\"");
       out.print(now.getTodayUnformated());
-      out.write("\"></td>                             \n");
-      out.write("        </table>                    \n");
-      out.write("        <input name=\"CREATE_USER\" type=\"submit\" value=\"Create User\">                \n");
+      out.write("\"></td>                             \r\n");
+      out.write("        </table>                    \r\n");
+      out.write("        <input name=\"CREATE_USER\" type=\"submit\" value=\"Create User\">                \r\n");
           }
-      out.write(" \n");
-      out.write("\n");
-      out.write("        </form>\n");
-      out.write("    \n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write(" \r\n");
+      out.write("\r\n");
+      out.write("        </form>\r\n");
+      out.write("    \r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

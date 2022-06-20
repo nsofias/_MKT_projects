@@ -64,18 +64,18 @@ boolean check_password_content_ok(String myNewPassword) throws Exception
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n");
-      out.write("   \"http://www.w3.org/TR/html4/loose.dtd\">\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n");
+      out.write("   \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>JSP Page</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
   
     String username=(String)session.getAttribute("username");
     String password=(String)session.getAttribute("password");
@@ -87,54 +87,54 @@ boolean check_password_content_ok(String myNewPassword) throws Exception
     DatabaseLogger myDatabaseLogger=null;
     if (username==null)
         {
-      out.write("\n");
+      out.write("\r\n");
       out.write("        ");
       if (true) {
         _jspx_page_context.forward("login.jsp");
         return;
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("    ");
   return;
         }    
     if (!password.equals(myPassword_old))
         {
-      out.write("\n");
-      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your OLD password is not entered correctly. Please go\n");
-      out.write("        <a href=\"change_password.jsp\">back</a> and try again!</font></b>\n");
+      out.write("\r\n");
+      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your OLD password is not entered correctly. Please go\r\n");
+      out.write("        <a href=\"change_password.jsp\">back</a> and try again!</font></b>\r\n");
       out.write("   ");
    return;
         }
     if (!myPassword_1.equals(myPassword_2))
         {
-      out.write("\n");
-      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is not entered correctly. Please go\n");
-      out.write("        <a href=\"change_password.jsp\">back</a> and try again!</font></b>\n");
+      out.write("\r\n");
+      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is not entered correctly. Please go\r\n");
+      out.write("        <a href=\"change_password.jsp\">back</a> and try again!</font></b>\r\n");
       out.write("   ");
    return;
         }
     String myNewPassword = myPassword_1;
     if (myNewPassword.length()<8)
         {
-      out.write("\n");
-      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password should be at least 8 characters long. Please go\n");
-      out.write("        <a href=\"change_password.jsp\">back</a> and try again!</font></b>\n");
+      out.write("\r\n");
+      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password should be at least 8 characters long. Please go\r\n");
+      out.write("        <a href=\"change_password.jsp\">back</a> and try again!</font></b>\r\n");
       out.write("   ");
    return;
         }
     if (myNewPassword.length()<8)
         {
-      out.write("\n");
-      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password should be at least 8 characters long. Please go\n");
-      out.write("        <a href=\"change_password.jsp\">back</a> and try again!</font></b>\n");
+      out.write("\r\n");
+      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password should be at least 8 characters long. Please go\r\n");
+      out.write("        <a href=\"change_password.jsp\">back</a> and try again!</font></b>\r\n");
       out.write("   ");
    return;
         }  
     if (!check_password_content_ok(myNewPassword))
         {
-      out.write("\n");
-      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password should contain at least one special character (%,@,#,$,!), one number, one Capital and one small letter. Please go\n");
-      out.write("        <a href=\"change_password.jsp\">back</a> and try again!</font></b>\n");
+      out.write("\r\n");
+      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password should contain at least one special character (%,@,#,$,!), one number, one Capital and one small letter. Please go\r\n");
+      out.write("        <a href=\"change_password.jsp\">back</a> and try again!</font></b>\r\n");
       out.write("   ");
    return;
         }        
@@ -158,18 +158,18 @@ boolean check_password_content_ok(String myNewPassword) throws Exception
         out.println(e.toString());
         myDatabaseLogger.close();
         
-      out.write("\n");
-      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">SORRY SERVICE NOT AVAILABLE AT THE MOMENT! Your password did not change. Please go\n");
-      out.write("        <a href=\"index.jsp\">back</a> and try again!</font></b>\n");
+      out.write("\r\n");
+      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">SORRY SERVICE NOT AVAILABLE AT THE MOMENT! Your password did not change. Please go\r\n");
+      out.write("        <a href=\"index.jsp\">back</a> and try again!</font></b>\r\n");
       out.write("   ");
    
         }
-      out.write("\n");
-      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Your password changed!. Please go\n");
-      out.write("        <a href=\"index.jsp\">back</a></font></b>\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("        <b><font face=\"Verdana\" size=\"3\" color=\"#000080\">Your password changed!. Please go\r\n");
+      out.write("        <a href=\"index.jsp\">back</a></font></b>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
+      out.write("\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

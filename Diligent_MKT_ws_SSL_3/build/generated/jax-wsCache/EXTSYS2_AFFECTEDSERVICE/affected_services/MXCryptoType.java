@@ -11,20 +11,20 @@ import affected_services.runtime.ZeroOneBooleanAdapter;
 
 
 /**
- * &lt;p&gt;Java class for MXCryptoType complex type.
+ * <p>Java class for MXCryptoType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="MXCryptoType"&amp;gt;
- *   &amp;lt;simpleContent&amp;gt;
- *     &amp;lt;extension base="&amp;lt;http://www.w3.org/2001/XMLSchema&amp;gt;base64Binary"&amp;gt;
- *       &amp;lt;attribute name="changed" type="{http://www.ibm.com/maximo}ChangeIndicatorType" /&amp;gt;
- *       &amp;lt;attribute name="mxencrypted" type="{http://www.ibm.com/maximo}BooleanType" default="1" /&amp;gt;
- *     &amp;lt;/extension&amp;gt;
- *   &amp;lt;/simpleContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="MXCryptoType"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;base64Binary"&gt;
+ *       &lt;attribute name="changed" type="{http://www.ibm.com/maximo}ChangeIndicatorType" /&gt;
+ *       &lt;attribute name="mxencrypted" type="{http://www.ibm.com/maximo}BooleanType" default="1" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */

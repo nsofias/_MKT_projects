@@ -7,20 +7,20 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * &lt;p&gt;Java class for ProcessingActionType.
+ * <p>Java class for ProcessingActionType.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
- * &lt;pre&gt;
- * &amp;lt;simpleType name="ProcessingActionType"&amp;gt;
- *   &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}token"&amp;gt;
- *     &amp;lt;enumeration value="Add"/&amp;gt;
- *     &amp;lt;enumeration value="Change"/&amp;gt;
- *     &amp;lt;enumeration value="Replace"/&amp;gt;
- *     &amp;lt;enumeration value="Delete"/&amp;gt;
- *     &amp;lt;enumeration value="AddChange"/&amp;gt;
- *   &amp;lt;/restriction&amp;gt;
- * &amp;lt;/simpleType&amp;gt;
- * &lt;/pre&gt;
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <pre>
+ * &lt;simpleType name="ProcessingActionType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token"&gt;
+ *     &lt;enumeration value="Add"/&gt;
+ *     &lt;enumeration value="Change"/&gt;
+ *     &lt;enumeration value="Replace"/&gt;
+ *     &lt;enumeration value="Delete"/&gt;
+ *     &lt;enumeration value="AddChange"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
+ * </pre>
  * 
  */
 @XmlType(name = "ProcessingActionType")

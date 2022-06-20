@@ -68,10 +68,10 @@ public final class logViewer_005falarms_jsp extends org.apache.jasper.runtime.Ht
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     request.setCharacterEncoding("UTF-8");
     response.setCharacterEncoding("UTF-8");
@@ -83,15 +83,15 @@ public final class logViewer_005falarms_jsp extends org.apache.jasper.runtime.Ht
         notice = "!@#$%";
         }
 
-      out.write("\n");
-      out.write("<form action=\"logViewer_alarms.jsp\">\n");
-      out.write("    <input type=\"submit\" value=\"refresh\" name=\"refresh\" />\n");
-      out.write("    <input type=\"submit\" value=\"flush\" name=\"flush\" />\n");
-      out.write("    <input type=\"submit\" value=\"errors\" name=\"errors\" />\n");
-      out.write("    <input type=\"text\" name=\"notice\" value=\"\" />\n");
-      out.write("</form>\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("<form action=\"logViewer_alarms.jsp\">\r\n");
+      out.write("    <input type=\"submit\" value=\"refresh\" name=\"refresh\" />\r\n");
+      out.write("    <input type=\"submit\" value=\"flush\" name=\"flush\" />\r\n");
+      out.write("    <input type=\"submit\" value=\"errors\" name=\"errors\" />\r\n");
+      out.write("    <input type=\"text\" name=\"notice\" value=\"\" />\r\n");
+      out.write("</form>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     if (flush != null)
         {
@@ -191,14 +191,14 @@ public final class logViewer_005falarms_jsp extends org.apache.jasper.runtime.Ht
         }
     out.flush();
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

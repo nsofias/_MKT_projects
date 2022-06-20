@@ -67,15 +67,16 @@ public final class threadsViewer_jsp extends org.apache.jasper.runtime.HttpJspBa
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
  String userTypes = "00";
+      out.write('\r');
       out.write('\n');
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     //String userTypes = "00,01,02";
     //  ----------- SEQURITY CHECK ---------------
@@ -86,62 +87,65 @@ public final class threadsViewer_jsp extends org.apache.jasper.runtime.HttpJspBa
     String username = (String) session.getAttribute("username");
     if (userType == null)
         {
+      out.write('\r');
       out.write('\n');
       if (true) {
         _jspx_page_context.forward(url);
         return;
       }
+      out.write('\r');
       out.write('\n');
   return;
     }
 else if (userType.endsWith("-expired"))// password expired
         {
         
-      out.write("\n");
-      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\n");
+      out.write("\r\n");
+      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\r\n");
       out.write("        ");
       if (true) {
         _jspx_page_context.forward("change_password.jsp");
         return;
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("        ");
 return;
         }
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write('\r');
       out.write('\n');
 //----------- sequrity----------------
     try {
         if (!userTypes.contains(userType)) {
 
-      out.write("\n");
-      out.write("<font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\n");
+      out.write("\r\n");
+      out.write("<font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\r\n");
 return;
         }
     } catch (Exception e) {
     }
 //----------- sequrity end----------------
 
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <title>CCMonitor</title>\n");
-      out.write("        <meta http-equiv=\"refresh\" content=\"120; url=threadsViewer.jsp\">\n");
-      out.write("        <link rel=\"stylesheet\" href=\"global_1.css\">\n");
-      out.write("    </head>\n");
-      out.write("    <body>            \n");
-      out.write("        <h2>DSLMON Threads!</h2>\n");
-      out.write("\n");
-      out.write("        <form action=\"threadsViewer.jsp\">\n");
-      out.write("            <input type=\"submit\" name=\"Stop\" value=\"Stop DSLMON\" />\n");
-      out.write("            <input type=\"submit\" name=\"Start\" value=\"Start DSLMON\" />\n");
-      out.write("            <input type=\"submit\" name=\"Refresh\" value=\"Refresh\" />  \n");
-      out.write("            <input type=\"submit\" name=\"flushTickets\" value=\"flushTickets\" />  \n");
-      out.write("\n");
-      out.write("        </form>        \n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <title>CCMonitor</title>\r\n");
+      out.write("        <meta http-equiv=\"refresh\" content=\"120; url=threadsViewer.jsp\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"global_1.css\">\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>            \r\n");
+      out.write("        <h2>DSLMON Threads!</h2>\r\n");
+      out.write("\r\n");
+      out.write("        <form action=\"threadsViewer.jsp\">\r\n");
+      out.write("            <input type=\"submit\" name=\"Stop\" value=\"Stop DSLMON\" />\r\n");
+      out.write("            <input type=\"submit\" name=\"Start\" value=\"Start DSLMON\" />\r\n");
+      out.write("            <input type=\"submit\" name=\"Refresh\" value=\"Refresh\" />  \r\n");
+      out.write("            <input type=\"submit\" name=\"flushTickets\" value=\"flushTickets\" />  \r\n");
+      out.write("\r\n");
+      out.write("        </form>        \r\n");
       out.write("        ");
 
             TimeStamp1 now = new TimeStamp1();
@@ -272,48 +276,48 @@ return;
                     myTicketsUpdateDaemonTimeStamp_fromNow = -myTicketsUpdateDaemonTimeStamp.minutesDiff(now);
                 }
         
-      out.write("       \n");
+      out.write("       \r\n");
       out.write("        <h2>");
       out.print(myGroupBy_Daemon.getDesc());
-      out.write("</h2>        \n");
+      out.write("</h2>        \r\n");
       out.write("        Last Data input @: ");
       out.print(lastDataTimeStamp.getNowFormated());
-      out.write("\n");
+      out.write("\r\n");
       out.write("        Last Cycle  @: ");
       out.print(lastCycleTimeStamp.getNowFormated());
-      out.write("\n");
-      out.write("        <p>\n");
-      out.write("        <table style=\"text-align:left; font-size:12px;\" border=\"1\"  cellpadding=\"1\"  id=\"table2\" >                 \n");
+      out.write("\r\n");
+      out.write("        <p>\r\n");
+      out.write("        <table style=\"text-align:left; font-size:12px;\" border=\"1\"  cellpadding=\"1\"  id=\"table2\" >                 \r\n");
       out.write("            <tr><td>DSLFileParserDaemon</td><td>");
       out.print(myNumberFormat.format(myDSLFileParserDaemonTimeStamp_fromNow).replace(",", "."));
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(status.get(myGroupBy_Daemon.getStatus()));
-      out.write("</td>\n");
-      out.write("            </tr>\n");
+      out.write("</td>\r\n");
+      out.write("            </tr>\r\n");
       out.write("            <tr><td>HealthCheckerDaemon</td><td>");
       out.print(myNumberFormat.format(myHealthCheckerDaemonTimeStamp_fromNow).replace(",", "."));
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(status.get(myHealthCheckerDaemon.getStatus()));
-      out.write("</td>\n");
-      out.write("            </tr>\n");
+      out.write("</td>\r\n");
+      out.write("            </tr>\r\n");
       out.write("            <tr><td>TicketsUpdateDaemon</td><td>");
       out.print(myNumberFormat.format(myTicketsUpdateDaemonTimeStamp_fromNow).replace(",", "."));
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(status.get(myTicketsUpdateDaemon.getStatus()));
-      out.write("</td>\n");
-      out.write("            </tr>    \n");
+      out.write("</td>\r\n");
+      out.write("            </tr>    \r\n");
       out.write("            <tr><td>TicketsUpdateDaemon</td><td>");
       out.print(myNumberFormat.format(myTicketsUpdateDaemonTimeStamp_fromNow).replace(",", "."));
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(status.get(myTicketsUpdateDaemon.getStatus()));
-      out.write("</td>\n");
-      out.write("            </tr>             \n");
-      out.write("        </Table>            \n");
-      out.write("        <p></p>    \n");
+      out.write("</td>\r\n");
+      out.write("            </tr>             \r\n");
+      out.write("        </Table>            \r\n");
+      out.write("        <p></p>    \r\n");
       out.write("        ");
 
                 out.println("<p>TicketsList size =" + myContainer.getTicketsArrayList().size() + "    EventsLogArrayList size =" + myContainer.getEventsLogArrayList().size());
@@ -335,10 +339,10 @@ return;
                 }*/
 
         
-      out.write("\n");
-      out.write("\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

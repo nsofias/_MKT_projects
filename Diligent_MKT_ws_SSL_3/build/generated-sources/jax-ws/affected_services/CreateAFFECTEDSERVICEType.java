@@ -11,22 +11,22 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * &lt;p&gt;Java class for CreateAFFECTEDSERVICEType complex type.
+ * <p>Java class for CreateAFFECTEDSERVICEType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="CreateAFFECTEDSERVICEType"&amp;gt;
- *   &amp;lt;complexContent&amp;gt;
- *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *       &amp;lt;sequence&amp;gt;
- *         &amp;lt;element ref="{http://www.ibm.com/maximo}AFFECTEDSERVICESet"/&amp;gt;
- *       &amp;lt;/sequence&amp;gt;
- *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}CommonContentGroup"/&amp;gt;
- *     &amp;lt;/restriction&amp;gt;
- *   &amp;lt;/complexContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="CreateAFFECTEDSERVICEType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.ibm.com/maximo}AFFECTEDSERVICESet"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.ibm.com/maximo}CommonContentGroup"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */

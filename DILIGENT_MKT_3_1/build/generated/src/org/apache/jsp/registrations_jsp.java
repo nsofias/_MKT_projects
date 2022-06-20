@@ -47,15 +47,16 @@ public final class registrations_jsp extends org.apache.jasper.runtime.HttpJspBa
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
  String userTypes = "00,01,02";
+      out.write('\r');
       out.write('\n');
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     //String userTypes = "00,01,02";
     //  ----------- SEQURITY CHECK ---------------
@@ -66,31 +67,34 @@ public final class registrations_jsp extends org.apache.jasper.runtime.HttpJspBa
     String username = (String) session.getAttribute("username");
     if (userType == null)
         {
+      out.write('\r');
       out.write('\n');
       if (true) {
         _jspx_page_context.forward(url);
         return;
       }
+      out.write('\r');
       out.write('\n');
   return;
     }
 else if (userType.endsWith("-expired"))// password expired
         {
         
-      out.write("\n");
-      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\n");
+      out.write("\r\n");
+      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\r\n");
       out.write("        ");
       if (true) {
         _jspx_page_context.forward("change_password.jsp");
         return;
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("        ");
 return;
         }
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write('\r');
       out.write('\n');
 
 //----------- sequrity----------------
@@ -99,8 +103,8 @@ return;
         if (!userTypes.contains(userType))
             {
             
-      out.write("\n");
-      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\n");
+      out.write("\r\n");
+      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\r\n");
       out.write("            ");
 return;
             }
@@ -110,8 +114,8 @@ return;
         }
 //----------- sequrity end----------------
 
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
 
     String type = request.getParameter("type");
     String order_Desc = request.getParameter("order_Desc");
@@ -134,38 +138,38 @@ return;
         quiryStr += "&order_Desc=y";
         }
 
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <link rel=\"stylesheet\" href=\"global_1.css\">\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"global_1.css\">\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>JSP Page</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
       out.write("        <h1>");
       out.print(type);
-      out.write("</h1>\n");
+      out.write("</h1>\r\n");
  
    if (type != null && type.startsWith("Registrations") )
     {
-      out.write(" \n");
-      out.write("    <h2>Last hour UNIQUE registrations number</h2>\n");
+      out.write(" \r\n");
+      out.write("    <h2>Last hour UNIQUE registrations number</h2>\r\n");
       out.write("    ");
 }  
-      out.write("    \n");
-      out.write("\n");
-      out.write("        <table  width=\"100%\">\n");
-      out.write("            <tr>\n");
+      out.write("    \r\n");
+      out.write("\r\n");
+      out.write("        <table  width=\"100%\">\r\n");
+      out.write("            <tr>\r\n");
       out.write("                <td><iframe width=\"650\" height=\"700\" src= \"reggr.jsp?");
       out.print(quiryStr);
-      out.write("\" frameborder= \"0\"></iframe> </td>\n");
+      out.write("\" frameborder= \"0\"></iframe> </td>\r\n");
       out.write("                <td><iframe width=\"700\" height=\"700\" src= \"reggr_text.jsp?");
       out.print(quiryStr);
-      out.write("\" frameborder= \"0\"></iframe> </td>\n");
-      out.write("            </tr>\n");
-      out.write("        </table>\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\" frameborder= \"0\"></iframe> </td>\r\n");
+      out.write("            </tr>\r\n");
+      out.write("        </table>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

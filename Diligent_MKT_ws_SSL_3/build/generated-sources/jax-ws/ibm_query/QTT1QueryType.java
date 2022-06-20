@@ -11,176 +11,176 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * &lt;p&gt;Java class for QTT1QueryType complex type.
+ * <p>Java class for QTT1QueryType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="QTT1QueryType"&amp;gt;
- *   &amp;lt;complexContent&amp;gt;
- *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *       &amp;lt;sequence&amp;gt;
- *         &amp;lt;element name="WHERE" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="INCIDENT" minOccurs="0"&amp;gt;
- *           &amp;lt;complexType&amp;gt;
- *             &amp;lt;complexContent&amp;gt;
- *               &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *                 &amp;lt;sequence&amp;gt;
- *                   &amp;lt;element name="ACTUALCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACTUALFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACTUALSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="AFFECTEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CABLEGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CENTRALA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CLASS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CLASSIFICATIONID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CLASSSTRUCTUREID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DEVICENAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="EXTERNALSYSTEM" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="FAULTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="FAULTLOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="GLOBALTICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="IMPACT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="IMSMIGRATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INDICATEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INTERNALPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ISGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="KABEL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="KATEGORIJA" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LINEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LINISKAOPREMA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="MESTOPOVREDE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="NUMBEROFAFFECTEDCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORIGINATEDCOMPANY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORIGINATEDDEVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PAKET" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PRECKAID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="RELATEDTOGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="RESOLVEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="RESOLVER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ROOTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SERVICESINFAULT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SLATIPSERVIS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SOLUTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TARGETCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TARGETFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TICKETUID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TIPPREKIN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TKTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="URGENCY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="WAYOFREPAIR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="WOCATALOG" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="WORKAROUND" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="WORKAROUNDDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="WORKLOG" minOccurs="0"&amp;gt;
- *                     &amp;lt;complexType&amp;gt;
- *                       &amp;lt;complexContent&amp;gt;
- *                         &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *                           &amp;lt;sequence&amp;gt;
- *                             &amp;lt;element name="CREATEBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="LOGTYPE" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="MODIFYBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="MODIFYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WORKLOGID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                           &amp;lt;/sequence&amp;gt;
- *                           &amp;lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&amp;gt;
- *                         &amp;lt;/restriction&amp;gt;
- *                       &amp;lt;/complexContent&amp;gt;
- *                     &amp;lt;/complexType&amp;gt;
- *                   &amp;lt;/element&amp;gt;
- *                   &amp;lt;element name="WORKORDER" minOccurs="0"&amp;gt;
- *                     &amp;lt;complexType&amp;gt;
- *                       &amp;lt;complexContent&amp;gt;
- *                         &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *                           &amp;lt;sequence&amp;gt;
- *                             &amp;lt;element name="ACTFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ACTSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CANCELREASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CREATEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="EXTERNALREFID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="LASTREMARK" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OBJECTTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ORDERAIM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ORIGRECORDID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLACEOFFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WONUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WORKORDERID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                           &amp;lt;/sequence&amp;gt;
- *                           &amp;lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&amp;gt;
- *                         &amp;lt;/restriction&amp;gt;
- *                       &amp;lt;/complexContent&amp;gt;
- *                     &amp;lt;/complexType&amp;gt;
- *                   &amp;lt;/element&amp;gt;
- *                   &amp;lt;element name="AFFECTEDSERVICE" minOccurs="0"&amp;gt;
- *                     &amp;lt;complexType&amp;gt;
- *                       &amp;lt;complexContent&amp;gt;
- *                         &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *                           &amp;lt;sequence&amp;gt;
- *                             &amp;lt;element name="AFFECTEDSERVICEID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CHANGEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="DELETEFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ENDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="EQUIPMENTTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="NUMADSL" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="NUMINTERNET" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="NUMIPTV" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="NUMOFIMPACTEDCUST" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="NUMVOIP" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="NUMWLR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ONETMID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="REGION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SERVICEINFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="STARTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SYSSTATUS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                           &amp;lt;/sequence&amp;gt;
- *                           &amp;lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&amp;gt;
- *                         &amp;lt;/restriction&amp;gt;
- *                       &amp;lt;/complexContent&amp;gt;
- *                     &amp;lt;/complexType&amp;gt;
- *                   &amp;lt;/element&amp;gt;
- *                 &amp;lt;/sequence&amp;gt;
- *               &amp;lt;/restriction&amp;gt;
- *             &amp;lt;/complexContent&amp;gt;
- *           &amp;lt;/complexType&amp;gt;
- *         &amp;lt;/element&amp;gt;
- *       &amp;lt;/sequence&amp;gt;
- *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}QueryClausePropertyGroup"/&amp;gt;
- *     &amp;lt;/restriction&amp;gt;
- *   &amp;lt;/complexContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="QTT1QueryType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="WHERE" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="INCIDENT" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="ACTUALCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ACTUALFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ACTUALSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="AFFECTEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ASSIGNEDOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CABLEGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CENTRALA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CLASS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CLASSIFICATIONID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CLASSSTRUCTUREID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DEVICENAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="EXTERNALSYSTEM" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="FAULTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="FAULTLOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="GLOBALTICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="IMPACT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="IMSMIGRATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INDICATEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INTERNALPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ISGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="KABEL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="KATEGORIJA" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="LINEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="LINISKAOPREMA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="MESTOPOVREDE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="NUMBEROFAFFECTEDCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ORIGINATEDCOMPANY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ORIGINATEDDEVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="OWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PAKET" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PRECKAID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="RELATEDTOGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="RESOLVEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="RESOLVER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ROOTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SERVICESINFAULT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SLATIPSERVIS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SOLUTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TARGETCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TARGETFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TICKETUID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TIPPREKIN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TKTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="URGENCY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="WAYOFREPAIR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="WOCATALOG" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="WORKAROUND" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="WORKAROUNDDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="WORKLOG" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="CREATEBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="LOGTYPE" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="MODIFYBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="MODIFYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="ORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="WORKLOGID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                           &lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="WORKORDER" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="ACTFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="ACTSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="CANCELREASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="CREATEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="EXTERNALREFID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="LASTREMARK" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="OBJECTTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="ORDERAIM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="ORIGRECORDID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="PLACEOFFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="SITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="WONUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="WORKORDERID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                           &lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="AFFECTEDSERVICE" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="AFFECTEDSERVICEID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="CHANGEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="DELETEFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="ENDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="EQUIPMENTTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="NUMADSL" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="NUMINTERNET" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="NUMIPTV" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="NUMOFIMPACTEDCUST" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="NUMVOIP" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="NUMWLR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="ONETMID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="REGION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="SERVICEINFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="STARTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                             &lt;element name="SYSSTATUS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                           &lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.ibm.com/maximo}QueryClausePropertyGroup"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */
@@ -302,164 +302,164 @@ public class QTT1QueryType {
 
 
     /**
-     * &lt;p&gt;Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
-     * &lt;pre&gt;
-     * &amp;lt;complexType&amp;gt;
-     *   &amp;lt;complexContent&amp;gt;
-     *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-     *       &amp;lt;sequence&amp;gt;
-     *         &amp;lt;element name="ACTUALCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACTUALFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACTUALSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="AFFECTEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CABLEGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CENTRALA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CLASS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CLASSIFICATIONID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CLASSSTRUCTUREID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DEVICENAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="EXTERNALSYSTEM" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="FAULTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="FAULTLOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="GLOBALTICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="IMPACT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="IMSMIGRATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INDICATEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INTERNALPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ISGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="KABEL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="KATEGORIJA" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LINEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LINISKAOPREMA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="MESTOPOVREDE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="NUMBEROFAFFECTEDCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORIGINATEDCOMPANY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORIGINATEDDEVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PAKET" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PRECKAID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="RELATEDTOGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="RESOLVEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="RESOLVER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ROOTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SERVICESINFAULT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SLATIPSERVIS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SOLUTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TARGETCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TARGETFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TICKETUID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TIPPREKIN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TKTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="URGENCY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="WAYOFREPAIR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="WOCATALOG" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="WORKAROUND" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="WORKAROUNDDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="WORKLOG" minOccurs="0"&amp;gt;
-     *           &amp;lt;complexType&amp;gt;
-     *             &amp;lt;complexContent&amp;gt;
-     *               &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-     *                 &amp;lt;sequence&amp;gt;
-     *                   &amp;lt;element name="CREATEBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="LOGTYPE" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="MODIFYBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="MODIFYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WORKLOGID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                 &amp;lt;/sequence&amp;gt;
-     *                 &amp;lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&amp;gt;
-     *               &amp;lt;/restriction&amp;gt;
-     *             &amp;lt;/complexContent&amp;gt;
-     *           &amp;lt;/complexType&amp;gt;
-     *         &amp;lt;/element&amp;gt;
-     *         &amp;lt;element name="WORKORDER" minOccurs="0"&amp;gt;
-     *           &amp;lt;complexType&amp;gt;
-     *             &amp;lt;complexContent&amp;gt;
-     *               &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-     *                 &amp;lt;sequence&amp;gt;
-     *                   &amp;lt;element name="ACTFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ACTSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CANCELREASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CREATEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="EXTERNALREFID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="LASTREMARK" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OBJECTTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ORDERAIM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ORIGRECORDID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLACEOFFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WONUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WORKORDERID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                 &amp;lt;/sequence&amp;gt;
-     *                 &amp;lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&amp;gt;
-     *               &amp;lt;/restriction&amp;gt;
-     *             &amp;lt;/complexContent&amp;gt;
-     *           &amp;lt;/complexType&amp;gt;
-     *         &amp;lt;/element&amp;gt;
-     *         &amp;lt;element name="AFFECTEDSERVICE" minOccurs="0"&amp;gt;
-     *           &amp;lt;complexType&amp;gt;
-     *             &amp;lt;complexContent&amp;gt;
-     *               &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-     *                 &amp;lt;sequence&amp;gt;
-     *                   &amp;lt;element name="AFFECTEDSERVICEID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CHANGEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="DELETEFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ENDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="EQUIPMENTTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="NUMADSL" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="NUMINTERNET" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="NUMIPTV" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="NUMOFIMPACTEDCUST" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="NUMVOIP" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="NUMWLR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ONETMID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="REGION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SERVICEINFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="STARTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SYSSTATUS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *                 &amp;lt;/sequence&amp;gt;
-     *                 &amp;lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&amp;gt;
-     *               &amp;lt;/restriction&amp;gt;
-     *             &amp;lt;/complexContent&amp;gt;
-     *           &amp;lt;/complexType&amp;gt;
-     *         &amp;lt;/element&amp;gt;
-     *       &amp;lt;/sequence&amp;gt;
-     *     &amp;lt;/restriction&amp;gt;
-     *   &amp;lt;/complexContent&amp;gt;
-     * &amp;lt;/complexType&amp;gt;
-     * &lt;/pre&gt;
+     * <pre>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="ACTUALCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ACTUALFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ACTUALSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="AFFECTEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ASSIGNEDOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CABLEGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CENTRALA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CLASS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CLASSIFICATIONID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CLASSSTRUCTUREID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DEVICENAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="EXTERNALSYSTEM" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="FAULTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="FAULTLOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="GLOBALTICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="IMPACT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="IMSMIGRATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INDICATEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INTERNALPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ISGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="KABEL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="KATEGORIJA" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="LINEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="LINISKAOPREMA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="MESTOPOVREDE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="NUMBEROFAFFECTEDCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ORIGINATEDCOMPANY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ORIGINATEDDEVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="OWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PAKET" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PRECKAID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="RELATEDTOGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="RESOLVEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="RESOLVER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ROOTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SERVICESINFAULT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SLATIPSERVIS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SOLUTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TARGETCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TARGETFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TICKETUID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TIPPREKIN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TKTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="URGENCY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="WAYOFREPAIR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="WOCATALOG" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="WORKAROUND" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="WORKAROUNDDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="WORKLOG" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="CREATEBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="LOGTYPE" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="MODIFYBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="MODIFYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="ORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="WORKLOGID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *                 &lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="WORKORDER" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="ACTFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="ACTSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="CANCELREASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="CREATEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="EXTERNALREFID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="LASTREMARK" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="OBJECTTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="ORDERAIM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="ORIGRECORDID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="PLACEOFFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="SITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="WONUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="WORKORDERID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *                 &lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="AFFECTEDSERVICE" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="AFFECTEDSERVICEID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="CHANGEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="DELETEFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="ENDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="EQUIPMENTTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="NUMADSL" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="NUMINTERNET" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="NUMIPTV" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="NUMOFIMPACTEDCUST" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="NUMVOIP" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="NUMWLR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="ONETMID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="REGION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="SERVICEINFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="STARTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                   &lt;element name="SYSSTATUS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *                 &lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
+     * </pre>
      * 
      * 
      */
@@ -670,20 +670,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the actualcontactdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actualcontactdate property.
+         * This is why there is not a <CODE>set</CODE> method for the actualcontactdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTUALCONTACTDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -699,20 +699,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the actualfinish property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actualfinish property.
+         * This is why there is not a <CODE>set</CODE> method for the actualfinish property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTUALFINISH().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -728,20 +728,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the actualstart property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actualstart property.
+         * This is why there is not a <CODE>set</CODE> method for the actualstart property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTUALSTART().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -757,20 +757,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the adjustedtargetcontacttime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the adjustedtargetcontacttime property.
+         * This is why there is not a <CODE>set</CODE> method for the adjustedtargetcontacttime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getADJUSTEDTARGETCONTACTTIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -786,20 +786,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the adjustedtargetresolutiontime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the adjustedtargetresolutiontime property.
+         * This is why there is not a <CODE>set</CODE> method for the adjustedtargetresolutiontime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getADJUSTEDTARGETRESOLUTIONTIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -815,20 +815,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the affecteddate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the affecteddate property.
+         * This is why there is not a <CODE>set</CODE> method for the affecteddate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getAFFECTEDDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -844,20 +844,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the assignedownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assignedownergroup property.
+         * This is why there is not a <CODE>set</CODE> method for the assignedownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getASSIGNEDOWNERGROUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -873,20 +873,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the cablegroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the cablegroup property.
+         * This is why there is not a <CODE>set</CODE> method for the cablegroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCABLEGROUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -902,20 +902,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the centrala property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the centrala property.
+         * This is why there is not a <CODE>set</CODE> method for the centrala property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCENTRALA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -931,20 +931,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the cinum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the cinum property.
+         * This is why there is not a <CODE>set</CODE> method for the cinum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCINUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -960,20 +960,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the class property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the class property.
+         * This is why there is not a <CODE>set</CODE> method for the class property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCLASS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDomainQueryType }
          * 
@@ -989,20 +989,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the classificationid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the classificationid property.
+         * This is why there is not a <CODE>set</CODE> method for the classificationid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCLASSIFICATIONID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1018,20 +1018,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the classstructureid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the classstructureid property.
+         * This is why there is not a <CODE>set</CODE> method for the classstructureid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCLASSSTRUCTUREID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1047,20 +1047,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the description property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the description property.
+         * This is why there is not a <CODE>set</CODE> method for the description property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDESCRIPTION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1076,20 +1076,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the devicename property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the devicename property.
+         * This is why there is not a <CODE>set</CODE> method for the devicename property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDEVICENAME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1105,20 +1105,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the externalsystem property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the externalsystem property.
+         * This is why there is not a <CODE>set</CODE> method for the externalsystem property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getEXTERNALSYSTEM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDomainQueryType }
          * 
@@ -1134,20 +1134,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the faultcause property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the faultcause property.
+         * This is why there is not a <CODE>set</CODE> method for the faultcause property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getFAULTCAUSE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -1163,20 +1163,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the faultlocation property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the faultlocation property.
+         * This is why there is not a <CODE>set</CODE> method for the faultlocation property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getFAULTLOCATION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1192,20 +1192,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the globalticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the globalticketid property.
+         * This is why there is not a <CODE>set</CODE> method for the globalticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getGLOBALTICKETID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1221,20 +1221,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the historyflag property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the historyflag property.
+         * This is why there is not a <CODE>set</CODE> method for the historyflag property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHISTORYFLAG().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -1250,20 +1250,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the impact property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the impact property.
+         * This is why there is not a <CODE>set</CODE> method for the impact property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getIMPACT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -1279,20 +1279,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the imsmigration property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the imsmigration property.
+         * This is why there is not a <CODE>set</CODE> method for the imsmigration property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getIMSMIGRATION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1308,20 +1308,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the indicatedpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the indicatedpriority property.
+         * This is why there is not a <CODE>set</CODE> method for the indicatedpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINDICATEDPRIORITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -1337,20 +1337,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the internalpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the internalpriority property.
+         * This is why there is not a <CODE>set</CODE> method for the internalpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINTERNALPRIORITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -1366,20 +1366,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the isglobal property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the isglobal property.
+         * This is why there is not a <CODE>set</CODE> method for the isglobal property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getISGLOBAL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -1395,20 +1395,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the kabel property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the kabel property.
+         * This is why there is not a <CODE>set</CODE> method for the kabel property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getKABEL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1424,20 +1424,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the kategorija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the kategorija property.
+         * This is why there is not a <CODE>set</CODE> method for the kategorija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getKATEGORIJA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -1453,20 +1453,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the lineid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the lineid property.
+         * This is why there is not a <CODE>set</CODE> method for the lineid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLINEID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1482,20 +1482,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the liniskaoprema property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the liniskaoprema property.
+         * This is why there is not a <CODE>set</CODE> method for the liniskaoprema property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLINISKAOPREMA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1511,20 +1511,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the location property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the location property.
+         * This is why there is not a <CODE>set</CODE> method for the location property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLOCATION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1540,20 +1540,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the mestopovrede property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the mestopovrede property.
+         * This is why there is not a <CODE>set</CODE> method for the mestopovrede property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getMESTOPOVREDE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1569,20 +1569,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the numberofaffectedcustomers property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the numberofaffectedcustomers property.
+         * This is why there is not a <CODE>set</CODE> method for the numberofaffectedcustomers property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getNUMBEROFAFFECTEDCUSTOMERS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -1598,20 +1598,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the originatedcompany property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the originatedcompany property.
+         * This is why there is not a <CODE>set</CODE> method for the originatedcompany property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORIGINATEDCOMPANY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1627,20 +1627,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the originateddevice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the originateddevice property.
+         * This is why there is not a <CODE>set</CODE> method for the originateddevice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORIGINATEDDEVICE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1656,20 +1656,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the owner property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the owner property.
+         * This is why there is not a <CODE>set</CODE> method for the owner property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOWNER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1685,20 +1685,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the ownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ownergroup property.
+         * This is why there is not a <CODE>set</CODE> method for the ownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOWNERGROUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1714,20 +1714,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the paket property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the paket property.
+         * This is why there is not a <CODE>set</CODE> method for the paket property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPAKET().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1743,20 +1743,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the preckaid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the preckaid property.
+         * This is why there is not a <CODE>set</CODE> method for the preckaid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPRECKAID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1772,20 +1772,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the reason property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reason property.
+         * This is why there is not a <CODE>set</CODE> method for the reason property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREASON().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1801,20 +1801,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the regionname property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the regionname property.
+         * This is why there is not a <CODE>set</CODE> method for the regionname property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREGIONNAME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1830,20 +1830,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the relatedtoglobal property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the relatedtoglobal property.
+         * This is why there is not a <CODE>set</CODE> method for the relatedtoglobal property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getRELATEDTOGLOBAL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -1859,20 +1859,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the reportdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportdate property.
+         * This is why there is not a <CODE>set</CODE> method for the reportdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -1888,20 +1888,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the reportedby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportedby property.
+         * This is why there is not a <CODE>set</CODE> method for the reportedby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTEDBY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1917,20 +1917,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the reportedpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportedpriority property.
+         * This is why there is not a <CODE>set</CODE> method for the reportedpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTEDPRIORITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -1946,20 +1946,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the resolvedby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the resolvedby property.
+         * This is why there is not a <CODE>set</CODE> method for the resolvedby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getRESOLVEDBY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1975,20 +1975,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the resolver property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the resolver property.
+         * This is why there is not a <CODE>set</CODE> method for the resolver property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getRESOLVER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2004,20 +2004,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the rootcause property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the rootcause property.
+         * This is why there is not a <CODE>set</CODE> method for the rootcause property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getROOTCAUSE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -2033,20 +2033,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the servicesinfault property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the servicesinfault property.
+         * This is why there is not a <CODE>set</CODE> method for the servicesinfault property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSERVICESINFAULT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -2062,20 +2062,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the slatipservis property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the slatipservis property.
+         * This is why there is not a <CODE>set</CODE> method for the slatipservis property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSLATIPSERVIS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2091,20 +2091,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the solution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the solution property.
+         * This is why there is not a <CODE>set</CODE> method for the solution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSOLUTION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2120,20 +2120,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the status property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the status property.
+         * This is why there is not a <CODE>set</CODE> method for the status property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTATUS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDomainQueryType }
          * 
@@ -2149,20 +2149,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the statusdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the statusdate property.
+         * This is why there is not a <CODE>set</CODE> method for the statusdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTATUSDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2178,20 +2178,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the targetcontactdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targetcontactdate property.
+         * This is why there is not a <CODE>set</CODE> method for the targetcontactdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTARGETCONTACTDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2207,20 +2207,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the targetfinish property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targetfinish property.
+         * This is why there is not a <CODE>set</CODE> method for the targetfinish property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTARGETFINISH().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2236,20 +2236,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the ticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ticketid property.
+         * This is why there is not a <CODE>set</CODE> method for the ticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTICKETID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2265,20 +2265,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the ticketuid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ticketuid property.
+         * This is why there is not a <CODE>set</CODE> method for the ticketuid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTICKETUID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -2294,20 +2294,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the tipprekin property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the tipprekin property.
+         * This is why there is not a <CODE>set</CODE> method for the tipprekin property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTIPPREKIN().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2323,20 +2323,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the tktype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the tktype property.
+         * This is why there is not a <CODE>set</CODE> method for the tktype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTKTYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2352,20 +2352,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the urgency property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the urgency property.
+         * This is why there is not a <CODE>set</CODE> method for the urgency property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getURGENCY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -2381,20 +2381,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the wayofrepair property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wayofrepair property.
+         * This is why there is not a <CODE>set</CODE> method for the wayofrepair property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getWAYOFREPAIR().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -2410,20 +2410,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the wocatalog property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wocatalog property.
+         * This is why there is not a <CODE>set</CODE> method for the wocatalog property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getWOCATALOG().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2439,20 +2439,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the workaround property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the workaround property.
+         * This is why there is not a <CODE>set</CODE> method for the workaround property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getWORKAROUND().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -2468,20 +2468,20 @@ public class QTT1QueryType {
         /**
          * Gets the value of the workarounddesc property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the workarounddesc property.
+         * This is why there is not a <CODE>set</CODE> method for the workarounddesc property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getWORKAROUNDDESC().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2568,40 +2568,40 @@ public class QTT1QueryType {
 
 
         /**
-         * &lt;p&gt;Java class for anonymous complex type.
+         * <p>Java class for anonymous complex type.
          * 
-         * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+         * <p>The following schema fragment specifies the expected content contained within this class.
          * 
-         * &lt;pre&gt;
-         * &amp;lt;complexType&amp;gt;
-         *   &amp;lt;complexContent&amp;gt;
-         *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-         *       &amp;lt;sequence&amp;gt;
-         *         &amp;lt;element name="AFFECTEDSERVICEID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CHANGEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="DELETEFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ENDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="EQUIPMENTTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="NUMADSL" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="NUMINTERNET" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="NUMIPTV" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="NUMOFIMPACTEDCUST" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="NUMVOIP" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="NUMWLR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ONETMID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="REGION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SERVICEINFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="STARTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SYSSTATUS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *       &amp;lt;/sequence&amp;gt;
-         *       &amp;lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&amp;gt;
-         *     &amp;lt;/restriction&amp;gt;
-         *   &amp;lt;/complexContent&amp;gt;
-         * &amp;lt;/complexType&amp;gt;
-         * &lt;/pre&gt;
+         * <pre>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="AFFECTEDSERVICEID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="CHANGEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="DELETEFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="ENDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="EQUIPMENTTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="NUMADSL" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="NUMINTERNET" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="NUMIPTV" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="NUMOFIMPACTEDCUST" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="NUMVOIP" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="NUMWLR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="ONETMID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="REGION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="SERVICEINFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="STARTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="SYSSTATUS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *       &lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
+         * </pre>
          * 
          * 
          */
@@ -2673,20 +2673,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the affectedserviceid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the affectedserviceid property.
+             * This is why there is not a <CODE>set</CODE> method for the affectedserviceid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getAFFECTEDSERVICEID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -2702,20 +2702,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the changedate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the changedate property.
+             * This is why there is not a <CODE>set</CODE> method for the changedate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCHANGEDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -2731,20 +2731,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the cinum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the cinum property.
+             * This is why there is not a <CODE>set</CODE> method for the cinum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCINUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -2760,20 +2760,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the deleteflag property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the deleteflag property.
+             * This is why there is not a <CODE>set</CODE> method for the deleteflag property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getDELETEFLAG().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -2789,20 +2789,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the description property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the description property.
+             * This is why there is not a <CODE>set</CODE> method for the description property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getDESCRIPTION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -2818,20 +2818,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the enddate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the enddate property.
+             * This is why there is not a <CODE>set</CODE> method for the enddate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getENDDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -2847,20 +2847,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the equipmenttype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the equipmenttype property.
+             * This is why there is not a <CODE>set</CODE> method for the equipmenttype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getEQUIPMENTTYPE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -2876,20 +2876,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the location property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the location property.
+             * This is why there is not a <CODE>set</CODE> method for the location property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getLOCATION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -2905,20 +2905,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the numadsl property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the numadsl property.
+             * This is why there is not a <CODE>set</CODE> method for the numadsl property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getNUMADSL().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -2934,20 +2934,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the numinternet property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the numinternet property.
+             * This is why there is not a <CODE>set</CODE> method for the numinternet property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getNUMINTERNET().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -2963,20 +2963,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the numiptv property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the numiptv property.
+             * This is why there is not a <CODE>set</CODE> method for the numiptv property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getNUMIPTV().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -2992,20 +2992,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the numofimpactedcust property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the numofimpactedcust property.
+             * This is why there is not a <CODE>set</CODE> method for the numofimpactedcust property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getNUMOFIMPACTEDCUST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -3021,20 +3021,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the numvoip property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the numvoip property.
+             * This is why there is not a <CODE>set</CODE> method for the numvoip property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getNUMVOIP().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -3050,20 +3050,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the numwlr property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the numwlr property.
+             * This is why there is not a <CODE>set</CODE> method for the numwlr property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getNUMWLR().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -3079,20 +3079,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the onetmid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the onetmid property.
+             * This is why there is not a <CODE>set</CODE> method for the onetmid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getONETMID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3108,20 +3108,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the region property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the region property.
+             * This is why there is not a <CODE>set</CODE> method for the region property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getREGION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3137,20 +3137,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the serviceinfault property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the serviceinfault property.
+             * This is why there is not a <CODE>set</CODE> method for the serviceinfault property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSERVICEINFAULT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3166,20 +3166,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the startdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the startdate property.
+             * This is why there is not a <CODE>set</CODE> method for the startdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSTARTDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -3195,20 +3195,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the sysstatus property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the sysstatus property.
+             * This is why there is not a <CODE>set</CODE> method for the sysstatus property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSYSSTATUS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3249,29 +3249,29 @@ public class QTT1QueryType {
 
 
         /**
-         * &lt;p&gt;Java class for anonymous complex type.
+         * <p>Java class for anonymous complex type.
          * 
-         * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+         * <p>The following schema fragment specifies the expected content contained within this class.
          * 
-         * &lt;pre&gt;
-         * &amp;lt;complexType&amp;gt;
-         *   &amp;lt;complexContent&amp;gt;
-         *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-         *       &amp;lt;sequence&amp;gt;
-         *         &amp;lt;element name="CREATEBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="LOGTYPE" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="MODIFYBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="MODIFYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WORKLOGID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *       &amp;lt;/sequence&amp;gt;
-         *       &amp;lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&amp;gt;
-         *     &amp;lt;/restriction&amp;gt;
-         *   &amp;lt;/complexContent&amp;gt;
-         * &amp;lt;/complexType&amp;gt;
-         * &lt;/pre&gt;
+         * <pre>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="CREATEBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="LOGTYPE" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="MODIFYBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="MODIFYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="ORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="WORKLOGID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *       &lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
+         * </pre>
          * 
          * 
          */
@@ -3310,20 +3310,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the createby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the createby property.
+             * This is why there is not a <CODE>set</CODE> method for the createby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCREATEBY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3339,20 +3339,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the createdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the createdate property.
+             * This is why there is not a <CODE>set</CODE> method for the createdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCREATEDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -3368,20 +3368,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the description property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the description property.
+             * This is why there is not a <CODE>set</CODE> method for the description property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getDESCRIPTION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3397,20 +3397,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the logtype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the logtype property.
+             * This is why there is not a <CODE>set</CODE> method for the logtype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getLOGTYPE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDomainQueryType }
              * 
@@ -3426,20 +3426,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the modifyby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the modifyby property.
+             * This is why there is not a <CODE>set</CODE> method for the modifyby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getMODIFYBY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3455,20 +3455,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the modifydate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the modifydate property.
+             * This is why there is not a <CODE>set</CODE> method for the modifydate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getMODIFYDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -3484,20 +3484,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the orgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the orgid property.
+             * This is why there is not a <CODE>set</CODE> method for the orgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getORGID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3513,20 +3513,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the worklogid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the worklogid property.
+             * This is why there is not a <CODE>set</CODE> method for the worklogid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWORKLOGID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -3567,42 +3567,42 @@ public class QTT1QueryType {
 
 
         /**
-         * &lt;p&gt;Java class for anonymous complex type.
+         * <p>Java class for anonymous complex type.
          * 
-         * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+         * <p>The following schema fragment specifies the expected content contained within this class.
          * 
-         * &lt;pre&gt;
-         * &amp;lt;complexType&amp;gt;
-         *   &amp;lt;complexContent&amp;gt;
-         *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-         *       &amp;lt;sequence&amp;gt;
-         *         &amp;lt;element name="ACTFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ACTSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CANCELREASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CREATEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="EXTERNALREFID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="LASTREMARK" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OBJECTTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ORDERAIM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ORIGRECORDID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLACEOFFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WONUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WORKORDERID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-         *       &amp;lt;/sequence&amp;gt;
-         *       &amp;lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&amp;gt;
-         *     &amp;lt;/restriction&amp;gt;
-         *   &amp;lt;/complexContent&amp;gt;
-         * &amp;lt;/complexType&amp;gt;
-         * &lt;/pre&gt;
+         * <pre>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="ACTFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="ACTSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="CANCELREASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="CREATEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="EXTERNALREFID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="LASTREMARK" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="OBJECTTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="ORDERAIM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="ORIGRECORDID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="PLACEOFFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="SITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="WONUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *         &lt;element name="WORKORDERID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *       &lt;attribute name="filter" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
+         * </pre>
          * 
          * 
          */
@@ -3680,20 +3680,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the actfinish property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actfinish property.
+             * This is why there is not a <CODE>set</CODE> method for the actfinish property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getACTFINISH().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -3709,20 +3709,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the actstart property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actstart property.
+             * This is why there is not a <CODE>set</CODE> method for the actstart property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getACTSTART().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -3738,20 +3738,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the cancelreason property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the cancelreason property.
+             * This is why there is not a <CODE>set</CODE> method for the cancelreason property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCANCELREASON().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3767,20 +3767,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the createdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the createdate property.
+             * This is why there is not a <CODE>set</CODE> method for the createdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCREATEDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -3796,20 +3796,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the createdby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the createdby property.
+             * This is why there is not a <CODE>set</CODE> method for the createdby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCREATEDBY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3825,20 +3825,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the description property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the description property.
+             * This is why there is not a <CODE>set</CODE> method for the description property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getDESCRIPTION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3854,20 +3854,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the externalrefid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the externalrefid property.
+             * This is why there is not a <CODE>set</CODE> method for the externalrefid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getEXTERNALREFID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3883,20 +3883,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the historyflag property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the historyflag property.
+             * This is why there is not a <CODE>set</CODE> method for the historyflag property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getHISTORYFLAG().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -3912,20 +3912,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the lastremark property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the lastremark property.
+             * This is why there is not a <CODE>set</CODE> method for the lastremark property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getLASTREMARK().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3941,20 +3941,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the objecttype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the objecttype property.
+             * This is why there is not a <CODE>set</CODE> method for the objecttype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOBJECTTYPE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3970,20 +3970,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the orderaim property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the orderaim property.
+             * This is why there is not a <CODE>set</CODE> method for the orderaim property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getORDERAIM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -3999,20 +3999,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the origrecordid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the origrecordid property.
+             * This is why there is not a <CODE>set</CODE> method for the origrecordid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getORIGRECORDID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -4028,20 +4028,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the owner property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the owner property.
+             * This is why there is not a <CODE>set</CODE> method for the owner property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOWNER().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -4057,20 +4057,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the placeoffault property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the placeoffault property.
+             * This is why there is not a <CODE>set</CODE> method for the placeoffault property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLACEOFFAULT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -4086,20 +4086,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the regionname property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the regionname property.
+             * This is why there is not a <CODE>set</CODE> method for the regionname property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getREGIONNAME().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -4115,20 +4115,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the reportdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportdate property.
+             * This is why there is not a <CODE>set</CODE> method for the reportdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getREPORTDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -4144,20 +4144,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the siteid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the siteid property.
+             * This is why there is not a <CODE>set</CODE> method for the siteid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSITEID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -4173,20 +4173,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the status property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the status property.
+             * This is why there is not a <CODE>set</CODE> method for the status property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSTATUS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDomainQueryType }
              * 
@@ -4202,20 +4202,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the statusdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the statusdate property.
+             * This is why there is not a <CODE>set</CODE> method for the statusdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSTATUSDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -4231,20 +4231,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the wonum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wonum property.
+             * This is why there is not a <CODE>set</CODE> method for the wonum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWONUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -4260,20 +4260,20 @@ public class QTT1QueryType {
             /**
              * Gets the value of the workorderid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the workorderid property.
+             * This is why there is not a <CODE>set</CODE> method for the workorderid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWORKORDERID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 

@@ -10,7 +10,6 @@ import ccm.CCMTicket;
 import ccm.CCMTicketFactory;
 import diligent_MKT.AlarmOpenningProfile;
 import diligent_MKT.Alarm_FYROM;
-import static diligent_MKT.Alarm_FYROM.COPPER_PATH_DEPTH_ATC;
 import static diligent_MKT.Alarm_FYROM.SUBTYPE_COPPER_ATC;
 import static diligent_MKT.Alarm_FYROM.SUBTYPE_COPPER_CABLE_CABLE;
 import static diligent_MKT.Alarm_FYROM.SUBTYPE_COPPER_CABLE_DP;

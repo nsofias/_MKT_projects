@@ -11,42 +11,42 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * &lt;p&gt;Java class for AFFECTEDSERVICE_AFFECTEDSERVICEType complex type.
+ * <p>Java class for AFFECTEDSERVICE_AFFECTEDSERVICEType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="AFFECTEDSERVICE_AFFECTEDSERVICEType"&amp;gt;
- *   &amp;lt;complexContent&amp;gt;
- *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *       &amp;lt;sequence&amp;gt;
- *         &amp;lt;element name="MAXINTERRORMSG" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="AFFECTEDSERVICEID" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="DELETEFLAG" type="{http://www.ibm.com/maximo}MXBooleanType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="ENDDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="EQUIPMENTTYPE" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="NUMADSL" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="NUMINTERNET" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="NUMIPTV" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="NUMOFIMPACTEDCUST" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="NUMVOIP" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="NUMWLR" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="ONETMID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="REGION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="SERVICEINFAULT" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="STARTDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="SYSSTATUS" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="TICKETID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
- *       &amp;lt;/sequence&amp;gt;
- *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}ObjectStructurePropertyGroup"/&amp;gt;
- *       &amp;lt;attribute name="transLanguage" type="{http://www.w3.org/2001/XMLSchema}string" /&amp;gt;
- *     &amp;lt;/restriction&amp;gt;
- *   &amp;lt;/complexContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="AFFECTEDSERVICE_AFFECTEDSERVICEType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="MAXINTERRORMSG" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AFFECTEDSERVICEID" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
+ *         &lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
+ *         &lt;element name="DELETEFLAG" type="{http://www.ibm.com/maximo}MXBooleanType" minOccurs="0"/&gt;
+ *         &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
+ *         &lt;element name="ENDDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
+ *         &lt;element name="EQUIPMENTTYPE" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
+ *         &lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
+ *         &lt;element name="NUMADSL" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
+ *         &lt;element name="NUMINTERNET" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
+ *         &lt;element name="NUMIPTV" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
+ *         &lt;element name="NUMOFIMPACTEDCUST" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
+ *         &lt;element name="NUMVOIP" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
+ *         &lt;element name="NUMWLR" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
+ *         &lt;element name="ONETMID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
+ *         &lt;element name="REGION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
+ *         &lt;element name="SERVICEINFAULT" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
+ *         &lt;element name="STARTDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
+ *         &lt;element name="SYSSTATUS" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
+ *         &lt;element name="TICKETID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.ibm.com/maximo}ObjectStructurePropertyGroup"/&gt;
+ *       &lt;attribute name="transLanguage" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */

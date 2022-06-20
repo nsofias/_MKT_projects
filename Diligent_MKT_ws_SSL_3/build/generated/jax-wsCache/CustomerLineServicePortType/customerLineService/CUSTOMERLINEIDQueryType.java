@@ -11,39 +11,39 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * &lt;p&gt;Java class for CUSTOMERLINEIDQueryType complex type.
+ * <p>Java class for CUSTOMERLINEIDQueryType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="CUSTOMERLINEIDQueryType"&amp;gt;
- *   &amp;lt;complexContent&amp;gt;
- *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *       &amp;lt;sequence&amp;gt;
- *         &amp;lt;element name="WHERE" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="CUSTOMERLINEID" minOccurs="0"&amp;gt;
- *           &amp;lt;complexType&amp;gt;
- *             &amp;lt;complexContent&amp;gt;
- *               &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *                 &amp;lt;sequence&amp;gt;
- *                   &amp;lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CUSTOMERLINEIDID" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ENDTIME" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LINEID" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TICKETID" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TYPE" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                 &amp;lt;/sequence&amp;gt;
- *               &amp;lt;/restriction&amp;gt;
- *             &amp;lt;/complexContent&amp;gt;
- *           &amp;lt;/complexType&amp;gt;
- *         &amp;lt;/element&amp;gt;
- *       &amp;lt;/sequence&amp;gt;
- *       &amp;lt;attGroup ref="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}QueryClausePropertyGroup"/&amp;gt;
- *     &amp;lt;/restriction&amp;gt;
- *   &amp;lt;/complexContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="CUSTOMERLINEIDQueryType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="WHERE" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CUSTOMERLINEID" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CUSTOMERLINEIDID" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ENDTIME" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="LINEID" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TICKETID" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TYPE" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}QueryClausePropertyGroup"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */
@@ -165,27 +165,27 @@ public class CUSTOMERLINEIDQueryType {
 
 
     /**
-     * &lt;p&gt;Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
-     * &lt;pre&gt;
-     * &amp;lt;complexType&amp;gt;
-     *   &amp;lt;complexContent&amp;gt;
-     *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-     *       &amp;lt;sequence&amp;gt;
-     *         &amp;lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CUSTOMERLINEIDID" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ENDTIME" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LINEID" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TICKETID" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TYPE" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *       &amp;lt;/sequence&amp;gt;
-     *     &amp;lt;/restriction&amp;gt;
-     *   &amp;lt;/complexContent&amp;gt;
-     * &amp;lt;/complexType&amp;gt;
-     * &lt;/pre&gt;
+     * <pre>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CUSTOMERLINEIDID" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ENDTIME" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="LINEID" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TICKETID" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TYPE" type="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
+     * </pre>
      * 
      * 
      */
@@ -219,20 +219,20 @@ public class CUSTOMERLINEIDQueryType {
         /**
          * Gets the value of the changedate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the changedate property.
+         * This is why there is not a <CODE>set</CODE> method for the changedate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCHANGEDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -248,20 +248,20 @@ public class CUSTOMERLINEIDQueryType {
         /**
          * Gets the value of the customerlineidid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the customerlineidid property.
+         * This is why there is not a <CODE>set</CODE> method for the customerlineidid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCUSTOMERLINEIDID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -277,20 +277,20 @@ public class CUSTOMERLINEIDQueryType {
         /**
          * Gets the value of the description property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the description property.
+         * This is why there is not a <CODE>set</CODE> method for the description property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDESCRIPTION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -306,20 +306,20 @@ public class CUSTOMERLINEIDQueryType {
         /**
          * Gets the value of the endtime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the endtime property.
+         * This is why there is not a <CODE>set</CODE> method for the endtime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getENDTIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -335,20 +335,20 @@ public class CUSTOMERLINEIDQueryType {
         /**
          * Gets the value of the lineid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the lineid property.
+         * This is why there is not a <CODE>set</CODE> method for the lineid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLINEID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -364,20 +364,20 @@ public class CUSTOMERLINEIDQueryType {
         /**
          * Gets the value of the ticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ticketid property.
+         * This is why there is not a <CODE>set</CODE> method for the ticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTICKETID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -393,20 +393,20 @@ public class CUSTOMERLINEIDQueryType {
         /**
          * Gets the value of the type property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the type property.
+         * This is why there is not a <CODE>set</CODE> method for the type property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 

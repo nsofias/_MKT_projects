@@ -6,8 +6,10 @@
 package ccm;
 
 import com.google.gson.Gson;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -30,9 +32,8 @@ public class CallInfo {
         this.networkType = networkType;
         this.reason = reason;
     }
-    
-    public String toJson()
-    {
+
+    public String toJson() {
         return new Gson().toJson(this);
     }
 
@@ -42,6 +43,7 @@ public class CallInfo {
     public Map<String, String> getResources() {
         return resources;
     }
+
     /**
      * @param resources the resources to set
      */
@@ -60,12 +62,14 @@ public class CallInfo {
     public String getLineId() {
         return lineId;
     }
+
     /**
      * @param lineId the lineId to set
      */
     public void setLineId(String lineId) {
         this.lineId = lineId;
     }
+
     /**
      * @return the terminationCode
      */
@@ -108,10 +112,8 @@ public class CallInfo {
         this.networkType = lineType;
     }
 
-    public static void main(String[] args) {
-        //String[] a = new String[]{"1","2",null};
-        //String[] b = new String[10];
-        //System.out.println(b[2]);
-    }
-
 }
+
+
+
+

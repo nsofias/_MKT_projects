@@ -68,22 +68,22 @@ public final class logViewer_005fsystem_jsp extends org.apache.jasper.runtime.Ht
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     request.setCharacterEncoding("UTF-8");
     response.setCharacterEncoding("UTF-8");
     String flush = request.getParameter("flush");
     
-      out.write("\n");
-      out.write("    <form action=\"logViewer_system.jsp\">\n");
-      out.write("        <input type=\"submit\" value=\"refresh\" name=\"refresh\" />\n");
-      out.write("        <input type=\"submit\" value=\"flush\" name=\"flush\" />\n");
-      out.write("    </form>\n");
-      out.write("    \n");
-      out.write("    \n");
+      out.write("\r\n");
+      out.write("    <form action=\"logViewer_system.jsp\">\r\n");
+      out.write("        <input type=\"submit\" value=\"refresh\" name=\"refresh\" />\r\n");
+      out.write("        <input type=\"submit\" value=\"flush\" name=\"flush\" />\r\n");
+      out.write("    </form>\r\n");
+      out.write("    \r\n");
+      out.write("    \r\n");
       out.write("    ");
 
     if (flush != null)
@@ -144,14 +144,14 @@ public final class logViewer_005fsystem_jsp extends org.apache.jasper.runtime.Ht
  
     out.flush();
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

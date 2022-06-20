@@ -11,19 +11,19 @@ import ibm_query.runtime.ZeroOneBooleanAdapter;
 
 
 /**
- * &lt;p&gt;Java class for MXBooleanType complex type.
+ * <p>Java class for MXBooleanType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="MXBooleanType"&amp;gt;
- *   &amp;lt;simpleContent&amp;gt;
- *     &amp;lt;extension base="&amp;lt;http://www.ibm.com/maximo&amp;gt;BooleanType"&amp;gt;
- *       &amp;lt;attribute name="changed" type="{http://www.ibm.com/maximo}ChangeIndicatorType" /&amp;gt;
- *     &amp;lt;/extension&amp;gt;
- *   &amp;lt;/simpleContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="MXBooleanType"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.ibm.com/maximo&gt;BooleanType"&gt;
+ *       &lt;attribute name="changed" type="{http://www.ibm.com/maximo}ChangeIndicatorType" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */

@@ -11,513 +11,513 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * &lt;p&gt;Java class for QTTINCIDENTQueryType complex type.
+ * <p>Java class for QTTINCIDENTQueryType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="QTTINCIDENTQueryType"&amp;gt;
- *   &amp;lt;complexContent&amp;gt;
- *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *       &amp;lt;sequence&amp;gt;
- *         &amp;lt;element name="WHERE" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="INCIDENT" minOccurs="0"&amp;gt;
- *           &amp;lt;complexType&amp;gt;
- *             &amp;lt;complexContent&amp;gt;
- *               &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *                 &amp;lt;sequence&amp;gt;
- *                   &amp;lt;element name="ACCUMULATEDHOLDTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACTUALCONTACTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACTUALFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACTUALSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ADJUSTEDTARGETRESPONSETIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ADRESAIZVOD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ADRESAKORISNIKA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="AFFECTEDDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="AFFECTEDEMAIL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="AFFECTEDPERSON" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="AFFECTEDPHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ASSETNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ASSETORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ASSETSITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CALCCALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CENTRALA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CENTRALAPORT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CINUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CLASSIFICATIONID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CLASSSTRUCTUREID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="COMMODITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="COMMODITYGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CONTACTEMAIL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CONTACTPERSON" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CONTACTPHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CORRELATIONATTRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CREATEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CREATEWOMULTI" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CREATIONDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CUSTOMERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CUSTOMERNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CUSTOMERVALUE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DATE1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DATE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DESCSRVID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DOMEN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DSLAMPORT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="EXTERNALRECID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="EXTERNALSYSTEM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="EXTERNALSYSTEM_TICKETID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="EXTSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="FAILURECODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="FAULTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="FR1CODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="FR2CODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="GLACCOUNT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXGLAccountQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="GLOBALTICKETCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="GLOBALTICKETID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HASACTIVITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HASSOLUTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HASSUPPORTCONTRACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HGWTIP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HISTORYFLAG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="IMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INDICATEDPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INHERITSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INT1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INT2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INT3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INTERNALPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ISGLOBAL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ISKNOWNERROR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ISKNOWNERRORDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="IZVOD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="KABEL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="KATEGORIJA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LINISKAOPREMA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="MOZEOPTIKA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="NOTEOPEN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OLA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OPERATORNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORIGRECORDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORIGRECORDID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORIGRECORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORIGRECSITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OUTAGEDURATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PAKET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PARICA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPADDRESSLINE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPADDRESSLINE3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPADDRISCHANGED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPAGREEMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPBBLINENUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPBILLBATCH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCALCCALNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCOSTCENTER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCOUNTRY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCOUNTY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCUSTCHACCT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCUSTOMER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCUSTPONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPDIRECTIONS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPGEOCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPLATITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPLONGITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPMAXPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPPOREQ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPPOSTALCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPPRICESCHED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPQUOTEDPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPQUOTETYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPREFPOINT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPREGIONDISTR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPRESPONSEPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPREVNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPSTADDRDIRPRFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPSTADDRDIRSFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPSTADDRNUMBER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPSTADDRSTREET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPSTADDRSTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPSTADDRUNITNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPSTATEPROVINCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPSTREETADDRESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPTIMEZONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMCOMIMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMCOMRESOLUTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMCOMTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMCOMURGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCCRID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCITEMNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCOFFSUMMARY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCQUANTITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="POZICIJA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PRECKAID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PRESPOJBROJ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PRESPOJLINIJA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PROBLEMCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="RAM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REBRO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REGION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="RELATEDTOGLOBAL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTEDEMAIL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTEDPHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTEDPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ROOTCUSTOMERREF" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SEARCHSOURCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SELFSERVSOLACCESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SERIALNUMBERHGW" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SERIALNUMBERSTB" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SERVICESINFAULT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SITEVISIT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SOLUTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SOURCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STATUSDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STRING1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STRING2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STRING3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SUPERVISOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TARGETCONTACTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TARGETDESC" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TARGETFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TARGETSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TECHNICIANNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TEMPLATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TEMPLATEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TICKETID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TICKETUID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TIPDSLAM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="URGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="VENDOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="VIRTUALENV" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="WORKLOG" minOccurs="0"&amp;gt;
- *                     &amp;lt;complexType&amp;gt;
- *                       &amp;lt;complexContent&amp;gt;
- *                         &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *                           &amp;lt;sequence&amp;gt;
- *                             &amp;lt;element name="CLIENTVIEWABLE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CREATEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CREATEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="LOGTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="MODIFYBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="MODIFYDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="RECORDKEY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WORKLOGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                           &amp;lt;/sequence&amp;gt;
- *                         &amp;lt;/restriction&amp;gt;
- *                       &amp;lt;/complexContent&amp;gt;
- *                     &amp;lt;/complexType&amp;gt;
- *                   &amp;lt;/element&amp;gt;
- *                   &amp;lt;element name="TKSTATUS" minOccurs="0"&amp;gt;
- *                     &amp;lt;complexType&amp;gt;
- *                       &amp;lt;complexContent&amp;gt;
- *                         &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *                           &amp;lt;sequence&amp;gt;
- *                             &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="MEMO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="STATUSTRACKING" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="TKSTATUSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                           &amp;lt;/sequence&amp;gt;
- *                         &amp;lt;/restriction&amp;gt;
- *                       &amp;lt;/complexContent&amp;gt;
- *                     &amp;lt;/complexType&amp;gt;
- *                   &amp;lt;/element&amp;gt;
- *                   &amp;lt;element name="WORKORDER" minOccurs="0"&amp;gt;
- *                     &amp;lt;complexType&amp;gt;
- *                       &amp;lt;complexContent&amp;gt;
- *                         &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *                           &amp;lt;sequence&amp;gt;
- *                             &amp;lt;element name="ACTFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ACTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ACTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ACTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ACTSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ACTSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ACTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ASSETLOCPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ASSETNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="BACKOUTPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CALCCALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CALCPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CHARGESTORE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CINUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CLASSSTRUCTUREID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="COMMODITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="COMMODITYGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CONTRACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CREWID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="CUSTOMERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="DISABLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="DOWNTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ENVIRONMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ESTATAPPRLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ESTATAPPRLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ESTATAPPRMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ESTATAPPRSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ESTATAPPRTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ESTDUR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ESTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ESTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ESTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ESTSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ESTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="EXTERNALREFID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="FAILDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="FAILURECODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="FAULTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="FINCNTRLID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="FIRSTAPPRSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="FLOWACTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="FLOWACTIONASSIST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="FLOWCONTROLLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="GENERATEDFORPO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="GENFORPOLINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="GLACCOUNT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXGLAccountQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="HASCHILDREN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="HASFOLLOWUPWORK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="HISTORYFLAG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="INSPECTOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="INTERRUPTIBLE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ISTASK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="JOBTASKID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="JPNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="JUSTIFYPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="LAUNCHENTRYNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="LEAD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="LINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="LOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="MEASUREDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="MEASUREMENTVALUE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="NEWCHILDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OBSERVATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ONBEHALFOF" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ORIGRECORDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ORIGRECORDID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OUTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OUTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OUTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OWNERSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PARENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PARENTCHGSSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PERSONGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPADDRESSLINE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPADDRESSLINE3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPADDRISCHANGED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPAGREEMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPALLOWQUOTE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPBBLINENUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPBILLBATCH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPBILLBATCHID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPBILLSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPCALCCALNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPCALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPCALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPCITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPCOSTCENTER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPCOUNTRY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPCOUNTY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPCUSTCHACCT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPCUSTOMER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPCUSTPONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPDIRECTIONS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPGEOCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPLATDIRECTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPLATITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPLINESTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPLONGDIRECTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPLONGITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPMAXPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPORIGQPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPORIGQTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPPOREQ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPPOSTALCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPPRICESCHED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPQUOTEDPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPQUOTETYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPREFPOINT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPREGIONDISTR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPRESPONSEPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPREVNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPSTADDRDIRPRFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPSTADDRDIRSFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPSTADDRNUMBER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPSTADDRSTREET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPSTADDRSTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPSTADDRUNITNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPSTATEPROVINCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPSTREETADDRESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PLUSPTIMEZONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PMCOMBPELACTNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PMCOMBPELENABLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PMCOMBPELINPROG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PMCOMIMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PMCOMSTATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PMCOMTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PMCOMURGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PMDUEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PMEXTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PMNEXTDUEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PMNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="POINTNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PRECKAID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="PROBLEMCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="REASONFORCHANGE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="REGION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="REMDUR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="REPORTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="REPORTEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="RESPONDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="RISK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ROUTE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ROUTESTOPID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SCHEDFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SCHEDSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SENDERSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SERVICESINFAULT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SOURCESYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="STATUSDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SUPERVISOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SUSPENDFLOW" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="TARGCOMPDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="TARGETDESC" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="TARGSTARTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="TASKID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="VENDOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="VERIFICATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WHOMISCHANGEFOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOACCEPTSCHARGES" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ10" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ11" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ12" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ13" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ14" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOEQ9" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOISSWAP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJO1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJO2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJO3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJO4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJO5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJO6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJO7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJO8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJP1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJP2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJP3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJP4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOJP5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOL1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOL2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOL3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOL4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOLABLNK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOLO1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOLO10" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOLO2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOLO3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOLO4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOLO5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOLO6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOLO7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOLO8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOLO9" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WORKLOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WORKORDERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WORKTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WORTS1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WORTS2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WORTS3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WORTS4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WORTS5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="WOSEQUENCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                           &amp;lt;/sequence&amp;gt;
- *                         &amp;lt;/restriction&amp;gt;
- *                       &amp;lt;/complexContent&amp;gt;
- *                     &amp;lt;/complexType&amp;gt;
- *                   &amp;lt;/element&amp;gt;
- *                   &amp;lt;element name="TKOWNERHISTORY" minOccurs="0"&amp;gt;
- *                     &amp;lt;complexType&amp;gt;
- *                       &amp;lt;complexContent&amp;gt;
- *                         &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *                           &amp;lt;sequence&amp;gt;
- *                             &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OWNDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OWNERCHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                             &amp;lt;element name="TKOWNERHISTORYID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
- *                           &amp;lt;/sequence&amp;gt;
- *                         &amp;lt;/restriction&amp;gt;
- *                       &amp;lt;/complexContent&amp;gt;
- *                     &amp;lt;/complexType&amp;gt;
- *                   &amp;lt;/element&amp;gt;
- *                 &amp;lt;/sequence&amp;gt;
- *               &amp;lt;/restriction&amp;gt;
- *             &amp;lt;/complexContent&amp;gt;
- *           &amp;lt;/complexType&amp;gt;
- *         &amp;lt;/element&amp;gt;
- *       &amp;lt;/sequence&amp;gt;
- *       &amp;lt;attGroup ref="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}QueryClausePropertyGroup"/&amp;gt;
- *     &amp;lt;/restriction&amp;gt;
- *   &amp;lt;/complexContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="QTTINCIDENTQueryType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="WHERE" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="INCIDENT" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="ACCUMULATEDHOLDTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ACTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ACTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ACTUALCONTACTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ACTUALFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ACTUALSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ADJUSTEDTARGETRESPONSETIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ADRESAIZVOD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ADRESAKORISNIKA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="AFFECTEDDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="AFFECTEDEMAIL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="AFFECTEDPERSON" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="AFFECTEDPHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ASSETNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ASSETORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ASSETSITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CALCCALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CENTRALA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CENTRALAPORT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CINUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CLASSIFICATIONID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CLASSSTRUCTUREID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="COMMODITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="COMMODITYGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CONTACTEMAIL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CONTACTPERSON" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CONTACTPHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CORRELATIONATTRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CREATEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CREATEWOMULTI" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CREATIONDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CUSTOMERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CUSTOMERNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="CUSTOMERVALUE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="DATE1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="DATE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="DESCSRVID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="DOMEN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="DSLAMPORT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="EXTERNALRECID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="EXTERNALSYSTEM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="EXTERNALSYSTEM_TICKETID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="EXTSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="FAILURECODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="FAULTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="FR1CODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="FR2CODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="GLACCOUNT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXGLAccountQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="GLOBALTICKETCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="GLOBALTICKETID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="HASACTIVITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="HASSOLUTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="HASSUPPORTCONTRACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="HGWTIP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="HISTORYFLAG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="IMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="INDICATEDPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="INHERITSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="INT1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="INT2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="INT3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="INTERNALPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ISGLOBAL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ISKNOWNERROR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ISKNOWNERRORDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="IZVOD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="KABEL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="KATEGORIJA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="LINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="LINISKAOPREMA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="LOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="MOZEOPTIKA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="NOTEOPEN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="OLA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="OPERATORNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ORIGRECORDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ORIGRECORDID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ORIGRECORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ORIGRECSITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="OUTAGEDURATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PAKET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PARICA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPADDRESSLINE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPADDRESSLINE3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPADDRISCHANGED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPAGREEMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPBBLINENUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPBILLBATCH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCALCCALNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCOSTCENTER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCOUNTRY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCOUNTY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCUSTCHACCT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCUSTOMER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCUSTPONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPDIRECTIONS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPGEOCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPLATITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPLONGITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPMAXPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPPOREQ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPPOSTALCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPPRICESCHED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPQUOTEDPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPQUOTETYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPREFPOINT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPREGIONDISTR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPRESPONSEPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPREVNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPSTADDRDIRPRFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPSTADDRDIRSFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPSTADDRNUMBER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPSTADDRSTREET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPSTADDRSTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPSTADDRUNITNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPSTATEPROVINCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPSTREETADDRESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPTIMEZONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PMCOMIMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PMCOMRESOLUTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PMCOMTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PMCOMURGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCCRID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCITEMNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCOFFSUMMARY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCQUANTITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="POZICIJA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PRECKAID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PRESPOJBROJ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PRESPOJLINIJA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="PROBLEMCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="RAM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="REBRO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="REGION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="RELATEDTOGLOBAL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTEDEMAIL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTEDPHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTEDPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="ROOTCUSTOMERREF" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="SEARCHSOURCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="SELFSERVSOLACCESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="SERIALNUMBERHGW" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="SERIALNUMBERSTB" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="SERVICESINFAULT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="SITEVISIT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="SOLUTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="SOURCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="STATUSDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="STRING1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="STRING2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="STRING3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="SUPERVISOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="TARGETCONTACTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="TARGETDESC" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="TARGETFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="TARGETSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="TECHNICIANNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="TEMPLATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="TEMPLATEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="TICKETID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="TICKETUID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="TIPDSLAM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="URGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="VENDOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="VIRTUALENV" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                   &lt;element name="WORKLOG" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="CLIENTVIEWABLE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CREATEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CREATEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="LOGTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="MODIFYBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="MODIFYDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="RECORDKEY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WORKLOGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="TKSTATUS" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="MEMO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="STATUSTRACKING" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="TKSTATUSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="WORKORDER" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="ACTFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ACTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ACTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ACTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ACTSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ACTSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ACTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ASSETLOCPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ASSETNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="BACKOUTPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CALCCALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CALCPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CHARGESTORE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CINUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CLASSSTRUCTUREID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="COMMODITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="COMMODITYGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CONTRACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CREWID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="CUSTOMERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="DISABLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="DOWNTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ENVIRONMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ESTATAPPRLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ESTATAPPRLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ESTATAPPRMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ESTATAPPRSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ESTATAPPRTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ESTDUR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ESTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ESTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ESTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ESTSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ESTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="EXTERNALREFID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="FAILDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="FAILURECODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="FAULTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="FINCNTRLID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="FIRSTAPPRSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="FLOWACTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="FLOWACTIONASSIST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="FLOWCONTROLLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="GENERATEDFORPO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="GENFORPOLINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="GLACCOUNT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXGLAccountQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="HASCHILDREN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="HASFOLLOWUPWORK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="HISTORYFLAG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="INSPECTOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="INTERRUPTIBLE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ISTASK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="JOBTASKID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="JPNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="JUSTIFYPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="LAUNCHENTRYNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="LEAD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="LINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="LOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="MEASUREDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="MEASUREMENTVALUE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="NEWCHILDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OBSERVATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ONBEHALFOF" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ORIGRECORDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ORIGRECORDID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OUTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OUTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OUTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OWNERSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PARENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PARENTCHGSSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PERSONGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPADDRESSLINE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPADDRESSLINE3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPADDRISCHANGED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPAGREEMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPALLOWQUOTE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPBBLINENUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPBILLBATCH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPBILLBATCHID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPBILLSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPCALCCALNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPCALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPCALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPCITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPCOSTCENTER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPCOUNTRY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPCOUNTY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPCUSTCHACCT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPCUSTOMER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPCUSTPONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPDIRECTIONS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPGEOCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPLATDIRECTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPLATITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPLINESTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPLONGDIRECTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPLONGITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPMAXPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPORIGQPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPORIGQTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPPOREQ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPPOSTALCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPPRICESCHED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPQUOTEDPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPQUOTETYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPREFPOINT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPREGIONDISTR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPRESPONSEPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPREVNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPSTADDRDIRPRFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPSTADDRDIRSFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPSTADDRNUMBER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPSTADDRSTREET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPSTADDRSTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPSTADDRUNITNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPSTATEPROVINCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPSTREETADDRESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PLUSPTIMEZONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PMCOMBPELACTNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PMCOMBPELENABLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PMCOMBPELINPROG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PMCOMIMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PMCOMSTATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PMCOMTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PMCOMURGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PMDUEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PMEXTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PMNEXTDUEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PMNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="POINTNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PRECKAID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="PROBLEMCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="REASONFORCHANGE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="REGION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="REMDUR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="REPORTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="REPORTEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="RESPONDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="RISK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ROUTE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ROUTESTOPID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="SCHEDFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="SCHEDSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="SENDERSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="SERVICESINFAULT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="SOURCESYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="STATUSDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="SUPERVISOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="SUSPENDFLOW" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="TARGCOMPDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="TARGETDESC" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="TARGSTARTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="TASKID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="VENDOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="VERIFICATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WHOMISCHANGEFOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOACCEPTSCHARGES" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ10" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ11" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ12" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ13" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ14" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOEQ9" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOISSWAP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJO1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJO2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJO3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJO4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJO5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJO6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJO7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJO8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJP1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJP2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJP3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJP4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOJP5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOL1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOL2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOL3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOL4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOLABLNK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOLO1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOLO10" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOLO2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOLO3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOLO4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOLO5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOLO6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOLO7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOLO8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOLO9" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WORKLOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WORKORDERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WORKTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WORTS1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WORTS2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WORTS3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WORTS4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WORTS5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="WOSEQUENCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                   &lt;element name="TKOWNERHISTORY" minOccurs="0"&gt;
+ *                     &lt;complexType&gt;
+ *                       &lt;complexContent&gt;
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                           &lt;sequence&gt;
+ *                             &lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OWNDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OWNERCHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                             &lt;element name="TKOWNERHISTORYID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+ *                           &lt;/sequence&gt;
+ *                         &lt;/restriction&gt;
+ *                       &lt;/complexContent&gt;
+ *                     &lt;/complexType&gt;
+ *                   &lt;/element&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}QueryClausePropertyGroup"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */
@@ -639,501 +639,501 @@ public class QTTINCIDENTQueryType {
 
 
     /**
-     * &lt;p&gt;Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
-     * &lt;pre&gt;
-     * &amp;lt;complexType&amp;gt;
-     *   &amp;lt;complexContent&amp;gt;
-     *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-     *       &amp;lt;sequence&amp;gt;
-     *         &amp;lt;element name="ACCUMULATEDHOLDTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACTUALCONTACTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACTUALFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACTUALSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ADJUSTEDTARGETRESPONSETIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ADRESAIZVOD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ADRESAKORISNIKA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="AFFECTEDDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="AFFECTEDEMAIL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="AFFECTEDPERSON" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="AFFECTEDPHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ASSETNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ASSETORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ASSETSITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CALCCALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CENTRALA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CENTRALAPORT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CINUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CLASSIFICATIONID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CLASSSTRUCTUREID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="COMMODITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="COMMODITYGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CONTACTEMAIL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CONTACTPERSON" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CONTACTPHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CORRELATIONATTRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CREATEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CREATEWOMULTI" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CREATIONDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CUSTOMERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CUSTOMERNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CUSTOMERVALUE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DATE1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DATE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DESCSRVID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DOMEN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DSLAMPORT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="EXTERNALRECID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="EXTERNALSYSTEM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="EXTERNALSYSTEM_TICKETID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="EXTSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="FAILURECODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="FAULTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="FR1CODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="FR2CODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="GLACCOUNT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXGLAccountQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="GLOBALTICKETCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="GLOBALTICKETID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HASACTIVITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HASSOLUTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HASSUPPORTCONTRACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HGWTIP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HISTORYFLAG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="IMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INDICATEDPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INHERITSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INT1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INT2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INT3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INTERNALPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ISGLOBAL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ISKNOWNERROR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ISKNOWNERRORDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="IZVOD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="KABEL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="KATEGORIJA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LINISKAOPREMA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="MOZEOPTIKA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="NOTEOPEN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OLA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OPERATORNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORIGRECORDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORIGRECORDID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORIGRECORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORIGRECSITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OUTAGEDURATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PAKET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PARICA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPADDRESSLINE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPADDRESSLINE3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPADDRISCHANGED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPAGREEMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPBBLINENUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPBILLBATCH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCALCCALNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCOSTCENTER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCOUNTRY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCOUNTY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCUSTCHACCT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCUSTOMER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCUSTPONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPDIRECTIONS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPGEOCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPLATITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPLONGITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPMAXPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPPOREQ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPPOSTALCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPPRICESCHED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPQUOTEDPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPQUOTETYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPREFPOINT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPREGIONDISTR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPRESPONSEPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPREVNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPSTADDRDIRPRFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPSTADDRDIRSFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPSTADDRNUMBER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPSTADDRSTREET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPSTADDRSTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPSTADDRUNITNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPSTATEPROVINCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPSTREETADDRESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPTIMEZONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMCOMIMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMCOMRESOLUTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMCOMTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMCOMURGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCCRID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCITEMNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCOFFSUMMARY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCQUANTITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="POZICIJA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PRECKAID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PRESPOJBROJ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PRESPOJLINIJA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PROBLEMCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="RAM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REBRO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REGION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="RELATEDTOGLOBAL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTEDEMAIL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTEDPHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTEDPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ROOTCUSTOMERREF" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SEARCHSOURCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SELFSERVSOLACCESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SERIALNUMBERHGW" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SERIALNUMBERSTB" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SERVICESINFAULT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SITEVISIT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SOLUTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SOURCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STATUSDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STRING1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STRING2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STRING3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SUPERVISOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TARGETCONTACTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TARGETDESC" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TARGETFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TARGETSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TECHNICIANNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TEMPLATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TEMPLATEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TICKETID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TICKETUID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TIPDSLAM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="URGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="VENDOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="VIRTUALENV" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="WORKLOG" minOccurs="0"&amp;gt;
-     *           &amp;lt;complexType&amp;gt;
-     *             &amp;lt;complexContent&amp;gt;
-     *               &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-     *                 &amp;lt;sequence&amp;gt;
-     *                   &amp;lt;element name="CLIENTVIEWABLE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CREATEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CREATEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="LOGTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="MODIFYBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="MODIFYDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="RECORDKEY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WORKLOGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                 &amp;lt;/sequence&amp;gt;
-     *               &amp;lt;/restriction&amp;gt;
-     *             &amp;lt;/complexContent&amp;gt;
-     *           &amp;lt;/complexType&amp;gt;
-     *         &amp;lt;/element&amp;gt;
-     *         &amp;lt;element name="TKSTATUS" minOccurs="0"&amp;gt;
-     *           &amp;lt;complexType&amp;gt;
-     *             &amp;lt;complexContent&amp;gt;
-     *               &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-     *                 &amp;lt;sequence&amp;gt;
-     *                   &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="MEMO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="STATUSTRACKING" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="TKSTATUSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                 &amp;lt;/sequence&amp;gt;
-     *               &amp;lt;/restriction&amp;gt;
-     *             &amp;lt;/complexContent&amp;gt;
-     *           &amp;lt;/complexType&amp;gt;
-     *         &amp;lt;/element&amp;gt;
-     *         &amp;lt;element name="WORKORDER" minOccurs="0"&amp;gt;
-     *           &amp;lt;complexType&amp;gt;
-     *             &amp;lt;complexContent&amp;gt;
-     *               &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-     *                 &amp;lt;sequence&amp;gt;
-     *                   &amp;lt;element name="ACTFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ACTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ACTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ACTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ACTSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ACTSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ACTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ASSETLOCPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ASSETNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="BACKOUTPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CALCCALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CALCPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CHARGESTORE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CINUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CLASSSTRUCTUREID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="COMMODITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="COMMODITYGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CONTRACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CREWID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="CUSTOMERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="DISABLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="DOWNTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ENVIRONMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ESTATAPPRLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ESTATAPPRLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ESTATAPPRMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ESTATAPPRSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ESTATAPPRTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ESTDUR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ESTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ESTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ESTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ESTSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ESTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="EXTERNALREFID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="FAILDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="FAILURECODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="FAULTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="FINCNTRLID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="FIRSTAPPRSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="FLOWACTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="FLOWACTIONASSIST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="FLOWCONTROLLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="GENERATEDFORPO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="GENFORPOLINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="GLACCOUNT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXGLAccountQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="HASCHILDREN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="HASFOLLOWUPWORK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="HISTORYFLAG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="INSPECTOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="INTERRUPTIBLE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ISTASK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="JOBTASKID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="JPNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="JUSTIFYPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="LAUNCHENTRYNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="LEAD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="LINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="LOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="MEASUREDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="MEASUREMENTVALUE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="NEWCHILDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OBSERVATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ONBEHALFOF" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ORIGRECORDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ORIGRECORDID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OUTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OUTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OUTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OWNERSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PARENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PARENTCHGSSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PERSONGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPADDRESSLINE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPADDRESSLINE3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPADDRISCHANGED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPAGREEMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPALLOWQUOTE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPBBLINENUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPBILLBATCH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPBILLBATCHID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPBILLSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPCALCCALNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPCALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPCALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPCITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPCOSTCENTER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPCOUNTRY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPCOUNTY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPCUSTCHACCT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPCUSTOMER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPCUSTPONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPDIRECTIONS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPGEOCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPLATDIRECTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPLATITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPLINESTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPLONGDIRECTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPLONGITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPMAXPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPORIGQPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPORIGQTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPPOREQ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPPOSTALCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPPRICESCHED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPQUOTEDPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPQUOTETYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPREFPOINT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPREGIONDISTR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPRESPONSEPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPREVNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPSTADDRDIRPRFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPSTADDRDIRSFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPSTADDRNUMBER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPSTADDRSTREET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPSTADDRSTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPSTADDRUNITNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPSTATEPROVINCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPSTREETADDRESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PLUSPTIMEZONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PMCOMBPELACTNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PMCOMBPELENABLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PMCOMBPELINPROG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PMCOMIMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PMCOMSTATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PMCOMTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PMCOMURGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PMDUEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PMEXTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PMNEXTDUEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PMNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="POINTNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PRECKAID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="PROBLEMCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="REASONFORCHANGE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="REGION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="REMDUR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="REPORTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="REPORTEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="RESPONDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="RISK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ROUTE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ROUTESTOPID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SCHEDFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SCHEDSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SENDERSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SERVICESINFAULT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SOURCESYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="STATUSDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SUPERVISOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SUSPENDFLOW" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="TARGCOMPDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="TARGETDESC" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="TARGSTARTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="TASKID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="VENDOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="VERIFICATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WHOMISCHANGEFOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOACCEPTSCHARGES" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ10" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ11" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ12" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ13" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ14" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOEQ9" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOISSWAP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJO1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJO2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJO3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJO4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJO5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJO6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJO7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJO8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJP1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJP2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJP3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJP4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOJP5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOL1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOL2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOL3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOL4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOLABLNK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOLO1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOLO10" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOLO2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOLO3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOLO4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOLO5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOLO6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOLO7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOLO8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOLO9" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WORKLOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WORKORDERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WORKTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WORTS1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WORTS2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WORTS3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WORTS4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WORTS5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="WOSEQUENCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                 &amp;lt;/sequence&amp;gt;
-     *               &amp;lt;/restriction&amp;gt;
-     *             &amp;lt;/complexContent&amp;gt;
-     *           &amp;lt;/complexType&amp;gt;
-     *         &amp;lt;/element&amp;gt;
-     *         &amp;lt;element name="TKOWNERHISTORY" minOccurs="0"&amp;gt;
-     *           &amp;lt;complexType&amp;gt;
-     *             &amp;lt;complexContent&amp;gt;
-     *               &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-     *                 &amp;lt;sequence&amp;gt;
-     *                   &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OWNDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OWNERCHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                   &amp;lt;element name="TKOWNERHISTORYID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-     *                 &amp;lt;/sequence&amp;gt;
-     *               &amp;lt;/restriction&amp;gt;
-     *             &amp;lt;/complexContent&amp;gt;
-     *           &amp;lt;/complexType&amp;gt;
-     *         &amp;lt;/element&amp;gt;
-     *       &amp;lt;/sequence&amp;gt;
-     *     &amp;lt;/restriction&amp;gt;
-     *   &amp;lt;/complexContent&amp;gt;
-     * &amp;lt;/complexType&amp;gt;
-     * &lt;/pre&gt;
+     * <pre>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="ACCUMULATEDHOLDTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ACTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ACTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ACTUALCONTACTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ACTUALFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ACTUALSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ADJUSTEDTARGETRESPONSETIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ADRESAIZVOD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ADRESAKORISNIKA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="AFFECTEDDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="AFFECTEDEMAIL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="AFFECTEDPERSON" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="AFFECTEDPHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ASSETNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ASSETORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ASSETSITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CALCCALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CENTRALA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CENTRALAPORT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CINUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CLASSIFICATIONID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CLASSSTRUCTUREID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="COMMODITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="COMMODITYGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CONTACTEMAIL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CONTACTPERSON" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CONTACTPHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CORRELATIONATTRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CREATEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CREATEWOMULTI" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CREATIONDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CUSTOMERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CUSTOMERNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="CUSTOMERVALUE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="DATE1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="DATE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="DESCSRVID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="DOMEN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="DSLAMPORT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="EXTERNALRECID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="EXTERNALSYSTEM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="EXTERNALSYSTEM_TICKETID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="EXTSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="FAILURECODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="FAULTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="FR1CODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="FR2CODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="GLACCOUNT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXGLAccountQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="GLOBALTICKETCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="GLOBALTICKETID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="HASACTIVITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="HASSOLUTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="HASSUPPORTCONTRACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="HGWTIP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="HISTORYFLAG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="IMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="INDICATEDPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="INHERITSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="INT1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="INT2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="INT3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="INTERNALPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ISGLOBAL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ISKNOWNERROR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ISKNOWNERRORDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="IZVOD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="KABEL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="KATEGORIJA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="LINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="LINISKAOPREMA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="LOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="MOZEOPTIKA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="NOTEOPEN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="OLA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="OPERATORNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ORIGRECORDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ORIGRECORDID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ORIGRECORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ORIGRECSITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="OUTAGEDURATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PAKET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PARICA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPADDRESSLINE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPADDRESSLINE3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPADDRISCHANGED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPAGREEMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPBBLINENUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPBILLBATCH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCALCCALNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCOSTCENTER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCOUNTRY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCOUNTY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCUSTCHACCT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCUSTOMER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCUSTPONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPDIRECTIONS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPGEOCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPLATITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPLONGITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPMAXPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPPOREQ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPPOSTALCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPPRICESCHED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPQUOTEDPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPQUOTETYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPREFPOINT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPREGIONDISTR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPRESPONSEPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPREVNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPSTADDRDIRPRFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPSTADDRDIRSFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPSTADDRNUMBER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPSTADDRSTREET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPSTADDRSTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPSTADDRUNITNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPSTATEPROVINCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPSTREETADDRESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPTIMEZONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PMCOMIMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PMCOMRESOLUTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PMCOMTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PMCOMURGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCCRID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCITEMNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCOFFSUMMARY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCQUANTITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="POZICIJA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PRECKAID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PRESPOJBROJ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PRESPOJLINIJA" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="PROBLEMCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="RAM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="REBRO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="REGION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="RELATEDTOGLOBAL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTEDEMAIL" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTEDPHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTEDPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="ROOTCUSTOMERREF" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="SEARCHSOURCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="SELFSERVSOLACCESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="SERIALNUMBERHGW" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="SERIALNUMBERSTB" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="SERVICESINFAULT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="SITEVISIT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="SOLUTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="SOURCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="STATUSDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="STRING1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="STRING2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="STRING3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="SUPERVISOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="TARGETCONTACTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="TARGETDESC" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="TARGETFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="TARGETSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="TECHNICIANNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="TEMPLATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="TEMPLATEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="TICKETID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="TICKETUID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="TIPDSLAM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="URGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="VENDOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="VIRTUALENV" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *         &lt;element name="WORKLOG" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="CLIENTVIEWABLE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CREATEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CREATEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="LOGTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="MODIFYBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="MODIFYDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="RECORDKEY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WORKLOGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="TKSTATUS" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="MEMO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="STATUSTRACKING" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="TKSTATUSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="WORKORDER" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="ACTFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ACTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ACTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ACTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ACTSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ACTSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ACTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ASSETLOCPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ASSETNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="BACKOUTPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CALCCALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CALCPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CHARGESTORE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CINUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CLASSSTRUCTUREID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="COMMODITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="COMMODITYGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CONTRACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CREWID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="CUSTOMERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="DISABLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="DOWNTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ENVIRONMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ESTATAPPRLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ESTATAPPRLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ESTATAPPRMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ESTATAPPRSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ESTATAPPRTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ESTDUR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ESTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ESTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ESTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ESTSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ESTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="EXTERNALREFID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="FAILDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="FAILURECODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="FAULTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="FINCNTRLID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="FIRSTAPPRSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="FLOWACTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="FLOWACTIONASSIST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="FLOWCONTROLLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="GENERATEDFORPO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="GENFORPOLINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="GLACCOUNT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXGLAccountQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="HASCHILDREN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="HASFOLLOWUPWORK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="HISTORYFLAG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="INSPECTOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="INTERRUPTIBLE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ISTASK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="JOBTASKID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="JPNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="JUSTIFYPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="LAUNCHENTRYNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="LEAD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="LINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="LOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="MEASUREDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="MEASUREMENTVALUE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="NEWCHILDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OBSERVATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ONBEHALFOF" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ORIGRECORDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ORIGRECORDID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OUTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OUTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OUTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OWNERSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PARENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PARENTCHGSSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PERSONGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPADDRESSLINE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPADDRESSLINE3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPADDRISCHANGED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPAGREEMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPALLOWQUOTE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPBBLINENUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPBILLBATCH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPBILLBATCHID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPBILLSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPCALCCALNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPCALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPCALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPCITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPCOSTCENTER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPCOUNTRY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPCOUNTY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPCUSTCHACCT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPCUSTOMER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPCUSTPONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPDIRECTIONS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPGEOCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPLATDIRECTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPLATITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPLINESTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPLONGDIRECTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPLONGITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPMAXPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPORIGQPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPORIGQTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPPOREQ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPPOSTALCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPPRICESCHED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPQUOTEDPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPQUOTETYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPREFPOINT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPREGIONDISTR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPRESPONSEPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPREVNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPSTADDRDIRPRFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPSTADDRDIRSFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPSTADDRNUMBER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPSTADDRSTREET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPSTADDRSTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPSTADDRUNITNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPSTATEPROVINCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPSTREETADDRESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PLUSPTIMEZONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PMCOMBPELACTNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PMCOMBPELENABLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PMCOMBPELINPROG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PMCOMIMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PMCOMSTATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PMCOMTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PMCOMURGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PMDUEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PMEXTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PMNEXTDUEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PMNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="POINTNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PRECKAID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="PROBLEMCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="REASONFORCHANGE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="REGION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="REMDUR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="REPORTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="REPORTEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="RESPONDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="RISK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ROUTE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ROUTESTOPID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="SCHEDFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="SCHEDSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="SENDERSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="SERVICESINFAULT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="SOURCESYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="STATUSDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="SUPERVISOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="SUSPENDFLOW" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="TARGCOMPDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="TARGETDESC" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="TARGSTARTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="TASKID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="VENDOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="VERIFICATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WHOMISCHANGEFOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOACCEPTSCHARGES" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ10" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ11" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ12" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ13" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ14" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOEQ9" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOISSWAP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJO1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJO2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJO3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJO4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJO5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJO6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJO7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJO8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJP1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJP2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJP3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJP4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOJP5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOL1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOL2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOL3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOL4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOLABLNK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOLO1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOLO10" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOLO2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOLO3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOLO4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOLO5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOLO6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOLO7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOLO8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOLO9" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WORKLOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WORKORDERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WORKTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WORTS1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WORTS2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WORTS3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WORTS4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WORTS5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="WOSEQUENCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *         &lt;element name="TKOWNERHISTORY" minOccurs="0"&gt;
+     *           &lt;complexType&gt;
+     *             &lt;complexContent&gt;
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *                 &lt;sequence&gt;
+     *                   &lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OWNDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OWNERCHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                   &lt;element name="TKOWNERHISTORYID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+     *                 &lt;/sequence&gt;
+     *               &lt;/restriction&gt;
+     *             &lt;/complexContent&gt;
+     *           &lt;/complexType&gt;
+     *         &lt;/element&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
+     * </pre>
      * 
      * 
      */
@@ -1710,20 +1710,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the accumulatedholdtime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the accumulatedholdtime property.
+         * This is why there is not a <CODE>set</CODE> method for the accumulatedholdtime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACCUMULATEDHOLDTIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -1739,20 +1739,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the actlabcost property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actlabcost property.
+         * This is why there is not a <CODE>set</CODE> method for the actlabcost property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTLABCOST().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -1768,20 +1768,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the actlabhrs property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actlabhrs property.
+         * This is why there is not a <CODE>set</CODE> method for the actlabhrs property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTLABHRS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -1797,20 +1797,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the actualcontactdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actualcontactdate property.
+         * This is why there is not a <CODE>set</CODE> method for the actualcontactdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTUALCONTACTDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -1826,20 +1826,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the actualfinish property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actualfinish property.
+         * This is why there is not a <CODE>set</CODE> method for the actualfinish property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTUALFINISH().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -1855,20 +1855,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the actualstart property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actualstart property.
+         * This is why there is not a <CODE>set</CODE> method for the actualstart property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTUALSTART().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -1884,20 +1884,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the adjustedtargetcontacttime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the adjustedtargetcontacttime property.
+         * This is why there is not a <CODE>set</CODE> method for the adjustedtargetcontacttime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getADJUSTEDTARGETCONTACTTIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -1913,20 +1913,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the adjustedtargetresolutiontime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the adjustedtargetresolutiontime property.
+         * This is why there is not a <CODE>set</CODE> method for the adjustedtargetresolutiontime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getADJUSTEDTARGETRESOLUTIONTIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -1942,20 +1942,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the adjustedtargetresponsetime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the adjustedtargetresponsetime property.
+         * This is why there is not a <CODE>set</CODE> method for the adjustedtargetresponsetime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getADJUSTEDTARGETRESPONSETIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -1971,20 +1971,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the adresaizvod property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the adresaizvod property.
+         * This is why there is not a <CODE>set</CODE> method for the adresaizvod property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getADRESAIZVOD().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2000,20 +2000,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the adresakorisnika property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the adresakorisnika property.
+         * This is why there is not a <CODE>set</CODE> method for the adresakorisnika property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getADRESAKORISNIKA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2029,20 +2029,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the affecteddate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the affecteddate property.
+         * This is why there is not a <CODE>set</CODE> method for the affecteddate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getAFFECTEDDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2058,20 +2058,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the affectedemail property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the affectedemail property.
+         * This is why there is not a <CODE>set</CODE> method for the affectedemail property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getAFFECTEDEMAIL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2087,20 +2087,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the affectedperson property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the affectedperson property.
+         * This is why there is not a <CODE>set</CODE> method for the affectedperson property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getAFFECTEDPERSON().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2116,20 +2116,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the affectedphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the affectedphone property.
+         * This is why there is not a <CODE>set</CODE> method for the affectedphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getAFFECTEDPHONE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2145,20 +2145,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the assetnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assetnum property.
+         * This is why there is not a <CODE>set</CODE> method for the assetnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getASSETNUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2174,20 +2174,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the assetorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assetorgid property.
+         * This is why there is not a <CODE>set</CODE> method for the assetorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getASSETORGID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2203,20 +2203,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the assetsiteid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assetsiteid property.
+         * This is why there is not a <CODE>set</CODE> method for the assetsiteid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getASSETSITEID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2232,20 +2232,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the assignedownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assignedownergroup property.
+         * This is why there is not a <CODE>set</CODE> method for the assignedownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getASSIGNEDOWNERGROUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2261,20 +2261,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the calccalendar property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the calccalendar property.
+         * This is why there is not a <CODE>set</CODE> method for the calccalendar property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCALCCALENDAR().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2290,20 +2290,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the calcorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the calcorgid property.
+         * This is why there is not a <CODE>set</CODE> method for the calcorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCALCORGID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2319,20 +2319,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the calcshift property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the calcshift property.
+         * This is why there is not a <CODE>set</CODE> method for the calcshift property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCALCSHIFT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2348,20 +2348,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the centrala property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the centrala property.
+         * This is why there is not a <CODE>set</CODE> method for the centrala property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCENTRALA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2377,20 +2377,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the centralaport property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the centralaport property.
+         * This is why there is not a <CODE>set</CODE> method for the centralaport property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCENTRALAPORT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2406,20 +2406,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the changeby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the changeby property.
+         * This is why there is not a <CODE>set</CODE> method for the changeby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCHANGEBY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2435,20 +2435,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the changedate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the changedate property.
+         * This is why there is not a <CODE>set</CODE> method for the changedate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCHANGEDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2464,20 +2464,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the cinum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the cinum property.
+         * This is why there is not a <CODE>set</CODE> method for the cinum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCINUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2493,20 +2493,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the class property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the class property.
+         * This is why there is not a <CODE>set</CODE> method for the class property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCLASS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2522,20 +2522,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the classificationid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the classificationid property.
+         * This is why there is not a <CODE>set</CODE> method for the classificationid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCLASSIFICATIONID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2551,20 +2551,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the classstructureid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the classstructureid property.
+         * This is why there is not a <CODE>set</CODE> method for the classstructureid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCLASSSTRUCTUREID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2580,20 +2580,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the commodity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the commodity property.
+         * This is why there is not a <CODE>set</CODE> method for the commodity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCOMMODITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2609,20 +2609,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the commoditygroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the commoditygroup property.
+         * This is why there is not a <CODE>set</CODE> method for the commoditygroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCOMMODITYGROUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2638,20 +2638,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the contactemail property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the contactemail property.
+         * This is why there is not a <CODE>set</CODE> method for the contactemail property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCONTACTEMAIL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2667,20 +2667,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the contactperson property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the contactperson property.
+         * This is why there is not a <CODE>set</CODE> method for the contactperson property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCONTACTPERSON().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2696,20 +2696,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the contactphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the contactphone property.
+         * This is why there is not a <CODE>set</CODE> method for the contactphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCONTACTPHONE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2725,20 +2725,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the correlationattrs property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the correlationattrs property.
+         * This is why there is not a <CODE>set</CODE> method for the correlationattrs property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCORRELATIONATTRS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2754,20 +2754,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the createdby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the createdby property.
+         * This is why there is not a <CODE>set</CODE> method for the createdby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCREATEDBY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2783,20 +2783,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the createwomulti property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the createwomulti property.
+         * This is why there is not a <CODE>set</CODE> method for the createwomulti property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCREATEWOMULTI().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2812,20 +2812,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the creationdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the creationdate property.
+         * This is why there is not a <CODE>set</CODE> method for the creationdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCREATIONDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2841,20 +2841,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the customerid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the customerid property.
+         * This is why there is not a <CODE>set</CODE> method for the customerid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCUSTOMERID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2870,20 +2870,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the customername property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the customername property.
+         * This is why there is not a <CODE>set</CODE> method for the customername property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCUSTOMERNAME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2899,20 +2899,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the customervalue property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the customervalue property.
+         * This is why there is not a <CODE>set</CODE> method for the customervalue property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCUSTOMERVALUE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -2928,20 +2928,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the date1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the date1 property.
+         * This is why there is not a <CODE>set</CODE> method for the date1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDATE1().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2957,20 +2957,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the date2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the date2 property.
+         * This is why there is not a <CODE>set</CODE> method for the date2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDATE2().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2986,20 +2986,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the description property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the description property.
+         * This is why there is not a <CODE>set</CODE> method for the description property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDESCRIPTION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3015,20 +3015,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the descsrvid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the descsrvid property.
+         * This is why there is not a <CODE>set</CODE> method for the descsrvid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDESCSRVID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3044,20 +3044,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the domen property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the domen property.
+         * This is why there is not a <CODE>set</CODE> method for the domen property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDOMEN().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3073,20 +3073,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the dslamport property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the dslamport property.
+         * This is why there is not a <CODE>set</CODE> method for the dslamport property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDSLAMPORT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3102,20 +3102,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the externalrecid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the externalrecid property.
+         * This is why there is not a <CODE>set</CODE> method for the externalrecid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getEXTERNALRECID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3131,20 +3131,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the externalsystem property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the externalsystem property.
+         * This is why there is not a <CODE>set</CODE> method for the externalsystem property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getEXTERNALSYSTEM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3160,20 +3160,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the externalsystemticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the externalsystemticketid property.
+         * This is why there is not a <CODE>set</CODE> method for the externalsystemticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getEXTERNALSYSTEMTICKETID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3189,20 +3189,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the extsysid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the extsysid property.
+         * This is why there is not a <CODE>set</CODE> method for the extsysid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getEXTSYSID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3218,20 +3218,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the failurecode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the failurecode property.
+         * This is why there is not a <CODE>set</CODE> method for the failurecode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getFAILURECODE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3247,20 +3247,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the faulttype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the faulttype property.
+         * This is why there is not a <CODE>set</CODE> method for the faulttype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getFAULTTYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -3276,20 +3276,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the fr1CODE property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the fr1CODE property.
+         * This is why there is not a <CODE>set</CODE> method for the fr1CODE property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getFR1CODE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3305,20 +3305,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the fr2CODE property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the fr2CODE property.
+         * This is why there is not a <CODE>set</CODE> method for the fr2CODE property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getFR2CODE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3334,20 +3334,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the glaccount property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the glaccount property.
+         * This is why there is not a <CODE>set</CODE> method for the glaccount property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getGLACCOUNT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXGLAccountQueryType }
          * 
@@ -3363,20 +3363,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the globalticketclass property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the globalticketclass property.
+         * This is why there is not a <CODE>set</CODE> method for the globalticketclass property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getGLOBALTICKETCLASS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3392,20 +3392,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the globalticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the globalticketid property.
+         * This is why there is not a <CODE>set</CODE> method for the globalticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getGLOBALTICKETID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3421,20 +3421,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the hasactivity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the hasactivity property.
+         * This is why there is not a <CODE>set</CODE> method for the hasactivity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHASACTIVITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -3450,20 +3450,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the hassolution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the hassolution property.
+         * This is why there is not a <CODE>set</CODE> method for the hassolution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHASSOLUTION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -3479,20 +3479,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the hassupportcontract property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the hassupportcontract property.
+         * This is why there is not a <CODE>set</CODE> method for the hassupportcontract property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHASSUPPORTCONTRACT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -3508,20 +3508,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the hgwtip property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the hgwtip property.
+         * This is why there is not a <CODE>set</CODE> method for the hgwtip property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHGWTIP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3537,20 +3537,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the historyflag property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the historyflag property.
+         * This is why there is not a <CODE>set</CODE> method for the historyflag property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHISTORYFLAG().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -3566,20 +3566,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the impact property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the impact property.
+         * This is why there is not a <CODE>set</CODE> method for the impact property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getIMPACT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -3595,20 +3595,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the indicatedpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the indicatedpriority property.
+         * This is why there is not a <CODE>set</CODE> method for the indicatedpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINDICATEDPRIORITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -3624,20 +3624,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the inheritstatus property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the inheritstatus property.
+         * This is why there is not a <CODE>set</CODE> method for the inheritstatus property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINHERITSTATUS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -3653,20 +3653,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the int1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the int1 property.
+         * This is why there is not a <CODE>set</CODE> method for the int1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINT1().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -3682,20 +3682,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the int2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the int2 property.
+         * This is why there is not a <CODE>set</CODE> method for the int2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINT2().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -3711,20 +3711,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the int3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the int3 property.
+         * This is why there is not a <CODE>set</CODE> method for the int3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINT3().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -3740,20 +3740,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the internalpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the internalpriority property.
+         * This is why there is not a <CODE>set</CODE> method for the internalpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINTERNALPRIORITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -3769,20 +3769,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the isglobal property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the isglobal property.
+         * This is why there is not a <CODE>set</CODE> method for the isglobal property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getISGLOBAL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -3798,20 +3798,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the isknownerror property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the isknownerror property.
+         * This is why there is not a <CODE>set</CODE> method for the isknownerror property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getISKNOWNERROR().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -3827,20 +3827,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the isknownerrordate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the isknownerrordate property.
+         * This is why there is not a <CODE>set</CODE> method for the isknownerrordate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getISKNOWNERRORDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -3856,20 +3856,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the izvod property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the izvod property.
+         * This is why there is not a <CODE>set</CODE> method for the izvod property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getIZVOD().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3885,20 +3885,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the kabel property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the kabel property.
+         * This is why there is not a <CODE>set</CODE> method for the kabel property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getKABEL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3914,20 +3914,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the kategorija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the kategorija property.
+         * This is why there is not a <CODE>set</CODE> method for the kategorija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getKATEGORIJA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -3943,20 +3943,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the lineid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the lineid property.
+         * This is why there is not a <CODE>set</CODE> method for the lineid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLINEID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3972,20 +3972,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the liniskaoprema property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the liniskaoprema property.
+         * This is why there is not a <CODE>set</CODE> method for the liniskaoprema property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLINISKAOPREMA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4001,20 +4001,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the location property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the location property.
+         * This is why there is not a <CODE>set</CODE> method for the location property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLOCATION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4030,20 +4030,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the mozeoptika property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the mozeoptika property.
+         * This is why there is not a <CODE>set</CODE> method for the mozeoptika property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getMOZEOPTIKA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -4059,20 +4059,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the noteopen property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the noteopen property.
+         * This is why there is not a <CODE>set</CODE> method for the noteopen property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getNOTEOPEN().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4088,20 +4088,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the ola property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ola property.
+         * This is why there is not a <CODE>set</CODE> method for the ola property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOLA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -4117,20 +4117,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the operatorname property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the operatorname property.
+         * This is why there is not a <CODE>set</CODE> method for the operatorname property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOPERATORNAME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4146,20 +4146,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the orgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the orgid property.
+         * This is why there is not a <CODE>set</CODE> method for the orgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORGID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4175,20 +4175,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the origrecordclass property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the origrecordclass property.
+         * This is why there is not a <CODE>set</CODE> method for the origrecordclass property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORIGRECORDCLASS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4204,20 +4204,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the origrecordid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the origrecordid property.
+         * This is why there is not a <CODE>set</CODE> method for the origrecordid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORIGRECORDID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4233,20 +4233,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the origrecorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the origrecorgid property.
+         * This is why there is not a <CODE>set</CODE> method for the origrecorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORIGRECORGID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4262,20 +4262,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the origrecsiteid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the origrecsiteid property.
+         * This is why there is not a <CODE>set</CODE> method for the origrecsiteid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORIGRECSITEID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4291,20 +4291,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the outageduration property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the outageduration property.
+         * This is why there is not a <CODE>set</CODE> method for the outageduration property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOUTAGEDURATION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -4320,20 +4320,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the owner property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the owner property.
+         * This is why there is not a <CODE>set</CODE> method for the owner property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOWNER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4349,20 +4349,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the ownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ownergroup property.
+         * This is why there is not a <CODE>set</CODE> method for the ownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOWNERGROUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4378,20 +4378,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the paket property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the paket property.
+         * This is why there is not a <CODE>set</CODE> method for the paket property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPAKET().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4407,20 +4407,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the parica property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the parica property.
+         * This is why there is not a <CODE>set</CODE> method for the parica property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPARICA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4436,20 +4436,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspaddressline2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspaddressline2 property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspaddressline2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPADDRESSLINE2().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4465,20 +4465,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspaddressline3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspaddressline3 property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspaddressline3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPADDRESSLINE3().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4494,20 +4494,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspaddrischanged property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspaddrischanged property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspaddrischanged property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPADDRISCHANGED().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -4523,20 +4523,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspagreement property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspagreement property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspagreement property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPAGREEMENT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4552,20 +4552,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspbblinenum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspbblinenum property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspbblinenum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPBBLINENUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -4581,20 +4581,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspbillbatch property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspbillbatch property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspbillbatch property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPBILLBATCH().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4610,20 +4610,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspcalccalnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcalccalnum property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcalccalnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCALCCALNUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4639,20 +4639,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspcalcorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcalcorgid property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcalcorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCALCORGID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4668,20 +4668,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspcalcshift property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcalcshift property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcalcshift property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCALCSHIFT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4697,20 +4697,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspcity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcity property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4726,20 +4726,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspcostcenter property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcostcenter property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcostcenter property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCOSTCENTER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4755,20 +4755,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspcountry property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcountry property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcountry property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCOUNTRY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4784,20 +4784,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspcounty property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcounty property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcounty property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCOUNTY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4813,20 +4813,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspcustchacct property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcustchacct property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcustchacct property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCUSTCHACCT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4842,20 +4842,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspcustomer property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcustomer property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcustomer property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCUSTOMER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4871,20 +4871,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspcustponum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcustponum property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcustponum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCUSTPONUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4900,20 +4900,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspdirections property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspdirections property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspdirections property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPDIRECTIONS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4929,20 +4929,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspgeocode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspgeocode property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspgeocode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPGEOCODE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4958,20 +4958,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the plusplatitude property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusplatitude property.
+         * This is why there is not a <CODE>set</CODE> method for the plusplatitude property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPLATITUDE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -4987,20 +4987,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the plusplongitude property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusplongitude property.
+         * This is why there is not a <CODE>set</CODE> method for the plusplongitude property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPLONGITUDE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -5016,20 +5016,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspmaxprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspmaxprice property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspmaxprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPMAXPRICE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -5045,20 +5045,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspporeq property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspporeq property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspporeq property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPPOREQ().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -5074,20 +5074,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the plusppostalcode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusppostalcode property.
+         * This is why there is not a <CODE>set</CODE> method for the plusppostalcode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPPOSTALCODE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5103,20 +5103,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the plusppricesched property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusppricesched property.
+         * This is why there is not a <CODE>set</CODE> method for the plusppricesched property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPPRICESCHED().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5132,20 +5132,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspquotedprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspquotedprice property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspquotedprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPQUOTEDPRICE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -5161,20 +5161,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspquotetype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspquotetype property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspquotetype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPQUOTETYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5190,20 +5190,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the plusprefpoint property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusprefpoint property.
+         * This is why there is not a <CODE>set</CODE> method for the plusprefpoint property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPREFPOINT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5219,20 +5219,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspregiondistr property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspregiondistr property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspregiondistr property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPREGIONDISTR().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5248,20 +5248,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspresponseplan property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspresponseplan property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspresponseplan property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPRESPONSEPLAN().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5277,20 +5277,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the plusprevnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusprevnum property.
+         * This is why there is not a <CODE>set</CODE> method for the plusprevnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPREVNUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -5306,20 +5306,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspstaddrdirprfx property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstaddrdirprfx property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspstaddrdirprfx property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPSTADDRDIRPRFX().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5335,20 +5335,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspstaddrdirsfx property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstaddrdirsfx property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspstaddrdirsfx property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPSTADDRDIRSFX().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5364,20 +5364,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspstaddrnumber property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstaddrnumber property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspstaddrnumber property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPSTADDRNUMBER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5393,20 +5393,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspstaddrstreet property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstaddrstreet property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspstaddrstreet property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPSTADDRSTREET().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5422,20 +5422,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspstaddrsttype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstaddrsttype property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspstaddrsttype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPSTADDRSTTYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5451,20 +5451,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspstaddrunitnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstaddrunitnum property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspstaddrunitnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPSTADDRUNITNUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5480,20 +5480,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspstateprovince property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstateprovince property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspstateprovince property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPSTATEPROVINCE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5509,20 +5509,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pluspstreetaddress property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstreetaddress property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspstreetaddress property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPSTREETADDRESS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5538,20 +5538,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the plusptimezone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusptimezone property.
+         * This is why there is not a <CODE>set</CODE> method for the plusptimezone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPTIMEZONE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5567,20 +5567,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pmcomimpact property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcomimpact property.
+         * This is why there is not a <CODE>set</CODE> method for the pmcomimpact property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMCOMIMPACT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -5596,20 +5596,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pmcomresolution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcomresolution property.
+         * This is why there is not a <CODE>set</CODE> method for the pmcomresolution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMCOMRESOLUTION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5625,20 +5625,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pmcomtype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcomtype property.
+         * This is why there is not a <CODE>set</CODE> method for the pmcomtype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMCOMTYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5654,20 +5654,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pmcomurgency property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcomurgency property.
+         * This is why there is not a <CODE>set</CODE> method for the pmcomurgency property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMCOMURGENCY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -5683,20 +5683,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pmsccrid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmsccrid property.
+         * This is why there is not a <CODE>set</CODE> method for the pmsccrid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCCRID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5712,20 +5712,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pmscitemnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmscitemnum property.
+         * This is why there is not a <CODE>set</CODE> method for the pmscitemnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCITEMNUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5741,20 +5741,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pmscoffsummary property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmscoffsummary property.
+         * This is why there is not a <CODE>set</CODE> method for the pmscoffsummary property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCOFFSUMMARY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5770,20 +5770,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pmscquantity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmscquantity property.
+         * This is why there is not a <CODE>set</CODE> method for the pmscquantity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCQUANTITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -5799,20 +5799,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the pozicija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pozicija property.
+         * This is why there is not a <CODE>set</CODE> method for the pozicija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPOZICIJA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5828,20 +5828,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the preckaid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the preckaid property.
+         * This is why there is not a <CODE>set</CODE> method for the preckaid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPRECKAID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5857,20 +5857,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the prespojbroj property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the prespojbroj property.
+         * This is why there is not a <CODE>set</CODE> method for the prespojbroj property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPRESPOJBROJ().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5886,20 +5886,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the prespojlinija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the prespojlinija property.
+         * This is why there is not a <CODE>set</CODE> method for the prespojlinija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPRESPOJLINIJA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5915,20 +5915,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the problemcode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the problemcode property.
+         * This is why there is not a <CODE>set</CODE> method for the problemcode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPROBLEMCODE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5944,20 +5944,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the ram property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ram property.
+         * This is why there is not a <CODE>set</CODE> method for the ram property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getRAM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5973,20 +5973,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the rebro property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the rebro property.
+         * This is why there is not a <CODE>set</CODE> method for the rebro property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREBRO().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6002,20 +6002,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the region property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the region property.
+         * This is why there is not a <CODE>set</CODE> method for the region property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREGION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -6031,20 +6031,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the relatedtoglobal property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the relatedtoglobal property.
+         * This is why there is not a <CODE>set</CODE> method for the relatedtoglobal property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getRELATEDTOGLOBAL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -6060,20 +6060,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the reportdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportdate property.
+         * This is why there is not a <CODE>set</CODE> method for the reportdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -6089,20 +6089,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the reportedby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportedby property.
+         * This is why there is not a <CODE>set</CODE> method for the reportedby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTEDBY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6118,20 +6118,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the reportedemail property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportedemail property.
+         * This is why there is not a <CODE>set</CODE> method for the reportedemail property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTEDEMAIL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6147,20 +6147,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the reportedphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportedphone property.
+         * This is why there is not a <CODE>set</CODE> method for the reportedphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTEDPHONE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6176,20 +6176,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the reportedpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportedpriority property.
+         * This is why there is not a <CODE>set</CODE> method for the reportedpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTEDPRIORITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -6205,20 +6205,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the rootcustomerref property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the rootcustomerref property.
+         * This is why there is not a <CODE>set</CODE> method for the rootcustomerref property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getROOTCUSTOMERREF().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6234,20 +6234,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the searchsource property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the searchsource property.
+         * This is why there is not a <CODE>set</CODE> method for the searchsource property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSEARCHSOURCE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6263,20 +6263,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the selfservsolaccess property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the selfservsolaccess property.
+         * This is why there is not a <CODE>set</CODE> method for the selfservsolaccess property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSELFSERVSOLACCESS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -6292,20 +6292,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the serialnumberhgw property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the serialnumberhgw property.
+         * This is why there is not a <CODE>set</CODE> method for the serialnumberhgw property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSERIALNUMBERHGW().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6321,20 +6321,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the serialnumberstb property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the serialnumberstb property.
+         * This is why there is not a <CODE>set</CODE> method for the serialnumberstb property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSERIALNUMBERSTB().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6350,20 +6350,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the servicesinfault property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the servicesinfault property.
+         * This is why there is not a <CODE>set</CODE> method for the servicesinfault property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSERVICESINFAULT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -6379,20 +6379,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the siteid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the siteid property.
+         * This is why there is not a <CODE>set</CODE> method for the siteid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSITEID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6408,20 +6408,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the sitevisit property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the sitevisit property.
+         * This is why there is not a <CODE>set</CODE> method for the sitevisit property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSITEVISIT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -6437,20 +6437,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the solution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the solution property.
+         * This is why there is not a <CODE>set</CODE> method for the solution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSOLUTION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6466,20 +6466,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the source property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the source property.
+         * This is why there is not a <CODE>set</CODE> method for the source property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSOURCE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6495,20 +6495,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the status property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the status property.
+         * This is why there is not a <CODE>set</CODE> method for the status property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTATUS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6524,20 +6524,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the statusdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the statusdate property.
+         * This is why there is not a <CODE>set</CODE> method for the statusdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTATUSDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -6553,20 +6553,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the string1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the string1 property.
+         * This is why there is not a <CODE>set</CODE> method for the string1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTRING1().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6582,20 +6582,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the string2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the string2 property.
+         * This is why there is not a <CODE>set</CODE> method for the string2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTRING2().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6611,20 +6611,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the string3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the string3 property.
+         * This is why there is not a <CODE>set</CODE> method for the string3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTRING3().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6640,20 +6640,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the supervisor property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the supervisor property.
+         * This is why there is not a <CODE>set</CODE> method for the supervisor property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSUPERVISOR().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6669,20 +6669,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the targetcontactdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targetcontactdate property.
+         * This is why there is not a <CODE>set</CODE> method for the targetcontactdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTARGETCONTACTDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -6698,20 +6698,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the targetdesc property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targetdesc property.
+         * This is why there is not a <CODE>set</CODE> method for the targetdesc property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTARGETDESC().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6727,20 +6727,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the targetfinish property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targetfinish property.
+         * This is why there is not a <CODE>set</CODE> method for the targetfinish property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTARGETFINISH().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -6756,20 +6756,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the targetstart property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targetstart property.
+         * This is why there is not a <CODE>set</CODE> method for the targetstart property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTARGETSTART().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -6785,20 +6785,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the technicianname property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the technicianname property.
+         * This is why there is not a <CODE>set</CODE> method for the technicianname property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTECHNICIANNAME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6814,20 +6814,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the template property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the template property.
+         * This is why there is not a <CODE>set</CODE> method for the template property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTEMPLATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -6843,20 +6843,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the templateid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the templateid property.
+         * This is why there is not a <CODE>set</CODE> method for the templateid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTEMPLATEID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6872,20 +6872,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the ticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ticketid property.
+         * This is why there is not a <CODE>set</CODE> method for the ticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTICKETID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6901,20 +6901,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the ticketuid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ticketuid property.
+         * This is why there is not a <CODE>set</CODE> method for the ticketuid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTICKETUID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -6930,20 +6930,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the tipdslam property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the tipdslam property.
+         * This is why there is not a <CODE>set</CODE> method for the tipdslam property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTIPDSLAM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6959,20 +6959,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the urgency property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the urgency property.
+         * This is why there is not a <CODE>set</CODE> method for the urgency property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getURGENCY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -6988,20 +6988,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the vendor property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the vendor property.
+         * This is why there is not a <CODE>set</CODE> method for the vendor property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getVENDOR().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7017,20 +7017,20 @@ public class QTTINCIDENTQueryType {
         /**
          * Gets the value of the virtualenv property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the virtualenv property.
+         * This is why there is not a <CODE>set</CODE> method for the virtualenv property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getVIRTUALENV().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -7141,28 +7141,28 @@ public class QTTINCIDENTQueryType {
 
 
         /**
-         * &lt;p&gt;Java class for anonymous complex type.
+         * <p>Java class for anonymous complex type.
          * 
-         * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+         * <p>The following schema fragment specifies the expected content contained within this class.
          * 
-         * &lt;pre&gt;
-         * &amp;lt;complexType&amp;gt;
-         *   &amp;lt;complexContent&amp;gt;
-         *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-         *       &amp;lt;sequence&amp;gt;
-         *         &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OWNDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OWNERCHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="TKOWNERHISTORYID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *       &amp;lt;/sequence&amp;gt;
-         *     &amp;lt;/restriction&amp;gt;
-         *   &amp;lt;/complexContent&amp;gt;
-         * &amp;lt;/complexType&amp;gt;
-         * &lt;/pre&gt;
+         * <pre>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OWNDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OWNERCHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="TKOWNERHISTORYID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
+         * </pre>
          * 
          * 
          */
@@ -7199,20 +7199,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the assignedownergroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assignedownergroup property.
+             * This is why there is not a <CODE>set</CODE> method for the assignedownergroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getASSIGNEDOWNERGROUP().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7228,20 +7228,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the orgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the orgid property.
+             * This is why there is not a <CODE>set</CODE> method for the orgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getORGID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7257,20 +7257,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the owndate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the owndate property.
+             * This is why there is not a <CODE>set</CODE> method for the owndate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOWNDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -7286,20 +7286,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the owner property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the owner property.
+             * This is why there is not a <CODE>set</CODE> method for the owner property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOWNER().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7315,20 +7315,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the ownerchangeby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ownerchangeby property.
+             * This is why there is not a <CODE>set</CODE> method for the ownerchangeby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOWNERCHANGEBY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7344,20 +7344,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the ownergroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ownergroup property.
+             * This is why there is not a <CODE>set</CODE> method for the ownergroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOWNERGROUP().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7373,20 +7373,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the siteid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the siteid property.
+             * This is why there is not a <CODE>set</CODE> method for the siteid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSITEID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7402,20 +7402,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the tkownerhistoryid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the tkownerhistoryid property.
+             * This is why there is not a <CODE>set</CODE> method for the tkownerhistoryid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getTKOWNERHISTORYID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -7432,31 +7432,31 @@ public class QTTINCIDENTQueryType {
 
 
         /**
-         * &lt;p&gt;Java class for anonymous complex type.
+         * <p>Java class for anonymous complex type.
          * 
-         * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+         * <p>The following schema fragment specifies the expected content contained within this class.
          * 
-         * &lt;pre&gt;
-         * &amp;lt;complexType&amp;gt;
-         *   &amp;lt;complexContent&amp;gt;
-         *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-         *       &amp;lt;sequence&amp;gt;
-         *         &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="MEMO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="STATUSTRACKING" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="TKSTATUSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *       &amp;lt;/sequence&amp;gt;
-         *     &amp;lt;/restriction&amp;gt;
-         *   &amp;lt;/complexContent&amp;gt;
-         * &amp;lt;/complexType&amp;gt;
-         * &lt;/pre&gt;
+         * <pre>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="ASSIGNEDOWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="MEMO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="STATUSTRACKING" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="TKSTATUSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
+         * </pre>
          * 
          * 
          */
@@ -7502,20 +7502,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the assignedownergroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assignedownergroup property.
+             * This is why there is not a <CODE>set</CODE> method for the assignedownergroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getASSIGNEDOWNERGROUP().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7531,20 +7531,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the changeby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the changeby property.
+             * This is why there is not a <CODE>set</CODE> method for the changeby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCHANGEBY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7560,20 +7560,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the changedate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the changedate property.
+             * This is why there is not a <CODE>set</CODE> method for the changedate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCHANGEDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -7589,20 +7589,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the memo property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the memo property.
+             * This is why there is not a <CODE>set</CODE> method for the memo property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getMEMO().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7618,20 +7618,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the orgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the orgid property.
+             * This is why there is not a <CODE>set</CODE> method for the orgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getORGID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7647,20 +7647,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the owner property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the owner property.
+             * This is why there is not a <CODE>set</CODE> method for the owner property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOWNER().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7676,20 +7676,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the ownergroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ownergroup property.
+             * This is why there is not a <CODE>set</CODE> method for the ownergroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOWNERGROUP().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7705,20 +7705,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the siteid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the siteid property.
+             * This is why there is not a <CODE>set</CODE> method for the siteid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSITEID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7734,20 +7734,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the status property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the status property.
+             * This is why there is not a <CODE>set</CODE> method for the status property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSTATUS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7763,20 +7763,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the statustracking property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the statustracking property.
+             * This is why there is not a <CODE>set</CODE> method for the statustracking property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSTATUSTRACKING().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7792,20 +7792,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the tkstatusid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the tkstatusid property.
+             * This is why there is not a <CODE>set</CODE> method for the tkstatusid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getTKSTATUSID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -7822,31 +7822,31 @@ public class QTTINCIDENTQueryType {
 
 
         /**
-         * &lt;p&gt;Java class for anonymous complex type.
+         * <p>Java class for anonymous complex type.
          * 
-         * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+         * <p>The following schema fragment specifies the expected content contained within this class.
          * 
-         * &lt;pre&gt;
-         * &amp;lt;complexType&amp;gt;
-         *   &amp;lt;complexContent&amp;gt;
-         *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-         *       &amp;lt;sequence&amp;gt;
-         *         &amp;lt;element name="CLIENTVIEWABLE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CREATEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CREATEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="LOGTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="MODIFYBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="MODIFYDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="RECORDKEY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WORKLOGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *       &amp;lt;/sequence&amp;gt;
-         *     &amp;lt;/restriction&amp;gt;
-         *   &amp;lt;/complexContent&amp;gt;
-         * &amp;lt;/complexType&amp;gt;
-         * &lt;/pre&gt;
+         * <pre>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="CLIENTVIEWABLE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CREATEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CREATEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="LOGTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="MODIFYBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="MODIFYDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="RECORDKEY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WORKLOGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
+         * </pre>
          * 
          * 
          */
@@ -7892,20 +7892,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the clientviewable property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the clientviewable property.
+             * This is why there is not a <CODE>set</CODE> method for the clientviewable property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCLIENTVIEWABLE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -7921,20 +7921,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the createby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the createby property.
+             * This is why there is not a <CODE>set</CODE> method for the createby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCREATEBY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -7950,20 +7950,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the createdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the createdate property.
+             * This is why there is not a <CODE>set</CODE> method for the createdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCREATEDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -7979,20 +7979,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the description property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the description property.
+             * This is why there is not a <CODE>set</CODE> method for the description property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getDESCRIPTION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -8008,20 +8008,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the logtype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the logtype property.
+             * This is why there is not a <CODE>set</CODE> method for the logtype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getLOGTYPE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -8037,20 +8037,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the modifyby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the modifyby property.
+             * This is why there is not a <CODE>set</CODE> method for the modifyby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getMODIFYBY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -8066,20 +8066,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the modifydate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the modifydate property.
+             * This is why there is not a <CODE>set</CODE> method for the modifydate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getMODIFYDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -8095,20 +8095,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the orgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the orgid property.
+             * This is why there is not a <CODE>set</CODE> method for the orgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getORGID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -8124,20 +8124,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the recordkey property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the recordkey property.
+             * This is why there is not a <CODE>set</CODE> method for the recordkey property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getRECORDKEY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -8153,20 +8153,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the siteid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the siteid property.
+             * This is why there is not a <CODE>set</CODE> method for the siteid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSITEID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -8182,20 +8182,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the worklogid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the worklogid property.
+             * This is why there is not a <CODE>set</CODE> method for the worklogid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWORKLOGID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -8212,247 +8212,247 @@ public class QTTINCIDENTQueryType {
 
 
         /**
-         * &lt;p&gt;Java class for anonymous complex type.
+         * <p>Java class for anonymous complex type.
          * 
-         * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+         * <p>The following schema fragment specifies the expected content contained within this class.
          * 
-         * &lt;pre&gt;
-         * &amp;lt;complexType&amp;gt;
-         *   &amp;lt;complexContent&amp;gt;
-         *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-         *       &amp;lt;sequence&amp;gt;
-         *         &amp;lt;element name="ACTFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ACTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ACTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ACTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ACTSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ACTSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ACTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ASSETLOCPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ASSETNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="BACKOUTPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CALCCALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CALCPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CHARGESTORE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CINUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CLASSSTRUCTUREID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="COMMODITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="COMMODITYGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CONTRACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CREWID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="CUSTOMERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="DISABLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="DOWNTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ENVIRONMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ESTATAPPRLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ESTATAPPRLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ESTATAPPRMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ESTATAPPRSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ESTATAPPRTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ESTDUR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ESTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ESTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ESTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ESTSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ESTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="EXTERNALREFID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="FAILDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="FAILURECODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="FAULTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="FINCNTRLID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="FIRSTAPPRSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="FLOWACTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="FLOWACTIONASSIST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="FLOWCONTROLLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="GENERATEDFORPO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="GENFORPOLINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="GLACCOUNT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXGLAccountQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="HASCHILDREN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="HASFOLLOWUPWORK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="HISTORYFLAG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="INSPECTOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="INTERRUPTIBLE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ISTASK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="JOBTASKID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="JPNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="JUSTIFYPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="LAUNCHENTRYNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="LEAD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="LINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="LOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="MEASUREDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="MEASUREMENTVALUE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="NEWCHILDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OBSERVATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ONBEHALFOF" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ORIGRECORDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ORIGRECORDID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OUTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OUTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OUTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="OWNERSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PARENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PARENTCHGSSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PERSONGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPADDRESSLINE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPADDRESSLINE3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPADDRISCHANGED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPAGREEMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPALLOWQUOTE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPBBLINENUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPBILLBATCH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPBILLBATCHID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPBILLSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPCALCCALNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPCALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPCALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPCITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPCOSTCENTER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPCOUNTRY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPCOUNTY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPCUSTCHACCT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPCUSTOMER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPCUSTPONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPDIRECTIONS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPGEOCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPLATDIRECTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPLATITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPLINESTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPLONGDIRECTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPLONGITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPMAXPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPORIGQPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPORIGQTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPPOREQ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPPOSTALCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPPRICESCHED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPQUOTEDPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPQUOTETYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPREFPOINT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPREGIONDISTR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPRESPONSEPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPREVNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPSTADDRDIRPRFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPSTADDRDIRSFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPSTADDRNUMBER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPSTADDRSTREET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPSTADDRSTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPSTADDRUNITNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPSTATEPROVINCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPSTREETADDRESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PLUSPTIMEZONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PMCOMBPELACTNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PMCOMBPELENABLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PMCOMBPELINPROG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PMCOMIMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PMCOMSTATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PMCOMTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PMCOMURGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PMDUEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PMEXTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PMNEXTDUEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PMNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="POINTNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PRECKAID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="PROBLEMCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="REASONFORCHANGE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="REGION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="REMDUR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="REPORTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="REPORTEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="RESPONDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="RISK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ROUTE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="ROUTESTOPID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SCHEDFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SCHEDSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SENDERSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SERVICESINFAULT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SOURCESYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="STATUSDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SUPERVISOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="SUSPENDFLOW" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="TARGCOMPDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="TARGETDESC" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="TARGSTARTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="TASKID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="VENDOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="VERIFICATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WHOMISCHANGEFOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOACCEPTSCHARGES" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ10" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ11" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ12" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ13" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ14" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOEQ9" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOISSWAP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJO1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJO2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJO3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJO4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJO5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJO6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJO7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJO8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJP1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJP2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJP3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJP4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOJP5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOL1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOL2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOL3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOL4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOLABLNK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOLO1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOLO10" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOLO2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOLO3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOLO4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOLO5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOLO6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOLO7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOLO8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOLO9" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WORKLOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WORKORDERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WORKTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WORTS1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WORTS2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WORTS3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WORTS4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WORTS5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *         &amp;lt;element name="WOSEQUENCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&amp;gt;
-         *       &amp;lt;/sequence&amp;gt;
-         *     &amp;lt;/restriction&amp;gt;
-         *   &amp;lt;/complexContent&amp;gt;
-         * &amp;lt;/complexType&amp;gt;
-         * &lt;/pre&gt;
+         * <pre>
+         * &lt;complexType&gt;
+         *   &lt;complexContent&gt;
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+         *       &lt;sequence&gt;
+         *         &lt;element name="ACTFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ACTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ACTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ACTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ACTSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ACTSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ACTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ASSETLOCPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ASSETNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="BACKOUTPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CALCCALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CALCPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CALENDAR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CHANGEBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CHANGEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CHARGESTORE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CINUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CLASSSTRUCTUREID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="COMMODITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="COMMODITYGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CONTRACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CREWID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="CUSTOMERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="DESCRIPTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="DISABLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="DOWNTIME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ENVIRONMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ESTATAPPRLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ESTATAPPRLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ESTATAPPRMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ESTATAPPRSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ESTATAPPRTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ESTDUR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ESTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ESTLABHRS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ESTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ESTSERVCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ESTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="EXTERNALREFID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="FAILDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="FAILURECODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="FAULTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="FINCNTRLID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="FIRSTAPPRSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="FLOWACTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="FLOWACTIONASSIST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="FLOWCONTROLLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="GENERATEDFORPO" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="GENFORPOLINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="GLACCOUNT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXGLAccountQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="HASCHILDREN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="HASFOLLOWUPWORK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="HISTORYFLAG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="INSPECTOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="INTERRUPTIBLE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ISTASK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="JOBTASKID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="JPNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="JUSTIFYPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="LAUNCHENTRYNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="LEAD" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="LINEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="LOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="MEASUREDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="MEASUREMENTVALUE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="NEWCHILDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OBSERVATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ONBEHALFOF" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ORIGRECORDCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ORIGRECORDID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OUTLABCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OUTMATCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OUTTOOLCOST" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OWNER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OWNERGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="OWNERSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PARENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PARENTCHGSSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PERSONGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PHONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPADDRESSLINE2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPADDRESSLINE3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPADDRISCHANGED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPAGREEMENT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPALLOWQUOTE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPBBLINENUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPBILLBATCH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPBILLBATCHID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPBILLSTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPCALCCALNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPCALCORGID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPCALCSHIFT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPCITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPCOSTCENTER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPCOUNTRY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPCOUNTY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPCUSTCHACCT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPCUSTOMER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPCUSTPONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPDIRECTIONS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPGEOCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPLATDIRECTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPLATITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPLINESTATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPLONGDIRECTION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPLONGITUDE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPMAXPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPORIGQPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPORIGQTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPPOREQ" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPPOSTALCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPPRICESCHED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPQUOTEDPRICE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPQUOTETYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPREFPOINT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPREGIONDISTR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPRESPONSEPLAN" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPREVNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPSTADDRDIRPRFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPSTADDRDIRSFX" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPSTADDRNUMBER" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPSTADDRSTREET" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPSTADDRSTTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPSTADDRUNITNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPSTATEPROVINCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPSTREETADDRESS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PLUSPTIMEZONE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PMCOMBPELACTNAME" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PMCOMBPELENABLED" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PMCOMBPELINPROG" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PMCOMIMPACT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PMCOMSTATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PMCOMTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PMCOMURGENCY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PMDUEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PMEXTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PMNEXTDUEDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PMNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="POINTNUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PRECKAID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="PROBLEMCODE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="REASONFORCHANGE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="REGION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="REMDUR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="REPORTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="REPORTEDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="RESPONDBY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="RISK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ROUTE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="ROUTESTOPID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="SCHEDFINISH" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="SCHEDSTART" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="SENDERSYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="SERVICESINFAULT" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="SITEID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="SOURCESYSID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="STATUS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="STATUSDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="SUPERVISOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="SUSPENDFLOW" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="TARGCOMPDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="TARGETDESC" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="TARGSTARTDATE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="TASKID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="VENDOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="VERIFICATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WHOMISCHANGEFOR" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOACCEPTSCHARGES" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOCLASS" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ10" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ11" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ12" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ13" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ14" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOEQ9" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOGROUP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOISSWAP" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXBooleanQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJO1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJO2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJO3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJO4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJO5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJO6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJO7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJO8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJP1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJP2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJP3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJP4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOJP5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOL1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOL2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOL3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOL4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOLABLNK" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOLO1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOLO10" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOLO2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOLO3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOLO4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOLO5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOLO6" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOLO7" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOLO8" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOLO9" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WONUM" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOPRIORITY" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WORKLOCATION" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WORKORDERID" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WORKTYPE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WORTS1" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WORTS2" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WORTS3" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXStringQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WORTS4" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDateTimeQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WORTS5" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXDoubleQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *         &lt;element name="WOSEQUENCE" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}MXLongQueryType" maxOccurs="2" minOccurs="0"/&gt;
+         *       &lt;/sequence&gt;
+         *     &lt;/restriction&gt;
+         *   &lt;/complexContent&gt;
+         * &lt;/complexType&gt;
+         * </pre>
          * 
          * 
          */
@@ -9146,20 +9146,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the actfinish property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actfinish property.
+             * This is why there is not a <CODE>set</CODE> method for the actfinish property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getACTFINISH().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -9175,20 +9175,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the actlabcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actlabcost property.
+             * This is why there is not a <CODE>set</CODE> method for the actlabcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getACTLABCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -9204,20 +9204,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the actlabhrs property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actlabhrs property.
+             * This is why there is not a <CODE>set</CODE> method for the actlabhrs property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getACTLABHRS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -9233,20 +9233,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the actmatcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actmatcost property.
+             * This is why there is not a <CODE>set</CODE> method for the actmatcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getACTMATCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -9262,20 +9262,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the actservcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actservcost property.
+             * This is why there is not a <CODE>set</CODE> method for the actservcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getACTSERVCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -9291,20 +9291,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the actstart property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actstart property.
+             * This is why there is not a <CODE>set</CODE> method for the actstart property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getACTSTART().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -9320,20 +9320,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the acttoolcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the acttoolcost property.
+             * This is why there is not a <CODE>set</CODE> method for the acttoolcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getACTTOOLCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -9349,20 +9349,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the assetlocpriority property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assetlocpriority property.
+             * This is why there is not a <CODE>set</CODE> method for the assetlocpriority property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getASSETLOCPRIORITY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -9378,20 +9378,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the assetnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assetnum property.
+             * This is why there is not a <CODE>set</CODE> method for the assetnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getASSETNUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9407,20 +9407,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the backoutplan property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the backoutplan property.
+             * This is why there is not a <CODE>set</CODE> method for the backoutplan property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getBACKOUTPLAN().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9436,20 +9436,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the calccalendar property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the calccalendar property.
+             * This is why there is not a <CODE>set</CODE> method for the calccalendar property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCALCCALENDAR().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9465,20 +9465,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the calcorgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the calcorgid property.
+             * This is why there is not a <CODE>set</CODE> method for the calcorgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCALCORGID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9494,20 +9494,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the calcpriority property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the calcpriority property.
+             * This is why there is not a <CODE>set</CODE> method for the calcpriority property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCALCPRIORITY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -9523,20 +9523,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the calcshift property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the calcshift property.
+             * This is why there is not a <CODE>set</CODE> method for the calcshift property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCALCSHIFT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9552,20 +9552,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the calendar property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the calendar property.
+             * This is why there is not a <CODE>set</CODE> method for the calendar property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCALENDAR().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9581,20 +9581,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the changeby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the changeby property.
+             * This is why there is not a <CODE>set</CODE> method for the changeby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCHANGEBY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9610,20 +9610,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the changedate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the changedate property.
+             * This is why there is not a <CODE>set</CODE> method for the changedate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCHANGEDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -9639,20 +9639,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the chargestore property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the chargestore property.
+             * This is why there is not a <CODE>set</CODE> method for the chargestore property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCHARGESTORE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -9668,20 +9668,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the cinum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the cinum property.
+             * This is why there is not a <CODE>set</CODE> method for the cinum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCINUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9697,20 +9697,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the classstructureid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the classstructureid property.
+             * This is why there is not a <CODE>set</CODE> method for the classstructureid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCLASSSTRUCTUREID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9726,20 +9726,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the commodity property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the commodity property.
+             * This is why there is not a <CODE>set</CODE> method for the commodity property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCOMMODITY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9755,20 +9755,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the commoditygroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the commoditygroup property.
+             * This is why there is not a <CODE>set</CODE> method for the commoditygroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCOMMODITYGROUP().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9784,20 +9784,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the contract property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the contract property.
+             * This is why there is not a <CODE>set</CODE> method for the contract property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCONTRACT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9813,20 +9813,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the crewid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the crewid property.
+             * This is why there is not a <CODE>set</CODE> method for the crewid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCREWID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9842,20 +9842,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the customerid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the customerid property.
+             * This is why there is not a <CODE>set</CODE> method for the customerid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getCUSTOMERID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9871,20 +9871,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the description property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the description property.
+             * This is why there is not a <CODE>set</CODE> method for the description property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getDESCRIPTION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9900,20 +9900,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the disabled property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the disabled property.
+             * This is why there is not a <CODE>set</CODE> method for the disabled property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getDISABLED().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -9929,20 +9929,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the downtime property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the downtime property.
+             * This is why there is not a <CODE>set</CODE> method for the downtime property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getDOWNTIME().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -9958,20 +9958,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the environment property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the environment property.
+             * This is why there is not a <CODE>set</CODE> method for the environment property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getENVIRONMENT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -9987,20 +9987,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the estatapprlabcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the estatapprlabcost property.
+             * This is why there is not a <CODE>set</CODE> method for the estatapprlabcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getESTATAPPRLABCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -10016,20 +10016,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the estatapprlabhrs property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the estatapprlabhrs property.
+             * This is why there is not a <CODE>set</CODE> method for the estatapprlabhrs property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getESTATAPPRLABHRS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -10045,20 +10045,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the estatapprmatcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the estatapprmatcost property.
+             * This is why there is not a <CODE>set</CODE> method for the estatapprmatcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getESTATAPPRMATCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -10074,20 +10074,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the estatapprservcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the estatapprservcost property.
+             * This is why there is not a <CODE>set</CODE> method for the estatapprservcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getESTATAPPRSERVCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -10103,20 +10103,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the estatapprtoolcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the estatapprtoolcost property.
+             * This is why there is not a <CODE>set</CODE> method for the estatapprtoolcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getESTATAPPRTOOLCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -10132,20 +10132,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the estdur property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the estdur property.
+             * This is why there is not a <CODE>set</CODE> method for the estdur property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getESTDUR().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -10161,20 +10161,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the estlabcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the estlabcost property.
+             * This is why there is not a <CODE>set</CODE> method for the estlabcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getESTLABCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -10190,20 +10190,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the estlabhrs property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the estlabhrs property.
+             * This is why there is not a <CODE>set</CODE> method for the estlabhrs property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getESTLABHRS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -10219,20 +10219,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the estmatcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the estmatcost property.
+             * This is why there is not a <CODE>set</CODE> method for the estmatcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getESTMATCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -10248,20 +10248,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the estservcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the estservcost property.
+             * This is why there is not a <CODE>set</CODE> method for the estservcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getESTSERVCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -10277,20 +10277,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the esttoolcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the esttoolcost property.
+             * This is why there is not a <CODE>set</CODE> method for the esttoolcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getESTTOOLCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -10306,20 +10306,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the externalrefid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the externalrefid property.
+             * This is why there is not a <CODE>set</CODE> method for the externalrefid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getEXTERNALREFID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -10335,20 +10335,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the faildate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the faildate property.
+             * This is why there is not a <CODE>set</CODE> method for the faildate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getFAILDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -10364,20 +10364,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the failurecode property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the failurecode property.
+             * This is why there is not a <CODE>set</CODE> method for the failurecode property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getFAILURECODE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -10393,20 +10393,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the faulttype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the faulttype property.
+             * This is why there is not a <CODE>set</CODE> method for the faulttype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getFAULTTYPE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -10422,20 +10422,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the fincntrlid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the fincntrlid property.
+             * This is why there is not a <CODE>set</CODE> method for the fincntrlid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getFINCNTRLID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -10451,20 +10451,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the firstapprstatus property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the firstapprstatus property.
+             * This is why there is not a <CODE>set</CODE> method for the firstapprstatus property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getFIRSTAPPRSTATUS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -10480,20 +10480,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the flowaction property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the flowaction property.
+             * This is why there is not a <CODE>set</CODE> method for the flowaction property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getFLOWACTION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -10509,20 +10509,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the flowactionassist property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the flowactionassist property.
+             * This is why there is not a <CODE>set</CODE> method for the flowactionassist property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getFLOWACTIONASSIST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -10538,20 +10538,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the flowcontrolled property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the flowcontrolled property.
+             * This is why there is not a <CODE>set</CODE> method for the flowcontrolled property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getFLOWCONTROLLED().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -10567,20 +10567,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the generatedforpo property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the generatedforpo property.
+             * This is why there is not a <CODE>set</CODE> method for the generatedforpo property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getGENERATEDFORPO().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -10596,20 +10596,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the genforpolineid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the genforpolineid property.
+             * This is why there is not a <CODE>set</CODE> method for the genforpolineid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getGENFORPOLINEID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -10625,20 +10625,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the glaccount property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the glaccount property.
+             * This is why there is not a <CODE>set</CODE> method for the glaccount property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getGLACCOUNT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXGLAccountQueryType }
              * 
@@ -10654,20 +10654,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the haschildren property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the haschildren property.
+             * This is why there is not a <CODE>set</CODE> method for the haschildren property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getHASCHILDREN().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -10683,20 +10683,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the hasfollowupwork property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the hasfollowupwork property.
+             * This is why there is not a <CODE>set</CODE> method for the hasfollowupwork property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getHASFOLLOWUPWORK().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -10712,20 +10712,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the historyflag property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the historyflag property.
+             * This is why there is not a <CODE>set</CODE> method for the historyflag property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getHISTORYFLAG().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -10741,20 +10741,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the inspector property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the inspector property.
+             * This is why there is not a <CODE>set</CODE> method for the inspector property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getINSPECTOR().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -10770,20 +10770,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the interruptible property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the interruptible property.
+             * This is why there is not a <CODE>set</CODE> method for the interruptible property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getINTERRUPTIBLE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -10799,20 +10799,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the istask property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the istask property.
+             * This is why there is not a <CODE>set</CODE> method for the istask property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getISTASK().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -10828,20 +10828,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the jobtaskid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the jobtaskid property.
+             * This is why there is not a <CODE>set</CODE> method for the jobtaskid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getJOBTASKID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -10857,20 +10857,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the jpnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the jpnum property.
+             * This is why there is not a <CODE>set</CODE> method for the jpnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getJPNUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -10886,20 +10886,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the justifypriority property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the justifypriority property.
+             * This is why there is not a <CODE>set</CODE> method for the justifypriority property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getJUSTIFYPRIORITY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -10915,20 +10915,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the launchentryname property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the launchentryname property.
+             * This is why there is not a <CODE>set</CODE> method for the launchentryname property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getLAUNCHENTRYNAME().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -10944,20 +10944,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the lead property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the lead property.
+             * This is why there is not a <CODE>set</CODE> method for the lead property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getLEAD().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -10973,20 +10973,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the lineid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the lineid property.
+             * This is why there is not a <CODE>set</CODE> method for the lineid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getLINEID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11002,20 +11002,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the location property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the location property.
+             * This is why there is not a <CODE>set</CODE> method for the location property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getLOCATION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11031,20 +11031,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the measuredate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the measuredate property.
+             * This is why there is not a <CODE>set</CODE> method for the measuredate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getMEASUREDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -11060,20 +11060,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the measurementvalue property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the measurementvalue property.
+             * This is why there is not a <CODE>set</CODE> method for the measurementvalue property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getMEASUREMENTVALUE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -11089,20 +11089,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the newchildclass property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the newchildclass property.
+             * This is why there is not a <CODE>set</CODE> method for the newchildclass property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getNEWCHILDCLASS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11118,20 +11118,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the observation property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the observation property.
+             * This is why there is not a <CODE>set</CODE> method for the observation property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOBSERVATION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11147,20 +11147,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the onbehalfof property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the onbehalfof property.
+             * This is why there is not a <CODE>set</CODE> method for the onbehalfof property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getONBEHALFOF().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11176,20 +11176,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the orgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the orgid property.
+             * This is why there is not a <CODE>set</CODE> method for the orgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getORGID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11205,20 +11205,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the origrecordclass property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the origrecordclass property.
+             * This is why there is not a <CODE>set</CODE> method for the origrecordclass property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getORIGRECORDCLASS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11234,20 +11234,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the origrecordid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the origrecordid property.
+             * This is why there is not a <CODE>set</CODE> method for the origrecordid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getORIGRECORDID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11263,20 +11263,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the outlabcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the outlabcost property.
+             * This is why there is not a <CODE>set</CODE> method for the outlabcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOUTLABCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -11292,20 +11292,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the outmatcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the outmatcost property.
+             * This is why there is not a <CODE>set</CODE> method for the outmatcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOUTMATCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -11321,20 +11321,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the outtoolcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the outtoolcost property.
+             * This is why there is not a <CODE>set</CODE> method for the outtoolcost property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOUTTOOLCOST().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -11350,20 +11350,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the owner property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the owner property.
+             * This is why there is not a <CODE>set</CODE> method for the owner property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOWNER().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11379,20 +11379,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the ownergroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ownergroup property.
+             * This is why there is not a <CODE>set</CODE> method for the ownergroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOWNERGROUP().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11408,20 +11408,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the ownersysid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ownersysid property.
+             * This is why there is not a <CODE>set</CODE> method for the ownersysid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getOWNERSYSID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11437,20 +11437,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the parent property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the parent property.
+             * This is why there is not a <CODE>set</CODE> method for the parent property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPARENT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11466,20 +11466,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the parentchgsstatus property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the parentchgsstatus property.
+             * This is why there is not a <CODE>set</CODE> method for the parentchgsstatus property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPARENTCHGSSTATUS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -11495,20 +11495,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the persongroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the persongroup property.
+             * This is why there is not a <CODE>set</CODE> method for the persongroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPERSONGROUP().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11524,20 +11524,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the phone property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the phone property.
+             * This is why there is not a <CODE>set</CODE> method for the phone property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPHONE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11553,20 +11553,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspaddressline2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspaddressline2 property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspaddressline2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPADDRESSLINE2().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11582,20 +11582,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspaddressline3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspaddressline3 property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspaddressline3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPADDRESSLINE3().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11611,20 +11611,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspaddrischanged property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspaddrischanged property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspaddrischanged property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPADDRISCHANGED().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -11640,20 +11640,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspagreement property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspagreement property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspagreement property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPAGREEMENT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11669,20 +11669,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspallowquote property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspallowquote property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspallowquote property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPALLOWQUOTE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -11698,20 +11698,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspbblinenum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspbblinenum property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspbblinenum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPBBLINENUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -11727,20 +11727,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspbillbatch property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspbillbatch property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspbillbatch property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPBILLBATCH().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11756,20 +11756,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspbillbatchid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspbillbatchid property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspbillbatchid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPBILLBATCHID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -11785,20 +11785,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspbillstatus property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspbillstatus property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspbillstatus property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPBILLSTATUS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11814,20 +11814,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspcalccalnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcalccalnum property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspcalccalnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPCALCCALNUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11843,20 +11843,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspcalcorgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcalcorgid property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspcalcorgid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPCALCORGID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11872,20 +11872,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspcalcshift property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcalcshift property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspcalcshift property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPCALCSHIFT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11901,20 +11901,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspcity property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcity property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspcity property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPCITY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11930,20 +11930,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspcostcenter property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcostcenter property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspcostcenter property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPCOSTCENTER().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11959,20 +11959,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspcountry property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcountry property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspcountry property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPCOUNTRY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -11988,20 +11988,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspcounty property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcounty property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspcounty property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPCOUNTY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12017,20 +12017,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspcustchacct property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcustchacct property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspcustchacct property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPCUSTCHACCT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12046,20 +12046,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspcustomer property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcustomer property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspcustomer property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPCUSTOMER().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12075,20 +12075,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspcustponum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcustponum property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspcustponum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPCUSTPONUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12104,20 +12104,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspdirections property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspdirections property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspdirections property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPDIRECTIONS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12133,20 +12133,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspgeocode property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspgeocode property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspgeocode property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPGEOCODE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12162,20 +12162,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the plusplatdirection property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusplatdirection property.
+             * This is why there is not a <CODE>set</CODE> method for the plusplatdirection property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPLATDIRECTION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12191,20 +12191,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the plusplatitude property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusplatitude property.
+             * This is why there is not a <CODE>set</CODE> method for the plusplatitude property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPLATITUDE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -12220,20 +12220,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the plusplinestatus property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusplinestatus property.
+             * This is why there is not a <CODE>set</CODE> method for the plusplinestatus property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPLINESTATUS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12249,20 +12249,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the plusplongdirection property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusplongdirection property.
+             * This is why there is not a <CODE>set</CODE> method for the plusplongdirection property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPLONGDIRECTION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12278,20 +12278,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the plusplongitude property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusplongitude property.
+             * This is why there is not a <CODE>set</CODE> method for the plusplongitude property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPLONGITUDE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -12307,20 +12307,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspmaxprice property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspmaxprice property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspmaxprice property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPMAXPRICE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -12336,20 +12336,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the plusporigqprice property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusporigqprice property.
+             * This is why there is not a <CODE>set</CODE> method for the plusporigqprice property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPORIGQPRICE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -12365,20 +12365,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the plusporigqtype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusporigqtype property.
+             * This is why there is not a <CODE>set</CODE> method for the plusporigqtype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPORIGQTYPE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12394,20 +12394,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspporeq property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspporeq property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspporeq property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPPOREQ().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -12423,20 +12423,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the plusppostalcode property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusppostalcode property.
+             * This is why there is not a <CODE>set</CODE> method for the plusppostalcode property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPPOSTALCODE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12452,20 +12452,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the plusppricesched property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusppricesched property.
+             * This is why there is not a <CODE>set</CODE> method for the plusppricesched property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPPRICESCHED().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12481,20 +12481,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspquotedprice property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspquotedprice property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspquotedprice property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPQUOTEDPRICE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -12510,20 +12510,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspquotetype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspquotetype property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspquotetype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPQUOTETYPE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12539,20 +12539,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the plusprefpoint property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusprefpoint property.
+             * This is why there is not a <CODE>set</CODE> method for the plusprefpoint property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPREFPOINT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12568,20 +12568,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspregiondistr property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspregiondistr property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspregiondistr property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPREGIONDISTR().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12597,20 +12597,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspresponseplan property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspresponseplan property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspresponseplan property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPRESPONSEPLAN().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12626,20 +12626,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the plusprevnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusprevnum property.
+             * This is why there is not a <CODE>set</CODE> method for the plusprevnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPREVNUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -12655,20 +12655,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspstaddrdirprfx property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstaddrdirprfx property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspstaddrdirprfx property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPSTADDRDIRPRFX().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12684,20 +12684,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspstaddrdirsfx property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstaddrdirsfx property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspstaddrdirsfx property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPSTADDRDIRSFX().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12713,20 +12713,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspstaddrnumber property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstaddrnumber property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspstaddrnumber property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPSTADDRNUMBER().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12742,20 +12742,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspstaddrstreet property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstaddrstreet property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspstaddrstreet property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPSTADDRSTREET().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12771,20 +12771,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspstaddrsttype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstaddrsttype property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspstaddrsttype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPSTADDRSTTYPE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12800,20 +12800,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspstaddrunitnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstaddrunitnum property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspstaddrunitnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPSTADDRUNITNUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12829,20 +12829,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspstateprovince property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstateprovince property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspstateprovince property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPSTATEPROVINCE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12858,20 +12858,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pluspstreetaddress property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspstreetaddress property.
+             * This is why there is not a <CODE>set</CODE> method for the pluspstreetaddress property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPSTREETADDRESS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12887,20 +12887,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the plusptimezone property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusptimezone property.
+             * This is why there is not a <CODE>set</CODE> method for the plusptimezone property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPLUSPTIMEZONE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12916,20 +12916,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pmcombpelactname property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcombpelactname property.
+             * This is why there is not a <CODE>set</CODE> method for the pmcombpelactname property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPMCOMBPELACTNAME().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -12945,20 +12945,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pmcombpelenabled property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcombpelenabled property.
+             * This is why there is not a <CODE>set</CODE> method for the pmcombpelenabled property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPMCOMBPELENABLED().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -12974,20 +12974,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pmcombpelinprog property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcombpelinprog property.
+             * This is why there is not a <CODE>set</CODE> method for the pmcombpelinprog property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPMCOMBPELINPROG().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -13003,20 +13003,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pmcomimpact property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcomimpact property.
+             * This is why there is not a <CODE>set</CODE> method for the pmcomimpact property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPMCOMIMPACT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -13032,20 +13032,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pmcomstate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcomstate property.
+             * This is why there is not a <CODE>set</CODE> method for the pmcomstate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPMCOMSTATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13061,20 +13061,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pmcomtype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcomtype property.
+             * This is why there is not a <CODE>set</CODE> method for the pmcomtype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPMCOMTYPE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13090,20 +13090,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pmcomurgency property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcomurgency property.
+             * This is why there is not a <CODE>set</CODE> method for the pmcomurgency property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPMCOMURGENCY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -13119,20 +13119,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pmduedate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmduedate property.
+             * This is why there is not a <CODE>set</CODE> method for the pmduedate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPMDUEDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -13148,20 +13148,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pmextdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmextdate property.
+             * This is why there is not a <CODE>set</CODE> method for the pmextdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPMEXTDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -13177,20 +13177,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pmnextduedate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmnextduedate property.
+             * This is why there is not a <CODE>set</CODE> method for the pmnextduedate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPMNEXTDUEDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -13206,20 +13206,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pmnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmnum property.
+             * This is why there is not a <CODE>set</CODE> method for the pmnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPMNUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13235,20 +13235,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the pointnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pointnum property.
+             * This is why there is not a <CODE>set</CODE> method for the pointnum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPOINTNUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13264,20 +13264,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the preckaid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the preckaid property.
+             * This is why there is not a <CODE>set</CODE> method for the preckaid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPRECKAID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13293,20 +13293,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the problemcode property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the problemcode property.
+             * This is why there is not a <CODE>set</CODE> method for the problemcode property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getPROBLEMCODE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13322,20 +13322,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the reasonforchange property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reasonforchange property.
+             * This is why there is not a <CODE>set</CODE> method for the reasonforchange property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getREASONFORCHANGE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13351,20 +13351,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the region property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the region property.
+             * This is why there is not a <CODE>set</CODE> method for the region property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getREGION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -13380,20 +13380,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the remdur property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the remdur property.
+             * This is why there is not a <CODE>set</CODE> method for the remdur property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getREMDUR().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -13409,20 +13409,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the reportdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportdate property.
+             * This is why there is not a <CODE>set</CODE> method for the reportdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getREPORTDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -13438,20 +13438,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the reportedby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportedby property.
+             * This is why there is not a <CODE>set</CODE> method for the reportedby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getREPORTEDBY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13467,20 +13467,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the respondby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the respondby property.
+             * This is why there is not a <CODE>set</CODE> method for the respondby property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getRESPONDBY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -13496,20 +13496,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the risk property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the risk property.
+             * This is why there is not a <CODE>set</CODE> method for the risk property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getRISK().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13525,20 +13525,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the route property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the route property.
+             * This is why there is not a <CODE>set</CODE> method for the route property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getROUTE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13554,20 +13554,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the routestopid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the routestopid property.
+             * This is why there is not a <CODE>set</CODE> method for the routestopid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getROUTESTOPID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -13583,20 +13583,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the schedfinish property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the schedfinish property.
+             * This is why there is not a <CODE>set</CODE> method for the schedfinish property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSCHEDFINISH().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -13612,20 +13612,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the schedstart property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the schedstart property.
+             * This is why there is not a <CODE>set</CODE> method for the schedstart property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSCHEDSTART().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -13641,20 +13641,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the sendersysid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the sendersysid property.
+             * This is why there is not a <CODE>set</CODE> method for the sendersysid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSENDERSYSID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13670,20 +13670,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the servicesinfault property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the servicesinfault property.
+             * This is why there is not a <CODE>set</CODE> method for the servicesinfault property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSERVICESINFAULT().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -13699,20 +13699,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the siteid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the siteid property.
+             * This is why there is not a <CODE>set</CODE> method for the siteid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSITEID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13728,20 +13728,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the sourcesysid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the sourcesysid property.
+             * This is why there is not a <CODE>set</CODE> method for the sourcesysid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSOURCESYSID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13757,20 +13757,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the status property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the status property.
+             * This is why there is not a <CODE>set</CODE> method for the status property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSTATUS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13786,20 +13786,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the statusdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the statusdate property.
+             * This is why there is not a <CODE>set</CODE> method for the statusdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSTATUSDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -13815,20 +13815,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the supervisor property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the supervisor property.
+             * This is why there is not a <CODE>set</CODE> method for the supervisor property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSUPERVISOR().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13844,20 +13844,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the suspendflow property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the suspendflow property.
+             * This is why there is not a <CODE>set</CODE> method for the suspendflow property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getSUSPENDFLOW().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -13873,20 +13873,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the targcompdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targcompdate property.
+             * This is why there is not a <CODE>set</CODE> method for the targcompdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getTARGCOMPDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -13902,20 +13902,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the targetdesc property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targetdesc property.
+             * This is why there is not a <CODE>set</CODE> method for the targetdesc property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getTARGETDESC().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -13931,20 +13931,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the targstartdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targstartdate property.
+             * This is why there is not a <CODE>set</CODE> method for the targstartdate property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getTARGSTARTDATE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -13960,20 +13960,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the taskid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the taskid property.
+             * This is why there is not a <CODE>set</CODE> method for the taskid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getTASKID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -13989,20 +13989,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the vendor property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the vendor property.
+             * This is why there is not a <CODE>set</CODE> method for the vendor property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getVENDOR().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14018,20 +14018,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the verification property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the verification property.
+             * This is why there is not a <CODE>set</CODE> method for the verification property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getVERIFICATION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14047,20 +14047,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the whomischangefor property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the whomischangefor property.
+             * This is why there is not a <CODE>set</CODE> method for the whomischangefor property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWHOMISCHANGEFOR().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14076,20 +14076,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woacceptscharges property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woacceptscharges property.
+             * This is why there is not a <CODE>set</CODE> method for the woacceptscharges property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOACCEPTSCHARGES().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -14105,20 +14105,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woclass property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woclass property.
+             * This is why there is not a <CODE>set</CODE> method for the woclass property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOCLASS().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14134,20 +14134,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq1 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq1 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq1 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ1().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14163,20 +14163,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq10 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq10 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq10 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ10().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14192,20 +14192,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq11 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq11 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq11 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ11().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14221,20 +14221,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq12 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq12 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq12 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ12().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -14250,20 +14250,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq13 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq13 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq13 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ13().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -14279,20 +14279,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq14 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq14 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq14 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ14().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -14308,20 +14308,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq2 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ2().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14337,20 +14337,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq3 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ3().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14366,20 +14366,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq4 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq4 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq4 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ4().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14395,20 +14395,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq5 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq5 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq5 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ5().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -14424,20 +14424,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq6 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq6 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq6 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ6().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -14453,20 +14453,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq7 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq7 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq7 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ7().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -14482,20 +14482,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq8 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq8 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq8 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ8().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14511,20 +14511,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woeq9 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woeq9 property.
+             * This is why there is not a <CODE>set</CODE> method for the woeq9 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOEQ9().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14540,20 +14540,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wogroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wogroup property.
+             * This is why there is not a <CODE>set</CODE> method for the wogroup property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOGROUP().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14569,20 +14569,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the woisswap property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the woisswap property.
+             * This is why there is not a <CODE>set</CODE> method for the woisswap property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOISSWAP().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXBooleanQueryType }
              * 
@@ -14598,20 +14598,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojo1 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojo1 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojo1 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJO1().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14627,20 +14627,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojo2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojo2 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojo2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJO2().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14656,20 +14656,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojo3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojo3 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojo3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJO3().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14685,20 +14685,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojo4 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojo4 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojo4 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJO4().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -14714,20 +14714,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojo5 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojo5 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojo5 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJO5().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14743,20 +14743,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojo6 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojo6 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojo6 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJO6().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14772,20 +14772,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojo7 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojo7 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojo7 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJO7().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14801,20 +14801,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojo8 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojo8 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojo8 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJO8().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14830,20 +14830,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojp1 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojp1 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojp1 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJP1().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14859,20 +14859,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojp2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojp2 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojp2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJP2().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14888,20 +14888,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojp3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojp3 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojp3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJP3().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -14917,20 +14917,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojp4 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojp4 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojp4 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJP4().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -14946,20 +14946,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wojp5 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wojp5 property.
+             * This is why there is not a <CODE>set</CODE> method for the wojp5 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOJP5().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -14975,20 +14975,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wol1 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wol1 property.
+             * This is why there is not a <CODE>set</CODE> method for the wol1 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOL1().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15004,20 +15004,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wol2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wol2 property.
+             * This is why there is not a <CODE>set</CODE> method for the wol2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOL2().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15033,20 +15033,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wol3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wol3 property.
+             * This is why there is not a <CODE>set</CODE> method for the wol3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOL3().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -15062,20 +15062,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wol4 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wol4 property.
+             * This is why there is not a <CODE>set</CODE> method for the wol4 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOL4().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -15091,20 +15091,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wolablnk property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wolablnk property.
+             * This is why there is not a <CODE>set</CODE> method for the wolablnk property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOLABLNK().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15120,20 +15120,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wolo1 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wolo1 property.
+             * This is why there is not a <CODE>set</CODE> method for the wolo1 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOLO1().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15149,20 +15149,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wolo10 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wolo10 property.
+             * This is why there is not a <CODE>set</CODE> method for the wolo10 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOLO10().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -15178,20 +15178,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wolo2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wolo2 property.
+             * This is why there is not a <CODE>set</CODE> method for the wolo2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOLO2().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15207,20 +15207,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wolo3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wolo3 property.
+             * This is why there is not a <CODE>set</CODE> method for the wolo3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOLO3().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15236,20 +15236,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wolo4 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wolo4 property.
+             * This is why there is not a <CODE>set</CODE> method for the wolo4 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOLO4().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15265,20 +15265,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wolo5 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wolo5 property.
+             * This is why there is not a <CODE>set</CODE> method for the wolo5 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOLO5().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15294,20 +15294,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wolo6 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wolo6 property.
+             * This is why there is not a <CODE>set</CODE> method for the wolo6 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOLO6().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -15323,20 +15323,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wolo7 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wolo7 property.
+             * This is why there is not a <CODE>set</CODE> method for the wolo7 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOLO7().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -15352,20 +15352,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wolo8 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wolo8 property.
+             * This is why there is not a <CODE>set</CODE> method for the wolo8 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOLO8().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -15381,20 +15381,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wolo9 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wolo9 property.
+             * This is why there is not a <CODE>set</CODE> method for the wolo9 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOLO9().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15410,20 +15410,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wonum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wonum property.
+             * This is why there is not a <CODE>set</CODE> method for the wonum property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWONUM().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15439,20 +15439,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wopriority property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wopriority property.
+             * This is why there is not a <CODE>set</CODE> method for the wopriority property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOPRIORITY().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -15468,20 +15468,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the worklocation property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the worklocation property.
+             * This is why there is not a <CODE>set</CODE> method for the worklocation property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWORKLOCATION().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15497,20 +15497,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the workorderid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the workorderid property.
+             * This is why there is not a <CODE>set</CODE> method for the workorderid property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWORKORDERID().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 
@@ -15526,20 +15526,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the worktype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the worktype property.
+             * This is why there is not a <CODE>set</CODE> method for the worktype property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWORKTYPE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15555,20 +15555,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the worts1 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the worts1 property.
+             * This is why there is not a <CODE>set</CODE> method for the worts1 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWORTS1().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15584,20 +15584,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the worts2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the worts2 property.
+             * This is why there is not a <CODE>set</CODE> method for the worts2 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWORTS2().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15613,20 +15613,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the worts3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the worts3 property.
+             * This is why there is not a <CODE>set</CODE> method for the worts3 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWORTS3().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXStringQueryType }
              * 
@@ -15642,20 +15642,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the worts4 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the worts4 property.
+             * This is why there is not a <CODE>set</CODE> method for the worts4 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWORTS4().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDateTimeQueryType }
              * 
@@ -15671,20 +15671,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the worts5 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the worts5 property.
+             * This is why there is not a <CODE>set</CODE> method for the worts5 property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWORTS5().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXDoubleQueryType }
              * 
@@ -15700,20 +15700,20 @@ public class QTTINCIDENTQueryType {
             /**
              * Gets the value of the wosequence property.
              * 
-             * &lt;p&gt;
+             * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
-             * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wosequence property.
+             * This is why there is not a <CODE>set</CODE> method for the wosequence property.
              * 
-             * &lt;p&gt;
+             * <p>
              * For example, to add a new item, do as follows:
-             * &lt;pre&gt;
+             * <pre>
              *    getWOSEQUENCE().add(newItem);
-             * &lt;/pre&gt;
+             * </pre>
              * 
              * 
-             * &lt;p&gt;
+             * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link MXLongQueryType }
              * 

@@ -52,9 +52,9 @@ public final class AlarmsToFile_005ftool_jsp extends org.apache.jasper.runtime.H
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
     
     response.setHeader("Content-type","text/csv");
     response.setHeader("Content-disposition","inline; filename="+ "myAlarms.csv");
@@ -100,7 +100,7 @@ public final class AlarmsToFile_005ftool_jsp extends org.apache.jasper.runtime.H
         out.println(e.toString());
         }
 
-      out.write("        \n");
+      out.write("        \r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

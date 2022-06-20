@@ -41,6 +41,7 @@ public class NetworkResourcesFinder_MKT implements NetworkResourcesFinder {
     private void getPstnNumberInfos(CallInfo myCallInfo) {
         String fault_CLI = myCallInfo.getLineId();
         try {
+            /*
             try {
                 String url = findCLIsResourcesURL + "?lineId=" + fault_CLI;       //http://10.232.63.13:8080/RADIUS_MKT/getCallInfo.jsp?lineId=L0239387
                 System.out.println("CCM12:findCLIsResources:myCallInfo:url:" + url);
@@ -50,11 +51,11 @@ public class NetworkResourcesFinder_MKT implements NetworkResourcesFinder {
                 //System.out.println("CCM12:findCLIsResources(Radius) CABLE:" + myCallInfo.getResources().get("CABLE") + " DP:" + myCallInfo.getResources().get("DP"));
             } catch (Exception e) {
                 System.out.println("CCM12:findCLIsResources error:" + e.toString());
-            }
+            }*/
             //---------- if not found ask NCDB ------------------
             if (myCallInfo.getResources().isEmpty()) {
                 myCallInfo.setResources(findCLIsResourcesFromNCDB(fault_CLI).getResources());
-                //System.out.println("CCM12:findCLIsResources(NCDB) CABLE:" + myCallInfo.getResources().get("CABLE") + " DP:" + myCallInfo.getResources().get("DP"));
+                System.out.println("CCM12:findCLIsResources(NCDB) :" + new Gson().toJson(myCallInfo));
             }
         } catch (Exception e) {
             System.out.println("CCM12:findCLIsResources error1:" + e.toString());
@@ -64,7 +65,7 @@ public class NetworkResourcesFinder_MKT implements NetworkResourcesFinder {
 
     public CallInfo findCLIsResourcesFromNCDB(String lineId) throws Exception {
         CallInfo myCallInfo = new CallInfo(lineId, new TimeStamp1().getNowUnformated(), "NA", "UNKN_REASON");
-        String SQL_STRING = "SELECT LINE_ID, SERVING_AREA, ATC, DSLAM_NAME, RACK, SHELF, SLOT, CABLE, DP, CARD_TECHNOLOGY "
+        String SQL_STRING = "SELECT LINE_ID, SERVING_AREA, ATC, HOST, DSLAM_NAME, RACK, SHELF, SLOT, CABLE, DP, CARD_TECHNOLOGY "
                 + "FROM NC_OSS_PROD_RDB.V_DILIGENT_LINES   where LINE_ID ='" + lineId + "'";
         //-----------------------------------
         //SERVING_AREA;ATC;DSLAM;SLOT;CABLE;DP;
@@ -83,7 +84,7 @@ public class NetworkResourcesFinder_MKT implements NetworkResourcesFinder {
                     cardTechnology = "COPPER";
                 }
                 String SERVING_AREA = res.getString("SERVING_AREA");
-                String ATC = res.getString("ATC");
+                String ATC = res.getString("HOST");
                 if (ATC == null || ATC.isEmpty()) {
                     ATC = SERVING_AREA;
                 }
@@ -101,8 +102,6 @@ public class NetworkResourcesFinder_MKT implements NetworkResourcesFinder {
                 //------------
                 if (!cardTechnology.equals("GPON")) {
                     //--------- COPPER  --------------
-                    //path = SERVING_AREA + ";" + ATC + ";" + DSLAM + ";" + SLOT;
-                    //path = ATC + ";" + CABLE + ";" + DP;
                     myCallInfo.setNetworkType("COPPER");
                     CABLE = ATC + "#" + CABLE;
                     DP = CABLE + "#" + DP;
@@ -113,9 +112,6 @@ public class NetworkResourcesFinder_MKT implements NetworkResourcesFinder {
                     myCallInfo.getResources().put("DP", ATC + ";" + CABLE + ";" + DP);
                 } else {
                     //-------- GPON ---------------
-                    //path = OLT + ";" + SHELF + ";" + SLOT;
-                    //path = ATC + ";" + CABLE + ";" + DP;
-                    //
                     myCallInfo.setNetworkType("GPON");
                     myCallInfo.getResources().put("OLT", DSLAM);
                     myCallInfo.getResources().put("GPON_SHELF", DSLAM + ";" + SHELF);

@@ -46,15 +46,16 @@ public final class logs_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
  String userTypes = "00";
+      out.write('\r');
       out.write('\n');
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     //String userTypes = "00,01,02";
     //  ----------- SEQURITY CHECK ---------------
@@ -65,33 +66,35 @@ public final class logs_jsp extends org.apache.jasper.runtime.HttpJspBase
     String username = (String) session.getAttribute("username");
     if (userType == null)
         {
+      out.write('\r');
       out.write('\n');
       if (true) {
         _jspx_page_context.forward(url);
         return;
       }
+      out.write('\r');
       out.write('\n');
   return;
     }
 else if (userType.endsWith("-expired"))// password expired
         {
         
-      out.write("\n");
-      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\n");
+      out.write("\r\n");
+      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\r\n");
       out.write("        ");
       if (true) {
         _jspx_page_context.forward("change_password.jsp");
         return;
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("        ");
 return;
         }
 
-      out.write('\n');
-      out.write('\n');
-      out.write("\n");
-      out.write("    \n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    \r\n");
 
 //----------- sequrity----------------
     try
@@ -99,8 +102,8 @@ return;
         if (!userTypes.contains(userType))
             {
             
-      out.write("\n");
-      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\n");
+      out.write("\r\n");
+      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\r\n");
       out.write("            ");
 return;
             }
@@ -110,32 +113,32 @@ return;
         }
 //----------- sequrity end----------------
 
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        <h1>Diligent Logs</h1>\n");
-      out.write("        <table>\n");
-      out.write("            <tr> \n");
-      out.write("                <td>\n");
-      out.write("                    <div id=\"id1\" style=\"position:relative; top: 0px; left: 0px;\">        \n");
-      out.write("                        <iframe src= \"logViewer_system.jsp\"  width= \"800\" height=\"800\"></iframe>\n");
-      out.write("                    </div> \n");
-      out.write("                </td>\n");
-      out.write("                <td>\n");
-      out.write("                    <div id=\"id2\" style=\"position:relative; top: 0px; left: 0px;\">        \n");
-      out.write("                        <iframe src= \"logViewer_alarms.jsp\"  width= \"800\" height=\"800\"></iframe>\n");
-      out.write("                    </div> \n");
-      out.write("                </td>\n");
-      out.write("            </tr>\n");
-      out.write("        </table>\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>JSP Page</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <h1>Diligent Logs</h1>\r\n");
+      out.write("        <table>\r\n");
+      out.write("            <tr> \r\n");
+      out.write("                <td>\r\n");
+      out.write("                    <div id=\"id1\" style=\"position:relative; top: 0px; left: 0px;\">        \r\n");
+      out.write("                        <iframe src= \"logViewer_system.jsp\"  width= \"800\" height=\"800\"></iframe>\r\n");
+      out.write("                    </div> \r\n");
+      out.write("                </td>\r\n");
+      out.write("                <td>\r\n");
+      out.write("                    <div id=\"id2\" style=\"position:relative; top: 0px; left: 0px;\">        \r\n");
+      out.write("                        <iframe src= \"logViewer_alarms.jsp\"  width= \"800\" height=\"800\"></iframe>\r\n");
+      out.write("                    </div> \r\n");
+      out.write("                </td>\r\n");
+      out.write("            </tr>\r\n");
+      out.write("        </table>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

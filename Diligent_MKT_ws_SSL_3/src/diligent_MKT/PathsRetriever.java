@@ -394,15 +394,17 @@ public class PathsRetriever {
     public static void main(String[] args) {
         //COPPER
         {
+        /*
             PathsRetriever myPathsRetriever1 = PathRetrieverFactory.create(Alarm_FYROM.TYPE_COPPER);
             PathsRetriever myPathsRetriever2 = PathRetrieverFactory.create(Alarm_FYROM.TYPE_COPPER_CABLE);
             PathsRetriever myPathsRetriever3 = PathRetrieverFactory.create(Alarm_FYROM.TYPE_GPON);
             PathsRetriever myPathsRetriever4 = PathRetrieverFactory.create(Alarm_FYROM.TYPE_GPON_CABLE);
+        
             Paths_1D_decimal myAggr = myPathsRetriever1.retrieveAggr();
             System.out.println("DSLMON_SKOPIA:myAggr" + myAggr.mapperElementsList.size());
             myAggr.mapperElementsList.forEach((k, v) -> {
                 System.out.println("DSLMON_SKOPIA::BBoard new:" + k);
-            });
+            });*/
         }
 
         //Paths_1D_decimal myAggr = myPathsRetriever.retrieveAggr();
@@ -425,5 +427,14 @@ public class PathsRetriever {
             });
         //System.out.println("path = " + myPathsRetriever.retrievePath("L0072807"));
          */
+                PathsRetriever myPatrhsRetriever = PathRetrieverFactory.create(Alarm_FYROM.TYPE_COPPER);
+                System.out.println("path = " + myPatrhsRetriever.retrievePath("F0002200"));
+                if (myPatrhsRetriever != null) {
+                    ArrayList<String> myLines = myPatrhsRetriever.retrieveLines("Centar");
+                    Collections.sort(myLines);
+                    for (String line : myLines) {
+                        System.out.println("<tr><td>" + line + "</td></tr>");
+                }
+            }
     }
 }

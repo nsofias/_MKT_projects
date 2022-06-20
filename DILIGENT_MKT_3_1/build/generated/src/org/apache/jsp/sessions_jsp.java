@@ -51,14 +51,15 @@ public final class sessions_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
  String userTypes = "00";
+      out.write('\r');
       out.write('\n');
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     //String userTypes = "00,01,02";
     //  ----------- SEQURITY CHECK ---------------
@@ -69,31 +70,34 @@ public final class sessions_jsp extends org.apache.jasper.runtime.HttpJspBase
     String username = (String) session.getAttribute("username");
     if (userType == null)
         {
+      out.write('\r');
       out.write('\n');
       if (true) {
         _jspx_page_context.forward(url);
         return;
       }
+      out.write('\r');
       out.write('\n');
   return;
     }
 else if (userType.endsWith("-expired"))// password expired
         {
         
-      out.write("\n");
-      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\n");
+      out.write("\r\n");
+      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\r\n");
       out.write("        ");
       if (true) {
         _jspx_page_context.forward("change_password.jsp");
         return;
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("        ");
 return;
         }
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write('\r');
       out.write('\n');
 
 //----------- sequrity----------------
@@ -102,8 +106,8 @@ return;
         if (!userTypes.contains(userType))
             {
             
-      out.write("\n");
-      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\n");
+      out.write("\r\n");
+      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\r\n");
       out.write("            ");
 return;
             }
@@ -113,17 +117,17 @@ return;
         }
 //----------- sequrity end----------------
 
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n");
-      out.write("    \"http://www.w3.org/TR/html4/loose.dtd\">\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>sessions Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n");
+      out.write("    \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>sessions Page</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
       out.write("        ");
 
             ServletContext myContext = request.getServletContext();
@@ -160,39 +164,39 @@ return;
                 }
 
         
-      out.write("\n");
-      out.write("        <p>\n");
-      out.write("        <form action=\"sessions.jsp\">\n");
-      out.write("            <input type=\"submit\" name=\"Reset\" value=\"Reset counters\" />\n");
-      out.write("            <input type=\"submit\" name=\"Refresh\" value=\"Refresh\" />\n");
-      out.write("        </form> \n");
-      out.write("        <p></p> \n");
-      out.write("        <table style=\"text-align:left; font-size:20px;\" border=\"1\"  cellpadding=\"1\"  id=\"table1\" >                    \n");
+      out.write("\r\n");
+      out.write("        <p>\r\n");
+      out.write("        <form action=\"sessions.jsp\">\r\n");
+      out.write("            <input type=\"submit\" name=\"Reset\" value=\"Reset counters\" />\r\n");
+      out.write("            <input type=\"submit\" name=\"Refresh\" value=\"Refresh\" />\r\n");
+      out.write("        </form> \r\n");
+      out.write("        <p></p> \r\n");
+      out.write("        <table style=\"text-align:left; font-size:20px;\" border=\"1\"  cellpadding=\"1\"  id=\"table1\" >                    \r\n");
       out.write("            ");
 
                 List<String> labels = myCounters.getLabelsSortedBy(Counters.sortByCount);
                 for (String label : labels) {
             
-      out.write("\n");
-      out.write("            <tr>\n");
+      out.write("\r\n");
+      out.write("            <tr>\r\n");
       out.write("                <td>");
       out.print(label);
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("                <td>");
       out.print(myCounters.getCount(label));
-      out.write("</td>\n");
-      out.write("            </tr>        \n");
+      out.write("</td>\r\n");
+      out.write("            </tr>        \r\n");
       out.write("            ");
 }
-      out.write("\n");
-      out.write("        </Table>        \n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("        </Table>        \r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("        <h1> Active sessions : ");
       out.print(count);
-      out.write("</h1>\n");
-      out.write("        <table>\n");
+      out.write("</h1>\r\n");
+      out.write("        <table>\r\n");
       out.write("            ");
 
 
@@ -206,33 +210,33 @@ return;
                     TimeStamp1 now = new TimeStamp1();
                     if (now.minutesDiff(objTime) < 5)
                     {
-      out.write("\n");
+      out.write("\r\n");
       out.write("            <tr><td><b>");
       out.print(visitor);
       out.write('(');
       out.print(IPAddress);
       out.write(")</b></td><td><b>");
       out.print(objTimeS);
-      out.write("</b></td></tr>                   \n");
+      out.write("</b></td></tr>                   \r\n");
       out.write("            ");
 }
                 else
                     {
-      out.write("\n");
+      out.write("\r\n");
       out.write("            <tr><td>");
       out.print(visitor);
       out.write('(');
       out.print(IPAddress);
       out.write(")</td><td>");
       out.print(objTimeS);
-      out.write("</td></tr>                         \n");
+      out.write("</td></tr>                         \r\n");
       out.write("            ");
 }
                         }
-      out.write("\n");
-      out.write("        </table>\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("        </table>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

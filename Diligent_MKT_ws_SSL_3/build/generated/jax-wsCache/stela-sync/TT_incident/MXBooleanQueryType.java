@@ -12,19 +12,19 @@ import TT_incident.runtime.ZeroOneBooleanAdapter;
 
 
 /**
- * &lt;p&gt;Java class for MXBooleanQueryType complex type.
+ * <p>Java class for MXBooleanQueryType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="MXBooleanQueryType"&amp;gt;
- *   &amp;lt;simpleContent&amp;gt;
- *     &amp;lt;extension base="&amp;lt;http://oss.it.telekom.mk/TroubleTicket/ibm/maximo&amp;gt;BooleanType"&amp;gt;
- *       &amp;lt;attribute name="operator" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}QueryOperatorType" /&amp;gt;
- *     &amp;lt;/extension&amp;gt;
- *   &amp;lt;/simpleContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="MXBooleanQueryType"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://oss.it.telekom.mk/TroubleTicket/ibm/maximo&gt;BooleanType"&gt;
+ *       &lt;attribute name="operator" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}QueryOperatorType" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */

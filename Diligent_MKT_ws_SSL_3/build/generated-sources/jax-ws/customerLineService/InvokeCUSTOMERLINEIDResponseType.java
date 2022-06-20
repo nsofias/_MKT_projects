@@ -11,22 +11,22 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * &lt;p&gt;Java class for InvokeCUSTOMERLINEIDResponseType complex type.
+ * <p>Java class for InvokeCUSTOMERLINEIDResponseType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="InvokeCUSTOMERLINEIDResponseType"&amp;gt;
- *   &amp;lt;complexContent&amp;gt;
- *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *       &amp;lt;sequence&amp;gt;
- *         &amp;lt;element ref="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}CUSTOMERLINEIDSet"/&amp;gt;
- *       &amp;lt;/sequence&amp;gt;
- *       &amp;lt;attGroup ref="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}CommonContentGroup"/&amp;gt;
- *     &amp;lt;/restriction&amp;gt;
- *   &amp;lt;/complexContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="InvokeCUSTOMERLINEIDResponseType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}CUSTOMERLINEIDSet"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}CommonContentGroup"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */

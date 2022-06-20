@@ -14,23 +14,23 @@ import customerLineService.runtime.ZeroOneBooleanAdapter;
 
 
 /**
- * &lt;p&gt;Java class for QueryCUSTOMERLINEIDType complex type.
+ * <p>Java class for QueryCUSTOMERLINEIDType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="QueryCUSTOMERLINEIDType"&amp;gt;
- *   &amp;lt;complexContent&amp;gt;
- *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *       &amp;lt;sequence&amp;gt;
- *         &amp;lt;element ref="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}CUSTOMERLINEIDQuery"/&amp;gt;
- *       &amp;lt;/sequence&amp;gt;
- *       &amp;lt;attGroup ref="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}CommonContentGroup"/&amp;gt;
- *       &amp;lt;attGroup ref="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}QueryContentGroup"/&amp;gt;
- *     &amp;lt;/restriction&amp;gt;
- *   &amp;lt;/complexContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="QueryCUSTOMERLINEIDType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}CUSTOMERLINEIDQuery"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}QueryContentGroup"/&gt;
+ *       &lt;attGroup ref="{http://oss.it.telekom.mk/tt/datatypes/customerLineService}CommonContentGroup"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */
@@ -42,6 +42,14 @@ public class QueryCUSTOMERLINEIDType {
 
     @XmlElement(name = "CUSTOMERLINEIDQuery", required = true)
     protected CUSTOMERLINEIDQueryType customerlineidQuery;
+    @XmlAttribute(name = "uniqueResult")
+    @XmlJavaTypeAdapter(ZeroOneBooleanAdapter.class)
+    protected Boolean uniqueResult;
+    @XmlAttribute(name = "maxItems")
+    @XmlSchemaType(name = "positiveInteger")
+    protected BigInteger maxItems;
+    @XmlAttribute(name = "rsStart")
+    protected BigInteger rsStart;
     @XmlAttribute(name = "creationDateTime")
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar creationDateTime;
@@ -53,14 +61,6 @@ public class QueryCUSTOMERLINEIDType {
     protected String messageID;
     @XmlAttribute(name = "maximoVersion")
     protected String maximoVersion;
-    @XmlAttribute(name = "uniqueResult")
-    @XmlJavaTypeAdapter(ZeroOneBooleanAdapter.class)
-    protected Boolean uniqueResult;
-    @XmlAttribute(name = "maxItems")
-    @XmlSchemaType(name = "positiveInteger")
-    protected BigInteger maxItems;
-    @XmlAttribute(name = "rsStart")
-    protected BigInteger rsStart;
 
     /**
      * Gets the value of the customerlineidQuery property.
@@ -84,6 +84,86 @@ public class QueryCUSTOMERLINEIDType {
      */
     public void setCUSTOMERLINEIDQuery(CUSTOMERLINEIDQueryType value) {
         this.customerlineidQuery = value;
+    }
+
+    /**
+     * Gets the value of the uniqueResult property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public boolean isUniqueResult() {
+        if (uniqueResult == null) {
+            return new ZeroOneBooleanAdapter().unmarshal("0");
+        } else {
+            return uniqueResult;
+        }
+    }
+
+    /**
+     * Sets the value of the uniqueResult property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setUniqueResult(Boolean value) {
+        this.uniqueResult = value;
+    }
+
+    /**
+     * Gets the value of the maxItems property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
+     */
+    public BigInteger getMaxItems() {
+        return maxItems;
+    }
+
+    /**
+     * Sets the value of the maxItems property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
+     */
+    public void setMaxItems(BigInteger value) {
+        this.maxItems = value;
+    }
+
+    /**
+     * Gets the value of the rsStart property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
+     */
+    public BigInteger getRsStart() {
+        if (rsStart == null) {
+            return new BigInteger("0");
+        } else {
+            return rsStart;
+        }
+    }
+
+    /**
+     * Sets the value of the rsStart property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
+     */
+    public void setRsStart(BigInteger value) {
+        this.rsStart = value;
     }
 
     /**
@@ -204,86 +284,6 @@ public class QueryCUSTOMERLINEIDType {
      */
     public void setMaximoVersion(String value) {
         this.maximoVersion = value;
-    }
-
-    /**
-     * Gets the value of the uniqueResult property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public boolean isUniqueResult() {
-        if (uniqueResult == null) {
-            return new ZeroOneBooleanAdapter().unmarshal("0");
-        } else {
-            return uniqueResult;
-        }
-    }
-
-    /**
-     * Sets the value of the uniqueResult property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUniqueResult(Boolean value) {
-        this.uniqueResult = value;
-    }
-
-    /**
-     * Gets the value of the maxItems property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getMaxItems() {
-        return maxItems;
-    }
-
-    /**
-     * Sets the value of the maxItems property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setMaxItems(BigInteger value) {
-        this.maxItems = value;
-    }
-
-    /**
-     * Gets the value of the rsStart property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getRsStart() {
-        if (rsStart == null) {
-            return new BigInteger("0");
-        } else {
-            return rsStart;
-        }
-    }
-
-    /**
-     * Sets the value of the rsStart property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setRsStart(BigInteger value) {
-        this.rsStart = value;
     }
 
 }

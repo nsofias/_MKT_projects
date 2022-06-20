@@ -14,23 +14,23 @@ import ibm_query.runtime.ZeroOneBooleanAdapter;
 
 
 /**
- * &lt;p&gt;Java class for QueryQTT1Type complex type.
+ * <p>Java class for QueryQTT1Type complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="QueryQTT1Type"&amp;gt;
- *   &amp;lt;complexContent&amp;gt;
- *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *       &amp;lt;sequence&amp;gt;
- *         &amp;lt;element ref="{http://www.ibm.com/maximo}QTT1Query"/&amp;gt;
- *       &amp;lt;/sequence&amp;gt;
- *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}CommonContentGroup"/&amp;gt;
- *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}QueryContentGroup"/&amp;gt;
- *     &amp;lt;/restriction&amp;gt;
- *   &amp;lt;/complexContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="QueryQTT1Type"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.ibm.com/maximo}QTT1Query"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.ibm.com/maximo}QueryContentGroup"/&gt;
+ *       &lt;attGroup ref="{http://www.ibm.com/maximo}CommonContentGroup"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */
@@ -42,6 +42,14 @@ public class QueryQTT1Type {
 
     @XmlElement(name = "QTT1Query", required = true)
     protected QTT1QueryType qtt1Query;
+    @XmlAttribute(name = "uniqueResult")
+    @XmlJavaTypeAdapter(ZeroOneBooleanAdapter.class)
+    protected Boolean uniqueResult;
+    @XmlAttribute(name = "maxItems")
+    @XmlSchemaType(name = "positiveInteger")
+    protected BigInteger maxItems;
+    @XmlAttribute(name = "rsStart")
+    protected BigInteger rsStart;
     @XmlAttribute(name = "creationDateTime")
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar creationDateTime;
@@ -53,14 +61,6 @@ public class QueryQTT1Type {
     protected String messageID;
     @XmlAttribute(name = "maximoVersion")
     protected String maximoVersion;
-    @XmlAttribute(name = "uniqueResult")
-    @XmlJavaTypeAdapter(ZeroOneBooleanAdapter.class)
-    protected Boolean uniqueResult;
-    @XmlAttribute(name = "maxItems")
-    @XmlSchemaType(name = "positiveInteger")
-    protected BigInteger maxItems;
-    @XmlAttribute(name = "rsStart")
-    protected BigInteger rsStart;
 
     /**
      * Gets the value of the qtt1Query property.
@@ -84,6 +84,86 @@ public class QueryQTT1Type {
      */
     public void setQTT1Query(QTT1QueryType value) {
         this.qtt1Query = value;
+    }
+
+    /**
+     * Gets the value of the uniqueResult property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public boolean isUniqueResult() {
+        if (uniqueResult == null) {
+            return new ZeroOneBooleanAdapter().unmarshal("0");
+        } else {
+            return uniqueResult;
+        }
+    }
+
+    /**
+     * Sets the value of the uniqueResult property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setUniqueResult(Boolean value) {
+        this.uniqueResult = value;
+    }
+
+    /**
+     * Gets the value of the maxItems property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
+     */
+    public BigInteger getMaxItems() {
+        return maxItems;
+    }
+
+    /**
+     * Sets the value of the maxItems property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
+     */
+    public void setMaxItems(BigInteger value) {
+        this.maxItems = value;
+    }
+
+    /**
+     * Gets the value of the rsStart property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
+     */
+    public BigInteger getRsStart() {
+        if (rsStart == null) {
+            return new BigInteger("0");
+        } else {
+            return rsStart;
+        }
+    }
+
+    /**
+     * Sets the value of the rsStart property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
+     */
+    public void setRsStart(BigInteger value) {
+        this.rsStart = value;
     }
 
     /**
@@ -204,86 +284,6 @@ public class QueryQTT1Type {
      */
     public void setMaximoVersion(String value) {
         this.maximoVersion = value;
-    }
-
-    /**
-     * Gets the value of the uniqueResult property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public boolean isUniqueResult() {
-        if (uniqueResult == null) {
-            return new ZeroOneBooleanAdapter().unmarshal("0");
-        } else {
-            return uniqueResult;
-        }
-    }
-
-    /**
-     * Sets the value of the uniqueResult property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUniqueResult(Boolean value) {
-        this.uniqueResult = value;
-    }
-
-    /**
-     * Gets the value of the maxItems property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getMaxItems() {
-        return maxItems;
-    }
-
-    /**
-     * Sets the value of the maxItems property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setMaxItems(BigInteger value) {
-        this.maxItems = value;
-    }
-
-    /**
-     * Gets the value of the rsStart property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getRsStart() {
-        if (rsStart == null) {
-            return new BigInteger("0");
-        } else {
-            return rsStart;
-        }
-    }
-
-    /**
-     * Sets the value of the rsStart property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setRsStart(BigInteger value) {
-        this.rsStart = value;
     }
 
 }

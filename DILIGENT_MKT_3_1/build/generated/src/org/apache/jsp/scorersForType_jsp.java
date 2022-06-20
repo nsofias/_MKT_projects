@@ -58,8 +58,8 @@ public final class scorersForType_jsp extends org.apache.jasper.runtime.HttpJspB
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
 
     ServletContext myContext = request.getServletContext();
     try
@@ -136,26 +136,26 @@ public final class scorersForType_jsp extends org.apache.jasper.runtime.HttpJspB
             elType = "ATC : Cable : BOX";
             }
 
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <title>Alarms</title>   \n");
-      out.write("        <link rel=\"stylesheet\" href=\"global_1.css\">\n");
-      out.write("    </head>\n");
-      out.write("    <body>         \n");
-      out.write("        <table  border='1'>\n");
-      out.write("            <tr bgcolor=\"LightBlue\">\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <title>Alarms</title>   \r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"global_1.css\">\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>         \r\n");
+      out.write("        <table  border='1'>\r\n");
+      out.write("            <tr bgcolor=\"LightBlue\">\r\n");
       out.write("                <th>");
       out.print(elType);
-      out.write("</th>  \n");
+      out.write("</th>  \r\n");
       out.write("                <th>");
       out.print(reportType_);
-      out.write("</th>                        \n");
-      out.write("            </tr> \n");
-      out.write("\n");
+      out.write("</th>                        \r\n");
+      out.write("            </tr> \r\n");
+      out.write("\r\n");
       out.write("            ");
 
                 if (myCCMonitorStatsObjsContainer == null)
@@ -188,19 +188,19 @@ public final class scorersForType_jsp extends org.apache.jasper.runtime.HttpJspB
                             reduction = format_number(topScorers.getValue(header));
                             }
             
-      out.write("\n");
-      out.write("            <tr>                      \n");
+      out.write("\r\n");
+      out.write("            <tr>                      \r\n");
       out.write("                <td nowrap><a href='HistoryServlet?type=");
       out.print(type);
       out.write("&resource=");
       out.print(header);
       out.write("' target='_blank'>");
       out.print(niceHeader);
-      out.write("</a></td>\n");
+      out.write("</a></td>\r\n");
       out.write("                <td>");
       out.print(reduction);
-      out.write("</td>\n");
-      out.write("            </tr> \n");
+      out.write("</td>\r\n");
+      out.write("            </tr> \r\n");
       out.write("            ");
                   }
                     catch (Exception e)
@@ -209,12 +209,12 @@ public final class scorersForType_jsp extends org.apache.jasper.runtime.HttpJspB
                         }
                     }
             
-      out.write("\n");
-      out.write("\n");
-      out.write("        </table>\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("        </table>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
+      out.write("\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

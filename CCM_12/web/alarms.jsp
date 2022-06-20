@@ -183,14 +183,15 @@
         <table  border='1' width="100%">
             <tr>
                 <th>On the map view</th>
-                <th>sourse</th>                
+                <th>sourse</th>
+                 <!--<th>parent</th>   -->             
                 <th>start</th>
                 <th>stop</th>
                 <th>type</th>                
                 <th>significant reason</th>
                 <th>Distinct callers</th>
                 <th>Min Ticketing threshold</th>
-                <th>Affected users</th>
+                <!--<th>Affected users</th>-->
                 <th>SR</th>
                 <th>SR reported time</th>
                 <!--<th>Previous (closed) SR</th>-->
@@ -209,7 +210,8 @@
                     CCMAlarm myAlarm = alarmArrayList.get(key);
                     //System.out.println("CCM12:alarms key=" + key);
 
-                    String alertOrigin = myAlarm.getAlarmObject().replace(";", "; ");
+                    String alertOrigin = myAlarm.getAlarmObject();
+                    String parent = myAlarm.getAlarmParent();
                     //System.out.println("CCM12:" + alertOrigin);
                     TimeStamp1 T1 = new TimeStamp1(myAlarm.getAlertStart());
                     TimeStamp1 T2 = new TimeStamp1(myAlarm.getAlarmStop());
@@ -249,11 +251,14 @@
                     if (!ticketState.equals("ANY") && (myCCMTicket == null || !ticketState.equals(myCCMTicket.getState()))) {
                         continue;
                     }
-                    String impact = "N/A";
+                    String impact_ = "N/A";
                     Double[] latLon = null;
                     if (myCCMTicket != null) {
                         try {
-                            impact = String.valueOf(myCCMTicket.getCustomerImpact());
+                            int impact = myCCMTicket.getCustomerImpact();
+                            if (impact > 0) {
+                                impact_ = String.valueOf(impact);
+                            }
                             if (myCCMTicket.getLastSignature() != null) {
                                 mySignature = myCCMTicket.getLastSignature().getLabel() + ":" + myCCMTicket.getLastSignature().getSynopsis();
                             }
@@ -286,14 +291,15 @@
                 <%if (latLon != null) {%>
                 <td nowrap><a href="map_1.jsp?lat=<%=latLon[0]%>&lon=<%=latLon[1]%>"><IMG src = "fyrom.jpg"/></a></td>
                 <%} else {%> <td></td><%}%>                
-                <td><%=alertOrigin%></td>                                
+                <td><%=alertOrigin%></td>
+                <!--<td><%=parent%></td>-->
                 <td nowrap><%=AlertStart.substring(0, 16)%></td>
                 <td nowrap><%=AlarmStop.substring(0, 16)%></td>  
                 <td><%=AlertTypeS%></td>  
                 <td><%=AlertMostSignificantReason%></td> 
-                <td><a href='numbers_called.jsp?resourceType=<%=AlertType%>&resource=<%=URLEncoder.encode(resource, "UTF8")%>&from=<%=T2.getNowUnformated()%>&to=<%=T1.getNowUnformated()%>' target='_blank'><%=(int) myAlarm.getTotalCalls()%> </a></td>                
+                <td nowrap><a href='numbers_called.jsp?resourceType=<%=AlertType%>&resource=<%=URLEncoder.encode(resource, "UTF8")%>&from=<%=T2.getNowUnformated()%>&to=<%=T1.getNowUnformated()%>' target='_blank'><%=(int) myAlarm.getTotalCalls()%></a> out of <%=impact_%></td>                
                 <td><%=createTicketMinCallsForType%></td>  
-                <td><%=impact%></td> 
+                <!--<td><%=impact_%></td> -->
                 <%if (myCCMTicket != null) {
                         String sr = myCCMTicket.getSR() != null ? myCCMTicket.getSR() : "";
                 %>                  

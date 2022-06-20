@@ -41,21 +41,21 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <title></title>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("        <link rel=\"stylesheet\" href=\"global.css\">\n");
-      out.write("\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("    </head>\n");
-      out.write("\n");
-      out.write("    <body>\n");
-      out.write("        <p>&nbsp;</p>\n");
-      out.write("        <p>&nbsp;</p>\n");
-      out.write("        <p>&nbsp;</p>\n");
+      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <title></title>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"global.css\">\r\n");
+      out.write("\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("    </head>\r\n");
+      out.write("\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <p>&nbsp;</p>\r\n");
+      out.write("        <p>&nbsp;</p>\r\n");
+      out.write("        <p>&nbsp;</p>\r\n");
       out.write("    ");
 
     session = request.getSession();
@@ -81,45 +81,45 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     String userName = (String) session.getAttribute("username");
     if (userType!=null && request_URI==null )   
         {
-      out.write("\n");
+      out.write("\r\n");
       out.write("        <h1>");
       out.print(userName);
-      out.write(",you have authenticated already!</h1>         \n");
-      out.write("                 \n");
+      out.write(",you have authenticated already!</h1>         \r\n");
+      out.write("                 \r\n");
        return;         }
     else if (userType!=null && request_URI.equals("login.jsp") )   
         {
-      out.write("\n");
-      out.write("        <h1>You have successfully authenticated!</h1> \n");
-      out.write("        <p>Enjoy!  \n");
+      out.write("\r\n");
+      out.write("        <h1>You have successfully authenticated!</h1> \r\n");
+      out.write("        <p>Enjoy!  \r\n");
       out.write("            ");
 
             if (!userType.equals("03"))
             {
-      out.write("\n");
+      out.write("\r\n");
       out.write("             ");
       if (true) {
         _jspx_page_context.forward("dashboard1.jsp");
         return;
       }
-      out.write('\n');
-      out.write(' ');
+      out.write("\r\n");
+      out.write(" ");
             }
                 
       return;         }
-      out.write("\n");
-      out.write("        \n");
-      out.write("        \n");
-      out.write("        <h1>Please enter your  Username and Password</h1>\n");
-      out.write("        <p>&nbsp;</p>\n");
-      out.write("        <img src=\"img/diligent_logo.jpg\" width=\"130\" height=\"30\" alt=\"Dili@gent\"/>  \n");
-      out.write("        <table width=\"800\" border=\"14\" cellspacing=\"15\" cellpadding=\"15\">\n");
-      out.write("            <thead>\n");
-      out.write("                    \n");
-      out.write("            </thead>\n");
-      out.write("            <tbody>\n");
-      out.write("                <tr>\n");
-      out.write("                    <td>\n");
+      out.write("\r\n");
+      out.write("        \r\n");
+      out.write("        \r\n");
+      out.write("        <h1>Please enter your  Username and Password</h1>\r\n");
+      out.write("        <p>&nbsp;</p>\r\n");
+      out.write("        <img src=\"img/diligent_logo.jpg\" width=\"130\" height=\"30\" alt=\"Dili@gent\"/>  \r\n");
+      out.write("        <table width=\"800\" border=\"14\" cellspacing=\"15\" cellpadding=\"15\">\r\n");
+      out.write("            <thead>\r\n");
+      out.write("                    \r\n");
+      out.write("            </thead>\r\n");
+      out.write("            <tbody>\r\n");
+      out.write("                <tr>\r\n");
+      out.write("                    <td>\r\n");
       out.write("                        ");
 
                             
@@ -128,32 +128,32 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
                                 request_URI = "login.jsp";
                                 }
                         
-      out.write("\n");
-      out.write("                        <form method=\"GET\" action=\"security_check.jsp\">\n");
-      out.write("                            <p>&nbsp;</p><p>&nbsp;</p>\n");
-      out.write("                            <h2>User Name:&nbsp;&nbsp;</h2>\n");
-      out.write("                            <input type=\"text\" name=\"j_username\"><p>&nbsp;</p>\n");
-      out.write("                            <h2>Password:&nbsp;&nbsp;</h2>\n");
-      out.write("                            <input type=\"password\" name=\"j_password\"><p>&nbsp;</p>\n");
+      out.write("\r\n");
+      out.write("                        <form method=\"GET\" action=\"security_check.jsp\">\r\n");
+      out.write("                            <p>&nbsp;</p><p>&nbsp;</p>\r\n");
+      out.write("                            <h2>User Name:&nbsp;&nbsp;</h2>\r\n");
+      out.write("                            <input type=\"text\" name=\"j_username\"><p>&nbsp;</p>\r\n");
+      out.write("                            <h2>Password:&nbsp;&nbsp;</h2>\r\n");
+      out.write("                            <input type=\"password\" name=\"j_password\"><p>&nbsp;</p>\r\n");
       out.write("                            <input value=\"");
       out.print(request_URI);
-      out.write("\" type=\"hidden\" name=\"request_URI\"><p>&nbsp;</p>\n");
-      out.write("                            <input type=\"submit\" value=\"Submit\" />\n");
-      out.write("                        </form>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("                    </td>\n");
-      out.write("                </tr>\n");
-      out.write("            </tbody>\n");
-      out.write("        </table>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\" type=\"hidden\" name=\"request_URI\"><p>&nbsp;</p>\r\n");
+      out.write("                            <input type=\"submit\" value=\"Submit\" />\r\n");
+      out.write("                        </form>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("                    </td>\r\n");
+      out.write("                </tr>\r\n");
+      out.write("            </tbody>\r\n");
+      out.write("        </table>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -56,30 +56,30 @@ public final class pathsAffected_jsp extends org.apache.jasper.runtime.HttpJspBa
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
  String type = request.getParameter("type");
     String myPath = request.getParameter("path");
 
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>Current status of affected customers</title>\n");
-      out.write("        <link rel=\"stylesheet\" href=\"global_1.css\">\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>Current status of affected customers</title>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"global_1.css\">\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
       out.write("        <h1>Current status of affected customers for ");
       out.print(myPath);
       out.write(" of type ");
       out.print(type);
-      out.write("</h1>\n");
-      out.write("        <table>\n");
+      out.write("</h1>\r\n");
+      out.write("        <table>\r\n");
       out.write("            ");
 
                 PathsRetriever myPatrhsRetriever = PathRetrieverFactory.create(type);
@@ -90,10 +90,10 @@ public final class pathsAffected_jsp extends org.apache.jasper.runtime.HttpJspBa
                     }
                 }
             
-      out.write("       \n");
-      out.write("        </table>\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("       \r\n");
+      out.write("        </table>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

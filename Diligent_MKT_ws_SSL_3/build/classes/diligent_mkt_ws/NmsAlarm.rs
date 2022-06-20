@@ -1,2 +1,0 @@
-diligent_mkt_ws.NmsAlarm
-diligent_mkt_ws.AdditionalText

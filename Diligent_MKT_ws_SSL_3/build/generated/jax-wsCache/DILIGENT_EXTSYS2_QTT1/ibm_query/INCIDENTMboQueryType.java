@@ -11,300 +11,300 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * &lt;p&gt;Java class for INCIDENTMboQueryType complex type.
+ * <p>Java class for INCIDENTMboQueryType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="INCIDENTMboQueryType"&amp;gt;
- *   &amp;lt;complexContent&amp;gt;
- *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *       &amp;lt;sequence&amp;gt;
- *         &amp;lt;element name="WHERE" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&amp;gt;
- *         &amp;lt;element name="INCIDENT" minOccurs="0"&amp;gt;
- *           &amp;lt;complexType&amp;gt;
- *             &amp;lt;complexContent&amp;gt;
- *               &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *                 &amp;lt;sequence&amp;gt;
- *                   &amp;lt;element name="TICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CLASS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INTERNALPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="IMPACT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="URGENCY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="AFFECTEDPERSON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="AFFECTEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SOURCE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SUPERVISOR" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ISGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="RELATEDTOGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="GLOBALTICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="GLOBALTICKETCLASS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="EXTERNALRECID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SITEVISIT" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORIGRECORDID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORIGRECORDCLASS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="GLACCOUNT" type="{http://www.ibm.com/maximo}MXGLAccountQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="COMMODITYGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="COMMODITY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INHERITSTATUS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ISKNOWNERROR" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TARGETSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TARGETFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACTUALSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACTUALFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORIGRECSITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORIGRECORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CHANGEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CHANGEBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TEMPLATE" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HASACTIVITY" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="FAILURECODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PROBLEMCODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACTLABHRS" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACTLABCOST" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="AFFECTEDPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTEDPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="AFFECTEDEMAIL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPORTEDEMAIL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ASSETSITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TEMPLATEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="VENDOR" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ASSETNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CLASSSTRUCTUREID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ISKNOWNERRORDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TARGETCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACTUALCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="FR1CODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="FR2CODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TICKETUID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SOLUTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ASSETORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LANGCODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HASLD" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CREATEWOMULTI" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TARGETDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SELFSERVSOLACCESS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HASSOLUTION" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CALCORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CALCCALENDAR" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CALCSHIFT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPQUOTETYPE" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPQUOTEDPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPAGREEMENT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCUSTOMER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCOSTCENTER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCUSTCHACCT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPRESPONSEPLAN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPREVNUM" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPPRICESCHED" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCUSTPONUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPMAXPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPBILLBATCH" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPBBLINENUM" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPPOREQ" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCALCORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCALCCALNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPCALCSHIFT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMCOMTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMCOMRESOLUTION" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMCOMIMPACT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMCOMURGENCY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INDICATEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="EXTERNALSYSTEM_TICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="EXTERNALSYSTEM" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DESCSRVID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CREATEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CREATIONDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="VIRTUALENV" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OUTAGEDURATION" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CLASSIFICATIONID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCCRID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCITEMNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCOFFSUMMARY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCQUANTITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ACCUMULATEDHOLDTIME" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ADJUSTEDTARGETRESPONSETIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CORRELATIONATTRS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="FAULTTYPE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CUSTOMERNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CUSTOMERID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="KATEGORIJA" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REGION" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ADRESAKORISNIKA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OPERATORNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CUSTOMERVALUE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OLA" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="NOTEOPEN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CONTACTPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CONTACTPERSON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CONTACTEMAIL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LINEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ROOTCUSTOMERREF" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TECHNICIANNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HASSUPPORTCONTRACT" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SERVICESINFAULT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PRECKAID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DOMEN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DSLAMPORT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SERIALNUMBERSTB" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HGWTIP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LINISKAOPREMA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ADRESAIZVOD" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SERIALNUMBERHGW" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PAKET" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="KABEL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="IZVOD" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PARICA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="RAM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REBRO" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="POZICIJA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CENTRALAPORT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PRESPOJBROJ" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PRESPOJLINIJA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TIPDSLAM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="MOZEOPTIKA" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STRING1" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STRING2" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STRING3" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INT1" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INT2" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INT3" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DATE1" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DATE2" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="EXTSYSID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TIPPRETPLATNIKA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="HNMOUTPUT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ALATOUTPUT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPEATED" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ATURBITS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ATUCBITS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SLATIPSERVIS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="AFFECTEDSERVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORIGINATEDCOMPANY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="MESTOPOVREDE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="RESOLVEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="FAULTLOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ALTCONTACTPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TKTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SMSPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="IMPACTEDREGION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SMSGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STRING4" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ATRIBUT1" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PREVIOUSSTATUS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="BACKUP" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TRANSMISSIONPATH" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="NEXTDEVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ORIGINATEDDEVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="IMSMIGRATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CABLEGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="VOZDUSNAMREZA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CABLETYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="OKNOBROJ" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TIPOVINACEVKE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SMS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="NUMBEROFAFFECTEDCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="NUMBEROFAFFECTEDKEYCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PROBABLECAUSE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="WITHOUTINT" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="POWER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="AGGREGATE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TRANSMISSION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CONTROLLER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SMSTYPE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="SMSPREVIEW" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DEVICENAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="RESOLVER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="WOCATALOG" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CENTRALA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LOGCREATE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LOGDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LOGINCTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="LOGLONG" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DIAGINVOKE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DIAGRESULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DIAGTEMPRESULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CHECK1" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CHECK2" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CHECK3" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DATE3" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="DATE4" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INT4" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INT5" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INT6" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STRING5" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STRING6" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="STRING7" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REASONT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TYPEOFFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="TIPPREKIN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ONCALLFIRSTROTASSNPERSON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ONCALLSTARTTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ONCALLAUTOASSIGN" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ONCALLREASSIGNTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ONCALLOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REPLACEDOWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMCOSOLAPPLIEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMCOSOLAPPLIEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMCOSOLFEEDBACK" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMCOSOLSTATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCITEMSETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCTMPLID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCINVALID" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCRECURRINGPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCONETIMEPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCTOTALRECURRINGPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCTOTALONETIMEPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PMSCCURRENCY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="RBA_RC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="CREATEPROBLEMDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="RESOLUTIONPROBLEM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="WORKAROUND" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="WAYOFREPAIR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PRRELATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="REASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="KNOWNERROR" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="WORKAROUNDDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INT8" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="INT9" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="FAULTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="ROOTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPPOOLNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPPOOLITEMNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPPOOLITEMSETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPTARGDELIVERYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                   &amp;lt;element name="PLUSPACTDELIVERYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
- *                 &amp;lt;/sequence&amp;gt;
- *               &amp;lt;/restriction&amp;gt;
- *             &amp;lt;/complexContent&amp;gt;
- *           &amp;lt;/complexType&amp;gt;
- *         &amp;lt;/element&amp;gt;
- *       &amp;lt;/sequence&amp;gt;
- *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}QueryClausePropertyGroup"/&amp;gt;
- *     &amp;lt;/restriction&amp;gt;
- *   &amp;lt;/complexContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="INCIDENTMboQueryType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="WHERE" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="INCIDENT" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="TICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CLASS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INTERNALPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="IMPACT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="URGENCY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="AFFECTEDPERSON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="AFFECTEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SOURCE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SUPERVISOR" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="OWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ISGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="RELATEDTOGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="GLOBALTICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="GLOBALTICKETCLASS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="EXTERNALRECID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SITEVISIT" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ORIGRECORDID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ORIGRECORDCLASS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="GLACCOUNT" type="{http://www.ibm.com/maximo}MXGLAccountQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="COMMODITYGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="COMMODITY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INHERITSTATUS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ISKNOWNERROR" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TARGETSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TARGETFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ACTUALSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ACTUALFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ORIGRECSITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ORIGRECORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CHANGEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CHANGEBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TEMPLATE" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="HASACTIVITY" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="FAILURECODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PROBLEMCODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ACTLABHRS" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ACTLABCOST" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="AFFECTEDPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTEDPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="AFFECTEDEMAIL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REPORTEDEMAIL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ASSETSITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TEMPLATEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="VENDOR" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ASSETNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CLASSSTRUCTUREID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ISKNOWNERRORDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TARGETCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ACTUALCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="FR1CODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="FR2CODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TICKETUID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SOLUTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ASSETORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="LANGCODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="HASLD" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CREATEWOMULTI" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TARGETDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SELFSERVSOLACCESS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="HASSOLUTION" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CALCORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CALCCALENDAR" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CALCSHIFT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPQUOTETYPE" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPQUOTEDPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPAGREEMENT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCUSTOMER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCOSTCENTER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCUSTCHACCT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPRESPONSEPLAN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPREVNUM" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPPRICESCHED" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCUSTPONUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPMAXPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPBILLBATCH" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPBBLINENUM" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPPOREQ" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCALCORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCALCCALNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPCALCSHIFT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMCOMTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMCOMRESOLUTION" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMCOMIMPACT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMCOMURGENCY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INDICATEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="EXTERNALSYSTEM_TICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="EXTERNALSYSTEM" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DESCSRVID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CREATEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CREATIONDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="VIRTUALENV" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="OUTAGEDURATION" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CLASSIFICATIONID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCCRID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCITEMNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCOFFSUMMARY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCQUANTITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ASSIGNEDOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ACCUMULATEDHOLDTIME" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ADJUSTEDTARGETRESPONSETIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CORRELATIONATTRS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="FAULTTYPE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CUSTOMERNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CUSTOMERID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="KATEGORIJA" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REGION" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ADRESAKORISNIKA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="OPERATORNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CUSTOMERVALUE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="OLA" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="NOTEOPEN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CONTACTPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CONTACTPERSON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CONTACTEMAIL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="LINEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ROOTCUSTOMERREF" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TECHNICIANNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="HASSUPPORTCONTRACT" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SERVICESINFAULT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PRECKAID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DOMEN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DSLAMPORT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SERIALNUMBERSTB" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="HGWTIP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="LINISKAOPREMA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ADRESAIZVOD" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SERIALNUMBERHGW" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PAKET" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="KABEL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="IZVOD" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PARICA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="RAM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REBRO" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="POZICIJA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CENTRALAPORT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PRESPOJBROJ" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PRESPOJLINIJA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TIPDSLAM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="MOZEOPTIKA" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="STRING1" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="STRING2" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="STRING3" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INT1" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INT2" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INT3" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DATE1" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DATE2" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="EXTSYSID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TIPPRETPLATNIKA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="HNMOUTPUT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ALATOUTPUT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REPEATED" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ATURBITS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ATUCBITS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SLATIPSERVIS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="OS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="AFFECTEDSERVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ORIGINATEDCOMPANY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="MESTOPOVREDE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="RESOLVEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="FAULTLOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ALTCONTACTPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TKTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SMSPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="IMPACTEDREGION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SMSGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="STRING4" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ATRIBUT1" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PREVIOUSSTATUS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="BACKUP" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TRANSMISSIONPATH" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="NEXTDEVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ORIGINATEDDEVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="IMSMIGRATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CABLEGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="VOZDUSNAMREZA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CABLETYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="OKNOBROJ" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TIPOVINACEVKE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SMS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="NUMBEROFAFFECTEDCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="NUMBEROFAFFECTEDKEYCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PROBABLECAUSE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="WITHOUTINT" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="POWER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="AGGREGATE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TRANSMISSION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CONTROLLER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SMSTYPE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="SMSPREVIEW" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DEVICENAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="RESOLVER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="WOCATALOG" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CENTRALA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="LOGCREATE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="LOGDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="LOGINCTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="LOGLONG" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DIAGINVOKE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DIAGRESULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DIAGTEMPRESULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CHECK1" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CHECK2" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CHECK3" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DATE3" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="DATE4" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INT4" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INT5" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INT6" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="STRING5" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="STRING6" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="STRING7" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REASONT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TYPEOFFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="TIPPREKIN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ONCALLFIRSTROTASSNPERSON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ONCALLSTARTTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ONCALLAUTOASSIGN" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ONCALLREASSIGNTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ONCALLOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REPLACEDOWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMCOSOLAPPLIEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMCOSOLAPPLIEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMCOSOLFEEDBACK" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMCOSOLSTATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCITEMSETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCTMPLID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCINVALID" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCRECURRINGPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCONETIMEPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCTOTALRECURRINGPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCTOTALONETIMEPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PMSCCURRENCY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="RBA_RC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="CREATEPROBLEMDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="RESOLUTIONPROBLEM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="WORKAROUND" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="WAYOFREPAIR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PRRELATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="REASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="KNOWNERROR" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="WORKAROUNDDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INT8" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="INT9" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="FAULTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="ROOTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPPOOLNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPPOOLITEMNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPPOOLITEMSETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPTARGDELIVERYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                   &lt;element name="PLUSPACTDELIVERYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.ibm.com/maximo}QueryClausePropertyGroup"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */
@@ -426,288 +426,288 @@ public class INCIDENTMboQueryType {
 
 
     /**
-     * &lt;p&gt;Java class for anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
-     * &lt;pre&gt;
-     * &amp;lt;complexType&amp;gt;
-     *   &amp;lt;complexContent&amp;gt;
-     *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
-     *       &amp;lt;sequence&amp;gt;
-     *         &amp;lt;element name="TICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CLASS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INTERNALPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="IMPACT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="URGENCY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="AFFECTEDPERSON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="AFFECTEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SOURCE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SUPERVISOR" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ISGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="RELATEDTOGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="GLOBALTICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="GLOBALTICKETCLASS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="EXTERNALRECID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SITEVISIT" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORIGRECORDID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORIGRECORDCLASS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="GLACCOUNT" type="{http://www.ibm.com/maximo}MXGLAccountQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="COMMODITYGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="COMMODITY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INHERITSTATUS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ISKNOWNERROR" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TARGETSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TARGETFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACTUALSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACTUALFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORIGRECSITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORIGRECORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CHANGEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CHANGEBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TEMPLATE" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HASACTIVITY" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="FAILURECODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PROBLEMCODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACTLABHRS" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACTLABCOST" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="AFFECTEDPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTEDPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="AFFECTEDEMAIL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPORTEDEMAIL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ASSETSITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TEMPLATEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="VENDOR" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ASSETNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CLASSSTRUCTUREID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ISKNOWNERRORDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TARGETCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACTUALCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="FR1CODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="FR2CODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TICKETUID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SOLUTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ASSETORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LANGCODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HASLD" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CREATEWOMULTI" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TARGETDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SELFSERVSOLACCESS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HASSOLUTION" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CALCORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CALCCALENDAR" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CALCSHIFT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPQUOTETYPE" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPQUOTEDPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPAGREEMENT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCUSTOMER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCOSTCENTER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCUSTCHACCT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPRESPONSEPLAN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPREVNUM" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPPRICESCHED" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCUSTPONUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPMAXPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPBILLBATCH" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPBBLINENUM" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPPOREQ" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCALCORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCALCCALNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPCALCSHIFT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMCOMTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMCOMRESOLUTION" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMCOMIMPACT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMCOMURGENCY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INDICATEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="EXTERNALSYSTEM_TICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="EXTERNALSYSTEM" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DESCSRVID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CREATEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CREATIONDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="VIRTUALENV" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OUTAGEDURATION" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CLASSIFICATIONID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCCRID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCITEMNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCOFFSUMMARY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCQUANTITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ACCUMULATEDHOLDTIME" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ADJUSTEDTARGETRESPONSETIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CORRELATIONATTRS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="FAULTTYPE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CUSTOMERNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CUSTOMERID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="KATEGORIJA" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REGION" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ADRESAKORISNIKA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OPERATORNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CUSTOMERVALUE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OLA" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="NOTEOPEN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CONTACTPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CONTACTPERSON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CONTACTEMAIL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LINEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ROOTCUSTOMERREF" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TECHNICIANNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HASSUPPORTCONTRACT" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SERVICESINFAULT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PRECKAID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DOMEN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DSLAMPORT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SERIALNUMBERSTB" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HGWTIP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LINISKAOPREMA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ADRESAIZVOD" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SERIALNUMBERHGW" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PAKET" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="KABEL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="IZVOD" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PARICA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="RAM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REBRO" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="POZICIJA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CENTRALAPORT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PRESPOJBROJ" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PRESPOJLINIJA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TIPDSLAM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="MOZEOPTIKA" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STRING1" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STRING2" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STRING3" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INT1" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INT2" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INT3" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DATE1" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DATE2" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="EXTSYSID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TIPPRETPLATNIKA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="HNMOUTPUT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ALATOUTPUT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPEATED" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ATURBITS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ATUCBITS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SLATIPSERVIS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="AFFECTEDSERVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORIGINATEDCOMPANY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="MESTOPOVREDE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="RESOLVEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="FAULTLOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ALTCONTACTPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TKTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SMSPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="IMPACTEDREGION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SMSGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STRING4" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ATRIBUT1" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PREVIOUSSTATUS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="BACKUP" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TRANSMISSIONPATH" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="NEXTDEVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ORIGINATEDDEVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="IMSMIGRATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CABLEGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="VOZDUSNAMREZA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CABLETYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="OKNOBROJ" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TIPOVINACEVKE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SMS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="NUMBEROFAFFECTEDCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="NUMBEROFAFFECTEDKEYCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PROBABLECAUSE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="WITHOUTINT" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="POWER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="AGGREGATE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TRANSMISSION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CONTROLLER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SMSTYPE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="SMSPREVIEW" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DEVICENAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="RESOLVER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="WOCATALOG" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CENTRALA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LOGCREATE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LOGDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LOGINCTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="LOGLONG" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DIAGINVOKE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DIAGRESULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DIAGTEMPRESULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CHECK1" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CHECK2" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CHECK3" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DATE3" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="DATE4" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INT4" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INT5" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INT6" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STRING5" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STRING6" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="STRING7" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REASONT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TYPEOFFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="TIPPREKIN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ONCALLFIRSTROTASSNPERSON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ONCALLSTARTTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ONCALLAUTOASSIGN" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ONCALLREASSIGNTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ONCALLOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REPLACEDOWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMCOSOLAPPLIEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMCOSOLAPPLIEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMCOSOLFEEDBACK" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMCOSOLSTATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCITEMSETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCTMPLID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCINVALID" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCRECURRINGPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCONETIMEPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCTOTALRECURRINGPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCTOTALONETIMEPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PMSCCURRENCY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="RBA_RC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="CREATEPROBLEMDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="RESOLUTIONPROBLEM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="WORKAROUND" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="WAYOFREPAIR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PRRELATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="REASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="KNOWNERROR" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="WORKAROUNDDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INT8" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="INT9" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="FAULTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="ROOTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPPOOLNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPPOOLITEMNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPPOOLITEMSETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPTARGDELIVERYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *         &amp;lt;element name="PLUSPACTDELIVERYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
-     *       &amp;lt;/sequence&amp;gt;
-     *     &amp;lt;/restriction&amp;gt;
-     *   &amp;lt;/complexContent&amp;gt;
-     * &amp;lt;/complexType&amp;gt;
-     * &lt;/pre&gt;
+     * <pre>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="TICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CLASS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INTERNALPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="IMPACT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="URGENCY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="AFFECTEDPERSON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="AFFECTEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SOURCE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SUPERVISOR" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="OWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ISGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="RELATEDTOGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="GLOBALTICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="GLOBALTICKETCLASS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="EXTERNALRECID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SITEVISIT" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ORIGRECORDID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ORIGRECORDCLASS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="GLACCOUNT" type="{http://www.ibm.com/maximo}MXGLAccountQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="COMMODITYGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="COMMODITY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INHERITSTATUS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ISKNOWNERROR" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TARGETSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TARGETFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ACTUALSTART" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ACTUALFINISH" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ORIGRECSITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ORIGRECORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CHANGEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CHANGEBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TEMPLATE" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="HASACTIVITY" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="FAILURECODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PROBLEMCODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ACTLABHRS" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ACTLABCOST" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="AFFECTEDPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTEDPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="AFFECTEDEMAIL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REPORTEDEMAIL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ASSETSITEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TEMPLATEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="VENDOR" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ASSETNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CLASSSTRUCTUREID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ISKNOWNERRORDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TARGETCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ACTUALCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="FR1CODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="FR2CODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TICKETUID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SOLUTION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ASSETORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="LANGCODE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="HASLD" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CREATEWOMULTI" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TARGETDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SELFSERVSOLACCESS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="HASSOLUTION" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CALCORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CALCCALENDAR" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CALCSHIFT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPQUOTETYPE" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPQUOTEDPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPAGREEMENT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCUSTOMER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCOSTCENTER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCUSTCHACCT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPRESPONSEPLAN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPREVNUM" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPPRICESCHED" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCUSTPONUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPMAXPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPBILLBATCH" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPBBLINENUM" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPPOREQ" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCALCORGID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCALCCALNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPCALCSHIFT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMCOMTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMCOMRESOLUTION" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMCOMIMPACT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMCOMURGENCY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INDICATEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="EXTERNALSYSTEM_TICKETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="EXTERNALSYSTEM" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DESCSRVID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CREATEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CREATIONDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="VIRTUALENV" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="OUTAGEDURATION" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CLASSIFICATIONID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCCRID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCITEMNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCOFFSUMMARY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCQUANTITY" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ASSIGNEDOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ACCUMULATEDHOLDTIME" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ADJUSTEDTARGETRESPONSETIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CORRELATIONATTRS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="FAULTTYPE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CUSTOMERNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CUSTOMERID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="KATEGORIJA" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REGION" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ADRESAKORISNIKA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="OPERATORNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CUSTOMERVALUE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="OLA" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="NOTEOPEN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CONTACTPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CONTACTPERSON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CONTACTEMAIL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="LINEID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ROOTCUSTOMERREF" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TECHNICIANNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="HASSUPPORTCONTRACT" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SERVICESINFAULT" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PRECKAID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DOMEN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DSLAMPORT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SERIALNUMBERSTB" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="HGWTIP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="LINISKAOPREMA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ADRESAIZVOD" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SERIALNUMBERHGW" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PAKET" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="KABEL" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="IZVOD" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PARICA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="RAM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REBRO" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="POZICIJA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CENTRALAPORT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PRESPOJBROJ" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PRESPOJLINIJA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TIPDSLAM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="MOZEOPTIKA" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="STRING1" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="STRING2" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="STRING3" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INT1" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INT2" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INT3" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DATE1" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DATE2" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="EXTSYSID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TIPPRETPLATNIKA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="HNMOUTPUT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ALATOUTPUT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REPEATED" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ATURBITS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ATUCBITS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SLATIPSERVIS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="OS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="AFFECTEDSERVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ORIGINATEDCOMPANY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="MESTOPOVREDE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="RESOLVEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="FAULTLOCATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ALTCONTACTPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TKTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SMSPHONE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="IMPACTEDREGION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SMSGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="STRING4" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ATRIBUT1" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PREVIOUSSTATUS" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="BACKUP" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TRANSMISSIONPATH" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="NEXTDEVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ORIGINATEDDEVICE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="IMSMIGRATION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CABLEGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="VOZDUSNAMREZA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CABLETYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="OKNOBROJ" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TIPOVINACEVKE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SMS" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="NUMBEROFAFFECTEDCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="NUMBEROFAFFECTEDKEYCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PROBABLECAUSE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="WITHOUTINT" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="POWER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="AGGREGATE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TRANSMISSION" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CONTROLLER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SMSTYPE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="SMSPREVIEW" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DEVICENAME" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="RESOLVER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="WOCATALOG" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CENTRALA" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="LOGCREATE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="LOGDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="LOGINCTYPE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="LOGLONG" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DIAGINVOKE" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DIAGRESULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DIAGTEMPRESULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CHECK1" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CHECK2" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CHECK3" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DATE3" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="DATE4" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INT4" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INT5" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INT6" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="STRING5" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="STRING6" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="STRING7" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REASONT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TYPEOFFAULT" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="TIPPREKIN" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ONCALLFIRSTROTASSNPERSON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ONCALLSTARTTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ONCALLAUTOASSIGN" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ONCALLREASSIGNTIME" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ONCALLOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REPLACEDOWNER" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMCOSOLAPPLIEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMCOSOLAPPLIEDBY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMCOSOLFEEDBACK" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMCOSOLSTATUS" type="{http://www.ibm.com/maximo}MXDomainQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCITEMSETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCTMPLID" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCINVALID" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCRECURRINGPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCONETIMEPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCTOTALRECURRINGPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCTOTALONETIMEPRICE" type="{http://www.ibm.com/maximo}MXDoubleQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PMSCCURRENCY" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="RBA_RC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="CREATEPROBLEMDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="RESOLUTIONPROBLEM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="WORKAROUND" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="WAYOFREPAIR" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PRRELATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="REASON" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="KNOWNERROR" type="{http://www.ibm.com/maximo}MXBooleanQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="WORKAROUNDDESC" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INT8" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="INT9" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="FAULTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="ROOTCAUSE" type="{http://www.ibm.com/maximo}MXLongQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPPOOLNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPPOOLITEMNUM" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPPOOLITEMSETID" type="{http://www.ibm.com/maximo}MXStringQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPTARGDELIVERYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *         &lt;element name="PLUSPACTDELIVERYDATE" type="{http://www.ibm.com/maximo}MXDateTimeQueryType" maxOccurs="unbounded" minOccurs="0"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
+     * </pre>
      * 
      * 
      */
@@ -1524,20 +1524,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the ticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ticketid property.
+         * This is why there is not a <CODE>set</CODE> method for the ticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTICKETID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1553,20 +1553,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the class property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the class property.
+         * This is why there is not a <CODE>set</CODE> method for the class property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCLASS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDomainQueryType }
          * 
@@ -1582,20 +1582,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the description property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the description property.
+         * This is why there is not a <CODE>set</CODE> method for the description property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDESCRIPTION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1611,20 +1611,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the status property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the status property.
+         * This is why there is not a <CODE>set</CODE> method for the status property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTATUS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDomainQueryType }
          * 
@@ -1640,20 +1640,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the statusdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the statusdate property.
+         * This is why there is not a <CODE>set</CODE> method for the statusdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTATUSDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -1669,20 +1669,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the reportedpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportedpriority property.
+         * This is why there is not a <CODE>set</CODE> method for the reportedpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTEDPRIORITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -1698,20 +1698,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the internalpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the internalpriority property.
+         * This is why there is not a <CODE>set</CODE> method for the internalpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINTERNALPRIORITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -1727,20 +1727,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the impact property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the impact property.
+         * This is why there is not a <CODE>set</CODE> method for the impact property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getIMPACT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -1756,20 +1756,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the urgency property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the urgency property.
+         * This is why there is not a <CODE>set</CODE> method for the urgency property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getURGENCY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -1785,20 +1785,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the reportedby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportedby property.
+         * This is why there is not a <CODE>set</CODE> method for the reportedby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTEDBY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1814,20 +1814,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the reportdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportdate property.
+         * This is why there is not a <CODE>set</CODE> method for the reportdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -1843,20 +1843,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the affectedperson property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the affectedperson property.
+         * This is why there is not a <CODE>set</CODE> method for the affectedperson property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getAFFECTEDPERSON().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1872,20 +1872,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the affecteddate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the affecteddate property.
+         * This is why there is not a <CODE>set</CODE> method for the affecteddate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getAFFECTEDDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -1901,20 +1901,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the source property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the source property.
+         * This is why there is not a <CODE>set</CODE> method for the source property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSOURCE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1930,20 +1930,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the supervisor property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the supervisor property.
+         * This is why there is not a <CODE>set</CODE> method for the supervisor property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSUPERVISOR().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1959,20 +1959,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the owner property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the owner property.
+         * This is why there is not a <CODE>set</CODE> method for the owner property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOWNER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -1988,20 +1988,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the ownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ownergroup property.
+         * This is why there is not a <CODE>set</CODE> method for the ownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOWNERGROUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2017,20 +2017,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the isglobal property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the isglobal property.
+         * This is why there is not a <CODE>set</CODE> method for the isglobal property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getISGLOBAL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -2046,20 +2046,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the relatedtoglobal property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the relatedtoglobal property.
+         * This is why there is not a <CODE>set</CODE> method for the relatedtoglobal property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getRELATEDTOGLOBAL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -2075,20 +2075,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the globalticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the globalticketid property.
+         * This is why there is not a <CODE>set</CODE> method for the globalticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getGLOBALTICKETID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2104,20 +2104,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the globalticketclass property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the globalticketclass property.
+         * This is why there is not a <CODE>set</CODE> method for the globalticketclass property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getGLOBALTICKETCLASS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDomainQueryType }
          * 
@@ -2133,20 +2133,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the externalrecid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the externalrecid property.
+         * This is why there is not a <CODE>set</CODE> method for the externalrecid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getEXTERNALRECID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2162,20 +2162,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the sitevisit property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the sitevisit property.
+         * This is why there is not a <CODE>set</CODE> method for the sitevisit property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSITEVISIT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -2191,20 +2191,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the origrecordid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the origrecordid property.
+         * This is why there is not a <CODE>set</CODE> method for the origrecordid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORIGRECORDID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2220,20 +2220,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the origrecordclass property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the origrecordclass property.
+         * This is why there is not a <CODE>set</CODE> method for the origrecordclass property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORIGRECORDCLASS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2249,20 +2249,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the glaccount property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the glaccount property.
+         * This is why there is not a <CODE>set</CODE> method for the glaccount property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getGLACCOUNT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXGLAccountQueryType }
          * 
@@ -2278,20 +2278,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the commoditygroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the commoditygroup property.
+         * This is why there is not a <CODE>set</CODE> method for the commoditygroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCOMMODITYGROUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2307,20 +2307,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the commodity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the commodity property.
+         * This is why there is not a <CODE>set</CODE> method for the commodity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCOMMODITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2336,20 +2336,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the inheritstatus property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the inheritstatus property.
+         * This is why there is not a <CODE>set</CODE> method for the inheritstatus property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINHERITSTATUS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -2365,20 +2365,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the isknownerror property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the isknownerror property.
+         * This is why there is not a <CODE>set</CODE> method for the isknownerror property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getISKNOWNERROR().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -2394,20 +2394,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the targetstart property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targetstart property.
+         * This is why there is not a <CODE>set</CODE> method for the targetstart property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTARGETSTART().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2423,20 +2423,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the targetfinish property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targetfinish property.
+         * This is why there is not a <CODE>set</CODE> method for the targetfinish property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTARGETFINISH().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2452,20 +2452,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the actualstart property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actualstart property.
+         * This is why there is not a <CODE>set</CODE> method for the actualstart property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTUALSTART().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2481,20 +2481,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the actualfinish property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actualfinish property.
+         * This is why there is not a <CODE>set</CODE> method for the actualfinish property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTUALFINISH().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2510,20 +2510,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the origrecsiteid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the origrecsiteid property.
+         * This is why there is not a <CODE>set</CODE> method for the origrecsiteid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORIGRECSITEID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2539,20 +2539,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the origrecorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the origrecorgid property.
+         * This is why there is not a <CODE>set</CODE> method for the origrecorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORIGRECORGID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2568,20 +2568,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the siteid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the siteid property.
+         * This is why there is not a <CODE>set</CODE> method for the siteid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSITEID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2597,20 +2597,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the orgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the orgid property.
+         * This is why there is not a <CODE>set</CODE> method for the orgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORGID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2626,20 +2626,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the changedate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the changedate property.
+         * This is why there is not a <CODE>set</CODE> method for the changedate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCHANGEDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -2655,20 +2655,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the changeby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the changeby property.
+         * This is why there is not a <CODE>set</CODE> method for the changeby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCHANGEBY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2684,20 +2684,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the historyflag property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the historyflag property.
+         * This is why there is not a <CODE>set</CODE> method for the historyflag property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHISTORYFLAG().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -2713,20 +2713,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the template property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the template property.
+         * This is why there is not a <CODE>set</CODE> method for the template property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTEMPLATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -2742,20 +2742,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the hasactivity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the hasactivity property.
+         * This is why there is not a <CODE>set</CODE> method for the hasactivity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHASACTIVITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -2771,20 +2771,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the failurecode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the failurecode property.
+         * This is why there is not a <CODE>set</CODE> method for the failurecode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getFAILURECODE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2800,20 +2800,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the problemcode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the problemcode property.
+         * This is why there is not a <CODE>set</CODE> method for the problemcode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPROBLEMCODE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2829,20 +2829,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the actlabhrs property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actlabhrs property.
+         * This is why there is not a <CODE>set</CODE> method for the actlabhrs property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTLABHRS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -2858,20 +2858,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the actlabcost property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actlabcost property.
+         * This is why there is not a <CODE>set</CODE> method for the actlabcost property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTLABCOST().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -2887,20 +2887,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the affectedphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the affectedphone property.
+         * This is why there is not a <CODE>set</CODE> method for the affectedphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getAFFECTEDPHONE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2916,20 +2916,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the reportedphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportedphone property.
+         * This is why there is not a <CODE>set</CODE> method for the reportedphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTEDPHONE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2945,20 +2945,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the affectedemail property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the affectedemail property.
+         * This is why there is not a <CODE>set</CODE> method for the affectedemail property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getAFFECTEDEMAIL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -2974,20 +2974,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the reportedemail property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reportedemail property.
+         * This is why there is not a <CODE>set</CODE> method for the reportedemail property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPORTEDEMAIL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3003,20 +3003,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the assetsiteid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assetsiteid property.
+         * This is why there is not a <CODE>set</CODE> method for the assetsiteid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getASSETSITEID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3032,20 +3032,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the templateid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the templateid property.
+         * This is why there is not a <CODE>set</CODE> method for the templateid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTEMPLATEID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3061,20 +3061,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the vendor property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the vendor property.
+         * This is why there is not a <CODE>set</CODE> method for the vendor property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getVENDOR().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3090,20 +3090,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the assetnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assetnum property.
+         * This is why there is not a <CODE>set</CODE> method for the assetnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getASSETNUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3119,20 +3119,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the location property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the location property.
+         * This is why there is not a <CODE>set</CODE> method for the location property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLOCATION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3148,20 +3148,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the classstructureid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the classstructureid property.
+         * This is why there is not a <CODE>set</CODE> method for the classstructureid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCLASSSTRUCTUREID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3177,20 +3177,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the isknownerrordate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the isknownerrordate property.
+         * This is why there is not a <CODE>set</CODE> method for the isknownerrordate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getISKNOWNERRORDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -3206,20 +3206,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the targetcontactdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targetcontactdate property.
+         * This is why there is not a <CODE>set</CODE> method for the targetcontactdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTARGETCONTACTDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -3235,20 +3235,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the actualcontactdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the actualcontactdate property.
+         * This is why there is not a <CODE>set</CODE> method for the actualcontactdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACTUALCONTACTDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -3264,20 +3264,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the fr1CODE property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the fr1CODE property.
+         * This is why there is not a <CODE>set</CODE> method for the fr1CODE property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getFR1CODE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3293,20 +3293,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the fr2CODE property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the fr2CODE property.
+         * This is why there is not a <CODE>set</CODE> method for the fr2CODE property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getFR2CODE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3322,20 +3322,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the ticketuid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ticketuid property.
+         * This is why there is not a <CODE>set</CODE> method for the ticketuid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTICKETUID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -3351,20 +3351,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the solution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the solution property.
+         * This is why there is not a <CODE>set</CODE> method for the solution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSOLUTION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3380,20 +3380,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the assetorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assetorgid property.
+         * This is why there is not a <CODE>set</CODE> method for the assetorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getASSETORGID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3409,20 +3409,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the langcode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the langcode property.
+         * This is why there is not a <CODE>set</CODE> method for the langcode property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLANGCODE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3438,20 +3438,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the hasld property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the hasld property.
+         * This is why there is not a <CODE>set</CODE> method for the hasld property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHASLD().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -3467,20 +3467,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the cinum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the cinum property.
+         * This is why there is not a <CODE>set</CODE> method for the cinum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCINUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3496,20 +3496,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the createwomulti property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the createwomulti property.
+         * This is why there is not a <CODE>set</CODE> method for the createwomulti property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCREATEWOMULTI().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDomainQueryType }
          * 
@@ -3525,20 +3525,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the targetdesc property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the targetdesc property.
+         * This is why there is not a <CODE>set</CODE> method for the targetdesc property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTARGETDESC().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3554,20 +3554,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the selfservsolaccess property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the selfservsolaccess property.
+         * This is why there is not a <CODE>set</CODE> method for the selfservsolaccess property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSELFSERVSOLACCESS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -3583,20 +3583,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the hassolution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the hassolution property.
+         * This is why there is not a <CODE>set</CODE> method for the hassolution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHASSOLUTION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -3612,20 +3612,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the calcorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the calcorgid property.
+         * This is why there is not a <CODE>set</CODE> method for the calcorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCALCORGID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3641,20 +3641,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the calccalendar property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the calccalendar property.
+         * This is why there is not a <CODE>set</CODE> method for the calccalendar property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCALCCALENDAR().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3670,20 +3670,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the calcshift property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the calcshift property.
+         * This is why there is not a <CODE>set</CODE> method for the calcshift property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCALCSHIFT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3699,20 +3699,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspquotetype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspquotetype property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspquotetype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPQUOTETYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDomainQueryType }
          * 
@@ -3728,20 +3728,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspquotedprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspquotedprice property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspquotedprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPQUOTEDPRICE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -3757,20 +3757,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspagreement property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspagreement property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspagreement property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPAGREEMENT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3786,20 +3786,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspcustomer property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcustomer property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcustomer property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCUSTOMER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3815,20 +3815,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspcostcenter property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcostcenter property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcostcenter property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCOSTCENTER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3844,20 +3844,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspcustchacct property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcustchacct property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcustchacct property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCUSTCHACCT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3873,20 +3873,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspresponseplan property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspresponseplan property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspresponseplan property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPRESPONSEPLAN().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3902,20 +3902,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the plusprevnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusprevnum property.
+         * This is why there is not a <CODE>set</CODE> method for the plusprevnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPREVNUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -3931,20 +3931,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the plusppricesched property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusppricesched property.
+         * This is why there is not a <CODE>set</CODE> method for the plusppricesched property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPPRICESCHED().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3960,20 +3960,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspcustponum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcustponum property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcustponum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCUSTPONUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -3989,20 +3989,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspmaxprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspmaxprice property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspmaxprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPMAXPRICE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -4018,20 +4018,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspbillbatch property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspbillbatch property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspbillbatch property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPBILLBATCH().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4047,20 +4047,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspbblinenum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspbblinenum property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspbblinenum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPBBLINENUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -4076,20 +4076,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspporeq property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspporeq property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspporeq property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPPOREQ().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -4105,20 +4105,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspcalcorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcalcorgid property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcalcorgid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCALCORGID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4134,20 +4134,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspcalccalnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcalccalnum property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcalccalnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCALCCALNUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4163,20 +4163,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspcalcshift property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspcalcshift property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspcalcshift property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPCALCSHIFT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4192,20 +4192,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmcomtype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcomtype property.
+         * This is why there is not a <CODE>set</CODE> method for the pmcomtype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMCOMTYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4221,20 +4221,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmcomresolution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcomresolution property.
+         * This is why there is not a <CODE>set</CODE> method for the pmcomresolution property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMCOMRESOLUTION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDomainQueryType }
          * 
@@ -4250,20 +4250,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmcomimpact property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcomimpact property.
+         * This is why there is not a <CODE>set</CODE> method for the pmcomimpact property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMCOMIMPACT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -4279,20 +4279,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmcomurgency property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcomurgency property.
+         * This is why there is not a <CODE>set</CODE> method for the pmcomurgency property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMCOMURGENCY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -4308,20 +4308,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the indicatedpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the indicatedpriority property.
+         * This is why there is not a <CODE>set</CODE> method for the indicatedpriority property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINDICATEDPRIORITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -4337,20 +4337,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the externalsystemticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the externalsystemticketid property.
+         * This is why there is not a <CODE>set</CODE> method for the externalsystemticketid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getEXTERNALSYSTEMTICKETID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4366,20 +4366,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the externalsystem property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the externalsystem property.
+         * This is why there is not a <CODE>set</CODE> method for the externalsystem property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getEXTERNALSYSTEM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDomainQueryType }
          * 
@@ -4395,20 +4395,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the descsrvid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the descsrvid property.
+         * This is why there is not a <CODE>set</CODE> method for the descsrvid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDESCSRVID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4424,20 +4424,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the createdby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the createdby property.
+         * This is why there is not a <CODE>set</CODE> method for the createdby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCREATEDBY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4453,20 +4453,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the creationdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the creationdate property.
+         * This is why there is not a <CODE>set</CODE> method for the creationdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCREATIONDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -4482,20 +4482,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the virtualenv property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the virtualenv property.
+         * This is why there is not a <CODE>set</CODE> method for the virtualenv property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getVIRTUALENV().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -4511,20 +4511,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the outageduration property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the outageduration property.
+         * This is why there is not a <CODE>set</CODE> method for the outageduration property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOUTAGEDURATION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -4540,20 +4540,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the classificationid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the classificationid property.
+         * This is why there is not a <CODE>set</CODE> method for the classificationid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCLASSIFICATIONID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4569,20 +4569,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmsccrid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmsccrid property.
+         * This is why there is not a <CODE>set</CODE> method for the pmsccrid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCCRID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4598,20 +4598,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmscitemnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmscitemnum property.
+         * This is why there is not a <CODE>set</CODE> method for the pmscitemnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCITEMNUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4627,20 +4627,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmscoffsummary property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmscoffsummary property.
+         * This is why there is not a <CODE>set</CODE> method for the pmscoffsummary property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCOFFSUMMARY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4656,20 +4656,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmscquantity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmscquantity property.
+         * This is why there is not a <CODE>set</CODE> method for the pmscquantity property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCQUANTITY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -4685,20 +4685,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the assignedownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the assignedownergroup property.
+         * This is why there is not a <CODE>set</CODE> method for the assignedownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getASSIGNEDOWNERGROUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4714,20 +4714,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the accumulatedholdtime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the accumulatedholdtime property.
+         * This is why there is not a <CODE>set</CODE> method for the accumulatedholdtime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getACCUMULATEDHOLDTIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -4743,20 +4743,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the adjustedtargetcontacttime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the adjustedtargetcontacttime property.
+         * This is why there is not a <CODE>set</CODE> method for the adjustedtargetcontacttime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getADJUSTEDTARGETCONTACTTIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -4772,20 +4772,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the adjustedtargetresponsetime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the adjustedtargetresponsetime property.
+         * This is why there is not a <CODE>set</CODE> method for the adjustedtargetresponsetime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getADJUSTEDTARGETRESPONSETIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -4801,20 +4801,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the adjustedtargetresolutiontime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the adjustedtargetresolutiontime property.
+         * This is why there is not a <CODE>set</CODE> method for the adjustedtargetresolutiontime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getADJUSTEDTARGETRESOLUTIONTIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -4830,20 +4830,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the correlationattrs property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the correlationattrs property.
+         * This is why there is not a <CODE>set</CODE> method for the correlationattrs property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCORRELATIONATTRS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4859,20 +4859,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the faulttype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the faulttype property.
+         * This is why there is not a <CODE>set</CODE> method for the faulttype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getFAULTTYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -4888,20 +4888,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the customername property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the customername property.
+         * This is why there is not a <CODE>set</CODE> method for the customername property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCUSTOMERNAME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4917,20 +4917,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the customerid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the customerid property.
+         * This is why there is not a <CODE>set</CODE> method for the customerid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCUSTOMERID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -4946,20 +4946,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the kategorija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the kategorija property.
+         * This is why there is not a <CODE>set</CODE> method for the kategorija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getKATEGORIJA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -4975,20 +4975,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the region property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the region property.
+         * This is why there is not a <CODE>set</CODE> method for the region property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREGION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -5004,20 +5004,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the adresakorisnika property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the adresakorisnika property.
+         * This is why there is not a <CODE>set</CODE> method for the adresakorisnika property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getADRESAKORISNIKA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5033,20 +5033,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the operatorname property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the operatorname property.
+         * This is why there is not a <CODE>set</CODE> method for the operatorname property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOPERATORNAME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5062,20 +5062,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the customervalue property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the customervalue property.
+         * This is why there is not a <CODE>set</CODE> method for the customervalue property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCUSTOMERVALUE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -5091,20 +5091,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the ola property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ola property.
+         * This is why there is not a <CODE>set</CODE> method for the ola property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOLA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -5120,20 +5120,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the noteopen property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the noteopen property.
+         * This is why there is not a <CODE>set</CODE> method for the noteopen property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getNOTEOPEN().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5149,20 +5149,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the contactphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the contactphone property.
+         * This is why there is not a <CODE>set</CODE> method for the contactphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCONTACTPHONE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5178,20 +5178,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the contactperson property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the contactperson property.
+         * This is why there is not a <CODE>set</CODE> method for the contactperson property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCONTACTPERSON().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5207,20 +5207,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the contactemail property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the contactemail property.
+         * This is why there is not a <CODE>set</CODE> method for the contactemail property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCONTACTEMAIL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5236,20 +5236,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the lineid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the lineid property.
+         * This is why there is not a <CODE>set</CODE> method for the lineid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLINEID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5265,20 +5265,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the rootcustomerref property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the rootcustomerref property.
+         * This is why there is not a <CODE>set</CODE> method for the rootcustomerref property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getROOTCUSTOMERREF().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5294,20 +5294,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the technicianname property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the technicianname property.
+         * This is why there is not a <CODE>set</CODE> method for the technicianname property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTECHNICIANNAME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5323,20 +5323,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the hassupportcontract property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the hassupportcontract property.
+         * This is why there is not a <CODE>set</CODE> method for the hassupportcontract property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHASSUPPORTCONTRACT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -5352,20 +5352,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the servicesinfault property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the servicesinfault property.
+         * This is why there is not a <CODE>set</CODE> method for the servicesinfault property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSERVICESINFAULT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -5381,20 +5381,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the preckaid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the preckaid property.
+         * This is why there is not a <CODE>set</CODE> method for the preckaid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPRECKAID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5410,20 +5410,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the domen property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the domen property.
+         * This is why there is not a <CODE>set</CODE> method for the domen property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDOMEN().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5439,20 +5439,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the dslamport property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the dslamport property.
+         * This is why there is not a <CODE>set</CODE> method for the dslamport property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDSLAMPORT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5468,20 +5468,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the serialnumberstb property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the serialnumberstb property.
+         * This is why there is not a <CODE>set</CODE> method for the serialnumberstb property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSERIALNUMBERSTB().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5497,20 +5497,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the hgwtip property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the hgwtip property.
+         * This is why there is not a <CODE>set</CODE> method for the hgwtip property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHGWTIP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5526,20 +5526,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the liniskaoprema property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the liniskaoprema property.
+         * This is why there is not a <CODE>set</CODE> method for the liniskaoprema property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLINISKAOPREMA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5555,20 +5555,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the adresaizvod property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the adresaizvod property.
+         * This is why there is not a <CODE>set</CODE> method for the adresaizvod property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getADRESAIZVOD().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5584,20 +5584,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the serialnumberhgw property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the serialnumberhgw property.
+         * This is why there is not a <CODE>set</CODE> method for the serialnumberhgw property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSERIALNUMBERHGW().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5613,20 +5613,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the paket property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the paket property.
+         * This is why there is not a <CODE>set</CODE> method for the paket property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPAKET().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5642,20 +5642,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the kabel property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the kabel property.
+         * This is why there is not a <CODE>set</CODE> method for the kabel property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getKABEL().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5671,20 +5671,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the izvod property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the izvod property.
+         * This is why there is not a <CODE>set</CODE> method for the izvod property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getIZVOD().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5700,20 +5700,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the parica property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the parica property.
+         * This is why there is not a <CODE>set</CODE> method for the parica property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPARICA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5729,20 +5729,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the ram property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the ram property.
+         * This is why there is not a <CODE>set</CODE> method for the ram property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getRAM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5758,20 +5758,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the rebro property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the rebro property.
+         * This is why there is not a <CODE>set</CODE> method for the rebro property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREBRO().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5787,20 +5787,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pozicija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pozicija property.
+         * This is why there is not a <CODE>set</CODE> method for the pozicija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPOZICIJA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5816,20 +5816,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the centralaport property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the centralaport property.
+         * This is why there is not a <CODE>set</CODE> method for the centralaport property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCENTRALAPORT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5845,20 +5845,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the prespojbroj property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the prespojbroj property.
+         * This is why there is not a <CODE>set</CODE> method for the prespojbroj property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPRESPOJBROJ().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5874,20 +5874,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the prespojlinija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the prespojlinija property.
+         * This is why there is not a <CODE>set</CODE> method for the prespojlinija property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPRESPOJLINIJA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5903,20 +5903,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the tipdslam property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the tipdslam property.
+         * This is why there is not a <CODE>set</CODE> method for the tipdslam property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTIPDSLAM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5932,20 +5932,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the mozeoptika property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the mozeoptika property.
+         * This is why there is not a <CODE>set</CODE> method for the mozeoptika property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getMOZEOPTIKA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -5961,20 +5961,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the string1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the string1 property.
+         * This is why there is not a <CODE>set</CODE> method for the string1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTRING1().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -5990,20 +5990,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the string2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the string2 property.
+         * This is why there is not a <CODE>set</CODE> method for the string2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTRING2().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6019,20 +6019,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the string3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the string3 property.
+         * This is why there is not a <CODE>set</CODE> method for the string3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTRING3().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6048,20 +6048,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the int1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the int1 property.
+         * This is why there is not a <CODE>set</CODE> method for the int1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINT1().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -6077,20 +6077,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the int2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the int2 property.
+         * This is why there is not a <CODE>set</CODE> method for the int2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINT2().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -6106,20 +6106,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the int3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the int3 property.
+         * This is why there is not a <CODE>set</CODE> method for the int3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINT3().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -6135,20 +6135,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the date1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the date1 property.
+         * This is why there is not a <CODE>set</CODE> method for the date1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDATE1().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -6164,20 +6164,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the date2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the date2 property.
+         * This is why there is not a <CODE>set</CODE> method for the date2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDATE2().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -6193,20 +6193,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the extsysid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the extsysid property.
+         * This is why there is not a <CODE>set</CODE> method for the extsysid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getEXTSYSID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6222,20 +6222,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the tippretplatnika property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the tippretplatnika property.
+         * This is why there is not a <CODE>set</CODE> method for the tippretplatnika property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTIPPRETPLATNIKA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6251,20 +6251,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the hnmoutput property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the hnmoutput property.
+         * This is why there is not a <CODE>set</CODE> method for the hnmoutput property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getHNMOUTPUT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6280,20 +6280,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the alatoutput property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the alatoutput property.
+         * This is why there is not a <CODE>set</CODE> method for the alatoutput property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getALATOUTPUT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6309,20 +6309,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the repeated property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the repeated property.
+         * This is why there is not a <CODE>set</CODE> method for the repeated property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPEATED().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -6338,20 +6338,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the aturbits property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the aturbits property.
+         * This is why there is not a <CODE>set</CODE> method for the aturbits property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getATURBITS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6367,20 +6367,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the atucbits property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the atucbits property.
+         * This is why there is not a <CODE>set</CODE> method for the atucbits property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getATUCBITS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6396,20 +6396,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the slatipservis property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the slatipservis property.
+         * This is why there is not a <CODE>set</CODE> method for the slatipservis property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSLATIPSERVIS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6425,20 +6425,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the os property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the os property.
+         * This is why there is not a <CODE>set</CODE> method for the os property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -6454,20 +6454,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the regionname property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the regionname property.
+         * This is why there is not a <CODE>set</CODE> method for the regionname property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREGIONNAME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6483,20 +6483,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the affectedservice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the affectedservice property.
+         * This is why there is not a <CODE>set</CODE> method for the affectedservice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getAFFECTEDSERVICE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6512,20 +6512,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the originatedcompany property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the originatedcompany property.
+         * This is why there is not a <CODE>set</CODE> method for the originatedcompany property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORIGINATEDCOMPANY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6541,20 +6541,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the mestopovrede property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the mestopovrede property.
+         * This is why there is not a <CODE>set</CODE> method for the mestopovrede property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getMESTOPOVREDE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6570,20 +6570,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the resolvedby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the resolvedby property.
+         * This is why there is not a <CODE>set</CODE> method for the resolvedby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getRESOLVEDBY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6599,20 +6599,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the faultlocation property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the faultlocation property.
+         * This is why there is not a <CODE>set</CODE> method for the faultlocation property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getFAULTLOCATION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6628,20 +6628,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the altcontactphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the altcontactphone property.
+         * This is why there is not a <CODE>set</CODE> method for the altcontactphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getALTCONTACTPHONE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6657,20 +6657,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the te property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the te property.
+         * This is why there is not a <CODE>set</CODE> method for the te property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6686,20 +6686,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the tktype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the tktype property.
+         * This is why there is not a <CODE>set</CODE> method for the tktype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTKTYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6715,20 +6715,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the smsphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the smsphone property.
+         * This is why there is not a <CODE>set</CODE> method for the smsphone property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSMSPHONE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6744,20 +6744,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the impactedregion property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the impactedregion property.
+         * This is why there is not a <CODE>set</CODE> method for the impactedregion property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getIMPACTEDREGION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6773,20 +6773,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the smsgroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the smsgroup property.
+         * This is why there is not a <CODE>set</CODE> method for the smsgroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSMSGROUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6802,20 +6802,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the string4 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the string4 property.
+         * This is why there is not a <CODE>set</CODE> method for the string4 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTRING4().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6831,20 +6831,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the atribut1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the atribut1 property.
+         * This is why there is not a <CODE>set</CODE> method for the atribut1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getATRIBUT1().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6860,20 +6860,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the previousstatus property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the previousstatus property.
+         * This is why there is not a <CODE>set</CODE> method for the previousstatus property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPREVIOUSSTATUS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6889,20 +6889,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the backup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the backup property.
+         * This is why there is not a <CODE>set</CODE> method for the backup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getBACKUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -6918,20 +6918,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the transmissionpath property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the transmissionpath property.
+         * This is why there is not a <CODE>set</CODE> method for the transmissionpath property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTRANSMISSIONPATH().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6947,20 +6947,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the nextdevice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the nextdevice property.
+         * This is why there is not a <CODE>set</CODE> method for the nextdevice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getNEXTDEVICE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -6976,20 +6976,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the originateddevice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the originateddevice property.
+         * This is why there is not a <CODE>set</CODE> method for the originateddevice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getORIGINATEDDEVICE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7005,20 +7005,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the imsmigration property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the imsmigration property.
+         * This is why there is not a <CODE>set</CODE> method for the imsmigration property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getIMSMIGRATION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7034,20 +7034,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the cablegroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the cablegroup property.
+         * This is why there is not a <CODE>set</CODE> method for the cablegroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCABLEGROUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7063,20 +7063,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the vozdusnamreza property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the vozdusnamreza property.
+         * This is why there is not a <CODE>set</CODE> method for the vozdusnamreza property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getVOZDUSNAMREZA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7092,20 +7092,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the cabletype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the cabletype property.
+         * This is why there is not a <CODE>set</CODE> method for the cabletype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCABLETYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7121,20 +7121,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the oknobroj property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the oknobroj property.
+         * This is why there is not a <CODE>set</CODE> method for the oknobroj property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getOKNOBROJ().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7150,20 +7150,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the tipovinacevke property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the tipovinacevke property.
+         * This is why there is not a <CODE>set</CODE> method for the tipovinacevke property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTIPOVINACEVKE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7179,20 +7179,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the sms property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the sms property.
+         * This is why there is not a <CODE>set</CODE> method for the sms property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSMS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -7208,20 +7208,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the numberofaffectedcustomers property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the numberofaffectedcustomers property.
+         * This is why there is not a <CODE>set</CODE> method for the numberofaffectedcustomers property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getNUMBEROFAFFECTEDCUSTOMERS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -7237,20 +7237,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the numberofaffectedkeycustomers property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the numberofaffectedkeycustomers property.
+         * This is why there is not a <CODE>set</CODE> method for the numberofaffectedkeycustomers property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getNUMBEROFAFFECTEDKEYCUSTOMERS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -7266,20 +7266,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the probablecause property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the probablecause property.
+         * This is why there is not a <CODE>set</CODE> method for the probablecause property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPROBABLECAUSE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7295,20 +7295,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the withoutint property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the withoutint property.
+         * This is why there is not a <CODE>set</CODE> method for the withoutint property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getWITHOUTINT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -7324,20 +7324,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the power property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the power property.
+         * This is why there is not a <CODE>set</CODE> method for the power property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPOWER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7353,20 +7353,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the aggregate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the aggregate property.
+         * This is why there is not a <CODE>set</CODE> method for the aggregate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getAGGREGATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7382,20 +7382,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the transmission property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the transmission property.
+         * This is why there is not a <CODE>set</CODE> method for the transmission property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTRANSMISSION().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7411,20 +7411,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the controller property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the controller property.
+         * This is why there is not a <CODE>set</CODE> method for the controller property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCONTROLLER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7440,20 +7440,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the type property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the type property.
+         * This is why there is not a <CODE>set</CODE> method for the type property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7469,20 +7469,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the smstype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the smstype property.
+         * This is why there is not a <CODE>set</CODE> method for the smstype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSMSTYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -7498,20 +7498,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the smspreview property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the smspreview property.
+         * This is why there is not a <CODE>set</CODE> method for the smspreview property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSMSPREVIEW().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7527,20 +7527,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the devicename property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the devicename property.
+         * This is why there is not a <CODE>set</CODE> method for the devicename property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDEVICENAME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7556,20 +7556,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the resolver property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the resolver property.
+         * This is why there is not a <CODE>set</CODE> method for the resolver property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getRESOLVER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7585,20 +7585,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the wocatalog property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wocatalog property.
+         * This is why there is not a <CODE>set</CODE> method for the wocatalog property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getWOCATALOG().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7614,20 +7614,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the centrala property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the centrala property.
+         * This is why there is not a <CODE>set</CODE> method for the centrala property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCENTRALA().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7643,20 +7643,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the logcreate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the logcreate property.
+         * This is why there is not a <CODE>set</CODE> method for the logcreate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLOGCREATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7672,20 +7672,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the logdesc property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the logdesc property.
+         * This is why there is not a <CODE>set</CODE> method for the logdesc property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLOGDESC().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7701,20 +7701,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the loginctype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the loginctype property.
+         * This is why there is not a <CODE>set</CODE> method for the loginctype property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLOGINCTYPE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7730,20 +7730,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the loglong property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the loglong property.
+         * This is why there is not a <CODE>set</CODE> method for the loglong property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getLOGLONG().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7759,20 +7759,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the diaginvoke property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the diaginvoke property.
+         * This is why there is not a <CODE>set</CODE> method for the diaginvoke property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDIAGINVOKE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7788,20 +7788,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the diagresult property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the diagresult property.
+         * This is why there is not a <CODE>set</CODE> method for the diagresult property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDIAGRESULT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7817,20 +7817,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the diagtempresult property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the diagtempresult property.
+         * This is why there is not a <CODE>set</CODE> method for the diagtempresult property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDIAGTEMPRESULT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -7846,20 +7846,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the check1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the check1 property.
+         * This is why there is not a <CODE>set</CODE> method for the check1 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCHECK1().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -7875,20 +7875,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the check2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the check2 property.
+         * This is why there is not a <CODE>set</CODE> method for the check2 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCHECK2().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -7904,20 +7904,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the check3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the check3 property.
+         * This is why there is not a <CODE>set</CODE> method for the check3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCHECK3().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -7933,20 +7933,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the date3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the date3 property.
+         * This is why there is not a <CODE>set</CODE> method for the date3 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDATE3().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -7962,20 +7962,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the date4 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the date4 property.
+         * This is why there is not a <CODE>set</CODE> method for the date4 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getDATE4().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -7991,20 +7991,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the int4 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the int4 property.
+         * This is why there is not a <CODE>set</CODE> method for the int4 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINT4().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -8020,20 +8020,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the int5 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the int5 property.
+         * This is why there is not a <CODE>set</CODE> method for the int5 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINT5().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -8049,20 +8049,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the int6 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the int6 property.
+         * This is why there is not a <CODE>set</CODE> method for the int6 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINT6().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -8078,20 +8078,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the string5 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the string5 property.
+         * This is why there is not a <CODE>set</CODE> method for the string5 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTRING5().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8107,20 +8107,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the string6 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the string6 property.
+         * This is why there is not a <CODE>set</CODE> method for the string6 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTRING6().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8136,20 +8136,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the string7 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the string7 property.
+         * This is why there is not a <CODE>set</CODE> method for the string7 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getSTRING7().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8165,20 +8165,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the reasont property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reasont property.
+         * This is why there is not a <CODE>set</CODE> method for the reasont property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREASONT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8194,20 +8194,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the typeoffault property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the typeoffault property.
+         * This is why there is not a <CODE>set</CODE> method for the typeoffault property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTYPEOFFAULT().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8223,20 +8223,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the tipprekin property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the tipprekin property.
+         * This is why there is not a <CODE>set</CODE> method for the tipprekin property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getTIPPREKIN().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8252,20 +8252,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the oncallfirstrotassnperson property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the oncallfirstrotassnperson property.
+         * This is why there is not a <CODE>set</CODE> method for the oncallfirstrotassnperson property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getONCALLFIRSTROTASSNPERSON().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8281,20 +8281,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the oncallstarttime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the oncallstarttime property.
+         * This is why there is not a <CODE>set</CODE> method for the oncallstarttime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getONCALLSTARTTIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -8310,20 +8310,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the oncallautoassign property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the oncallautoassign property.
+         * This is why there is not a <CODE>set</CODE> method for the oncallautoassign property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getONCALLAUTOASSIGN().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -8339,20 +8339,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the oncallreassigntime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the oncallreassigntime property.
+         * This is why there is not a <CODE>set</CODE> method for the oncallreassigntime property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getONCALLREASSIGNTIME().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -8368,20 +8368,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the oncallownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the oncallownergroup property.
+         * This is why there is not a <CODE>set</CODE> method for the oncallownergroup property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getONCALLOWNERGROUP().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8397,20 +8397,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the replacedowner property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the replacedowner property.
+         * This is why there is not a <CODE>set</CODE> method for the replacedowner property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREPLACEDOWNER().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8426,20 +8426,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmcosolapplieddate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcosolapplieddate property.
+         * This is why there is not a <CODE>set</CODE> method for the pmcosolapplieddate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMCOSOLAPPLIEDDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -8455,20 +8455,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmcosolappliedby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcosolappliedby property.
+         * This is why there is not a <CODE>set</CODE> method for the pmcosolappliedby property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMCOSOLAPPLIEDBY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8484,20 +8484,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmcosolfeedback property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcosolfeedback property.
+         * This is why there is not a <CODE>set</CODE> method for the pmcosolfeedback property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMCOSOLFEEDBACK().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8513,20 +8513,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmcosolstatus property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmcosolstatus property.
+         * This is why there is not a <CODE>set</CODE> method for the pmcosolstatus property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMCOSOLSTATUS().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDomainQueryType }
          * 
@@ -8542,20 +8542,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmscitemsetid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmscitemsetid property.
+         * This is why there is not a <CODE>set</CODE> method for the pmscitemsetid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCITEMSETID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8571,20 +8571,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmsctmplid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmsctmplid property.
+         * This is why there is not a <CODE>set</CODE> method for the pmsctmplid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCTMPLID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -8600,20 +8600,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmscinvalid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmscinvalid property.
+         * This is why there is not a <CODE>set</CODE> method for the pmscinvalid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCINVALID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -8629,20 +8629,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmscrecurringprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmscrecurringprice property.
+         * This is why there is not a <CODE>set</CODE> method for the pmscrecurringprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCRECURRINGPRICE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -8658,20 +8658,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmsconetimeprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmsconetimeprice property.
+         * This is why there is not a <CODE>set</CODE> method for the pmsconetimeprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCONETIMEPRICE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -8687,20 +8687,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmsctotalrecurringprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmsctotalrecurringprice property.
+         * This is why there is not a <CODE>set</CODE> method for the pmsctotalrecurringprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCTOTALRECURRINGPRICE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -8716,20 +8716,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmsctotalonetimeprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmsctotalonetimeprice property.
+         * This is why there is not a <CODE>set</CODE> method for the pmsctotalonetimeprice property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCTOTALONETIMEPRICE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDoubleQueryType }
          * 
@@ -8745,20 +8745,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pmsccurrency property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pmsccurrency property.
+         * This is why there is not a <CODE>set</CODE> method for the pmsccurrency property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPMSCCURRENCY().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8774,20 +8774,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the rbarc property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the rbarc property.
+         * This is why there is not a <CODE>set</CODE> method for the rbarc property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getRBARC().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8803,20 +8803,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the createproblemdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the createproblemdate property.
+         * This is why there is not a <CODE>set</CODE> method for the createproblemdate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getCREATEPROBLEMDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -8832,20 +8832,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the resolutionproblem property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the resolutionproblem property.
+         * This is why there is not a <CODE>set</CODE> method for the resolutionproblem property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getRESOLUTIONPROBLEM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8861,20 +8861,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the workaround property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the workaround property.
+         * This is why there is not a <CODE>set</CODE> method for the workaround property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getWORKAROUND().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -8890,20 +8890,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the wayofrepair property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the wayofrepair property.
+         * This is why there is not a <CODE>set</CODE> method for the wayofrepair property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getWAYOFREPAIR().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -8919,20 +8919,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the prrelatedate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the prrelatedate property.
+         * This is why there is not a <CODE>set</CODE> method for the prrelatedate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPRRELATEDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -8948,20 +8948,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the reason property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the reason property.
+         * This is why there is not a <CODE>set</CODE> method for the reason property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getREASON().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -8977,20 +8977,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the knownerror property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the knownerror property.
+         * This is why there is not a <CODE>set</CODE> method for the knownerror property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getKNOWNERROR().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXBooleanQueryType }
          * 
@@ -9006,20 +9006,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the workarounddesc property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the workarounddesc property.
+         * This is why there is not a <CODE>set</CODE> method for the workarounddesc property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getWORKAROUNDDESC().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -9035,20 +9035,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the int8 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the int8 property.
+         * This is why there is not a <CODE>set</CODE> method for the int8 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINT8().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -9064,20 +9064,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the int9 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the int9 property.
+         * This is why there is not a <CODE>set</CODE> method for the int9 property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getINT9().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -9093,20 +9093,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the faultcause property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the faultcause property.
+         * This is why there is not a <CODE>set</CODE> method for the faultcause property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getFAULTCAUSE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -9122,20 +9122,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the rootcause property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the rootcause property.
+         * This is why there is not a <CODE>set</CODE> method for the rootcause property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getROOTCAUSE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXLongQueryType }
          * 
@@ -9151,20 +9151,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the plusppoolnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusppoolnum property.
+         * This is why there is not a <CODE>set</CODE> method for the plusppoolnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPPOOLNUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -9180,20 +9180,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the plusppoolitemnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusppoolitemnum property.
+         * This is why there is not a <CODE>set</CODE> method for the plusppoolitemnum property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPPOOLITEMNUM().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -9209,20 +9209,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the plusppoolitemsetid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusppoolitemsetid property.
+         * This is why there is not a <CODE>set</CODE> method for the plusppoolitemsetid property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPPOOLITEMSETID().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXStringQueryType }
          * 
@@ -9238,20 +9238,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the plusptargdeliverydate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the plusptargdeliverydate property.
+         * This is why there is not a <CODE>set</CODE> method for the plusptargdeliverydate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPTARGDELIVERYDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 
@@ -9267,20 +9267,20 @@ public class INCIDENTMboQueryType {
         /**
          * Gets the value of the pluspactdeliverydate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * This accessor method returns a reference to the live list,
          * not a snapshot. Therefore any modification you make to the
          * returned list will be present inside the JAXB object.
-         * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the pluspactdeliverydate property.
+         * This is why there is not a <CODE>set</CODE> method for the pluspactdeliverydate property.
          * 
-         * &lt;p&gt;
+         * <p>
          * For example, to add a new item, do as follows:
-         * &lt;pre&gt;
+         * <pre>
          *    getPLUSPACTDELIVERYDATE().add(newItem);
-         * &lt;/pre&gt;
+         * </pre>
          * 
          * 
-         * &lt;p&gt;
+         * <p>
          * Objects of the following type(s) are allowed in the list
          * {@link MXDateTimeQueryType }
          * 

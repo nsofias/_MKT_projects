@@ -157,7 +157,7 @@
                 <th>Bound CTTs</th>
                 <th>signature</th>
                 <th>reason</th>
-                <th>affected</th>
+                <!--<th>affected</th>-->
             </tr>
             <%                ArrayList<String> alarmIds = new ArrayList(alarmArrayList.keySet());
                 Collections.sort(alarmIds, Collections.reverseOrder());
@@ -233,7 +233,7 @@
                 <td><%=srReported%></td>
                 <td><%=myCCMTicket.getType()%></td>
                 <td><%=myCCMTicket.getState().replace("STATE_", "")%></td>
-                <td><%=myCCMTicket.getNumOfCalls()%></td>
+                <td><%=myCCMTicket.getNumOfCalls()%> out of <%=impact%> </td>
                 <td><%=myCCMTicket.getNumOfCCTs()%></td>
                 <td><%=signatute%></td> 
                 <%if (myCCMTicket.getState().equals(Ticket.STATE_OPEN) && false) {%>                
@@ -242,7 +242,7 @@
                 <!--<td><a href='tickets.jsp?openTicket=<%=myAlarm.getTicketId()%>' target='_blank'>open</a></td>-->
                 <%}%>
                 <td><%=reason%></td>
-                <td><%=impact%></td>
+                <!--<td><%=impact%></td>-->
             </tr> 
 
             <%           }

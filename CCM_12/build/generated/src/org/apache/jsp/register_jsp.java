@@ -41,26 +41,26 @@ public final class register_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>Register your email</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        <h1>Register your email to CCM to get Alarm Notifications by e-mail </h1>\n");
-      out.write("        \n");
-      out.write("        <form name=\"register\" action=\"register_servlet\">\n");
-      out.write("            <p>e-mail address: <input type=\"text\" name=\"email\" value=\"\" size=\"100\" />            \n");
-      out.write("            <p><input type=\"submit\" value=\"ok!\" name=\"submit\" />\n");
-      out.write("        </form>\n");
-      out.write("        <b>(UNDER CONSTRUCTION)</b>\n");
-      out.write("        \n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>Register your email</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <h1>Register your email to CCM to get Alarm Notifications by e-mail </h1>\r\n");
+      out.write("        \r\n");
+      out.write("        <form name=\"register\" action=\"register_servlet\">\r\n");
+      out.write("            <p>e-mail address: <input type=\"text\" name=\"email\" value=\"\" size=\"100\" />            \r\n");
+      out.write("            <p><input type=\"submit\" value=\"ok!\" name=\"submit\" />\r\n");
+      out.write("        </form>\r\n");
+      out.write("        <b>(UNDER CONSTRUCTION)</b>\r\n");
+      out.write("        \r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

@@ -6,13 +6,19 @@
 package svt_mkt_ws;
 
 import SVT_MKT_ws1.TechnicalExceptionMessage;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.GregorianCalendar;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeConstants;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
+import nsofiasLib.others.Helpme;
 import nsofiasLib.time.TimeStamp1;
 import nsofiasLib.utils.MailAlert;
+import nsofiasLib.utils.URLContextReader_object;
 
 /**
  *
@@ -92,8 +98,8 @@ REMARK
             //
             svt_mkt_ws.IDiligentWSService service = new svt_mkt_ws.IDiligentWSService();
             svt_mkt_ws.IDiligentWS port = service.getIDiligentWS();
-                    System.setProperty("http.proxyHost", "");
-        System.setProperty("http.proxyPort", "");
+            System.setProperty("http.proxyHost", "");
+            System.setProperty("http.proxyPort", "");
             port.createCustomerIssue(eiMessageContextHolder, createCustomerIssueRequestData, createCustomerIssueResponseDataHolder);
             //
             return createCustomerIssueResponseDataHolder.value.getValidationModel().getResponseReason();
@@ -118,7 +124,7 @@ REMARK
         //-----------------
         SVT_MKT_ws1.CRMDiligentPortTypeService service = new SVT_MKT_ws1.CRMDiligentPortTypeService();
         SVT_MKT_ws1.CRMDiligentPortType port = service.getCRMDiligentPortType();
-                System.setProperty("http.proxyHost", "");
+        System.setProperty("http.proxyHost", "");
         System.setProperty("http.proxyPort", "");
         port.hasCustomerIndividualFault(eiMessageContext, data, data0);
         String INCIDENTID = data0.value.getINCIDENTID();
@@ -165,7 +171,7 @@ REMARK
         //
         svt_tool.DiagnosticServicePortTypeService service = new svt_tool.DiagnosticServicePortTypeService();
         svt_tool.DiagnosticServicePortType port = service.getDiagnosticServicePortType();
-                System.setProperty("http.proxyHost", "");
+        System.setProperty("http.proxyHost", "");
         System.setProperty("http.proxyPort", "");
         port.checkLineService(eiMessageContext, data, data0);
         String transportStatus = data0.value.getTransport();
@@ -201,7 +207,7 @@ REMARK
         //
         svt_mkt_tool_prod.DiagnosticServicePortTypeService service = new svt_mkt_tool_prod.DiagnosticServicePortTypeService();
         svt_mkt_tool_prod.DiagnosticServicePortType port = service.getDiagnosticServicePortType();
-                System.setProperty("http.proxyHost", "");
+        System.setProperty("http.proxyHost", "");
         System.setProperty("http.proxyPort", "");
         port.checkLineService(eiMessageContext, data, data0);
         String transportStatus = data0.value.getTransport();
@@ -270,8 +276,8 @@ REMARK
             //
             svt_mkt_ws.IDiligentWSService service = new svt_mkt_ws.IDiligentWSService();
             svt_mkt_ws.IDiligentWS port = service.getIDiligentWS();
-                    System.setProperty("http.proxyHost", "");
-        System.setProperty("http.proxyPort", "");
+            System.setProperty("http.proxyHost", "");
+            System.setProperty("http.proxyPort", "");
             port.createCustomerIssue(eiMessageContextHolder, createCustomerIssueRequestData, createCustomerIssueResponseDataHolder);
             //
             return createCustomerIssueResponseDataHolder.value.getValidationModel().getResponseReason();
@@ -296,14 +302,33 @@ REMARK
     }
 
     /**
-     * @param args the command line arguments
-     *
-     * 38932388688,38923085407
+     * @param lineId
+     * @return
+     * @throws java.net.MalformedURLException
      *
      */
+    public static String checkLineServiceNEW_SVT(String lineId) throws MalformedURLException, Exception {
+        setSystemProperties();        
+        //
+        SVTTest mySVTTest = new SVTTest();
+        mySVTTest.setState("New");
+        mySVTTest.setStartDateTime(new TimeStamp1().getNowUnformated_elegant() + ".00Z");
+        mySVTTest.setDescription("Diligent tests");
+        ServiceTestCharacteristic myServiceTestCharacteristic = new ServiceTestCharacteristic();
+        myServiceTestCharacteristic.setName("CHECK_ALL_SERVICES_BY_LINE_ID");
+        myServiceTestCharacteristic.setValue(lineId);
+        mySVTTest.setMyServiceTestCharacteristic(new ServiceTestCharacteristic[]{myServiceTestCharacteristic});
+        URL myURL = new URL("https://10.85.0.13/service-test-management/tmf-api/serviceTestManagement/serviceTest");
+        //10.232.61.30:8080,10.232.61.35
+        Gson gson = new GsonBuilder().create();
+        System.out.println("mySVTTest=" + gson.toJson(mySVTTest));
+        return Helpme.postObjToUrlAsJson(myURL, mySVTTest);
+    }
+
     public static void main(String[] args) {
         try {
-            System.out.println(SVT_MKT_ws.createTestCustomerIssue());
+            //System.out.println(SVT_MKT_ws.createTestCustomerIssue());
+            System.out.println(checkLineServiceNEW_SVT("F2005565"));
             //System.out.println(hasCustomerIndividualFault("38923085407"));
             //System.out.println("status="+checkLineService("L2108563"));
         } catch (Exception e) {

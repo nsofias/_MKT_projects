@@ -53,13 +53,13 @@ public final class reggr_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n");
-      out.write("    \"http://www.w3.org/TR/html4/loose.dtd\">\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n");
+      out.write("    \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
 
     String type = request.getParameter("type");
     String order_Desc = request.getParameter("order_Desc");
@@ -105,29 +105,29 @@ public final class reggr_jsp extends org.apache.jasper.runtime.HttpJspBase
         }
 
 
-      out.write(" \n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <title>CCMonitor</title>\n");
-      out.write("\n");
-      out.write("    </head>\n");
-      out.write("    <!--    <body onload=\"JavaScript:timedRefresh(120000);\"> -->\n");
-      out.write("    <body>   \n");
-      out.write("        <table  border=\"0\" width=\"100%\"   id=\"table2\" cellspacing=\"0\" cellpadding=\"0\">\n");
-      out.write("            <tr>\n");
-      out.write("                <td>\n");
+      out.write(" \r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <title>CCMonitor</title>\r\n");
+      out.write("\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <!--    <body onload=\"JavaScript:timedRefresh(120000);\"> -->\r\n");
+      out.write("    <body>   \r\n");
+      out.write("        <table  border=\"0\" width=\"100%\"   id=\"table2\" cellspacing=\"0\" cellpadding=\"0\">\r\n");
+      out.write("            <tr>\r\n");
+      out.write("                <td>\r\n");
       out.write("                    <IMG width=\"100%\" src=\"BRAS_servlet?");
       out.print(quiryStr);
       out.write("&maxDataToDisplay=");
       out.print(maxDataToDisplay);
-      out.write("\">                 \n");
-      out.write("                </td>\n");
-      out.write("            </tr>                     \n");
-      out.write("        </table>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("    </body>\n");
-      out.write("</html> \n");
+      out.write("\">                 \r\n");
+      out.write("                </td>\r\n");
+      out.write("            </tr>                     \r\n");
+      out.write("        </table>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html> \r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

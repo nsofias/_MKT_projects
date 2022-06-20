@@ -12,23 +12,23 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * &lt;p&gt;Java class for QueryQTT1ResponseType complex type.
+ * <p>Java class for QueryQTT1ResponseType complex type.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
- * &lt;pre&gt;
- * &amp;lt;complexType name="QueryQTT1ResponseType"&amp;gt;
- *   &amp;lt;complexContent&amp;gt;
- *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
- *       &amp;lt;sequence&amp;gt;
- *         &amp;lt;element ref="{http://www.ibm.com/maximo}QTT1Set"/&amp;gt;
- *       &amp;lt;/sequence&amp;gt;
- *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}ResponseContentGroup"/&amp;gt;
- *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}CommonContentGroup"/&amp;gt;
- *     &amp;lt;/restriction&amp;gt;
- *   &amp;lt;/complexContent&amp;gt;
- * &amp;lt;/complexType&amp;gt;
- * &lt;/pre&gt;
+ * <pre>
+ * &lt;complexType name="QueryQTT1ResponseType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.ibm.com/maximo}QTT1Set"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://www.ibm.com/maximo}CommonContentGroup"/&gt;
+ *       &lt;attGroup ref="{http://www.ibm.com/maximo}ResponseContentGroup"/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
  * 
  * 
  */
@@ -40,12 +40,6 @@ public class QueryQTT1ResponseType {
 
     @XmlElement(name = "QTT1Set", required = true)
     protected QTT1SetType qtt1Set;
-    @XmlAttribute(name = "rsStart")
-    protected BigInteger rsStart;
-    @XmlAttribute(name = "rsCount")
-    protected BigInteger rsCount;
-    @XmlAttribute(name = "rsTotal")
-    protected BigInteger rsTotal;
     @XmlAttribute(name = "creationDateTime")
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar creationDateTime;
@@ -57,6 +51,12 @@ public class QueryQTT1ResponseType {
     protected String messageID;
     @XmlAttribute(name = "maximoVersion")
     protected String maximoVersion;
+    @XmlAttribute(name = "rsStart")
+    protected BigInteger rsStart;
+    @XmlAttribute(name = "rsCount")
+    protected BigInteger rsCount;
+    @XmlAttribute(name = "rsTotal")
+    protected BigInteger rsTotal;
 
     /**
      * Gets the value of the qtt1Set property.
@@ -80,78 +80,6 @@ public class QueryQTT1ResponseType {
      */
     public void setQTT1Set(QTT1SetType value) {
         this.qtt1Set = value;
-    }
-
-    /**
-     * Gets the value of the rsStart property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getRsStart() {
-        return rsStart;
-    }
-
-    /**
-     * Sets the value of the rsStart property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setRsStart(BigInteger value) {
-        this.rsStart = value;
-    }
-
-    /**
-     * Gets the value of the rsCount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getRsCount() {
-        return rsCount;
-    }
-
-    /**
-     * Sets the value of the rsCount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setRsCount(BigInteger value) {
-        this.rsCount = value;
-    }
-
-    /**
-     * Gets the value of the rsTotal property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getRsTotal() {
-        return rsTotal;
-    }
-
-    /**
-     * Sets the value of the rsTotal property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setRsTotal(BigInteger value) {
-        this.rsTotal = value;
     }
 
     /**
@@ -272,6 +200,78 @@ public class QueryQTT1ResponseType {
      */
     public void setMaximoVersion(String value) {
         this.maximoVersion = value;
+    }
+
+    /**
+     * Gets the value of the rsStart property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
+     */
+    public BigInteger getRsStart() {
+        return rsStart;
+    }
+
+    /**
+     * Sets the value of the rsStart property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
+     */
+    public void setRsStart(BigInteger value) {
+        this.rsStart = value;
+    }
+
+    /**
+     * Gets the value of the rsCount property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
+     */
+    public BigInteger getRsCount() {
+        return rsCount;
+    }
+
+    /**
+     * Sets the value of the rsCount property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
+     */
+    public void setRsCount(BigInteger value) {
+        this.rsCount = value;
+    }
+
+    /**
+     * Gets the value of the rsTotal property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
+     */
+    public BigInteger getRsTotal() {
+        return rsTotal;
+    }
+
+    /**
+     * Sets the value of the rsTotal property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
+     */
+    public void setRsTotal(BigInteger value) {
+        this.rsTotal = value;
     }
 
 }

@@ -7,17 +7,17 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * &lt;p&gt;Java class for EIOperationCompleted.
+ * <p>Java class for EIOperationCompleted.
  * 
- * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
- * &lt;pre&gt;
- * &amp;lt;simpleType name="EIOperationCompleted"&amp;gt;
- *   &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&amp;gt;
- *     &amp;lt;enumeration value="no"/&amp;gt;
- *     &amp;lt;enumeration value="maybe"/&amp;gt;
- *   &amp;lt;/restriction&amp;gt;
- * &amp;lt;/simpleType&amp;gt;
- * &lt;/pre&gt;
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <pre>
+ * &lt;simpleType name="EIOperationCompleted"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="no"/&gt;
+ *     &lt;enumeration value="maybe"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
+ * </pre>
  * 
  */
 @XmlType(name = "EIOperationCompleted", namespace = "http://messaging.ei.tmobile.net/datatypes")

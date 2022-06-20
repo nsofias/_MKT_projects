@@ -57,13 +57,13 @@ public final class linesStopped_005fNOT_005fMASSIVE_jsp extends org.apache.jaspe
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     ServletContext myContext = request.getServletContext();
     String type = request.getParameter("type");
@@ -96,17 +96,17 @@ public final class linesStopped_005fNOT_005fMASSIVE_jsp extends org.apache.jaspe
     }
 
 
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>Current status of affected customers</title>\n");
-      out.write("        <link rel=\"stylesheet\" href=\"global_1.css\">\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        <h1>Current lines' status for </h1>\n");
-      out.write("        <table  border='1' width='100%'>\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>Current status of affected customers</title>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"global_1.css\">\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <h1>Current lines' status for </h1>\r\n");
+      out.write("        <table  border='1' width='100%'>\r\n");
       out.write("            ");
   if (myPatrhsRetriever != null) {
                     Collections.sort(allLinesStopped);
@@ -114,10 +114,10 @@ public final class linesStopped_005fNOT_005fMASSIVE_jsp extends org.apache.jaspe
                         out.println("<tr><td>" + line + "</td></tr>");
                     }
                 }
-      out.write("       \n");
-      out.write("        </table>\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("       \r\n");
+      out.write("        </table>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

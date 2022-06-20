@@ -72,16 +72,17 @@ public final class showUsers_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
  String userTypes = "00";
+      out.write('\r');
       out.write('\n');
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     //String userTypes = "00,01,02";
     //  ----------- SEQURITY CHECK ---------------
@@ -92,31 +93,34 @@ public final class showUsers_jsp extends org.apache.jasper.runtime.HttpJspBase
     String username = (String) session.getAttribute("username");
     if (userType == null)
         {
+      out.write('\r');
       out.write('\n');
       if (true) {
         _jspx_page_context.forward(url);
         return;
       }
+      out.write('\r');
       out.write('\n');
   return;
     }
 else if (userType.endsWith("-expired"))// password expired
         {
         
-      out.write("\n");
-      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\n");
+      out.write("\r\n");
+      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\r\n");
       out.write("        ");
       if (true) {
         _jspx_page_context.forward("change_password.jsp");
         return;
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("        ");
 return;
         }
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write('\r');
       out.write('\n');
 
 //----------- sequrity----------------
@@ -125,8 +129,8 @@ return;
         if (!userTypes.contains(userType))
             {
             
-      out.write("\n");
-      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\n");
+      out.write("\r\n");
+      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\r\n");
       out.write("            ");
 return;
             }
@@ -136,17 +140,17 @@ return;
         }
 //----------- sequrity end----------------
 
-      out.write("\n");
-      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n");
-      out.write("   \"http://www.w3.org/TR/html4/loose.dtd\">\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        \n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n");
+      out.write("   \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>JSP Page</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        \r\n");
       out.write("        ");
 
         String title="Users administration";
@@ -156,60 +160,60 @@ return;
         String sqlStr="select * from users";
         ResultSet users=myDatabaseLogger.getResults(sqlStr);
         
-      out.write(" \n");
+      out.write(" \r\n");
       out.write("        <h1>");
       out.print(title);
-      out.write("</h1>\n");
-      out.write("        <a href=\"updateUser.jsp\">Create User</a>\n");
-      out.write("        <table border=\"1\" cellspacing=\"1\" cellpadding=\"1\">\n");
-      out.write("            <tr><th align=\"left\" bgcolor=\"#DEB0AF\">username</th>\n");
-      out.write("            <th align=\"left\" bgcolor=\"#DEB0AF\">password</th>\n");
-      out.write("            <th align=\"left\" bgcolor=\"#DEB0AF\">role</th>\n");
-      out.write("            <th align=\"left\" bgcolor=\"#DEB0AF\">last Password Change</th>\n");
-      out.write("            <th align=\"left\" bgcolor=\"#DEB0AF\">real Name</th>\n");
-      out.write("            <th align=\"left\" bgcolor=\"#DEB0AF\">password Expiry Date</th></tr>\n");
+      out.write("</h1>\r\n");
+      out.write("        <a href=\"updateUser.jsp\">Create User</a>\r\n");
+      out.write("        <table border=\"1\" cellspacing=\"1\" cellpadding=\"1\">\r\n");
+      out.write("            <tr><th align=\"left\" bgcolor=\"#DEB0AF\">username</th>\r\n");
+      out.write("            <th align=\"left\" bgcolor=\"#DEB0AF\">password</th>\r\n");
+      out.write("            <th align=\"left\" bgcolor=\"#DEB0AF\">role</th>\r\n");
+      out.write("            <th align=\"left\" bgcolor=\"#DEB0AF\">last Password Change</th>\r\n");
+      out.write("            <th align=\"left\" bgcolor=\"#DEB0AF\">real Name</th>\r\n");
+      out.write("            <th align=\"left\" bgcolor=\"#DEB0AF\">password Expiry Date</th></tr>\r\n");
         while (users.next())
             {    
                         
             
-      out.write("\n");
+      out.write("\r\n");
       out.write("            <tr><td align=\"left\" bgcolor=\"#DEB0AF\"><a  href=\"updateUser.jsp?username=");
       out.print(users.getString(1));
       out.write('"');
       out.write('>');
       out.print(users.getString(1));
-      out.write("</a></td>\n");
-      out.write("            <td align=\"left\" bgcolor=\"#DEB0AF\">**************</td>\n");
+      out.write("</a></td>\r\n");
+      out.write("            <td align=\"left\" bgcolor=\"#DEB0AF\">**************</td>\r\n");
       out.write("            <td align=\"left\" bgcolor=\"#DEB0AF\">");
       out.print(users.getString(3));
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("            <td align=\"left\" bgcolor=\"#DEB0AF\">");
       out.print(users.getString(4));
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("            <td align=\"left\" bgcolor=\"#DEB0AF\">");
       out.print(users.getString(5));
-      out.write("</td>\n");
+      out.write("</td>\r\n");
       out.write("            <td align=\"left\" bgcolor=\"#DEB0AF\">");
       out.print(users.getString(6));
-      out.write("</td>     \n");
+      out.write("</td>     \r\n");
             }
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("    </tbody>\n");
-      out.write("</table>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("        \t\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("    \n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    </tbody>\r\n");
+      out.write("</table>\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("        \t\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    \r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

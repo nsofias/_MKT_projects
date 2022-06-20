@@ -53,15 +53,16 @@ public final class dashboard1_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
  String userTypes = "00,01,02";
+      out.write('\r');
       out.write('\n');
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     //String userTypes = "00,01,02";
     //  ----------- SEQURITY CHECK ---------------
@@ -72,31 +73,34 @@ public final class dashboard1_jsp extends org.apache.jasper.runtime.HttpJspBase
     String username = (String) session.getAttribute("username");
     if (userType == null)
         {
+      out.write('\r');
       out.write('\n');
       if (true) {
         _jspx_page_context.forward(url);
         return;
       }
+      out.write('\r');
       out.write('\n');
   return;
     }
 else if (userType.endsWith("-expired"))// password expired
         {
         
-      out.write("\n");
-      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\n");
+      out.write("\r\n");
+      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\r\n");
       out.write("        ");
       if (true) {
         _jspx_page_context.forward("change_password.jsp");
         return;
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("        ");
 return;
         }
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write('\r');
       out.write('\n');
 
 //----------- sequrity----------------
@@ -105,8 +109,8 @@ return;
         if (!userTypes.contains(userType))
             {
             
-      out.write("\n");
-      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\n");
+      out.write("\r\n");
+      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\r\n");
       out.write("            ");
 return;
             }
@@ -116,6 +120,7 @@ return;
         }
 //----------- sequrity end----------------
 
+      out.write('\r');
       out.write('\n');
 
     ServletContext myContext = request.getServletContext();
@@ -136,77 +141,77 @@ return;
         {
         }
 
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <title>TOP10</title>\n");
-      out.write("        <link rel=\"stylesheet\" href=\"global_1.css\">\n");
-      out.write("        <script  type=\"text/javascript\">\n");
-      out.write("            var max_timePage = 120;\n");
-      out.write("            var max_timeData = 120;\n");
-      out.write("            if (max_timeData < 0) {\n");
-      out.write("                max_timeData = 120;\n");
-      out.write("            }\n");
-      out.write("            var cinterval;\n");
-      out.write("\n");
-      out.write("            function countdown_timer() {\n");
-      out.write("                max_timePage--;\n");
-      out.write("                max_timeData--;\n");
-      out.write("                document.getElementById('countdownPage').innerHTML = max_timePage;\n");
-      out.write("                if (max_timeData < 0)\n");
-      out.write("                {\n");
-      out.write("                    document.getElementById('countdownData').innerHTML = \"READY\";\n");
-      out.write("                    window.location.reload(true);\n");
-      out.write("                } else\n");
-      out.write("                {\n");
-      out.write("                    document.getElementById('countdownData').innerHTML = max_timeData;\n");
-      out.write("                }\n");
-      out.write("                //\n");
-      out.write("                if (max_timePage === 0) {\n");
-      out.write("                    clearInterval(cinterval);\n");
-      out.write("                }\n");
-      out.write("            }\n");
-      out.write("            // 1,000 means 1 second.\n");
-      out.write("            cinterval = setInterval('countdown_timer()', 1000);\n");
-      out.write("        </script>        \n");
-      out.write("    </head>    \n");
-      out.write("\n");
-      out.write("    <body> \n");
-      out.write("        <table border=\"0\" width=\"100%\"   id=\"table1\" >\n");
-      out.write("            <tr>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <title>TOP10</title>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"global_1.css\">\r\n");
+      out.write("        <script  type=\"text/javascript\">\r\n");
+      out.write("            var max_timePage = 120;\r\n");
+      out.write("            var max_timeData = 120;\r\n");
+      out.write("            if (max_timeData < 0) {\r\n");
+      out.write("                max_timeData = 120;\r\n");
+      out.write("            }\r\n");
+      out.write("            var cinterval;\r\n");
+      out.write("\r\n");
+      out.write("            function countdown_timer() {\r\n");
+      out.write("                max_timePage--;\r\n");
+      out.write("                max_timeData--;\r\n");
+      out.write("                document.getElementById('countdownPage').innerHTML = max_timePage;\r\n");
+      out.write("                if (max_timeData < 0)\r\n");
+      out.write("                {\r\n");
+      out.write("                    document.getElementById('countdownData').innerHTML = \"READY\";\r\n");
+      out.write("                    window.location.reload(true);\r\n");
+      out.write("                } else\r\n");
+      out.write("                {\r\n");
+      out.write("                    document.getElementById('countdownData').innerHTML = max_timeData;\r\n");
+      out.write("                }\r\n");
+      out.write("                //\r\n");
+      out.write("                if (max_timePage === 0) {\r\n");
+      out.write("                    clearInterval(cinterval);\r\n");
+      out.write("                }\r\n");
+      out.write("            }\r\n");
+      out.write("            // 1,000 means 1 second.\r\n");
+      out.write("            cinterval = setInterval('countdown_timer()', 1000);\r\n");
+      out.write("        </script>        \r\n");
+      out.write("    </head>    \r\n");
+      out.write("\r\n");
+      out.write("    <body> \r\n");
+      out.write("        <table border=\"0\" width=\"100%\"   id=\"table1\" >\r\n");
+      out.write("            <tr>\r\n");
       out.write("                <td nowrap width=\"10%\" bgcolor=\"grey\"><font color=\"white\">Logged in as:");
       out.print(username);
-      out.write("</font></td>    \n");
-      out.write("                <td nowrap width=\"40%\" bgcolor=\"grey\"><font color=\"white\">Page refresh: <span id=\"countdownPage\">0</span>s</font></td>                \n");
-      out.write("                <td nowrap width=\"40%\" bgcolor=\"grey\"><font color=\"white\">Data refresh: <span id=\"countdownData\">0</span>s</font></td>                                  \n");
-      out.write("            </tr>\n");
-      out.write("        </table>\n");
-      out.write("\n");
-      out.write("        <h1> <IMG width=\"50\" height=\"50\" src='img/sad.jpg'>TOP UNSTABLE (outages) resources from </h1>\n");
-      out.write("        <table width=\"100%\">              \n");
-      out.write("            <tr>\n");
+      out.write("</font></td>    \r\n");
+      out.write("                <td nowrap width=\"40%\" bgcolor=\"grey\"><font color=\"white\">Page refresh: <span id=\"countdownPage\">0</span>s</font></td>                \r\n");
+      out.write("                <td nowrap width=\"40%\" bgcolor=\"grey\"><font color=\"white\">Data refresh: <span id=\"countdownData\">0</span>s</font></td>                                  \r\n");
+      out.write("            </tr>\r\n");
+      out.write("        </table>\r\n");
+      out.write("\r\n");
+      out.write("        <h1> <IMG width=\"50\" height=\"50\" src='img/sad.jpg'>TOP UNSTABLE (outages) resources from </h1>\r\n");
+      out.write("        <table width=\"100%\">              \r\n");
+      out.write("            <tr>\r\n");
       out.write("                <td><iframe width=\"500\" height=\"400\" src= \"scorersForType.jsp?type=");
       out.print(diligent_MKT.Alarm_FYROM.TYPE_COPPER);
-      out.write("&reportType=events\" frameborder= \"0\" ></iframe></td>                                 \n");
+      out.write("&reportType=events\" frameborder= \"0\" ></iframe></td>                                 \r\n");
       out.write("                <td><iframe width=\"400\" height=\"400\" src= \"scorersForType.jsp?type=");
       out.print(diligent_MKT.Alarm_FYROM.TYPE_GPON);
-      out.write("&reportType=events\" frameborder= \"0\" ></iframe></td>                \n");
-      out.write("            </tr>      \n");
-      out.write("            <tr>\n");
+      out.write("&reportType=events\" frameborder= \"0\" ></iframe></td>                \r\n");
+      out.write("            </tr>      \r\n");
+      out.write("            <tr>\r\n");
       out.write("                <td><iframe width=\"500\" height=\"400\" src= \"scorersForType.jsp?type=");
       out.print(diligent_MKT.Alarm_FYROM.TYPE_COPPER);
-      out.write("&reportType=impact\" frameborder= \"0\" ></iframe></td>                                 \n");
+      out.write("&reportType=impact\" frameborder= \"0\" ></iframe></td>                                 \r\n");
       out.write("                <td><iframe width=\"400\" height=\"400\" src= \"scorersForType.jsp?type=");
       out.print(diligent_MKT.Alarm_FYROM.TYPE_GPON);
-      out.write("&reportType=impact\" frameborder= \"0\" ></iframe></td>                 \n");
-      out.write("            </tr>            \n");
-      out.write("        </table>\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
-      out.write("\n");
+      out.write("&reportType=impact\" frameborder= \"0\" ></iframe></td>                 \r\n");
+      out.write("            </tr>            \r\n");
+      out.write("        </table>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
+      out.write("\r\n");
       out.write(" ");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

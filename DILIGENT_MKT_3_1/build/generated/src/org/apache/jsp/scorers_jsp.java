@@ -53,14 +53,15 @@ public final class scorers_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
  String userTypes = "00,01,02";
+      out.write('\r');
       out.write('\n');
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
     //String userTypes = "00,01,02";
     //  ----------- SEQURITY CHECK ---------------
@@ -71,31 +72,34 @@ public final class scorers_jsp extends org.apache.jasper.runtime.HttpJspBase
     String username = (String) session.getAttribute("username");
     if (userType == null)
         {
+      out.write('\r');
       out.write('\n');
       if (true) {
         _jspx_page_context.forward(url);
         return;
       }
+      out.write('\r');
       out.write('\n');
   return;
     }
 else if (userType.endsWith("-expired"))// password expired
         {
         
-      out.write("\n");
-      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\n");
+      out.write("\r\n");
+      out.write("        <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, your password is expired!!!</font>\r\n");
       out.write("        ");
       if (true) {
         _jspx_page_context.forward("change_password.jsp");
         return;
       }
-      out.write("\n");
+      out.write("\r\n");
       out.write("        ");
 return;
         }
 
-      out.write('\n');
-      out.write('\n');
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write('\r');
       out.write('\n');
 
 //----------- sequrity----------------
@@ -104,8 +108,8 @@ return;
         if (!userTypes.contains(userType))
             {
             
-      out.write("\n");
-      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\n");
+      out.write("\r\n");
+      out.write("            <font face=\"Verdana\" size=\"3\" color=\"#000080\">Sorry, you are not authorized to view this page!!!</font>\r\n");
       out.write("            ");
 return;
             }
@@ -115,6 +119,7 @@ return;
         }
 //----------- sequrity end----------------
 
+      out.write('\r');
       out.write('\n');
 
     ServletContext myContext = request.getServletContext();
@@ -181,100 +186,100 @@ return;
         return;
         }
 
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <title>TOP10</title>\n");
-      out.write("        <script  type=\"text/javascript\">\n");
-      out.write("            var max_timePage = 120;\n");
-      out.write("            var max_timeData = 120;\n");
-      out.write("            if (max_timeData < 0) {\n");
-      out.write("                max_timeData = 120;\n");
-      out.write("            }\n");
-      out.write("            var cinterval;\n");
-      out.write("\n");
-      out.write("            function countdown_timer() {\n");
-      out.write("                max_timePage--;\n");
-      out.write("                max_timeData--;\n");
-      out.write("                document.getElementById('countdownPage').innerHTML = max_timePage;\n");
-      out.write("                if (max_timeData < 0)\n");
-      out.write("                {\n");
-      out.write("                    document.getElementById('countdownData').innerHTML = \"READY\";\n");
-      out.write("                    window.location.reload(true);\n");
-      out.write("                } else\n");
-      out.write("                {\n");
-      out.write("                    document.getElementById('countdownData').innerHTML = max_timeData;\n");
-      out.write("                }\n");
-      out.write("                //\n");
-      out.write("                if (max_timePage === 0) {\n");
-      out.write("                    clearInterval(cinterval);\n");
-      out.write("                }\n");
-      out.write("            }\n");
-      out.write("            // 1,000 means 1 second.\n");
-      out.write("            cinterval = setInterval('countdown_timer()', 1000);\n");
-      out.write("        </script>        \n");
-      out.write("    </head>    \n");
-      out.write("\n");
-      out.write("    <body> \n");
-      out.write("        <table border=\"0\" width=\"100%\"   id=\"table1\" >\n");
-      out.write("            <tr>\n");
-      out.write("                <td nowrap width=\"5%\" bgcolor=\"grey\"><font color=\"white\">Page refresh: <span id=\"countdownPage\">0</span>s</font></td>                \n");
-      out.write("                <td nowrap width=\"5%\" bgcolor=\"grey\"><font color=\"white\">Data refresh: <span id=\"countdownData\">0</span>s</font></td>                                \n");
-      out.write("            </tr>\n");
-      out.write("        </table>\n");
-      out.write("        <b>Days back:</b><form action=\"scorers.jsp\">\n");
-      out.write("            <select onchange=\"form.submit()\"  name=\"daysBack\">\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <title>TOP10</title>\r\n");
+      out.write("        <script  type=\"text/javascript\">\r\n");
+      out.write("            var max_timePage = 120;\r\n");
+      out.write("            var max_timeData = 120;\r\n");
+      out.write("            if (max_timeData < 0) {\r\n");
+      out.write("                max_timeData = 120;\r\n");
+      out.write("            }\r\n");
+      out.write("            var cinterval;\r\n");
+      out.write("\r\n");
+      out.write("            function countdown_timer() {\r\n");
+      out.write("                max_timePage--;\r\n");
+      out.write("                max_timeData--;\r\n");
+      out.write("                document.getElementById('countdownPage').innerHTML = max_timePage;\r\n");
+      out.write("                if (max_timeData < 0)\r\n");
+      out.write("                {\r\n");
+      out.write("                    document.getElementById('countdownData').innerHTML = \"READY\";\r\n");
+      out.write("                    window.location.reload(true);\r\n");
+      out.write("                } else\r\n");
+      out.write("                {\r\n");
+      out.write("                    document.getElementById('countdownData').innerHTML = max_timeData;\r\n");
+      out.write("                }\r\n");
+      out.write("                //\r\n");
+      out.write("                if (max_timePage === 0) {\r\n");
+      out.write("                    clearInterval(cinterval);\r\n");
+      out.write("                }\r\n");
+      out.write("            }\r\n");
+      out.write("            // 1,000 means 1 second.\r\n");
+      out.write("            cinterval = setInterval('countdown_timer()', 1000);\r\n");
+      out.write("        </script>        \r\n");
+      out.write("    </head>    \r\n");
+      out.write("\r\n");
+      out.write("    <body> \r\n");
+      out.write("        <table border=\"0\" width=\"100%\"   id=\"table1\" >\r\n");
+      out.write("            <tr>\r\n");
+      out.write("                <td nowrap width=\"5%\" bgcolor=\"grey\"><font color=\"white\">Page refresh: <span id=\"countdownPage\">0</span>s</font></td>                \r\n");
+      out.write("                <td nowrap width=\"5%\" bgcolor=\"grey\"><font color=\"white\">Data refresh: <span id=\"countdownData\">0</span>s</font></td>                                \r\n");
+      out.write("            </tr>\r\n");
+      out.write("        </table>\r\n");
+      out.write("        <b>Days back:</b><form action=\"scorers.jsp\">\r\n");
+      out.write("            <select onchange=\"form.submit()\"  name=\"daysBack\">\r\n");
       out.write("                <option value=\"");
       out.print(daysBack);
       out.write('"');
       out.write('>');
       out.print(daysBack);
-      out.write("</option>\n");
-      out.write("                <option value=\"1\">1</option>\n");
-      out.write("                <option value=\"2\">2</option>\n");
-      out.write("                <option value=\"3\">3</option>\n");
-      out.write("                <option value=\"4\">4</option>\n");
-      out.write("                <option value=\"5\">5</option>\n");
-      out.write("                <option value=\"6\">6</option>\n");
-      out.write("                <option value=\"7\">7</option>\n");
-      out.write("            </select>\n");
+      out.write("</option>\r\n");
+      out.write("                <option value=\"1\">1</option>\r\n");
+      out.write("                <option value=\"2\">2</option>\r\n");
+      out.write("                <option value=\"3\">3</option>\r\n");
+      out.write("                <option value=\"4\">4</option>\r\n");
+      out.write("                <option value=\"5\">5</option>\r\n");
+      out.write("                <option value=\"6\">6</option>\r\n");
+      out.write("                <option value=\"7\">7</option>\r\n");
+      out.write("            </select>\r\n");
       out.write("            <input type=\"hidden\" name=\"reportType\" value=\"");
       out.print(reportType);
-      out.write("\" />\n");
-      out.write("        </form>\n");
+      out.write("\" />\r\n");
+      out.write("        </form>\r\n");
       out.write("        <h2> <IMG src='img/sad.jpg'>TOP unstable resources from ");
       out.print(T2_);
       out.write(" to ");
       out.print(T1_);
-      out.write("</h2>\n");
-      out.write("        <!--    <p>\n");
-      out.write("                <h3>Instability Indicator = sum of disconnections/sum of live sessions</h3> \n");
-      out.write("        //reportType:events,impact\n");
-      out.write("        -->\n");
-      out.write("        <table width=\"100%\">              \n");
-      out.write("            <tr>\n");
+      out.write("</h2>\r\n");
+      out.write("        <!--    <p>\r\n");
+      out.write("                <h3>Instability Indicator = sum of disconnections/sum of live sessions</h3> \r\n");
+      out.write("        //reportType:events,impact\r\n");
+      out.write("        -->\r\n");
+      out.write("        <table width=\"100%\">              \r\n");
+      out.write("            <tr>\r\n");
       out.write("                <td><iframe width=\"530\" height=\"800\" src= \"scorersForType.jsp?from=");
       out.print(T1);
       out.write("&to=");
       out.print(T2);
       out.write("&type=");
       out.print(type);
-      out.write("&reportType=events\" frameborder= \"0\" ></iframe></td>\n");
+      out.write("&reportType=events\" frameborder= \"0\" ></iframe></td>\r\n");
       out.write("                <td><iframe width=\"530\" height=\"800\" src= \"scorersForType.jsp?from=");
       out.print(T1);
       out.write("&to=");
       out.print(T2);
       out.write("&type=");
       out.print(type);
-      out.write("&reportType=impact\" frameborder= \"0\"></iframe></td>                \n");
-      out.write("            </tr>            \n");
-      out.write("        </table>\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
-      out.write("\n");
+      out.write("&reportType=impact\" frameborder= \"0\"></iframe></td>                \r\n");
+      out.write("            </tr>            \r\n");
+      out.write("        </table>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
+      out.write("\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

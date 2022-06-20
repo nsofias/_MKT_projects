@@ -55,20 +55,20 @@ public final class reggr_005ftext_jsp extends org.apache.jasper.runtime.HttpJspB
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n");
-      out.write("    <html>\n");
-      out.write("<head>\n");
-      out.write("    <title>Alarms</title>\n");
-      out.write("    <link rel=\"stylesheet\" href=\"global_1.css\">\n");
-      out.write("\n");
-      out.write("</head>\n");
-      out.write("<!--    <body onload=\"JavaScript:timedRefresh(120000);\"> -->\n");
-      out.write("<body>         \n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n");
+      out.write("    <html>\r\n");
+      out.write("<head>\r\n");
+      out.write("    <title>Alarms</title>\r\n");
+      out.write("    <link rel=\"stylesheet\" href=\"global_1.css\">\r\n");
+      out.write("\r\n");
+      out.write("</head>\r\n");
+      out.write("<!--    <body onload=\"JavaScript:timedRefresh(120000);\"> -->\r\n");
+      out.write("<body>         \r\n");
       out.write("    ");
 
         ServletContext myContext = request.getServletContext();
@@ -117,13 +117,13 @@ public final class reggr_005ftext_jsp extends org.apache.jasper.runtime.HttpJspB
             }
 
     
-      out.write("\n");
-      out.write("    <h2>User sessions distribution</h2>\n");
-      out.write("    <table  border=\"1\" width=\"100%\"   id=\"table2\" cellspacing=\"5\" cellpadding=\"5\">   \n");
+      out.write("\r\n");
+      out.write("    <h2>User sessions distribution</h2>\r\n");
+      out.write("    <table  border=\"1\" width=\"100%\"   id=\"table2\" cellspacing=\"5\" cellpadding=\"5\">   \r\n");
       out.write("        <th>");
       out.print(elType);
-      out.write("</th>\n");
-      out.write("        <th>sessions</th> \n");
+      out.write("</th>\r\n");
+      out.write("        <th>sessions</th> \r\n");
       out.write("            ");
 
                 ArrayList<Diligent_Daemon> myGroupBy_Daemons = (ArrayList<Diligent_Daemon>) myContext.getAttribute("myDiligent_Daemons");
@@ -171,43 +171,43 @@ public final class reggr_005ftext_jsp extends org.apache.jasper.runtime.HttpJspB
                     if (myVolumn > 1)
                         {
                             
-      out.write("         \n");
-      out.write("                        <tr>\n");
+      out.write("         \r\n");
+      out.write("                        <tr>\r\n");
       out.write("                            <td><a href=\"reggr_text.jsp?type=");
       out.print(type);
       out.write("&label=");
       out.print(labelDesc);
       out.write("&net_type_fix=y&net_type_mobile=y\" target=\"_blank\"><b>");
       out.print(labelDesc);
-      out.write("</b></a> </td>\n");
+      out.write("</b></a> </td>\r\n");
       out.write("                            <td>");
       out.print(myVolumn);
-      out.write("</td>   \n");
-      out.write("                        </tr>\n");
+      out.write("</td>   \r\n");
+      out.write("                        </tr>\r\n");
       out.write("                        ");
   }
                         else
                             {
                         
-      out.write("         \n");
-      out.write("                        <tr>\n");
+      out.write("         \r\n");
+      out.write("                        <tr>\r\n");
       out.write("                            <td nowrap>");
       out.print(labelDesc);
-      out.write(" </td>\n");
+      out.write(" </td>\r\n");
       out.write("                            <td>");
       out.print(myVolumn);
-      out.write("</td>\n");
-      out.write("                        </tr>\n");
+      out.write("</td>\r\n");
+      out.write("                        </tr>\r\n");
       out.write("                        ");
   }
                 out.flush();
                 }
             out.flush();
         
-      out.write("\n");
-      out.write("\n");
-      out.write("    </table>                                 \n");
-      out.write("</body>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("    </table>                                 \r\n");
+      out.write("</body>\r\n");
       out.write("</html> ");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

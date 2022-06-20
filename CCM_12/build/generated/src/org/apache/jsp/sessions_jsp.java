@@ -45,19 +45,19 @@ public final class sessions_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n");
-      out.write("   \"http://www.w3.org/TR/html4/loose.dtd\">\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>sessions Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("        \n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n");
+      out.write("   \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>sessions Page</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        \r\n");
       out.write("        ");
 
         CounterObjsGrouper visitorsGrouper = (CounterObjsGrouper)request.getSession().getServletContext().getAttribute("visitors");
@@ -76,10 +76,10 @@ public final class sessions_jsp extends org.apache.jasper.runtime.HttpJspBase
         
         
         
-      out.write("\n");
+      out.write("\r\n");
       out.write("        <h1> Active sessions : ");
       out.print(count);
-      out.write("</h1>\n");
+      out.write("</h1>\r\n");
       out.write("        ");
 
         for (int i=0;i<visitors.size();i++)
@@ -91,30 +91,30 @@ public final class sessions_jsp extends org.apache.jasper.runtime.HttpJspBase
              TimeStamp1 now  = new TimeStamp1();
              if (now.minutesDiff(objTime)<5)
                 {
-      out.write("\n");
+      out.write("\r\n");
       out.write("                <b>");
       out.print(IPAddress);
       out.write("&nbsp;&nbsp;");
       out.print(objTimeS);
-      out.write("</b>\n");
-      out.write("                    <p>&nbsp;                    \n");
+      out.write("</b>\r\n");
+      out.write("                    <p>&nbsp;                    \r\n");
       out.write("                ");
 }
              else
                 {
-      out.write("\n");
+      out.write("\r\n");
       out.write("                    ");
       out.print(IPAddress);
       out.write("&nbsp;&nbsp;");
       out.print(objTimeS);
-      out.write("\n");
-      out.write("                    <p>&nbsp;                    \n");
+      out.write("\r\n");
+      out.write("                    <p>&nbsp;                    \r\n");
       out.write("                ");
 }                 
             }
-      out.write("\n");
-      out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
