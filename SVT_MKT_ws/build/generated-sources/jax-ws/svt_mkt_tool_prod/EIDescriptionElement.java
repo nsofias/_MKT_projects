@@ -21,20 +21,20 @@ import javax.xml.bind.annotation.XmlValue;
  * 		        syntax for replacing fragments must not be defined.
  * 		    
  * 
- * <p>Java class for EIDescriptionElement complex type.
+ * &lt;p&gt;Java class for EIDescriptionElement complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
  * 
- * <pre>
- * &lt;complexType name="EIDescriptionElement"&gt;
- *   &lt;simpleContent&gt;
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;string"&gt;
- *       &lt;attribute ref="{http://messaging.ei.tmobile.net/datatypes}lang"/&gt;
- *       &lt;attribute name="descId" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
- *     &lt;/extension&gt;
- *   &lt;/simpleContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * &lt;pre&gt;
+ * &amp;lt;complexType name="EIDescriptionElement"&amp;gt;
+ *   &amp;lt;simpleContent&amp;gt;
+ *     &amp;lt;extension base="&amp;lt;http://www.w3.org/2001/XMLSchema&amp;gt;string"&amp;gt;
+ *       &amp;lt;attribute ref="{http://messaging.ei.tmobile.net/datatypes}lang"/&amp;gt;
+ *       &amp;lt;attribute name="descId" type="{http://www.w3.org/2001/XMLSchema}string" /&amp;gt;
+ *     &amp;lt;/extension&amp;gt;
+ *   &amp;lt;/simpleContent&amp;gt;
+ * &amp;lt;/complexType&amp;gt;
+ * &lt;/pre&gt;
  * 
  * 
  */

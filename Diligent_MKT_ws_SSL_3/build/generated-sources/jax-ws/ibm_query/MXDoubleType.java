@@ -9,19 +9,19 @@ import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java class for MXDoubleType complex type.
+ * &lt;p&gt;Java class for MXDoubleType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
  * 
- * <pre>
- * &lt;complexType name="MXDoubleType"&gt;
- *   &lt;simpleContent&gt;
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;double"&gt;
- *       &lt;attribute name="changed" type="{http://www.ibm.com/maximo}ChangeIndicatorType" /&gt;
- *     &lt;/extension&gt;
- *   &lt;/simpleContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * &lt;pre&gt;
+ * &amp;lt;complexType name="MXDoubleType"&amp;gt;
+ *   &amp;lt;simpleContent&amp;gt;
+ *     &amp;lt;extension base="&amp;lt;http://www.w3.org/2001/XMLSchema&amp;gt;double"&amp;gt;
+ *       &amp;lt;attribute name="changed" type="{http://www.ibm.com/maximo}ChangeIndicatorType" /&amp;gt;
+ *     &amp;lt;/extension&amp;gt;
+ *   &amp;lt;/simpleContent&amp;gt;
+ * &amp;lt;/complexType&amp;gt;
+ * &lt;/pre&gt;
  * 
  * 
  */

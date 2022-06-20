@@ -58,24 +58,24 @@ public final class ticketInfo_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
 
     ServletContext myContext = session.getServletContext();
     AlarmsDetectionListener myAlarmsDetectionListener = (AlarmsDetectionListener) myContext.getAttribute("myAlarmsDetectionListener");
@@ -96,26 +96,26 @@ public final class ticketInfo_jsp extends org.apache.jasper.runtime.HttpJspBase
         }
     }
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("<!DOCTYPE html>\r\n");
-      out.write("<html>\r\n");
-      out.write("    <head>\r\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <title>Ticket_MKT</title>\r\n");
-      out.write("        <link rel=\"stylesheet\" href=\"global.css\">\r\n");
-      out.write("    </head>\r\n");
-      out.write("    <body>\r\n");
-      out.write("        <style>\r\n");
-      out.write("            .json_object { \r\n");
-      out.write("                margin:10px; \r\n");
-      out.write("                padding-left:10px; \r\n");
-      out.write("                border-left:1px solid #ccc\r\n");
-      out.write("            }\r\n");
-      out.write("            .json_key { \r\n");
-      out.write("                font-weight: bold; \r\n");
-      out.write("            }\r\n");
-      out.write("        </style>\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>Ticket_MKT</title>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"global.css\">\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <style>\n");
+      out.write("            .json_object { \n");
+      out.write("                margin:10px; \n");
+      out.write("                padding-left:10px; \n");
+      out.write("                border-left:1px solid #ccc\n");
+      out.write("            }\n");
+      out.write("            .json_key { \n");
+      out.write("                font-weight: bold; \n");
+      out.write("            }\n");
+      out.write("        </style>\n");
       out.write("        ");
 
             out.println("<h1>ticket details</h1>");
@@ -126,13 +126,13 @@ public final class ticketInfo_jsp extends org.apache.jasper.runtime.HttpJspBase
                 out.println("<h1>No ticket exists</h1>");
             }
         
-      out.write("\r\n");
-      out.write("    </body>\r\n");
-      out.write("</html>\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

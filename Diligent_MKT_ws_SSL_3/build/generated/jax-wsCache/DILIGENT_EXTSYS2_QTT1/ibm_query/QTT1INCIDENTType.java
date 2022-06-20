@@ -13,90 +13,90 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for QTT1_INCIDENTType complex type.
+ * &lt;p&gt;Java class for QTT1_INCIDENTType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
  * 
- * <pre>
- * &lt;complexType name="QTT1_INCIDENTType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="MAXINTERRORMSG" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="ACTUALCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="ACTUALFINISH" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="ACTUALSTART" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="AFFECTEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="ASSIGNEDOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="CABLEGROUP" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="CENTRALA" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="CLASS" type="{http://www.ibm.com/maximo}MXDomainType" minOccurs="0"/&gt;
- *         &lt;element name="CLASSIFICATIONID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="CLASSSTRUCTUREID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="DESCRIPTION_LONGDESCRIPTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="DEVICENAME" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="EXTERNALSYSTEM" type="{http://www.ibm.com/maximo}MXDomainType" minOccurs="0"/&gt;
- *         &lt;element name="FAULTCAUSE" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *         &lt;element name="FAULTLOCATION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="GLOBALTICKETID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanType" minOccurs="0"/&gt;
- *         &lt;element name="IMPACT" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *         &lt;element name="IMSMIGRATION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="INDICATEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *         &lt;element name="INTERNALPRIORITY" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *         &lt;element name="ISGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanType" minOccurs="0"/&gt;
- *         &lt;element name="KABEL" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="KATEGORIJA" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *         &lt;element name="LINEID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="LINISKAOPREMA" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="MESTOPOVREDE" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="NUMBEROFAFFECTEDCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *         &lt;element name="ORIGINATEDCOMPANY" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="ORIGINATEDDEVICE" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="OWNERGROUP" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="PAKET" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="PRECKAID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="REASON" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="RELATEDTOGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanType" minOccurs="0"/&gt;
- *         &lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="REPORTEDBY" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="REPORTEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *         &lt;element name="RESOLVEDBY" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="RESOLVER" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="ROOTCAUSE" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *         &lt;element name="SERVICESINFAULT" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *         &lt;element name="SLATIPSERVIS" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="SOLUTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainType" minOccurs="0"/&gt;
- *         &lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="TARGETCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="TARGETFINISH" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="TICKETID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="TICKETUID" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *         &lt;element name="TIPPREKIN" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="TKTYPE" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="URGENCY" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *         &lt;element name="WAYOFREPAIR" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *         &lt;element name="WOCATALOG" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="WORKAROUND" type="{http://www.ibm.com/maximo}MXBooleanType" minOccurs="0"/&gt;
- *         &lt;element name="WORKAROUNDDESC" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="WORKLOG" type="{http://www.ibm.com/maximo}QTT1_WORKLOGType" maxOccurs="unbounded" minOccurs="0"/&gt;
- *         &lt;element name="WORKORDER" type="{http://www.ibm.com/maximo}QTT1_WORKORDERType" maxOccurs="unbounded" minOccurs="0"/&gt;
- *         &lt;element name="AFFECTEDSERVICE" type="{http://www.ibm.com/maximo}QTT1_AFFECTEDSERVICEType" maxOccurs="unbounded" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *       &lt;attGroup ref="{http://www.ibm.com/maximo}ObjectStructurePropertyGroup"/&gt;
- *       &lt;attribute name="transLanguage" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * &lt;pre&gt;
+ * &amp;lt;complexType name="QTT1_INCIDENTType"&amp;gt;
+ *   &amp;lt;complexContent&amp;gt;
+ *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
+ *       &amp;lt;sequence&amp;gt;
+ *         &amp;lt;element name="MAXINTERRORMSG" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ACTUALCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ACTUALFINISH" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ACTUALSTART" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ADJUSTEDTARGETCONTACTTIME" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ADJUSTEDTARGETRESOLUTIONTIME" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="AFFECTEDDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ASSIGNEDOWNERGROUP" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="CABLEGROUP" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="CENTRALA" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="CINUM" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="CLASS" type="{http://www.ibm.com/maximo}MXDomainType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="CLASSIFICATIONID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="CLASSSTRUCTUREID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="DESCRIPTION_LONGDESCRIPTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="DEVICENAME" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="EXTERNALSYSTEM" type="{http://www.ibm.com/maximo}MXDomainType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="FAULTCAUSE" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="FAULTLOCATION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="GLOBALTICKETID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="IMPACT" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="IMSMIGRATION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="INDICATEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="INTERNALPRIORITY" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ISGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="KABEL" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="KATEGORIJA" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="LINEID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="LINISKAOPREMA" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="LOCATION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="MESTOPOVREDE" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="NUMBEROFAFFECTEDCUSTOMERS" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ORIGINATEDCOMPANY" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ORIGINATEDDEVICE" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="OWNERGROUP" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="PAKET" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="PRECKAID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="REASON" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="RELATEDTOGLOBAL" type="{http://www.ibm.com/maximo}MXBooleanType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="REPORTEDBY" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="REPORTEDPRIORITY" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="RESOLVEDBY" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="RESOLVER" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ROOTCAUSE" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="SERVICESINFAULT" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="SLATIPSERVIS" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="SOLUTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="TARGETCONTACTDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="TARGETFINISH" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="TICKETID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="TICKETUID" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="TIPPREKIN" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="TKTYPE" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="URGENCY" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="WAYOFREPAIR" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="WOCATALOG" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="WORKAROUND" type="{http://www.ibm.com/maximo}MXBooleanType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="WORKAROUNDDESC" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="WORKLOG" type="{http://www.ibm.com/maximo}QTT1_WORKLOGType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="WORKORDER" type="{http://www.ibm.com/maximo}QTT1_WORKORDERType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="AFFECTEDSERVICE" type="{http://www.ibm.com/maximo}QTT1_AFFECTEDSERVICEType" maxOccurs="unbounded" minOccurs="0"/&amp;gt;
+ *       &amp;lt;/sequence&amp;gt;
+ *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}ObjectStructurePropertyGroup"/&amp;gt;
+ *       &amp;lt;attribute name="transLanguage" type="{http://www.w3.org/2001/XMLSchema}string" /&amp;gt;
+ *     &amp;lt;/restriction&amp;gt;
+ *   &amp;lt;/complexContent&amp;gt;
+ * &amp;lt;/complexType&amp;gt;
+ * &lt;/pre&gt;
  * 
  * 
  */
@@ -1881,20 +1881,20 @@ public class QTT1INCIDENTType {
     /**
      * Gets the value of the worklog property.
      * 
-     * <p>
+     * &lt;p&gt;
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the worklog property.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the worklog property.
      * 
-     * <p>
+     * &lt;p&gt;
      * For example, to add a new item, do as follows:
-     * <pre>
+     * &lt;pre&gt;
      *    getWORKLOG().add(newItem);
-     * </pre>
+     * &lt;/pre&gt;
      * 
      * 
-     * <p>
+     * &lt;p&gt;
      * Objects of the following type(s) are allowed in the list
      * {@link QTT1WORKLOGType }
      * 
@@ -1910,20 +1910,20 @@ public class QTT1INCIDENTType {
     /**
      * Gets the value of the workorder property.
      * 
-     * <p>
+     * &lt;p&gt;
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the workorder property.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the workorder property.
      * 
-     * <p>
+     * &lt;p&gt;
      * For example, to add a new item, do as follows:
-     * <pre>
+     * &lt;pre&gt;
      *    getWORKORDER().add(newItem);
-     * </pre>
+     * &lt;/pre&gt;
      * 
      * 
-     * <p>
+     * &lt;p&gt;
      * Objects of the following type(s) are allowed in the list
      * {@link QTT1WORKORDERType }
      * 
@@ -1939,20 +1939,20 @@ public class QTT1INCIDENTType {
     /**
      * Gets the value of the affectedservice property.
      * 
-     * <p>
+     * &lt;p&gt;
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the affectedservice property.
+     * This is why there is not a &lt;CODE&gt;set&lt;/CODE&gt; method for the affectedservice property.
      * 
-     * <p>
+     * &lt;p&gt;
      * For example, to add a new item, do as follows:
-     * <pre>
+     * &lt;pre&gt;
      *    getAFFECTEDSERVICE().add(newItem);
-     * </pre>
+     * &lt;/pre&gt;
      * 
      * 
-     * <p>
+     * &lt;p&gt;
      * Objects of the following type(s) are allowed in the list
      * {@link QTT1AFFECTEDSERVICEType }
      * 

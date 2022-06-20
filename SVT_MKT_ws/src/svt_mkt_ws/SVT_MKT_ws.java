@@ -287,18 +287,15 @@ REMARK
     }
 
     private static void setSystemProperties() {
-        /*
-        System.setProperty("javax.net.ssl.trustStore", "C:/my Files/data/certificates/diligent-prod-keystore.jks");
+        String certificates_dir = System.getenv("APPLICATIONS_PATH") + "/certificates/";
+        System.out.println("certificates_dir=" + certificates_dir);
+        System.setProperty("javax.net.ssl.trustStore", certificates_dir + "diligent-prod-keystore.jks");
         System.setProperty("javax.net.ssl.trustStorePassword", "changeit");
-        System.setProperty("javax.net.ssl.keyStore", "C:/my Files/data/certificates/diligent-prod-keystore.jks");
+        System.setProperty("javax.net.ssl.keyStore", certificates_dir + "diligent-prod-keystore.jks");
         System.setProperty("javax.net.ssl.keyStorePassword", "changeit");
-         */
-        //****************************************************
-
-        System.setProperty("javax.net.ssl.trustStore", "/home/diligent/data/certificates/diligent-prod-keystore.jks");
-        System.setProperty("javax.net.ssl.trustStorePassword", "changeit");
-        System.setProperty("javax.net.ssl.keyStore", "/home/diligent/data/certificates/diligent-prod-keystore.jks");
-        System.setProperty("javax.net.ssl.keyStorePassword", "changeit");
+        System.setProperty("http.proxyHost", "");
+        System.setProperty("https.proxyHost", "");
+        System.setProperty("http.proxyPort", "");
     }
 
     /**
@@ -318,17 +315,17 @@ REMARK
         myServiceTestCharacteristic.setName("CHECK_ALL_SERVICES_BY_LINE_ID");
         myServiceTestCharacteristic.setValue(lineId);
         mySVTTest.setMyServiceTestCharacteristic(new ServiceTestCharacteristic[]{myServiceTestCharacteristic});
-        URL myURL = new URL("https://10.85.0.13/service-test-management/tmf-api/serviceTestManagement/serviceTest");
+        URL myURL = new URL("https://api-prod.apps.osprod.telekom.mk/service-test-management/tmf-api/serviceTestManagement/serviceTest");
         //10.232.61.30:8080,10.232.61.35
         Gson gson = new GsonBuilder().create();
         System.out.println("mySVTTest=" + gson.toJson(mySVTTest));
-        return Helpme.postObjToUrlAsJson(myURL, mySVTTest);
+        return Helpme.postObjToUrlAsJsonHTTPS(myURL, mySVTTest);
     }
 
     public static void main(String[] args) {
         try {
             //System.out.println(SVT_MKT_ws.createTestCustomerIssue());
-            System.out.println(checkLineServiceNEW_SVT("F2005565"));
+            System.out.println(checkLineServiceNEW_SVT("L0007044"));
             //System.out.println(hasCustomerIndividualFault("38923085407"));
             //System.out.println("status="+checkLineService("L2108563"));
         } catch (Exception e) {

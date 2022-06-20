@@ -11,42 +11,42 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for QTT1_WORKORDERType complex type.
+ * &lt;p&gt;Java class for QTT1_WORKORDERType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
  * 
- * <pre>
- * &lt;complexType name="QTT1_WORKORDERType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="ACTFINISH" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="ACTSTART" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="CANCELREASON" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="CREATEDBY" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="EXTERNALREFID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanType" minOccurs="0"/&gt;
- *         &lt;element name="LASTREMARK" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="OBJECTTYPE" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="ORDERAIM" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="ORIGRECORDID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="PLACEOFFAULT" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="SITEID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainType" minOccurs="0"/&gt;
- *         &lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="WONUM" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="WORKORDERID" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *       &lt;attGroup ref="{http://www.ibm.com/maximo}ObjectStructurePropertyGroup"/&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * &lt;pre&gt;
+ * &amp;lt;complexType name="QTT1_WORKORDERType"&amp;gt;
+ *   &amp;lt;complexContent&amp;gt;
+ *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
+ *       &amp;lt;sequence&amp;gt;
+ *         &amp;lt;element name="ACTFINISH" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ACTSTART" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="CANCELREASON" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="CREATEDBY" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="EXTERNALREFID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="HISTORYFLAG" type="{http://www.ibm.com/maximo}MXBooleanType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="LASTREMARK" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="OBJECTTYPE" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ORDERAIM" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ORIGRECORDID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="OWNER" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="PLACEOFFAULT" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="REGIONNAME" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="REPORTDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="SITEID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="STATUS" type="{http://www.ibm.com/maximo}MXDomainType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="STATUSDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="WONUM" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="WORKORDERID" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *       &amp;lt;/sequence&amp;gt;
+ *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}ObjectStructurePropertyGroup"/&amp;gt;
+ *     &amp;lt;/restriction&amp;gt;
+ *   &amp;lt;/complexContent&amp;gt;
+ * &amp;lt;/complexType&amp;gt;
+ * &lt;/pre&gt;
  * 
  * 
  */

@@ -50,11 +50,11 @@ public final class howManyCallers_jsp extends org.apache.jasper.runtime.HttpJspB
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
 
     try {
         ServletContext myContext = request.getServletContext();
@@ -118,7 +118,6 @@ public final class howManyCallers_jsp extends org.apache.jasper.runtime.HttpJspB
         out.print(e.getMessage());
     }
 
-      out.write('\r');
       out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

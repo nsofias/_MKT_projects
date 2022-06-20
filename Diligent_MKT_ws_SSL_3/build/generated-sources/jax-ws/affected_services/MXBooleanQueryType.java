@@ -12,20 +12,20 @@ import affected_services.runtime.ZeroOneBooleanAdapter;
 
 
 /**
- * <p>Java class for MXBooleanQueryType complex type.
+ * &lt;p&gt;Java class for MXBooleanQueryType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
  * 
- * <pre>
- * &lt;complexType name="MXBooleanQueryType"&gt;
- *   &lt;simpleContent&gt;
- *     &lt;extension base="&lt;http://www.ibm.com/maximo&gt;BooleanType"&gt;
- *       &lt;attribute name="operator" type="{http://www.ibm.com/maximo}QueryOperatorType" /&gt;
- *       &lt;attribute name="operandModeOR" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
- *     &lt;/extension&gt;
- *   &lt;/simpleContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * &lt;pre&gt;
+ * &amp;lt;complexType name="MXBooleanQueryType"&amp;gt;
+ *   &amp;lt;simpleContent&amp;gt;
+ *     &amp;lt;extension base="&amp;lt;http://www.ibm.com/maximo&amp;gt;BooleanType"&amp;gt;
+ *       &amp;lt;attribute name="operator" type="{http://www.ibm.com/maximo}QueryOperatorType" /&amp;gt;
+ *       &amp;lt;attribute name="operandModeOR" type="{http://www.w3.org/2001/XMLSchema}boolean" /&amp;gt;
+ *     &amp;lt;/extension&amp;gt;
+ *   &amp;lt;/simpleContent&amp;gt;
+ * &amp;lt;/complexType&amp;gt;
+ * &lt;/pre&gt;
  * 
  * 
  */

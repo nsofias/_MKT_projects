@@ -12,21 +12,21 @@ import javax.xml.bind.annotation.XmlType;
  * 				The payload for the response of operation 'synch' of port-type 'stela-sync'
  * 			
  * 
- * <p>Java class for stela-sync_queryTTResponse complex type.
+ * &lt;p&gt;Java class for stela-sync_queryTTResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
  * 
- * <pre>
- * &lt;complexType name="stela-sync_queryTTResponse"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="QueryTTResponse" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}QueryQTTINCIDENTResponseType"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * &lt;pre&gt;
+ * &amp;lt;complexType name="stela-sync_queryTTResponse"&amp;gt;
+ *   &amp;lt;complexContent&amp;gt;
+ *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
+ *       &amp;lt;sequence&amp;gt;
+ *         &amp;lt;element name="QueryTTResponse" type="{http://oss.it.telekom.mk/TroubleTicket/ibm/maximo}QueryQTTINCIDENTResponseType"/&amp;gt;
+ *       &amp;lt;/sequence&amp;gt;
+ *     &amp;lt;/restriction&amp;gt;
+ *   &amp;lt;/complexContent&amp;gt;
+ * &amp;lt;/complexType&amp;gt;
+ * &lt;/pre&gt;
  * 
  * 
  */

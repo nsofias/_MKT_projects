@@ -13,29 +13,29 @@ import javax.xml.bind.annotation.XmlType;
  * 		   		DEPRECATED! Please use for new service interfaces the EIMessageContext2.
  * 		   	
  * 
- * <p>Java class for EIMessageContext complex type.
+ * &lt;p&gt;Java class for EIMessageContext complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
  * 
- * <pre>
- * &lt;complexType name="EIMessageContext"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="target" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageTarget" minOccurs="0"/&gt;
- *         &lt;element name="replyTo" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageReplyTo" minOccurs="0"/&gt;
- *         &lt;element name="requestId" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageRequestId" minOccurs="0"/&gt;
- *         &lt;element name="timeLeft" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageTimeLeft" minOccurs="0"/&gt;
- *         &lt;element name="priority" type="{http://messaging.ei.tmobile.net/datatypes}EIMessagePriority" minOccurs="0"/&gt;
- *         &lt;element name="redelivered" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageRedelivered" minOccurs="0"/&gt;
- *         &lt;element name="revision" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageRevision" minOccurs="0"/&gt;
- *         &lt;element name="sender" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageSender"/&gt;
- *         &lt;element name="correlationId" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageCorrelationId"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * &lt;pre&gt;
+ * &amp;lt;complexType name="EIMessageContext"&amp;gt;
+ *   &amp;lt;complexContent&amp;gt;
+ *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
+ *       &amp;lt;sequence&amp;gt;
+ *         &amp;lt;element name="target" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageTarget" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="replyTo" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageReplyTo" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="requestId" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageRequestId" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="timeLeft" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageTimeLeft" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="priority" type="{http://messaging.ei.tmobile.net/datatypes}EIMessagePriority" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="redelivered" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageRedelivered" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="revision" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageRevision" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="sender" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageSender"/&amp;gt;
+ *         &amp;lt;element name="correlationId" type="{http://messaging.ei.tmobile.net/datatypes}EIMessageCorrelationId"/&amp;gt;
+ *       &amp;lt;/sequence&amp;gt;
+ *     &amp;lt;/restriction&amp;gt;
+ *   &amp;lt;/complexContent&amp;gt;
+ * &amp;lt;/complexType&amp;gt;
+ * &lt;/pre&gt;
  * 
  * 
  */

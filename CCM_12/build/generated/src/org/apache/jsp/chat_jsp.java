@@ -42,8 +42,8 @@ public final class chat_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
+      out.write('\n');
+      out.write('\n');
 
     ServletContext myContext=request.getServletContext();
     Counters myCounters = (Counters)myContext.getAttribute("browseCounters");
@@ -51,25 +51,25 @@ public final class chat_jsp extends org.apache.jasper.runtime.HttpJspBase
     myCounters.updateCounters(request.getRequestURI()+" -> "+request.getRemoteAddr());
     }catch(Exception e){} 
     
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("<html>\r\n");
-      out.write("    <head>\r\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <title>JSP Page</title>\r\n");
-      out.write("    </head>\r\n");
-      out.write("\r\n");
-      out.write("<frameset  rows =\"70%,*\">\r\n");
-      out.write("    <frame name=\"up\" scrolling=\"yes\"  src=\"leftPage_perCC_TABLES.jsp\">          \r\n");
-      out.write("    <frame name=\"down\" scrolling=\"yes\"  src=\"chat/chat.jsp\">\r\n");
-      out.write(" <noframes>   \r\n");
-      out.write(" <body>\r\n");
-      out.write("  <p>This page uses frames, but your browser doesn't support them.</p>\r\n");
-      out.write("  </body>\r\n");
-      out.write("</noframes>      \r\n");
-      out.write("</frameset>        \r\n");
-      out.write("\r\n");
-      out.write("</html>\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("    </head>\n");
+      out.write("\n");
+      out.write("<frameset  rows =\"70%,*\">\n");
+      out.write("    <frame name=\"up\" scrolling=\"yes\"  src=\"leftPage_perCC_TABLES.jsp\">          \n");
+      out.write("    <frame name=\"down\" scrolling=\"yes\"  src=\"chat/chat.jsp\">\n");
+      out.write(" <noframes>   \n");
+      out.write(" <body>\n");
+      out.write("  <p>This page uses frames, but your browser doesn't support them.</p>\n");
+      out.write("  </body>\n");
+      out.write("</noframes>      \n");
+      out.write("</frameset>        \n");
+      out.write("\n");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

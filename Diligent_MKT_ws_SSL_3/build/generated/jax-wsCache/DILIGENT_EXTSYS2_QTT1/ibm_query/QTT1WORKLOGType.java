@@ -11,30 +11,30 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for QTT1_WORKLOGType complex type.
+ * &lt;p&gt;Java class for QTT1_WORKLOGType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
  * 
- * <pre>
- * &lt;complexType name="QTT1_WORKLOGType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="CREATEBY" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="DESCRIPTION_LONGDESCRIPTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="LOGTYPE" type="{http://www.ibm.com/maximo}MXDomainType" minOccurs="0"/&gt;
- *         &lt;element name="MODIFYBY" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="MODIFYDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&gt;
- *         &lt;element name="ORGID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&gt;
- *         &lt;element name="WORKLOGID" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&gt;
- *       &lt;/sequence&gt;
- *       &lt;attGroup ref="{http://www.ibm.com/maximo}ObjectStructurePropertyGroup"/&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * &lt;pre&gt;
+ * &amp;lt;complexType name="QTT1_WORKLOGType"&amp;gt;
+ *   &amp;lt;complexContent&amp;gt;
+ *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
+ *       &amp;lt;sequence&amp;gt;
+ *         &amp;lt;element name="CREATEBY" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="CREATEDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="DESCRIPTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="DESCRIPTION_LONGDESCRIPTION" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="LOGTYPE" type="{http://www.ibm.com/maximo}MXDomainType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="MODIFYBY" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="MODIFYDATE" type="{http://www.ibm.com/maximo}MXDateTimeType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="ORGID" type="{http://www.ibm.com/maximo}MXStringType" minOccurs="0"/&amp;gt;
+ *         &amp;lt;element name="WORKLOGID" type="{http://www.ibm.com/maximo}MXLongType" minOccurs="0"/&amp;gt;
+ *       &amp;lt;/sequence&amp;gt;
+ *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}ObjectStructurePropertyGroup"/&amp;gt;
+ *     &amp;lt;/restriction&amp;gt;
+ *   &amp;lt;/complexContent&amp;gt;
+ * &amp;lt;/complexType&amp;gt;
+ * &lt;/pre&gt;
  * 
  * 
  */

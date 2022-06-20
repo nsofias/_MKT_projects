@@ -13,23 +13,23 @@ import affected_services.runtime.ZeroOneBooleanAdapter;
 
 
 /**
- * <p>Java class for PublishAFFECTEDSERVICEType complex type.
+ * &lt;p&gt;Java class for PublishAFFECTEDSERVICEType complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * &lt;p&gt;The following schema fragment specifies the expected content contained within this class.
  * 
- * <pre>
- * &lt;complexType name="PublishAFFECTEDSERVICEType"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element ref="{http://www.ibm.com/maximo}AFFECTEDSERVICESet"/&gt;
- *       &lt;/sequence&gt;
- *       &lt;attGroup ref="{http://www.ibm.com/maximo}PublishingContentGroup"/&gt;
- *       &lt;attGroup ref="{http://www.ibm.com/maximo}CommonContentGroup"/&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
+ * &lt;pre&gt;
+ * &amp;lt;complexType name="PublishAFFECTEDSERVICEType"&amp;gt;
+ *   &amp;lt;complexContent&amp;gt;
+ *     &amp;lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&amp;gt;
+ *       &amp;lt;sequence&amp;gt;
+ *         &amp;lt;element ref="{http://www.ibm.com/maximo}AFFECTEDSERVICESet"/&amp;gt;
+ *       &amp;lt;/sequence&amp;gt;
+ *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}CommonContentGroup"/&amp;gt;
+ *       &amp;lt;attGroup ref="{http://www.ibm.com/maximo}PublishingContentGroup"/&amp;gt;
+ *     &amp;lt;/restriction&amp;gt;
+ *   &amp;lt;/complexContent&amp;gt;
+ * &amp;lt;/complexType&amp;gt;
+ * &lt;/pre&gt;
  * 
  * 
  */
@@ -41,9 +41,6 @@ public class PublishAFFECTEDSERVICEType {
 
     @XmlElement(name = "AFFECTEDSERVICESet", required = true)
     protected AFFECTEDSERVICESetType affectedserviceSet;
-    @XmlAttribute(name = "event")
-    @XmlJavaTypeAdapter(ZeroOneBooleanAdapter.class)
-    protected Boolean event;
     @XmlAttribute(name = "creationDateTime")
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar creationDateTime;
@@ -55,6 +52,9 @@ public class PublishAFFECTEDSERVICEType {
     protected String messageID;
     @XmlAttribute(name = "maximoVersion")
     protected String maximoVersion;
+    @XmlAttribute(name = "event")
+    @XmlJavaTypeAdapter(ZeroOneBooleanAdapter.class)
+    protected Boolean event;
 
     /**
      * Gets the value of the affectedserviceSet property.
@@ -78,34 +78,6 @@ public class PublishAFFECTEDSERVICEType {
      */
     public void setAFFECTEDSERVICESet(AFFECTEDSERVICESetType value) {
         this.affectedserviceSet = value;
-    }
-
-    /**
-     * Gets the value of the event property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public boolean isEvent() {
-        if (event == null) {
-            return new ZeroOneBooleanAdapter().unmarshal("0");
-        } else {
-            return event;
-        }
-    }
-
-    /**
-     * Sets the value of the event property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setEvent(Boolean value) {
-        this.event = value;
     }
 
     /**
@@ -226,6 +198,34 @@ public class PublishAFFECTEDSERVICEType {
      */
     public void setMaximoVersion(String value) {
         this.maximoVersion = value;
+    }
+
+    /**
+     * Gets the value of the event property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public boolean isEvent() {
+        if (event == null) {
+            return new ZeroOneBooleanAdapter().unmarshal("0");
+        } else {
+            return event;
+        }
+    }
+
+    /**
+     * Sets the value of the event property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setEvent(Boolean value) {
+        this.event = value;
     }
 
 }
