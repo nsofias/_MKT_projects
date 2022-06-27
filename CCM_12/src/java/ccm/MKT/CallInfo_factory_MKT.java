@@ -39,7 +39,8 @@ public class CallInfo_factory_MKT implements CallInfo_factory {
             } else if (reason.toLowerCase().contains("mobile")) {
                 reason = "MOBILE";
             } else {
-                reason = reason.split("-")[0].trim();
+                return null;
+                //reason = reason.split("-")[0].trim();
             }
             //---------------------
             if (lineIdInFault != null && !lineIdInFault.isEmpty() && !lineIdInFault.trim().equals("0")) {

@@ -3,6 +3,8 @@ package org.apache.jsp.MKT;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import nsofiasLib.utils.JsonToHtmlConverter;
+import com.google.gson.Gson;
 
 public final class askSVT_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -44,6 +46,8 @@ public final class askSVT_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
@@ -51,19 +55,33 @@ public final class askSVT_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <title>JSP Page</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
+      out.write("        <style>\n");
+      out.write("            .json_object { \n");
+      out.write("                margin:10px;\n");
+      out.write("                padding-left:10px;\n");
+      out.write("                border-left:1px solid #ccc\n");
+      out.write("            }\n");
+      out.write("            .json_key {\n");
+      out.write("                font-weight: bold;\n");
+      out.write("            }\n");
+      out.write("        </style>        \n");
       out.write("        <h1>Waiting from SVT...</h1>\n");
       out.write("        ");
 
-            out.flush(); 
-            String lineID = request.getParameter("lineID");  
+            out.flush();
+            String lineID = request.getParameter("lineID");
+            String res_="N/A";
             try {
-                String res_ = svt_mkt_ws.SVT_MKT_ws.checkLineServiceNEW_SVT(lineID);
-                out.println(res_);
+                res_ = svt_mkt_ws.SVT_MKT_ws.checkLineServiceNEW_SVT(lineID);
+                String myOutput = new JsonToHtmlConverter().getHtmlData(res_);
+                out.println(myOutput);
             } catch (Exception e) {
+                out.println(res_);
                 e.printStackTrace();
             }
       out.write("\n");
       out.write("    </body>\n");
+      out.write("    \n");
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
