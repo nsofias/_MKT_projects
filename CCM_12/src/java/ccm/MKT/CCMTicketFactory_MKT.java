@@ -202,6 +202,8 @@ public class CCMTicketFactory_MKT implements CCMTicketFactory {
                 Double[] coords = findLatLonOfATC(ATCsCoords, myATC);
                 String weather = Helpme.getWeatherInfo_LON_LAT(coords[1], coords[0]);
                 myAlarm.setWeatherInfo(weather);
+                myTicket.setWeatherInfo(weather);
+                myTicket.setCoords(coords);
             } catch (Exception e) {
                 System.out.println("CCM12:weather error: " + e.toString());
                 e.printStackTrace();

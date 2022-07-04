@@ -47,6 +47,9 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
     private String foundOpennedSR = "";
     private int numOfCCTs = 0;
     private int numOfCalls = 0;
+    private final List lineIDs = new ArrayList();
+    private String weatherInfo = "";
+    private Double[] coords = null;
 
     private final List<Signature> signatureHistory = new LinkedList();
 
@@ -104,6 +107,13 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
             myTicket_IBM.setState(Ticket.STATE_OPEN_FAILED);
             System.out.println("CCM12:Ticket_MKT:OPEN_ACTION_Thread error:" + e.toString());
             new MailAlert().sendmailAlert("CCM12:Ticket_MKT:ERROR (" + e.toString() + " oppening ticket with  Synopsis:" + myTicket_IBM.getSYNOPSIS(), e);
+        }
+        if (myTicket_IBM.getSR() != null && !myTicket_IBM.getSR().isEmpty() && this.getLastSignature().getLabel().equals("SIGNATURE_12")) {
+            try {
+                List registered = this.getMyTicket_IBM().getElementsList().get(0).findLineIDsRegistered();
+                getLineIDs().addAll(registered);
+            } catch (Exception e) {
+            }
         }
         System.out.println("CCM12:Ticket_MKT: On_OPEN_ACTION_Thread ended " + myTicket_IBM.getSR());
         return myTicket_IBM.getSR();
@@ -265,6 +275,15 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
 
     @Override
     public void initializeSignature() {
+        if (this.getWeatherInfo().contains("storm")) {
+            try {
+                this.setLastSignature(SignatureFactory.createSignature("SIGNATURE_12"));////"Mobile";
+                System.out.println("CCM12:Ticket_MKT:initializeSignature:SIGNATURE_12 - Weather problem for " + elementName + "");
+            } catch (Exception e) {
+                System.out.println("CCM12:Ticket_MKT:initializeSignature12 error:" + e.toString() + " for " + this.getElementName());
+                e.printStackTrace(System.out);
+            }
+        } else
         try {
             String sr_ = isElementRecentlyDefected();
             if (sr_ != null) {
@@ -367,6 +386,15 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
                             this.setState(Ticket.STATE_PENDING_TO_CLOSE);
                         }
                         break;
+                    case "SIGNATURE_12"://SIGNATURE_12 = "Weather"
+                        if (now.minutesDiff(startedTimeStamp) > 60 && coords != null) {
+                            String weatherUpdated = Helpme.getWeatherInfo_LON_LAT(coords[1], coords[0]);
+                            if (weatherUpdated.contains("storm")) {
+                                this.setLastSignature(SignatureFactory.createSignature("SIGNATURE_12"));
+                            } else {
+                                this.setState(Ticket.STATE_CLOSED);
+                            }
+                        }
                 }
             } catch (Exception e) {
                 System.out.println("CCM12:Ticket_MKT:updateSignature: error:" + e.toString());
@@ -539,6 +567,34 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
             return getMyTicket_IBM().getCurrentUsersRegistered();
         }
         return (0);
+    }
+
+    /**
+     * @return the weatherInfo
+     */
+    public String getWeatherInfo() {
+        return weatherInfo;
+    }
+
+    /**
+     * @param weatherInfo the weatherInfo to set
+     */
+    public void setWeatherInfo(String weatherInfo) {
+        this.weatherInfo = weatherInfo;
+    }
+
+    /**
+     * @return the coords
+     */
+    public Double[] getCoords() {
+        return coords;
+    }
+
+    /**
+     * @param coords the coords to set
+     */
+    public void setCoords(Double[] coords) {
+        this.coords = coords;
     }
 
     @Override
@@ -762,6 +818,13 @@ public class Ticket_MKT extends nsofiasLib.ote.alarms.Ticket implements CCMTicke
         } catch (IOException e) {
         }
         return null;
+    }
+
+    /**
+     * @return the lineIDs
+     */
+    public List getLineIDs() {
+        return lineIDs;
     }
 
     public static void main(String[] args) {
